@@ -1,0 +1,14 @@
+~08680~^~01~^~N~^~328~^~Majority of brands are not fortified with vitamin D, but some store brands are fortified at 20% DV (80 IU or 2 mcg/100 g).~
+~08680~^~02~^~N~^~324~^~Majority of brands are not fortified with vitamin D, but some store brands are fortified at 20% DV (80 IU or 2 mcg/100 g).~
+~09512~^~01~^~D~^~~^~Includes purple and white grape juice~
+~11056~^~01~^~N~^~432~^~Value based on the analysis of 5-methyltetrahydrofolate, 10-Formyl folic acid, 5-Formyltetrahydrofolic acid~
+~11056~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate, 10-Formyl folic acid, 5-Formyltetrahydrofolic acid~
+~11056~^~01~^~N~^~435~^~Value based on the analysis of 5-methyltetrahydrofolate, 10-Formyl folic acid, 5-Formyltetrahydrofolic acid~
+~11905~^~01~^~N~^~435~^~Value based on the analysis of 5-methyltetrahydrofolate, 10-Formyl folic acid, 5-Formyltetrahydrofolic acid~
+~11905~^~01~^~N~^~432~^~Value based on the analysis of 5-methyltetrahydrofolate, 10-Formyl folic acid, 5-Formyltetrahydrofolic acid~
+~11905~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate, 10-Formyl folic acid, 5-Formyltetrahydrofolic acid~
+~12536~^~01~^~N~^~307~^~Sodium includes salt on shells. Sodium from kernels only is 372 mg/100 g.~
+~14075~^~01~^~D~^~~^~Mineral content varies between brands~
+~16097~^~01~^~D~^~~^~Other phytosterols total 94.2 mg/100g; these include beta-sitosterol (77.2) delta 5-avenasterol (15.0), and campestanol (2.0)~
+~16397~^~01~^~D~^~~^~Other phytosterols total 94.2 mg/100g; these include beta-sitosterol (77.2), delta 5-avenasterol (15.0), and campestanol (2.0).~
+~19919~^~01~^~N~^~323~^~Some candies contain added Vitamin E. If vitamin E is added at 25% DV per serving then Vitamin E= 8.4mg/100gm.,~

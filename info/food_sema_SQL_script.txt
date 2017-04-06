@@ -1,0 +1,267 @@
+CREATE TABLE diet.food
+(
+  food_id integer NOT NULL DEFAULT nextval('diet.food_food_id_seq'::regclass),
+  ref_rec_id integer, -- the recipe that produces this food (if known)
+  foodname_label_id integer NOT NULL,
+  generalized boolean NOT NULL DEFAULT false,
+  manufacturer_id integer,
+  sd_id integer,
+  sentby character varying(255),
+  fooddesc_label_id integer,
+  CONSTRAINT food_pkey PRIMARY KEY (food_id),
+  CONSTRAINT food_fooddesc_label_id_fk FOREIGN KEY (fooddesc_label_id)
+      REFERENCES diet.label (label_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT label_id_fk21 FOREIGN KEY (foodname_label_id)
+      REFERENCES diet.label (label_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT recipe_id_fk22 FOREIGN KEY (ref_rec_id)
+      REFERENCES diet.recipe (rec_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT sd_id_fk23 FOREIGN KEY (sd_id)
+      REFERENCES userdb.security_descriptor (sd_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE SET NULL
+)
+WITH (
+  OIDS=TRUE
+);
+COMMENT ON COLUMN diet.food.ref_rec_id IS 'the recipe that produces this food (if known)';
+
+CREATE TABLE diet.food_content
+(
+  food_id integer NOT NULL,
+  source_id integer NOT NULL,
+  nutr_id integer NOT NULL,
+  fc_quantity double precision NOT NULL, -- Amount of nutrient in 100 grams (10 dkg) of the food, edible portion
+  CONSTRAINT food_content_pkey PRIMARY KEY (food_id, nutr_id, source_id),
+  CONSTRAINT food_content_fk FOREIGN KEY (source_id)
+      REFERENCES diet.source (source_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_content_new_fk25 FOREIGN KEY (nutr_id)
+      REFERENCES diet.nutrient (nutr_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_content_new_fk26 FOREIGN KEY (food_id)
+      REFERENCES diet.food (food_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE diet.food_content
+  OWNER TO menugene;
+GRANT ALL ON TABLE diet.food_content TO menugene;
+COMMENT ON COLUMN diet.food_content.fc_quantity IS 'Amount of nutrient in 100 grams (10 dkg) of the food, edible portion';
+
+CREATE TABLE diet.food_sets
+(
+  food_id integer NOT NULL,
+  set_id integer NOT NULL,
+  CONSTRAINT food_sets_pkey PRIMARY KEY (food_id, set_id),
+  CONSTRAINT food_sets_fk30 FOREIGN KEY (food_id)
+      REFERENCES diet.food (food_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_sets_fk31 FOREIGN KEY (set_id)
+      REFERENCES diet.set (set_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.food_source
+(
+  food_id integer NOT NULL,
+  source_id integer NOT NULL,
+  content_unit_id integer NOT NULL,
+  content_unit_q double precision NOT NULL,
+  refuse_percent integer NOT NULL,
+  source_link_no character varying(64),
+  menugene_link_no integer,
+  CONSTRAINT food_source_idx PRIMARY KEY (food_id, source_id),
+  CONSTRAINT food_source_fk FOREIGN KEY (food_id)
+      REFERENCES diet.food (food_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_source_fk1 FOREIGN KEY (source_id)
+      REFERENCES diet.source (source_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_source_menugene_link_no_fkey FOREIGN KEY (menugene_link_no)
+      REFERENCES menugene.sol (solid) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_source_menugene_link_no_key UNIQUE (menugene_link_no)
+)
+WITH (
+  OIDS=TRUE
+);
+
+
+CREATE TABLE diet.food_units
+(
+  food_id integer NOT NULL,
+  source_id integer NOT NULL,
+  unit_id integer NOT NULL,
+  lang_id integer NOT NULL,
+  scale double precision NOT NULL,
+  sort_order integer NOT NULL DEFAULT 0,
+  unit2_id integer,
+  unit2_q double precision,
+  unit2_text character varying(32),
+  CONSTRAINT food_weight_idx2 PRIMARY KEY (food_id, unit_id, lang_id, source_id),
+  CONSTRAINT food_id_fk32 FOREIGN KEY (food_id)
+      REFERENCES diet.food (food_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT food_units_unit2_id_fkey FOREIGN KEY (unit2_id)
+      REFERENCES diet.unit (unit_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT lang_id_fk33 FOREIGN KEY (lang_id)
+      REFERENCES diet.language (lang_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT source_id_fk32 FOREIGN KEY (source_id)
+      REFERENCES diet.source (source_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT unit_id_fk34 FOREIGN KEY (unit_id)
+      REFERENCES diet.unit (unit_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.nutrient
+(
+  nutr_id integer NOT NULL DEFAULT nextval('diet.nutrient_nutr_id_seq'::regclass),
+  nutrname_label_id integer NOT NULL,
+  usda_nutr_no character varying(50),
+  eurofir_nutr_no character varying(50),
+  unit_id integer NOT NULL,
+  decimals integer,
+  menugene_nutr_no integer,
+  CONSTRAINT nutrient_pkey PRIMARY KEY (nutr_id),
+  CONSTRAINT nutrient_fk46 FOREIGN KEY (unit_id)
+      REFERENCES diet.unit (unit_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT nutrient_fk47 FOREIGN KEY (nutrname_label_id)
+      REFERENCES diet.label (label_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT nutrient_menugene_nutr_no_fkey FOREIGN KEY (menugene_nutr_no)
+      REFERENCES menugene.sol (solid) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT nutrient_menugene_nutr_no_key UNIQUE (menugene_nutr_no)
+)
+WITH (
+  OIDS=TRUE
+);
+
+
+CREATE TABLE diet.nutrient_content
+(
+  nutr_id integer NOT NULL,
+  nutr_cont_id integer NOT NULL,
+  CONSTRAINT nutrient_content_idx PRIMARY KEY (nutr_id, nutr_cont_id),
+  CONSTRAINT nutrient_content_fk48 FOREIGN KEY (nutr_id)
+      REFERENCES diet.nutrient (nutr_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT nutrient_content_fk49 FOREIGN KEY (nutr_cont_id)
+      REFERENCES diet.nutrient (nutr_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.nutrient_sets
+(
+  nutrient_id integer NOT NULL,
+  set_id integer NOT NULL,
+  CONSTRAINT nutrient_sets_idx PRIMARY KEY (set_id, nutrient_id),
+  CONSTRAINT nutrient_sets_fk FOREIGN KEY (set_id)
+      REFERENCES diet.set (set_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT nutrient_sets_fk50 FOREIGN KEY (nutrient_id)
+      REFERENCES diet.nutrient (nutr_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.set
+(
+  set_id integer NOT NULL DEFAULT nextval('diet.set_set_id_seq'::regclass),
+  setname_label_id integer NOT NULL,
+  ontol_id integer NOT NULL,
+  parentset_id integer,
+  sort_order integer DEFAULT 0,
+  CONSTRAINT set_pkey PRIMARY KEY (set_id),
+  CONSTRAINT set_fk76 FOREIGN KEY (parentset_id)
+      REFERENCES diet.set (set_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT set_fk77 FOREIGN KEY (ontol_id)
+      REFERENCES diet.ontology (ontol_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT set_fk78 FOREIGN KEY (setname_label_id)
+      REFERENCES diet.label (label_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.source
+(
+  source_id serial NOT NULL,
+  source_label_id integer NOT NULL,
+  CONSTRAINT source_pkey PRIMARY KEY (source_id)
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.unit
+(
+  unit_id integer NOT NULL DEFAULT nextval('diet.unit_unit_id_seq'::regclass),
+  unit_label_id integer NOT NULL,
+  CONSTRAINT unit_pkey PRIMARY KEY (unit_id),
+  CONSTRAINT unit_fk79 FOREIGN KEY (unit_label_id)
+      REFERENCES diet.label (label_id) MATCH SIMPLE
+      ON UPDATE RESTRICT ON DELETE RESTRICT
+)
+WITH (
+  OIDS=TRUE
+);
+
+
+CREATE TABLE diet.keyword_url
+(
+  keyword_url_id serial NOT NULL,
+  keyword_id integer NOT NULL,
+  lang_id integer NOT NULL,
+  url character varying(255) NOT NULL,
+  CONSTRAINT keyword_url_idx PRIMARY KEY (keyword_url_id),
+  CONSTRAINT keyword_id_fk38 FOREIGN KEY (keyword_id)
+      REFERENCES diet.keyword (keyword_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT lang_id_fk39 FOREIGN KEY (lang_id)
+      REFERENCES diet.language (lang_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=TRUE
+);
+
+CREATE TABLE diet.label_text
+(
+  label_id integer NOT NULL,
+  lang_id integer NOT NULL,
+  label_text text NOT NULL,
+  label_long_text text,
+  CONSTRAINT label_text_pkey PRIMARY KEY (label_id, lang_id),
+  CONSTRAINT label_text_fk41 FOREIGN KEY (label_id)
+      REFERENCES diet.label (label_id) MATCH SIMPLE
+      ON UPDATE RESTRICT ON DELETE CASCADE,
+  CONSTRAINT label_text_fk42 FOREIGN KEY (lang_id)
+      REFERENCES diet.language (lang_id) MATCH SIMPLE
+      ON UPDATE RESTRICT ON DELETE RESTRICT
+)
+WITH (
+  OIDS=TRUE
+); 

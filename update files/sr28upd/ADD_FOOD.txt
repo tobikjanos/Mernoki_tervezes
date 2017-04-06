@@ -1,0 +1,370 @@
+~01284~^~0100~^~Yogurt, Greek, strawberry, lowfat~^~YOGURT,GREEK,STRAWBERRY,LOWFAT~^~~^~~^~Y~^~~^0^~~^^^^
+~01285~^~0100~^~Yogurt, Greek, strawberry, nonfat~^~YOGURT,GREEK,STRAWBERRY,NONFAT~^~~^~~^~Y~^~~^0^~~^^^^
+~01286~^~0100~^~Yogurt, Greek, vanilla, nonfat~^~YOGURT,GREEK,VANILLA,NONFAT~^~~^~~^~Y~^~~^0^~~^^^^
+~01287~^~0100~^~Yogurt, Greek, plain, lowfat~^~YOGURT,GREEK,PLN,LOWFAT~^~~^~~^~Y~^~~^0^~~^^^^
+~01289~^~0100~^~Kefir, lowfat, plain, LIFEWAY~^~KEFIR,LOWFAT,PLN,LIFEWAY~^~~^~~^~Y~^~~^0^~~^^^^
+~01290~^~0100~^~Kefir, lowfat, strawberry, LIFEWAY~^~KEFIR,LOWFAT,STRAWBERRY,LIFEWAY~^~~^~~^~Y~^~~^0^~~^^^^
+~01291~^~0100~^~Milk, evaporated, 2% fat, with added vitamin A and vitamin D~^~MILK,CND,EVAP,WO/ VIT A~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01292~^~0100~^~Milk, chocolate, fat free, with added vitamin A and vitamin D~^~MILK,CHOC,FAT FREE,W/ ADDED VIT A & VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~01293~^~0100~^~Yogurt, Greek, plain, whole milk~^~YOGURT,GREEK,PLN,WHL MILK~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~01294~^~0100~^~Yogurt, Greek, fruit, whole milk~^~YOGURT,GREEK,FRUIT,WHL MILK~^~~^~~^~Y~^~~^0^~~^^^^
+~01295~^~0100~^~Yogurt, vanilla, non-fat~^~YOGURT,VANILLA,NON-FAT~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01297~^~0100~^~Yogurt, Greek, vanilla, lowfat~^~YOGURT,GREEK,VANILLA,LOWFAT~^~~^~~^~Y~^~~^0^~~^^^^
+~01298~^~0100~^~Yogurt, frozen, flavors other than chocolate, lowfat~^~YOGURT,FRZ,FLAVORS OTHER THAN CHOC,LOWFAT~^~~^~~^~Y~^~~^0^~~^^^^
+~01300~^~0100~^~Ice cream bar, covered with chocolate and nuts~^~ICE CRM BAR,COVERED W/ CHOC & NUTS~^~~^~~^~Y~^~~^0^~~^^^^
+~01301~^~0100~^~Ice cream sundae cone~^~ICE CRM SUNDAE CONE~^~~^~~^~Y~^~~^0^~~^6.38^^^
+~01302~^~0100~^~Light ice cream, Creamsicle~^~LIGHT ICE CRM,CREAMSICLE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~01303~^~0100~^~Cream, half and half, lowfat~^~CREAM,HALF & HALF,LOWFAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~01305~^~0100~^~Milk, chocolate, lowfat, reduced sugar~^~MILK,CHOC,LOWFAT,RED SUGAR~^~~^~~^~Y~^~~^0^~~^^^^
+~01306~^~0100~^~Ice cream, lowfat, no sugar added, cone, added peanuts and chocolate sauce~^~ICE CRM,LOWFAT,NO SUGAR ADDED,CONE,ADDED PNUTS & CHOC SAU~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~03000~^~0300~^~Clif Z bar~^~CLIF Z BAR~^~~^~~^~Y~^~~^0^~~^^^^
+~03022~^~0300~^~Babyfood, GERBER, 2nd Foods, apple, carrot and squash, organic~^~BABYFOOD,GERBER,2ND FOODS,APPL,CARROT & SQUASH,ORGANIC~^~~^~~^~Y~^~~^0^~~^^^^
+~03023~^~0300~^~Finger snacks, GERBER GRADUATE PUFFS, apple and cinnamon~^~FINGER SNACKS,GERBER GRADUATE PUFFS,APPL & CINN~^~~^~~^~Y~^~~^0^~~^^^^
+~03024~^~0300~^~Babyfood, water, bottled, GERBER, without added fluoride.~^~BABYFOOD,H2O,BTLD,GERBER,WO/ ADDED FLUORIDE.~^~~^~~^~Y~^~~^0^~~^^^^
+~03025~^~0300~^~Babyfood, GERBER, 3rd Foods, apple, mango and kiwi~^~BABYFOOD,GERBER,3RD FOODS,APPL,MANGO & KIWI~^~~^~~^~Y~^~~^0^~~^^^^
+~03026~^~0300~^~Babyfood, tropical fruit medley~^~BABYFOOD,TROPICAL FRUIT MEDLEY~^~~^~~^~Y~^~~^0^~~^^^^
+~04709~^~0400~^~Salad dressing, mayonnaise-type, light~^~SALAD DRSNG,MAYONNAISE-TYPE,LT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~05327~^~0500~^~Chicken breast tenders, breaded, uncooked~^~CHICKEN BREAST TENDERS,BREADED,UNCKD~^~~^~~^~Y~^~~^0^~~^6.25^4.27^9.02^3.87
+~06188~^~0600~^~Soup, beef broth, less/reduced sodium, ready to serve~^~SOUP,BF BROTH,LESS/REDUCED NA,READY TO SERVE~^~~^~~^~Y~^~~^0^~~^^^^
+~06611~^~0600~^~Soup, SWANSON, beef broth, lower sodium~^~SOUP,SWANSON,BF BROTH,LOWER NA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~06626~^~0600~^~Sauce, pesto, ready-to-serve, refrigerated~^~SAUCE,PESTO,RTS,REFR~^~~^~~^~~^~~^0^~~^^^^
+~06627~^~0600~^~Sauce, pesto, ready-to-serve, shelf stable~^~SAUCE,PESTO,RTS,SHELF STABLE~^~~^~~^~~^~~^0^~~^^^^
+~06628~^~0600~^~Sauce, pesto, BUITONI, pesto with basil, ready-to-serve, refrigerated~^~SAUCE,PESTO,BUITONI,PESTO W/ BASIL,RTS,REFR~^~~^~Nestle USA, Inc.~^~~^~~^0^~~^^^^
+~06629~^~0600~^~Sauce, pesto, CLASSICO, basil pesto, ready-to-serve~^~SAUCE,PESTO,CLASSICO,BASIL PESTO,RTS~^~~^~Classico~^~~^~~^0^~~^^^^
+~06630~^~0600~^~Sauce, pesto, MEZZETTA, NAPA VALLEY BISTRO, basil pesto, ready-to-serve~^~SAUCE,PESTO,MEZZETTA,NAPA VALLEY BISTRO,BASIL PESTO,RTS~^~~^~Mezzetta~^~~^~~^0^~~^^^^
+~06631~^~0600~^~Sauce, hot chile, sriracha~^~SAUCE,HOT CHILE,SRIRACHA~^~~^~~^~~^~~^0^~~^^^^
+~06632~^~0600~^~Sauce, hot chile, sriracha, CHA! BY TEXAS PETE~^~SAUCE,HOT CHILE,SRIRACHA,CHA! BY TEXAS PETE~^~~^~TW Garner Food Company~^~~^~~^0^~~^^^^
+~06633~^~0600~^~Sauce, hot chile, sriracha, TUONG OT SRIRACHA~^~SAUCE,HOT CHILE,SRIRACHA,TUONG OT SRIRACHA~^~~^~Huy Fong Foods, Inc.~^~~^~~^0^~~^^^^
+~06700~^~0600~^~Soup, vegetable broth, ready to serve~^~SOUP,VEG BROTH,READY TO SERVE~^~~^~~^~Y~^~~^0^~~^^^^
+~06748~^~0600~^~Soup, PROGRESSO, beef barley, traditional, ready to serve~^~SOUP,PROGRESSO,BF BARLEY,TRADITIONAL,READY TO SERVE~^~~^~General Mills Inc.~^~~^~~^0^~~^^^^
+~07974~^~0700~^~Bacon, turkey, low sodium~^~BACON,TURKEY,LO NA~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~07976~^~0700~^~Sausage, chicken or turkey, Italian style,  lower sodium~^~SAUSAGE,CHICK OR TURKEY,ITALIAN STYLE,LOWER NA~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~07977~^~0700~^~Ham, smoked, extra lean, low sodium~^~HAM,SMOKED,EX LN,LO NA~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~07978~^~0700~^~Pork sausage, reduced sodium, cooked~^~PORK SAUSAGE,RED NA,CKD~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~07979~^~0700~^~Sausage, pork, turkey, and beef, reduced sodium~^~SAUSAGE,PORK,TURKEY,& BF,RED NA~^~~^~~^~Y~^~~^0^~~^^^^
+~08571~^~0800~^~Cereals ready-to-eat, NATURE'S PATH, Organic FLAX PLUS, Pumpkin Granola~^~CEREALS RTE,NATURE'S PATH,ORGANIC FLAX PLUS,PUMPKIN GRANOLA~^~~^~Nature's Path~^~Y~^~~^0^~~^6.25^^^
+~08709~^~0800~^~Cereals ready-to-eat, MOM'S BEST, Sweetened WHEAT-FULS~^~CEREALS RTE,MOM'S BEST,SWTND WHEAT-FULS~^~~^~MOM Brands~^~~^~~^0^~~^6.25^^^
+~08710~^~0800~^~Cereals ready-to-eat, KELLOGG'S, SPECIAL K gluten free, touch of brown sugar~^~CEREALS RTE,KELLOGG'S,SPL K GLUTEN FREE,TOUCH OF BROWN SUGAR~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08711~^~0800~^~Cereals ready-to-eat, KELLOGG'S, SPECIAL K protein, cinnamon brown sugar crunch~^~CEREALS RTE,KELLOGG'S,SPL K PROT,CINN BROWN SUGAR CRUNCH~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08712~^~0800~^~Cereals ready-to-eat, KELLOGG, KELLOGG'S RAISIN BRAN with cranberries~^~CEREALS RTE,KELLOGG,KELLOGG'S RAISIN BRAN W/ CRANBERRIES~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~09110~^~0900~^~Goji berries, dried~^~GOJI BERRIES,DRIED~^~wolfberries~^~~^~~^~~^^~Lycium barbarum L.~^^^^
+~09127~^~0900~^~Grapefruit juice, pink or red, with added calcium~^~GRAPEFRUIT JUC,PINK OR RED,W/ ADDED CA~^~~^~~^~Y~^~~^0^~~^^^^
+~09178~^~0900~^~Mango, dried, sweetened~^~MANGO,DRIED,SWTND~^~~^~~^~Y~^~~^0^~~^^^^
+~09212~^~0900~^~Orange juice, frozen concentrate, unsweetened, diluted with 3 volume water, with added calcium~^~ORANGE JUC,FRZ CONC,UNSWTND,DIL W/ 3 VOLUME H2O,W/ ADDED CA~^~~^~~^~~^~~^^~~^^^^
+~09416~^~0900~^~Grapefruit juice, white, bottled, unsweetened, OCEAN SPRAY~^~GRAPEFRUIT JUC,WHITE,BTLD,UNSWTND,OCEAN SPRAY~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^3.36^8.37^3.92
+~09519~^~0900~^~Guava nectar, with sucralose, canned~^~GUAVA NECTAR,W/ SUCRALOSE,CND~^~~^~~^~Y~^~~^0^~~^^^^
+~09520~^~0900~^~Kiwifruit, ZESPRI SunGold, raw~^~KIWIFRUIT,ZESPRI SUNGOLD,RAW~^~Gold3~^~~^~~^~Skin~^28^~Actinidia chinensis ‘Zesy002’ (Gold3)~^^3.36^8.37^3.60
+~09522~^~0900~^~Cranberry juice blend, 100% juice, bottled, with added vitamin C and calcium~^~CRANBERRY JUC BLEND,100% JUC,BTLD,W/ ADDED VIT C & CA~^~~^~~^~Y~^~~^0^~~^6.25^3.36^8.37^3.92
+~09523~^~0900~^~Lemon juice from concentrate, bottled, CONCORD~^~LEMON JUC FROM CONC,BTLD,CONCORD~^~~^~Concord Foods~^~~^~~^0^~~^^^^
+~09524~^~0900~^~Lemon juice from concentrate, bottled, REAL LEMON~^~LEMON JUC FROM CONC,BTLD,REAL LEMON~^~~^~~^~~^~~^0^~~^^3.36^8.37^2.70
+~09525~^~0900~^~Cranberry sauce, whole, canned, OCEAN SPRAY~^~CRANBERRY SAU,WHL,CND,OCEAN SPRAY~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^3.36^8.37^3.84
+~09526~^~0900~^~Cranberry sauce, jellied, canned, OCEAN SPRAY~^~CRANBERRY SAU,JELLIED,CND,OCEAN SPRAY~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^3.36^8.37^3.84
+~09528~^~0900~^~Ruby Red grapefruit juice blend (grapefruit, grape, apple), OCEAN SPRAY, bottled, with added vitamin C~^~RUBY RED GRPFRT JUC BLND (GRPFRT,GRP,APL),OCEAN SPRY,W/VIT C~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^^3.36^8.37^3.92
+~09530~^~0900~^~Fruit juice smoothie, ODWALLA, strawberry banana~^~FRUIT JUC SMOOTHIE,ODWALLA,STRAWBERRY BANANA~^~~^~Odwalla~^~Y~^~~^0^~~^6.25^3.36^8.37^3.92
+~09531~^~0900~^~Fruit juice smoothie, NAKED JUICE, strawberry banana~^~FRUIT JUC SMOOTHIE,NAKED JUC,STRAWBERRY BANANA~^~~^~Naked Juice Co. of Glendora, Inc.~^~Y~^~~^0^~~^6.25^3.36^8.37^3.92
+~11118~^~1100~^~Cabbage, kimchi~^~CABBAGE,KIMCHI~^~~^~~^~Y~^~~^0^~~^6.25^2.44^8.37^3.57
+~11214~^~1100~^~Escarole, cooked, boiled, drained, no salt added~^~ESCAROLE,CKD,BLD,DRND,NO SALT ADDED~^~~^~~^~Y~^~~^0^~~^^^^
+~11936~^~1100~^~Mushrooms, brown, italian, or crimini, exposed to ultraviolet light, raw~^~MUSHROOMS,BROWN,ITALIAN,OR CRIMINI,EXPOSED TO UV LT,RAW~^~~^~~^~~^~~^0^~Agaricus bisporus~^6.25^2.62^8.37^3.48
+~11938~^~1100~^~Mushroom, white, exposed to ultraviolet light, raw~^~MUSHROOM,WHITE,EXPOSED TO UV LT,RAW~^~~^~~^~~^~~^0^~~^6.25^2.62^8.37^3.48
+~11994~^~1100~^~Broccoli, chinese, raw~^~BROCCOLI,CHINESE,RAW~^~gai-lan, kai-lan~^~~^~Y~^~Base and damaged leaves~^12^~ Brassica oleracea var. alboglabra~^^^^
+~12012~^~1200~^~Seeds, hemp seed, hulled~^~SEEDS,HEMP SD,HULLED~^~~^~~^~~^~~^0^~Cannabis sativa L.~^5.30^3.47^8.37^4.07
+~12136~^~1200~^~Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend~^~NUTS,MXD NUTS,DRY RSTD,W/PNUTS,SALT ADD,PLANTERS PSTACH BLND~^~~^~Planters- Kraft Foods Group~^~~^~~^0^~~^5.30^3.47^8.37^4.07
+~12141~^~1200~^~Nuts, mixed nuts, dry roasted, with peanuts, salt added, CHOSEN ROASTER~^~NUTS,MXD NUTS,DRY RSTD,W/ PNUTS,SALT ADDED,CHOSEN ROASTER~^~~^~Chosen Roaster~^~~^~~^0^~~^6.25^3.47^8.37^4.07
+~12157~^~1200~^~Nuts, walnuts, dry roasted, with salt added~^~NUTS,WALNUTS,DRY RSTD,W/ SALT ADDED~^~~^~~^~Y~^~~^0^~~^^^^
+~13349~^~1300~^~Beef, chuck, under blade pot roast or steak, boneless, separable lean only, trimmed to 0" fat, select, raw~^~BEEF,CHK,UND BLADE POT RST OR STK,BNLESS,LN,0" FAT,SEL, RAW~^~URMIS #1151, URMIS #1158, Beef, Chuck, Under Blade Pot Roast or Steak~^~~^~~^~Connective tissue 6%, seam fat 13%~^19^~~^6.25^^^
+~13379~^~1300~^~Beef, chuck, blade roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised~^~BEEF,CHUCK,BLADE RST,LN&FAT,0"FAT,ALL GRDS,CKD,BRSD~^~Top Blade Steak~^~~^~~^~Bone~^25^~~^6.25^4.27^9.02^3.87
+~13953~^~1300~^~Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted~^~BF,BTTM SRLOIN,TRI-TIP RST,LN & FAT,0" FAT,ALL GRDS,CKD,RSTD~^~~^~~^~~^~Bone and connective tissue~^2^~~^6.25^4.27^9.02^3.87
+~14048~^~1400~^~Beverages, FUZE, orange mango, fortified with vitamins A, C, E, B6~^~BEVERAGES,FUZE,ORANGE MANGO,FORT W/ VITAMINS A,C,E,B6~^~~^~~^~~^~~^0^~~^6.25^^^
+~14056~^~1400~^~Beverages, Acai berry drink, fortified~^~BEVERAGES,ACAI BERRY DRK,FORT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14091~^~1400~^~Beverages, almond milk, unsweetened, shelf stable~^~BEVERAGES,ALMOND MILK,UNSWTND,SHELF STABLE~^~~^~~^~Y~^~~^0^~~^^^^
+~14092~^~1400~^~Beverages, chocolate almond milk, unsweetened, shelf-stable, fortified with vitamin D2 and E~^~BEV,CHOC ALMOND MILK,UNSWTND,SHELF-STABLE,FORT W/ VIT D2 & E~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14093~^~1400~^~Beverages, The COCA-COLA company, Glaceau Vitamin Water, Revive Fruit Punch, fortified~^~BEVERAGE, COCA-COLA CO,GLACEAU VIT H2O,REVIVE FRT PUNCH,FORT~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^^^^
+~14095~^~1400~^~Beverages, MINUTE MAID, Lemonada, Limeade~^~BEVERAGES,MINUTE MAID,LEMONADA,LIMEADE~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^6.25^^^
+~14161~^~1400~^~Beverages, Kiwi Strawberry Juice Drink~^~BEVERAGES,KIWI STRAWBERRY JUC DRK~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14162~^~1400~^~Beverages, Apple juice drink, light, fortified with vitamin C~^~BEVERAGES,APPL JUC DRK,LT,FORT W/ VIT C~^~~^~Mott's INC.~^~Y~^~~^0^~~^6.25^^^
+~14163~^~1400~^~Beverages, chocolate drink, milk and soy based, ready to drink, fortified~^~BEVERAGES,CHOC DRK,MILK & SOY BSD,READY TO DRK,FORT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14164~^~1400~^~Beverages, chocolate malt powder, prepared with 1% milk, fortified~^~BEVERAGES,CHOC MALT PDR,PREP W/ 1% MILK,FORT~^~~^~~^~~^~~^0^~~^^^^
+~14165~^~1400~^~Beverages, carbonated, limeade, high caffeine~^~BEVERAGES,CARB,LIMEADE,HI CAFFEINE~^~~^~~^~~^~~^0^~~^^^^
+~14167~^~1400~^~Beverages, POWERADE, Zero, Mixed Berry~^~BEVERAGES,POWERADE,ZERO,MXD BERRY~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^6.25^^^
+~14171~^~1400~^~Beverages, coconut milk, sweetened, fortified with calcium, vitamins A, B12, D2~^~BEVERAGES,COCNT MILK,SWTND,FORT W/ CA,VITAMINS A,B12,D2~^~~^~~^~Y~^~~^0^~~^^^^
+~14173~^~1400~^~Beverages, coffee, ready to drink, vanilla, light, milk based, sweetened~^~BEVERAGES,COFFEE,READY TO DRK,VANILLA,LT,MILK BSD,SWTND~^~~^~~^~~^~~^0^~~^6.25^^^
+~14174~^~1400~^~Beverages, Lemonade fruit juice drink light, fortified with vitamin E and C~^~BEVE,LEMONADE FRUIT JUC DRK LT,FORT W/ VIT E & C~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14179~^~1400~^~Beverages, coffee, ready to drink, milk based, sweetened~^~BEVERAGES,COFFEE,READY TO DRK,MILK BSD,SWTND~^~~^~~^~Y~^~~^0^~~^^^^
+~14180~^~1400~^~Beverages, coffee, brewed, breakfast blend~^~BEVERAGES,COFFEE,BREWED,BRKFST BLEND~^~~^~~^~~^~~^0^~~^^^^
+~14183~^~1400~^~Beverages, coffee, ready to drink, iced, mocha, milk based~^~BEVERAGES,COFFEE,READY TO DRK,ICED,MOCHA,MILK BSD~^~~^~~^~~^~~^0^~~^^^^
+~14185~^~1400~^~Beverages, tea, Oolong, brewed~^~BEVERAGES,TEA,OOLONG,BREWED~^~~^~~^~Y~^~~^0^~~^^^^
+~14188~^~1400~^~Beverages, tea, green, ready to drink, ginseng and honey, sweetened~^~BEVERAGES,TEA,GRN,READY TO DRK,GINSENG & HONEY,SWTND~^~~^~~^~Y~^~~^0^~~^^^^
+~14189~^~1400~^~Beverages, The COCA-COLA company, Minute Maid, Lemonade~^~BEVERAGES,THE COCA-COLA COMPANY,MINUTE MAID,LEMONADE~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^6.25^^^
+~14190~^~1400~^~Beverages, tea, green, ready-to-drink, diet~^~BEVERAGES,TEA,GRN,RTD,DIET~^~~^~~^~Y~^~~^0^~~^^^^
+~14191~^~1400~^~Beverages, tea, green, ready-to-drink, citrus, diet, fortified with vitamin C~^~BEVERAGES,TEA,GRN,RTD,CITRUS,DIET,FORT W/ VIT C~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14199~^~1400~^~Beverages, tea, black, ready-to-drink, lemon, sweetened~^~BEVERAGES,TEA,BLACK,RTD,LEMON,SWTND~^~~^~~^~Y~^~~^0^~~^^^^
+~14206~^~1400~^~Beverages, tea, green, ready-to-drink, sweetened~^~BEVERAGES,TEA,GRN,RTD,SWTND~^~~^~~^~Y~^~~^0^~~^^^^
+~14207~^~1400~^~Beverages, tea, ready-to-drink, lemon, diet~^~BEVERAGES,TEA,RTD,LEMON,DIET~^~~^~~^~Y~^~~^0^~~^^^^
+~14211~^~1400~^~Beverages, tea, black, ready-to-drink, lemon, diet~^~BEVERAGES,TEA,BLACK,RTD,LEMON,DIET~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14216~^~1400~^~Beverages, aloe vera juice drink, fortified with Vitamin C~^~BEVERAGES,ALOE VERA JUC DRK,FORT W/ VIT C~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14217~^~1400~^~Beverages, OCEAN SPRAY, Cran Grape~^~BEVERAGES,OCEAN SPRAY,CRAN GRAPE~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14220~^~1400~^~Beverages, OCEAN SPRAY, Cranberry-Apple Juice Drink, bottled~^~Beverages, OCEAN SPRAY, Cranberry-Apple Juice Drink, bottled~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14221~^~1400~^~Beverages, OCEAN SPRAY, Diet Cranberry Juice~^~BEVERAGES,OCEAN SPRAY,DIET CRANBERRY JUC~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14226~^~1400~^~Beverages, OCEAN SPRAY, Light Cranberry and Raspberry Flavored Juice~^~BEVERAGES,OCEAN SPRAY,LT CRANBERRY & RASPBERRY FLAV JUC~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14227~^~1400~^~Beverages, OCEAN SPRAY, White Cranberry Strawberry Flavored Juice Drink~^~BEVERAGES,OCEAN SPRAYWHITE CRANBERRY STRAWBERRY FLAV JUC DRK~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14231~^~1400~^~Beverages, KRAFT, coffee, instant, French Vanilla Cafe~^~BEVERAGES,KRAFT,COFFEE,INST,FRENCH VANILLA CAFE~^~~^~Kraft Foods, Inc.~^~~^~~^0^~~^^^^
+~14233~^~1400~^~Beverages, OCEAN SPRAY, Cran Raspberry Juice Drink~^~Beverages, OCEAN SPRAY, Cran Raspberry Juice Drink~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14234~^~1400~^~Beverages, OCEAN SPRAY, Cran Lemonade~^~BEVERAGES,OCEAN SPRAY,CRAN LEMONADE~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14235~^~1400~^~Beverages, OCEAN SPRAY, Diet Cran Cherry~^~BEV, OCEAN SPRAY, CRAN CHERRY DIET~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14239~^~1400~^~Alcoholic beverage, malt beer, hard lemonade~^~ALCOHOLIC BEV,MALT BEER,HARD LEMONADE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14246~^~1400~^~Beverages, tea, green, instant, decaffeinated, lemon, unsweetened, fortified with vitamin C~^~BEVERAGES,TEA,GRN,INST,DECAFFEI,LEMON,UNSWTND,FORT W/ VIT C~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14247~^~1400~^~Beverages, tea, black, ready to drink~^~BEVERAGES,TEA,BLACK,READY TO DRK~^~~^~McDonald's Corporation~^~Y~^~~^0^~~^6.25^^^
+~14248~^~1400~^~Alcoholic beverage, beer, light, higher alcohol~^~ALCOHOLIC BEV,BEER,LT,HIGHER ALCOHOL~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14250~^~1400~^~Beverages, AMBER, hard cider~^~BEVERAGES,AMBER,HARD CIDER~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14251~^~1400~^~Alcoholic beverages, beer, higher alcohol~^~ALCOHOLIC BEVERAGES,BEER,HIGHER ALCOHOL~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14252~^~1400~^~Beverages, Malt liquor beverage~^~BEVERAGES,MALT LIQUOR BEV~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14253~^~1400~^~Alcoholic beverages, wine, rose~^~ALCOHOLIC BEVERAGES,WINE,ROSE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14255~^~1400~^~Beverages, OCEAN SPRAY, Cran Pomegranate~^~BEVERAGES,OCEAN SPRAY,CRAN POMEGRANATE~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14256~^~1400~^~Beverages, OCEAN SPRAY, Cran Cherry~^~BEVERAGES,OCEAN SPRAY,CRAN CHERRY~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14257~^~1400~^~Beverages, OCEAN SPRAY, Light Cranberry~^~BEVERAGES,OCEAN SPRAY,LT CRANBERRY~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14258~^~1400~^~Beverages, OCEAN SPRAY, White Cranberry Peach~^~Beverages, OCEAN SPRAY, White Cranberry Peach~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14259~^~1400~^~Beverages, OCEAN SPRAY, Light Cranberry, Concord Grape~^~BEVERAGES,OCEAN SPRAY,LT CRANBERRY,CONCORD GRAPE~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14260~^~1400~^~Beverages, tea, green, brewed, decaffeinated~^~BEVERAGES,TEA,GRN,BREWED,DECAFFEINATED~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14261~^~1400~^~Beverages, tea, green, ready to drink, unsweetened~^~BEVERAGES,TEA,GRN,READY TO DRK,UNSWTND~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14270~^~1400~^~Beverages, coffee, instant, vanilla, sweetened, decaffeinated, with non dairy creamer~^~BEVERAGES,COFFEE,INST,VANILA,SWTND,DECAFF,W/ NON DAIRY CREAM~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14276~^~1400~^~Beverages, Tropical Punch, ready-to-drink~^~BEVERAGES,TROPICAL PUNCH,RTD~^~~^~Kraft Foods, Inc.~^~Y~^~~^0^~~^^^^
+~14278~^~1400~^~Beverages, tea, green, brewed, regular~^~BEVERAGES,TEA,GRN,BREWED,REG~^~~^~~^~Y~^~~^0^~~^^^^
+~14279~^~1400~^~Beverages, tea, black, ready-to-drink, peach, diet~^~BEVERAGES,TEA,BLACK,RTD,PEACH,DIET~^~~^~~^~Y~^~~^0^~~^^^^
+~14280~^~1400~^~Beverages, tea, black, ready to drink, decaffeinated, diet~^~BEVERAGES,TEA,BLACK,READY TO DRK,DECAFFEINATED,DIET~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14281~^~1400~^~Beverages, tea, black, ready to drink, decaffeinated~^~BEVERAGES,TEA,BLACK,READY TO DRK,DECAFFEINATED~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14284~^~1400~^~Beverages, Cranberry juice cocktail~^~BEVERAGES,CRANBERRY JUC COCKTAIL~^~~^~~^~~^~~^0^~~^^^^
+~14285~^~1400~^~Beverages, OCEAN SPRAY, Ruby Red cranberry~^~BEVERAGES,OCEAN SPRAY,RUBY RED CRANBERRY~^~~^~Ocean Spray Cranberries, Inc.~^~~^~~^0^~~^6.25^^^
+~14286~^~1400~^~Beverages, MOTTS, Apple juice light, fortified with vitamin C~^~BEVERAGES,MOTTS,APPL JUC LT,FORT W/ VIT C~^~~^~Mott's INC.~^~~^~~^0^~~^6.25^^^
+~14291~^~1400~^~Beverages, SNAPPLE, tea, black and green, ready to drink, peach, diet~^~BEVERAGES,SNAPPLE,TEA,BLACK & GRN,READY TO DRK,PEACH,DIET~^~~^~Snapple Beverage Corporation~^~~^~~^0^~~^6.25^^^
+~14294~^~1400~^~Beverages, SNAPPLE, tea, black and green, ready to drink, lemon, diet~^~BEVERAGES,SNAPPLE,TEA,BLACK & GRN,READY TO DRK,LEMON,DIET~^~~^~Snapple Beverage Corporation~^~~^~~^0^~~^6.25^^^
+~16613~^~1600~^~MORNINGSTAR FARMS Breakfast Sandwich Veggie Sausage Egg & Cheese English Muffin, frozen, unprepared~^~MORNNGSTR FRMS BRKFST SNDWCH SSGE EGG&CHS ENG MUFF,FRZ,UNPRP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16614~^~1600~^~MORNINGSTAR FARMS Breakfast Sandwich Veggie Scramble & Cheese English Muffin, frozen, unprepared~^~MORNNGSTR FRMS BRKFST SNDWCH SCRMBL&CHS ENG MUFF,FRZ,UNPRP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16615~^~1600~^~MORNINGSTAR FARMS Chipotle Black Bean Crumbles, frozen, unprepared~^~MORNINGSTAR FARMS CHIPOTLE BLACK BEAN CRUMBLES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16616~^~1600~^~MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared~^~MORNINGSTAR FARMS GARDEN VEGGIE NUGGETS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16617~^~1600~^~MORNINGSTAR FARMS Spicy Black Bean Enchilada Entree, frozen, unprepared~^~MORNINGSTAR FARMS SPICY BLK BEAN ENCHILADA ENTREE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16618~^~1600~^~MORNINGSTAR FARMS Spicy Indian Veggie Burger, frozen, unprepared~^~MORNINGSTAR FARMS SPICY INDIAN VEGGIE BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16619~^~1600~^~MORNINGSTAR FARMS Tuscan Greens & Beans, frozen, unprepared~^~MORNINGSTAR FARMS TUSCAN GRNS & BNS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~17439~^~1700~^~Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,IMP,FRSH,LEG,BTTM,BNLESS,LN,1/8" FAT,CKD,RSTD~^~URMIS # 2973~^~~^~~^~Connective tissue 7%, Separable fat 7%~^14^~~^^^^
+~17440~^~1700~^~Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean only, trimmed to 1/8" fat, cooked, braised~^~LAMB,AUS,FRSH,LEG,HINDSHANK,HEEL ON,BONE-IN,LN,1/8",BRSD~^~URMIS # 2969~^~~^~~^~Separable fat 4%, Bone and connective tissue 50%~^54^~~^^^^
+~17441~^~1700~^~Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean only, trimmed to 1/8" fat, raw~^~LAMB,AUS,FRSH,LEG,HINDSHANK,HEEL ON,BONE-IN,LN,1/8" FAT,RAW~^~URMIS # 2969~^~~^~~^~Bone and connective tissue 40%, Separable fat 12%~^52^~~^^^^
+~17442~^~1700~^~Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,IMP,FRSH,TENDERLOIN,BNLESS,LN,1/8" FAT,CKD,RSTD~^~URMIS #2961~^~~^~~^~Separable fat 1%~^1^~~^^^^
+~17443~^~1700~^~Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean only, trimmed to 1/8" fat, raw~^~LAMB,AUSTRALIAN,IMP,FRSH,TENDERLOIN,BNLESS,LN,1/8" FAT,RAW~^~URMIS #2961~^~~^~~^~Connective tissue 1%, Separable fat 2%~^3^~~^^^^
+~17444~^~1700~^~Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean only, trimmed to 1/8" fat, raw~^~LAMB,AUSTRALIAN,IMP,FRSH,LEG,BTTM,BNLESS,LN,1/8" FAT,RAW~^~URMIS # 2973~^~~^~~^~Connective tissue 5%, Separable fat 14%~^19^~~^^^^
+~17445~^~1700~^~Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean only, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,FRSH,LEG,TROTTER OFF,BONE-IN,LN,1/8" FAT,CKD,RSTD~^~URMIS # 2994~^~~^~~^~Bone and connective tissue 29%, Separable fat 6%~^35^~~^^^^
+~17446~^~1700~^~Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean only, trimmed to 1/8" fat, raw~^~LAMB,AUS,IMP,FRSH,LEG,TROTTER OFF,BONE-IN,LN,1/8" FAT,RAW~^~URMIS # 2994~^~~^~~^~Bone and connective tissue 21%, Separable fat 10%~^31^~~^^^^
+~17447~^~1700~^~Lamb, Australian, imported, fresh, rack, roast, frenched, denuded, bone-in, separable lean only, trimmed to 0" fat, cooked, roasted~^~LAMB,AUS,FRSH,RACK,RST,FRNCHED,DNUDED,BONE-IN,LN,0",CKD,RSTD~^~~^~~^~~^~Bone and connective tissue 28%, Separable fat 11%~^39^~~^^^^
+~17448~^~1700~^~Lamb, Australian, imported, fresh, rack, roast, frenched, bone-in, separable lean only, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,FRSH,RACK,RST,FRENCHED,BONE-IN,LN,1/8" FAT,CKD,RSTD~^~URMIS #2945~^~~^~~^~Bone and connective tissue 37%, Separable fat 10%~^47^~~^^^^
+~17449~^~1700~^~Lamb, Australian, imported, fresh, external fat, cooked~^~LAMB,AUSTRALIAN,IMP,FRSH,EXTERNAL FAT,CKD~^~~^~~^~~^~~^0^~~^6.25^^^
+~17450~^~1700~^~Lamb, Australian, imported, fresh, external fat, raw~^~LAMB,AUSTRALIAN,IMP,FRSH,EXTERNAL FAT,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~17451~^~1700~^~Lamb, Australian, imported, fresh, seam fat, cooked~^~LAMB,AUSTRALIAN,IMP,FRSH,SEAM FAT,CKD~^~~^~~^~~^~~^0^~~^6.25^^^
+~17452~^~1700~^~Lamb, Australian, imported, fresh, seam fat, raw~^~LAMB,AUSTRALIAN,IMP,FRSH,SEAM FAT,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~17453~^~1700~^~Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,IMP,FRSH,LEG,BTTM,BNLESS,LN & FAT,1/8" FAT,CKD,RSTD~^~URMIS #2973~^~~^~~^~Connective tissue 7%~^7^~~^^^^
+~17454~^~1700~^~Lamb, Australian, imported, fresh, leg, bottom, boneless, separable lean and fat, trimmed to 1/8" fat, raw~^~LAMB,AUS,IMP,FRSH,LEG,BTTM,BNLESS,LN & FAT,1/8" FAT,RAW~^~URMIS #2973~^~~^~~^~Connective tissue 5%~^5^~~^^^^
+~17455~^~1700~^~Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, braised~^~LAMB,AUS,FRSH,LEG,HINDSHANK,HEEL ON,BNE-IN,LN & FT,1/8",BRSD~^~URMIS #2969~^~~^~~^~Bone and connective tissue 50%~^50^~~^^^^
+~17456~^~1700~^~Lamb, Australian, imported, fresh, leg, hindshank, heel on, bone-in, separable lean and fat, trimmed to 1/8" fat, raw~^~LAMB,AUS,FRSH,LEG,HINDSHANK,HEEL ON,BNE-IN,LN & FAT,1/8",RAW~^~URMIS #2969~^~~^~~^~Bone and connective tissue 40%~^40^~~^^^^
+~17457~^~1700~^~Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,FRSH,LEG,TROTTER OFF,BONE-IN,LN & FAT,1/8" FAT,RSTD~^~URMIS #2994~^~~^~~^~Bone and connective tissue 29%~^29^~~^^^^
+~17458~^~1700~^~Lamb, Australian, imported, fresh, leg, trotter off, bone-in, separable lean and fat, trimmed to 1/8" fat, raw~^~LAMB,AUS,FRSH,LEG,TROTTER OFF,BONE-IN,LN & FAT,1/8" FAT,RAW~^~URMIS #2994~^~~^~~^~Bone and connective tissue 21%~^21^~~^^^^
+~17459~^~1700~^~Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,IMP,FRSH,TENDERLOIN,BNLESS,LN & FAT,1/8" FAT,RSTD~^~URMIS #2961~^~~^~~^~~^0^~~^^^^
+~17460~^~1700~^~Lamb, Australian, imported, fresh, tenderloin, boneless, separable lean and fat, trimmed to 1/8" fat, raw~^~LAMB,AUS,IMP,FRSH,TENDERLOIN,BNLESS,LN & FAT,1/8" FAT,RAW~^~URMIS #2961~^~~^~~^~Connective tissue 1%~^1^~~^^^^
+~17461~^~1700~^~Lamb, Australian, imported, fresh, rib chop, frenched, denuded, bone-in, separable lean only, trimmed to 0" fat, cooked, grilled~^~LAMB,AUS,FRSH,RIB CHOP,FRNCHED,DNUDED,BONE-IN,LN,0",GRILLED~^~~^~~^~~^~Bone and connective tissue 36%, Separable fat 8%~^44^~~^^^^
+~17462~^~1700~^~Lamb, Australian, imported, fresh, rack, roast, frenched, denuded, bone-in, separable lean and fat, trimmed to 0" fat, cooked, roasted~^~LAMB,AUS,FRSH,RACK,RST,FRNCHED,DNUDED,BNE-IN,LN & FT,0",RSTD~^~~^~~^~~^~Bone and connective tissue 28%~^28^~~^^^^
+~17463~^~1700~^~Lamb, Australian, imported, fresh, rack, roast, frenched, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, roasted~^~LAMB,AUS,FRSH,RACK,RST,FRENCHED,BNE-IN,LN & FT,1/8",RSTD~^~URMIS #2945~^~~^~~^~Bone and connective tissue 37%~^37^~~^^^^
+~17464~^~1700~^~Lamb, Australian, imported, fresh, rib chop, frenched, denuded, bone-in, separable lean and fat, trimmed to 0" fat, cooked, grilled~^~LAMB,AUS,IMP,FRSH,RIB CHOP,FRENCHED,DNUDED,BN-IN,L&F,0",GRLD~^~~^~~^~~^~Bone and connective tissue 36%~^36^~~^^^^
+~19000~^~1900~^~SCHIFF,TIGER'S MILK BAR~^~SCHIFF,TIGER'S MILK BAR~^~~^~~^~Y~^~~^0^~~^^^^
+~19001~^~1900~^~Candies, TOBLERONE, milk chocolate with honey and almond nougat~^~CANDIES,TOBLERONE,MILK CHOC W/ HONEY & ALMOND NOUGAT~^~~^~~^~Y~^~~^0^~~^^^^
+~19018~^~1900~^~Fruit syrup~^~FRUIT SYRUP~^~~^~~^~Y~^~~^0^~~^^^^
+~19025~^~1900~^~Candies, honey-combed, with peanut butter~^~CANDIES,HONEY-COMBED,W/ PNUT BUTTER~^~~^~~^~Y~^~~^0^~~^^^^
+~19029~^~1900~^~Topping, SMUCKER'S MAGIC SHELL~^~TOPPING,SMUCKER'S MAGIC SHELL~^~~^~~^~Y~^~~^0^~~^^^^
+~19030~^~1900~^~Syrup, fruit flavored~^~SYRUP,FRUIT FLAV~^~~^~~^~Y~^~~^0^~~^^^^
+~19920~^~1900~^~Jams, preserves, marmalades, sweetened with fruit juice~^~JAMS,PRESERVES,MARMALADES,SWTND W/ FRUIT JUC~^~~^~~^~Y~^~~^0^~~^^^^
+~19921~^~1900~^~Candies, Tamarind~^~CANDIES,TAMARIND~^~~^~~^~Y~^~~^0^~~^^^^
+~19922~^~1900~^~Candies, coconut bar, not chocolate covered~^~CANDIES,COCNT BAR,NOT CHOC COVERED~^~~^~~^~Y~^~~^0^~~^^^^
+~19923~^~1900~^~Candies, HERSHEYS, PAYDAY Bar~^~CANDIES,HERSHEYS,PAYDAY BAR~^~~^~~^~Y~^~~^0^~~^^^^
+~19924~^~1900~^~Syrup, NESTLE, chocolate~^~SYRUP,NESTLE,CHOC~^~~^~~^~Y~^~~^0^~~^^^^
+~20042~^~2000~^~Rice, brown, parboiled, dry, UNCLE BEN'S~^~RICE,BROWN,PARBLD,DRY,UNCLE BEN'S~^~~^~Mars Food US~^~~^~~^0^~~^^^^
+~20135~^~2000~^~Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry~^~PASTA,WHL GRAIN,51% WHL WHEAT,REMAINING UNENR SEMOLINA,DRY~^~macaroni product, spaghetti, elbow macaroni, farfalle, rotini, lasagna, shells, penne~^~~^~~^~~^0^~~^^3.78^8.37^3.95
+~20136~^~2000~^~Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, cooked~^~PASTA,WHL GRAIN,51% WHL WHEAT,REMAINING UNENR SEMOLINA,CKD~^~macaroni product, spaghetti, elbow macaroni, shells, penne, rotini, lasagna, farfalle~^~~^~~^~~^0^~~^^3.78^8.37^3.95
+~20651~^~2000~^~Rice, brown, parboiled, cooked, UNCLE BENS~^~RICE,BROWN,PARBLD,CKD,UNCLE BENS~^~~^~Mars Food US~^~~^~~^0^~~^^3.41^8.37^4.12
+~20652~^~2000~^~Pasta, whole grain, 51% whole wheat, remaining enriched semolina, cooked~^~PASTA,WHL GRAIN,51% WHL WHEAT,REMAINING ENR SEMOLINA,CKD~^~macaroni product, spaghetti, elbow macaroni, penne, lasagna, shells, farfalle, rotini~^~~^~~^~~^0^~~^^3.78^8.37^3.95
+~20653~^~2000~^~Pasta, whole grain, 51% whole wheat, remaining enriched semolina, dry~^~PASTA,WHL GRAIN,51% WHL WHEAT,REMAINING ENR SEMOLINA,DRY~^~macaroni product, spaghetti, elbow macaroni, rotini, lasagna, farfalle, penne, shells~^~~^~~^~~^0^~~^^3.78^8.37^3.95
+~20654~^~2000~^~Pasta, gluten-free, brown rice flour, cooked, TINKYADA~^~PASTA,GLUTEN-FREE,BROWN RICE FLR,CKD,TINKYADA~^~~^~Tinkyada~^~Y~^~~^0^~~^5.95^4.12^8.37^3.41
+~20655~^~2000~^~Pasta, gluten-free, corn flour and quinoa flour, cooked, ANCIENT HARVEST~^~PASTA,GLUTEN-FREE,CORN FLR & QUINOA FLR,CKD,ANCIENT HARVEST~^~~^~Ancient Harvest~^~Y~^~~^0^~~^6.25^3.78^8.37^3.95
+~20656~^~2000~^~Pasta, gluten-free, rice flour and rice bran extract, cooked, DE BOLES~^~PASTA,GLUTEN-FREE,RICE FLR & RICE BRAN EXTRACT,CKD,DE BOLES~^~~^~De Boles~^~~^~~^0^~~^5.95^3.82^8.37^4.16
+~20657~^~2000~^~Pasta, gluten-free, corn and rice flour, cooked~^~PASTA,GLUTEN-FREE,CORN & RICE FLR,CKD~^~~^~Barilla~^~Y~^~~^0^~~^5.95^3.82^8.37^4.16
+~21010~^~2100~^~Fast foods, biscuit, with crispy chicken fillet~^~FAST FOODS,BISCUIT,W/ CRISPY CHICK FILLET~^~~^~~^~Y~^~~^0^~~^6.04^4.08^8.74^3.95
+~21121~^~2100~^~Fast foods, roast beef sandwich, plain~^~FAST FOODS,RST BF SNDWCH,PLN~^~~^~~^~Y~^~~^0^~~^6.17^4.20^8.95^3.95
+~21150~^~2100~^~SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce~^~SUBWAY,SWT ONION CHICK SUB WHT BRD LTTC,TMT & SWT ONION SAU~^~~^~Subway~^~~^~~^0^~~^^^^
+~21151~^~2100~^~Fast foods, submarine sandwich, sweet onion chicken teriyaki on white bread with lettuce, tomato and sweet onion sauce~^~FAST FOODS,SUB,SWT ONION CHICK WIT BRD W/ LTTC,TMT SWT ONION~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21152~^~2100~^~SUBWAY, SUBWAY CLUB sub on white bread with lettuce and tomato~^~SUBWAY,SUBWAY CLUB SUB ON WHITE BREAD W/ LETTUCE & TOMATO~^~~^~Subway~^~~^~~^0^~~^^^^
+~21153~^~2100~^~Fast foods, submarine sandwich, turkey, roast beef and ham on white bread with lettuce and tomato~^~FAST FOODS,SUBMARINE SNDWCH,TRKY RST BF HM BRD W/ LTTC & TMT~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21154~^~2100~^~Fast foods, submarine sandwich, oven roasted chicken on white bread with lettuce and tomato~^~FAST FOODS,SUBMARINE SNDWCH,OVEN RSTD CHCK WHT BRD LTTC  TMT~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21155~^~2100~^~Fast foods, submarine sandwich, turkey breast on white bread with lettuce and tomato~^~FAST FOODS,SUBMARINE SNDWCH,TRKY BRST WHT BRD LTTC & TMT~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21156~^~2100~^~Fast foods, submarine sandwich, ham on white bread with lettuce and tomato~^~FAST FOODS,SUBMARINE SNDWCH,HAM ON WHT BRD W/ LTTC & TMT~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21157~^~2100~^~SUBWAY, meatball marinara sub on white bread (no toppings)~^~SUBWAY,MEATBALL MARINARA SUB ON WHITE BREAD (NO TOPPINGS)~^~~^~Subway~^~~^~~^0^~~^^^^
+~21158~^~2100~^~Fast foods, submarine sandwich, meatball marinara on white bread~^~FAST FOODS,SUBMARINE SNDWCH,MEATBALL MARINARA ON WHITE BREAD~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21159~^~2100~^~SUBWAY, steak & cheese sub on white bread with American cheese, lettuce and tomato~^~SUBWAY,STEAK & CHS SUB ON WHT BRD W/ AMERICAN CHS,LTTC & TMT~^~~^~Subway~^~~^~~^0^~~^^^^
+~21160~^~2100~^~Fast foods, submarine sandwich, steak and cheese on white bread with cheese, lettuce and tomato~^~FAST FOODS,SUBMARINE SNDWCH,STK CHS WHT BRD W/ CHS,LTTC TMT~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21161~^~2100~^~SUBWAY, B.L.T. sub on white bread with bacon, lettuce and tomato~^~SUBWAY,B.L.T. SUB ON WHITE BREAD W/ BACON,LETTUCE & TOMATO~^~BLT~^~Subway~^~~^~~^0^~~^^^^
+~21162~^~2100~^~Fast foods, submarine sandwich, bacon, lettuce, and tomato on white bread~^~FAST FOODS,SUBMARINE SNDWCH,BACON,LETTUCE,& TOMATO WHT BRD~^~BLT~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~21207~^~2100~^~SUBWAY, turkey breast sub on white bread with lettuce and tomato~^~SUBWAY,TURKEY BREAST SUB ON WHITE BREAD W/ LETTUCE & TOMATO~^~~^~Subway~^~~^~~^0^~~^6.25^^^
+~21209~^~2100~^~SUBWAY, black forest ham sub on white bread with lettuce and tomato~^~SUBWAY,BLACK FOREST HAM SUB ON WHITE BRD W/ LETTUCE & TOMATO~^~~^~Subway~^~~^~~^0^~~^6.25^^^
+~21211~^~2100~^~SUBWAY, oven roasted chicken sub on white bread with lettuce and tomato~^~SUBWAY,OVEN RSTD CHICK SUB ON WHITE BRD W/ LETTUCE & TOMATO~^~~^~Subway~^~~^~~^0^~~^6.25^^^
+~21516~^~2100~^~KASHI Pizza, Mushroom and Spinach, single serve, frozen, unprepared~^~KASHI PIZZA,MUSHROOM & SPINACH,SINGLE SERVE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~21517~^~2100~^~Fast foods, crispy chicken in tortilla, with lettuce, cheese, and ranch sauce~^~FAST FOODS,CRISPY CHICK IN TORTILLA,W/ LTTC,CHS,& RANCH SAU~^~snack, wrap~^~~^~Y~^~~^0^~~^^^^
+~21518~^~2100~^~Fast foods, grilled chicken in tortilla, with lettuce, cheese, and ranch sauce~^~FAST FOODS,GRILLED CHICK IN TORTILLA,W/ LTTC,CHS,& RANCH SAU~^~wrap, snack~^~~^~Y~^~~^0^~~^^^^
+~21519~^~2100~^~Fast foods, breakfast burrito, with egg, cheese, and sausage~^~FAST FOODS,BRKFST BURRITO,W/ EGG,CHS,& SAUSAGE~^~~^~~^~Y~^~~^0^~~^^^^
+~21520~^~2100~^~Fast foods, breadstick, soft, prepared with garlic and parmesan cheese~^~FAST FOODS,BREADSTICK,SOFT,PREP W/ GARLIC & PARMESAN CHS~^~~^~~^~Y~^~~^0^~~^^^^
+~21521~^~2100~^~Fast foods, strawberry banana smoothie made with ice and low-fat yogurt~^~FAST FOODS,STRWBY BANANA SMTH MADE W/ ICE & LOW-FAT YOGURT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~21522~^~2100~^~McDONALD'S, Southern Style Chicken Biscuit~^~MCDONALD'S,SOUTHERN STYLE CHICK BISCUIT~^~~^~McDonald's Corporation~^~~^~~^0^~~^^^^
+~21523~^~2100~^~McDONALD'S, RANCH SNACK WRAP, Crispy~^~MCDONALD'S,RANCH SNACK WRAP,CRISPY~^~~^~McDonald's Corporation~^~~^~~^0^~~^^^^
+~21524~^~2100~^~McDONALD'S, RANCH SNACK WRAP, Grilled~^~MCDONALD'S,RANCH SNACK WRAP,GRILLED~^~~^~McDonald's Corporation~^~~^~~^0^~~^^^^
+~21525~^~2100~^~PIZZA HUT, breadstick, parmesan garlic~^~PIZZA HUT,BREADSTICK,PARMESAN GARLIC~^~~^~Pizza Hut, Inc.~^~~^~~^0^~~^^^^
+~21526~^~2100~^~CHICK-FIL-A, chicken sandwich~^~CHICK-FIL-A,CHICK SNDWCH~^~~^~Chick-Fil-A~^~~^~~^0^~~^^^^
+~21527~^~2100~^~ARBY'S, roast beef sandwich, classic~^~ARBY'S,RST BF SNDWCH,CLASSIC~^~~^~ARBY'S~^~~^~~^0^~~^^^^
+~21600~^~2100~^~School Lunch, pizza, cheese topping, thin crust, whole grain, frozen, cooked~^~SCHOOL LUNCH,PIZZA,CHS TOPPING,THIN CRUST,WHL GRAIN,FRZ,CKD~^~school lunch~^~~^~Y~^~~^0^~~^^^^
+~21601~^~2100~^~School Lunch, pizza, cheese topping, thick crust, whole grain, frozen, cooked~^~SCHOOL LUNCH,PIZZA,CHS TOPPING,THICK CRUST,WHL GRAIN,FRZ,CKD~^~school lunch~^~~^~Y~^~~^0^~~^^^^
+~21602~^~2100~^~School Lunch, pizza, pepperoni topping, thin crust, whole grain, frozen, cooked~^~SCHOOL LUNCH,PIZZA,PEPPI TOPPING,THIN CRUST,WHL GRN,FRZ,CKD~^~school lunch~^~~^~Y~^~~^0^~~^^^^
+~21603~^~2100~^~School Lunch, pizza, pepperoni topping, thick crust, whole grain, frozen, cooked~^~SCHOOL LUNCH,PIZZA,PEPP TOPPING,THICK CRUST,WHL GRN,FRZ,CKD~^~school lunch~^~~^~Y~^~~^0^~~^^^^
+~21604~^~2100~^~School Lunch, pizza, sausage topping, thin crust, whole grain, frozen, cooked~^~SCHOOL LUNCH,PIZZA,SSAGE TOPPING,THIN CRST,WHL GRAIN,FRZ,CKD~^~school lunch~^~~^~Y~^~~^0^~~^6.25^^^
+~21605~^~2100~^~School Lunch, pizza, sausage topping, thick crust, whole grain, frozen, cooked~^~SCHOOL LUNCH,PIZZA,SAUSAGE TOP,THICK CRUST,WHL GRN,FRZ,CKD~^~school lunch~^~~^~Y~^~~^0^~~^^^^
+~21610~^~2100~^~School Lunch, chicken patty, whole grain breaded~^~SCHOOL LUNCH,CHICK PATTY,WHL GRAIN BREADED~^~school lunch~^~~^~Y~^~~^0^~~^^^^
+~21611~^~2100~^~School Lunch, chicken nuggets, whole grain breaded~^~SCHOOL LUNCH,CHICK NUGGETS,WHL GRAIN BREADED~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~22902~^~2100~^~Pizza, meat topping, thick crust, frozen, cooked~^~PIZZA,MEAT TOPPING,THICK CRUST,FRZ,CKD~^~~^~~^~Y~^~~^0^~~^^^^
+~23145~^~1300~^~Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw~^~BEEF,CHUCK EYE STEAK,BNLESS,LN & FAT,0" FAT,SEL,RAW~^~Beef, Chuck, Chuck Eye Steaks, URMIS #1102~^~~^~~^~Connective tissue 9%~^9^~~^6.25^^^
+~23306~^~1300~^~Beef, Australian, imported, grass-fed, loin, top sirloin cap-off steak/roast, boneless, separable lean only, raw~^~BEEF,AUS,IMP,GRSS-FD,TOP SIRLN CP-OFF STK/RST,BNLESS,LN,RAW~^~URMIS #1426, URMIS #1419~^~~^~~^~Connective tissue 2%, separable fat 1%~^3^~~^6.25^^^
+~23482~^~1300~^~Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, all grades, raw~^~BEEF,COMP OF RTL CUTS,LN & FAT,0" FAT,ALL GRDS,RAW~^~~^~~^~~^~No component data available~^0^~~^^^^
+~23483~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, all grades, raw~^~BEEF,COMP OF RTL CUTS,LN,1/8" FAT,ALL GRDS,RAW~^~~^~~^~~^~No component data available~^0^~~^^^^
+~23484~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, all grades, cooked~^~BEEF,COMP OF RTL CUTS,LN,1/8" FAT,ALL GRDS,CKD~^~~^~~^~~^~No component data available~^0^~~^^^^
+~23485~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, all grades, raw~^~BEEF,COMP OF RTL CUTS,LN,0" FAT,ALL GRDS,RAW~^~~^~~^~~^~No component data available~^0^~~^^^^
+~23490~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, choice, raw~^~BEEF,COMP OF RTL CUTS,LN,1/8" FAT,CHOIC,RAW~^~~^~~^~~^~No component data available~^^~~^^^^
+~23491~^~1300~^~Beef composite, separable lean only, trimmed to 1/8" fat, choice, cooked~^~BEEF COMP,LN,1/8" FAT,CHOIC,CKD~^~~^~~^~~^~No component data available~^^~~^^^^
+~23494~^~1300~^~Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, choice, raw~^~BEEF,COMP OF RTL CUTS,LN & FAT,0" FAT,CHOIC,RAW~^~~^~~^~~^~No component data available~^^~~^^^^
+~23495~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, choice, raw~^~BEEF,COMP OF RTL CUTS,LN,0" FAT,CHOIC,RAW~^~~^~~^~~^~No component data available~^^~~^^^^
+~23496~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, select, raw~^~BEEF,COMP OF RTL CUTS,LN,0" FAT,SEL,RAW~^~~^~~^~~^~No component data available~^^~~^^^^
+~23497~^~1300~^~Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, select, raw~^~BEEF,COMP OF RTL CUTS,LN & FAT,0" FAT,SEL,RAW~^~~^~~^~~^~No component data available~^^~~^^^^
+~23498~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, select, cooked~^~BEEF,COMP OF RTL CUTS,LN,1/8" FAT,SEL,CKD~^~~^~~^~~^~No component data available~^^~~^^^^
+~23499~^~1300~^~Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, select, raw~^~BEEF,COMP OF RTL CUTS,LN,1/8" FAT,SEL,RAW~^~~^~~^~~^~No component data available~^^~~^^^^
+~25065~^~2500~^~Snacks, Pretzels, gluten- free made with cornstarch and potato flour~^~SNACKS,PRETZELS,GLUTEN- FREE MADE W/ CORNSTARCH & POTATO FLR~^~~^~~^~Y~^~~^0^~~^^^^
+~25066~^~2500~^~Snacks, peas, roasted, wasabi-flavored~^~SNACKS,PEAS,RSTD,WASABI-FLAVORED~^~~^~~^~Y~^~~^0^~~^^^^
+~25067~^~2500~^~Formulated Bar, SOUTH BEACH protein bar~^~FORMULATED BAR,SOUTH BEACH PROT BAR~^~~^~~^~Y~^~~^0^~~^^^^
+~25068~^~2500~^~Snack, BALANCE, original bar~^~SNACK,BALANCE,ORIGINAL BAR~^~~^~~^~Y~^~~^0^~~^^^^
+~25070~^~2500~^~Snacks, shrimp cracker~^~SNACKS,SHRIMP CRACKER~^~~^~~^~Y~^~~^0^~~^^^^
+~25071~^~2500~^~Rice crackers~^~RICE CRACKERS~^~~^~~^~Y~^~~^0^~~^^^^
+~27061~^~0600~^~Gravy, HEINZ Home Style, classic chicken~^~GRAVY,HEINZ HOME STYLE,CLASSIC CHICK~^~~^~H.J. Heinz, Co.~^~~^~~^0^~~^^^^
+~27062~^~0600~^~Soup, beef barley, ready to serve~^~SOUP,BF BARLEY,READY TO SERVE~^~~^~~^~Y~^~~^0^~~^^^^
+~27063~^~0600~^~Sauce, enchilada, red, mild, ready to serve~^~SAUCE,ENCHILADA,RED,MILD,READY TO SERVE~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~27064~^~0600~^~Wasabi~^~WASABI~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~27065~^~0600~^~Dip, bean, original flavor~^~DIP,BEAN,ORIGINAL FLAVOR~^~~^~~^~Y~^~~^0^~~^^^^
+~27066~^~0600~^~Sauce, horseradish~^~SAUCE,HORSERADISH~^~~^~~^~Y~^~~^0^~~^^^^
+~27067~^~0600~^~Sauce, OLD EL PASO, enchilada, red, mild, ready to serve~^~SAUCE,OLD EL PASO,ENCHILADA,RED,MILD,READY TO SERVE~^~~^~General Mills Inc.~^~~^~~^0^~~^^^^
+~27068~^~0600~^~Dip, FRITO'S, bean, original flavor~^~DIP,FRITO'S,BEAN,ORIGINAL FLAVOR~^~~^~Pepsi-Cola North America~^~~^~~^0^~~^^^^
+~28310~^~1800~^~Cookies, shortbread, reduced fat~^~COOKIES,SHORTBREAD,RED FAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28311~^~1800~^~Cookies, sugar wafer, chocolate-covered~^~COOKIES,SUGAR WAFER,CHOCOLATE-COVERED~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28312~^~1800~^~Rolls, hamburger or hot dog, wheat/cracked wheat~^~ROLLS,HAMBURGER OR HOT DOG,WHEAT/CRACKED WHEAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28313~^~1800~^~Rolls, hamburger or hot dog, whole wheat~^~ROLLS,HAMBURGER OR HOT DOG,WHL WHEAT~^~~^~~^~Y~^~~^0^~~^^^^
+~28314~^~1800~^~Crackers, sandwich-type, peanut butter filled, reduced fat~^~CRACKERS,SANDWICH-TYPE,PNUT BUTTER FILLED,RED FAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28315~^~1800~^~Bread, cinnamon~^~BREAD,CINN~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28316~^~1800~^~Bread, wheat, sprouted~^~BREAD,WHEAT,SPROUTED~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28317~^~1800~^~Bread, wheat, sprouted, toasted~^~BREAD,WHEAT,SPROUTED,TSTD~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28318~^~1800~^~Bread, french or vienna, whole wheat~^~BREAD,FRENCH OR VIENNA,WHL WHEAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28319~^~1800~^~Bagels, whole grain white~^~BAGELS,WHL GRAIN WHITE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28320~^~1800~^~English muffins, whole grain white~^~ENGLISH MUFFINS,WHL GRAIN WHITE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28321~^~1800~^~Rolls, hamburger, whole grain white, calcium-fortified~^~ROLLS,HAMBURGER,WHL GRAIN WHITE,CALCIUM-FORTIFIED~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28322~^~1800~^~Bagels, multigrain~^~BAGELS,MULTIGRAIN~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28323~^~1800~^~Pancakes, plain, low fat, dry mix, incomplete (includes buttermilk)~^~PANCAKES,PLN,LOFAT,DRY MIX,INCOMPLETE (INCLUDES BUTTERMILK)~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28324~^~1800~^~Pancakes, whole wheat, dry mix, incomplete~^~PANCAKES,WHL WHEAT,DRY MIX,INCOMPLETE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28325~^~1800~^~Crackers, toast thins, low sodium~^~CRACKERS,TOAST THINS,LO NA~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28326~^~1800~^~Crackers, whole grain, sandwich-type, with peanut butter filling~^~CRACKERS,WHL GRAIN,SANDWICH-TYPE,W/ PNUT BUTTER FILLING~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28327~^~1800~^~Crackers, water biscuits~^~CRACKERS,H2O BISCUITS~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28328~^~1800~^~Cookies, chocolate chip sandwich, with creme filling~^~COOKIES,CHOC CHIP SNDWCH,W/ CREME FILLING~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28329~^~1800~^~Cookies, chocolate, made with rice cereal~^~COOKIES,CHOC,MADE W/ RICE CRL~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28330~^~1800~^~Cookies, marshmallow, with rice cereal and chocolate chips~^~COOKIES,MARSHMLLW,W/ RICE CRL & CHOC CHIPS~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28331~^~1800~^~Crackers, flavored, fish-shaped~^~CRACKERS,FLAV,FISH-SHAPED~^~~^~~^~~^~~^0^~~^6.25^^^
+~28332~^~1800~^~Cookies, gluten-free, chocolate sandwich, with creme filling~^~COOKIES,GLUTEN-FREE,CHOC SNDWCH,W/ CREME FILLING~^~~^~~^~Y~^~~^0^~~^^^^
+~28333~^~1800~^~Cookies, gluten-free, chocolate wafer~^~COOKIES,GLUTEN-FREE,CHOC WAFER~^~~^~~^~~^~~^0^~~^6.25^^^
+~28334~^~1800~^~Cookies, gluten-free, lemon wafer~^~COOKIES,GLUTEN-FREE,LEMON WAFER~^~~^~~^~~^~~^0^~~^6.25^^^
+~28335~^~1800~^~Cookies, gluten-free, vanilla sandwich, with creme filling~^~COOKIES,GLUTEN-FREE,VANILLA SNDWCH,W/ CREME FILLING~^~~^~~^~~^~~^0^~~^6.25^^^
+~28336~^~1800~^~Bread, gluten-free, white, made with potato extract, rice starch, and rice flour~^~BREAD,GLUTEN-FREE,POTATO EXTRACT,RICE STARCH,& RICE FLOUR~^~~^~~^~~^~~^0^~~^6.25^^^
+~28337~^~1800~^~Bread, gluten-free, white, made with rice flour, corn starch, and/or tapioca~^~BREAD,GLUTEN-FREE,RICE FLOUR,CORN STARCH,AND/OR TAPIOCA~^~~^~~^~Y~^~~^0^~~^^^^
+~28338~^~1800~^~Bread, gluten-free, white, made with tapioca starch and brown rice flour~^~BRD,GLUTEN-FREE,WHITE,MADE W/TAPIOCA STARCH & BRWN RICE FLR~^~~^~~^~~^~~^0^~~^6.25^^^
+~28339~^~1800~^~Bread, gluten-free, whole grain, made with tapioca starch and brown rice flour~^~BREAD,GLUTEN-FREE,WHL GRAIN,TAPIOCA STARCH & BROWN RICE FLR~^~~^~~^~~^~~^0^~~^6.25^^^
+~28340~^~1800~^~Rolls, gluten-free, white, made with brown rice flour, tapioca starch, and potato starch~^~ROLLS,GLUTEN-FREE,BRW RICE FLR,TAPIOCA STARCH,&POTATO STARCH~^~~^~~^~~^~~^0^~~^6.25^^^
+~28341~^~1800~^~Rolls, gluten-free, white, made with rice flour, rice starch, and corn starch~^~ROLLS,GLUTEN-FREE,RICE FLR,RICE STARCH,& CORN STARCH~^~~^~~^~Y~^~~^0^~~^^^^
+~28342~^~1800~^~Rolls, gluten-free, white, made with brown rice flour, tapioca starch, and sorghum flour~^~ROLLS,GLUTEN-FREE,BRW RICE FLR,TAPIOCA STARCH,&SORGHUM FLR~^~~^~~^~~^~~^0^~~^6.25^^^
+~28343~^~1800~^~Rolls, gluten-free, whole grain, made with tapioca starch and brown rice flour~^~ROLLS,GLUTEN-FREE,WHL GRAIN,TAPIOCA STARCH & BROWN RICE FLR~^~~^~~^~~^~~^0^~~^6.25^^^
+~28344~^~1800~^~Crackers, gluten-free, multigrain and vegetable, made with corn starch and white rice flour~^~CRACKERS,GLUTEN-FREE,MULTIGRAIN & VEG,MADE W/ CORN STARCH &~^~~^~~^~~^~~^0^~~^6.25^^^
+~28345~^~1800~^~Crackers, gluten-free, multi-seeded and multigrain~^~CRACKERS,GLUTEN-FREE,MULTI-SEEDED & MULTIGRAIN~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28346~^~1800~^~Waffles, gluten-free, frozen, ready-to-heat~^~WAFFLES,GLUTEN-FREE,FRZ,RTH~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28347~^~1800~^~Pancakes, gluten-free, frozen, ready-to-heat~^~PANCAKES,GLUTEN-FREE,FRZ,RTH~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28348~^~1800~^~Rolls, dinner, sweet~^~ROLLS,DINNER,SWT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28349~^~1800~^~Cookies, oatmeal, reduced fat~^~COOKIES,OATMEAL,RED FAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28350~^~1800~^~Cookies, chocolate cream covered biscuit sticks~^~COOKIES,CHOC CRM COVERED BISCUIT STKS~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28351~^~1800~^~Cookies, Marie biscuit~^~COOKIES,MARIE BISCUIT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28352~^~1800~^~Cookies, vanilla sandwich with creme filling, reduced fat~^~COOKIES,VANILLA SNDWCH W/ CREME FILLING,RED FAT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~28354~^~1800~^~ANDREA'S, Gluten Free Soft Dinner Roll~^~ANDREA'S,GLUTEN FREE SOFT DINNER ROLL~^~~^~Andrea's Gluten Free~^~~^~~^0^~~^6.25^^^
+~28355~^~1800~^~CRUNCHMASTER, Multi-Grain Crisps, Snack Crackers, Gluten-Free~^~CRUNCHMASTER,MULTI-GRAIN CRISPS,SNACK CRACKERS,GLUTEN-FREE~^~~^~Crunchmaster~^~~^~~^0^~~^^^^
+~28356~^~1800~^~GLUTINO, Gluten Free Cookies, Chocolate Vanilla Creme~^~GLUTINO,GLUTEN FREE COOKIES,CHOC VANILLA CREME~^~~^~Glutino~^~~^~~^0^~~^^^^
+~28357~^~1800~^~GLUTINO, Gluten Free Cookies, Vanilla Creme~^~GLUTINO,GLUTEN FREE COOKIES,VANILLA CREME~^~~^~Glutino~^~~^~~^0^~~^6.25^^^
+~28358~^~1800~^~GLUTINO, Gluten Free Wafers, Lemon Flavored~^~GLUTINO,GLUTEN FREE WAFERS,LEMON FLAV~^~~^~Glutino~^~~^~~^0^~~^^^^
+~28359~^~1800~^~GLUTINO, Gluten Free Wafers, Milk Chocolate~^~GLUTINO,GLUTEN FREE WAFERS,MILK CHOC~^~~^~Glutino~^~~^~~^0^~~^6.25^^^
+~28360~^~1800~^~MARY'S GONE CRACKERS, Original Crackers, Organic Gluten Free~^~MARY'S GONE CRACKERS,ORIGINAL CRACKERS,ORGANIC GLUTEN FREE~^~~^~Mary's Gone Crackers~^~~^~~^0^~~^6.25^^^
+~28361~^~1800~^~PEPPERIDGE FARM, Goldfish, Baked Snack Crackers, Cheddar~^~PEPPERIDGE FARM,GOLDFISH,BKD SNACK CRACKERS,CHEDDAR~^~~^~Pepperidge Farm~^~~^~~^0^~~^^^^
+~28362~^~1800~^~PEPPERIDGE FARM, Goldfish, Baked Snack Crackers, Explosive Pizza~^~PEPPERIDGE FARM,GOLDFISH,BKD SNACK CRACKERS,EXPLOSIVE PIZZA~^~~^~Pepperidge Farm~^~~^~~^0^~~^^^^
+~28363~^~1800~^~PEPPERIDGE FARM, Goldfish, Baked Snack Crackers, Original~^~PEPPERIDGE FARM,GOLDFISH,BKD SNACK CRACKERS,ORIGINAL~^~~^~Pepperidge Farm~^~~^~~^0^~~^^^^
+~28364~^~1800~^~PEPPERIDGE FARM, Goldfish, Baked Snack Crackers, Parmesan~^~PEPPERIDGE FARM,GOLDFISH,BKD SNACK CRACKERS,PARMESAN~^~~^~Pepperidge Farm~^~~^~~^0^~~^^^^
+~28365~^~1800~^~PEPPERIDGE FARM, Goldfish, Baked Snack Crackers, Pizza~^~PEPPERIDGE FARM,GOLDFISH,BKD SNACK CRACKERS,PIZZA~^~~^~Pepperidge Farm~^~~^~~^0^~~^^^^
+~28366~^~1800~^~RUDI'S, Gluten-Free Bakery, Original Sandwich Bread~^~RUDI'S,GLUTEN-FREE BAKERY,ORIGINAL SNDWCH BREAD~^~~^~Rudi's Bakery~^~~^~~^0^~~^6.25^^^
+~28367~^~1800~^~SAGE VALLEY, Gluten Free Vanilla Sandwich Cookies~^~SAGE VALLEY,GLUTEN FREE VANILLA SNDWCH COOKIES~^~~^~Sage Valley~^~~^~~^0^~~^6.25^^^
+~28368~^~1800~^~SCHAR, Gluten-Free, Classic White Rolls~^~SCHAR,GLUTEN-FREE,CLASSIC WHITE ROLLS~^~~^~Dr. Schar USA, Inc.~^~~^~~^0^~~^^^^
+~28369~^~1800~^~SCHAR, Gluten-Free, Wheat-Free, Classic White Bread~^~SCHAR,GLUTEN-FREE,WHEAT-FREE,CLASSIC WHITE BREAD~^~~^~Dr. Schar USA, Inc.~^~~^~~^0^~~^^^^
+~28370~^~1800~^~UDI'S, Gluten Free, Classic French Dinner Rolls~^~UDI'S,GLUTEN FREE,CLASSIC FRENCH DINNER ROLLS~^~~^~Udi's Gluten Free~^~~^~~^0^~~^6.25^^^
+~28371~^~1800~^~UDI'S, Gluten Free, Soft & Delicious White Sandwich Bread~^~UDI'S,GLUTEN FREE,SOFT & DELICIOUS WHITE SNDWCH BREAD~^~~^~Udi's Gluten Free~^~~^~~^0^~~^^^^
+~28372~^~1800~^~UDI'S, Gluten Free, Soft & Hearty Whole Grain Bread~^~UDI'S,GLUTEN FREE,SOFT & HEARTY WHL GRAIN BREAD~^~~^~Udi's Gluten Free~^~~^~~^0^~~^6.25^^^
+~28373~^~1800~^~UDI'S, Gluten Free, Whole Grain Dinner Rolls~^~UDI'S,GLUTEN FREE,WHL GRAIN DINNER ROLLS~^~~^~Udi's Gluten Free~^~~^~~^0^~~^6.25^^^
+~28374~^~1800~^~VAN'S, Gluten Free, Totally Original Pancakes~^~VAN'S,GLUTEN FREE,TOTALLY ORIGINAL PANCAKES~^~~^~Van's International Foods~^~~^~~^0^~~^6.25^^^
+~28375~^~1800~^~VAN'S, Gluten Free, Totally Original Waffles~^~VAN'S,GLUTEN FREE,TOTALLY ORIGINAL WAFFLES~^~~^~Van's International Foods~^~~^~~^0^~~^^^^
+~28376~^~1800~^~VAN'S, The Perfect 10, Crispy Six Whole Grain + Four Seed Baked Crackers, Gluten Free~^~VAN'S,THE PERFECT 10,CRISPY SIX WHL GRAIN + FOUR SD BKD CRAC~^~~^~Van's International Foods~^~~^~~^0^~~^6.25^^^
+~28377~^~1800~^~PEPPERIDGE FARM, 100% Whole Wheat Hamburger Buns~^~PEPPERIDGE FARM,100% WHL WHEAT HAMBURGER BUNS~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28378~^~1800~^~PEPPERIDGE FARM, Cinnamon Swirl Bread~^~PEPPERIDGE FARM,CINN SWIRL BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28379~^~1800~^~PEPPERIDGE FARM, Raisin Cinnamon Swirl Bread~^~PEPPERIDGE FARM,RAISIN CINN SWIRL BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28380~^~1800~^~PEPPERIDGE FARM, Whole Grain 15 Grain Bread~^~PEPPERIDGE FARM,WHL GRAIN 15 GRAIN BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28381~^~1800~^~PEPPERIDGE FARM, Farmhouse Hearty White Bread~^~PEPPERIDGE FARM,FARMHOUSE HEARTY WHITE BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28382~^~1800~^~PEPPERIDGE FARM, Farmhouse Oatmeal Bread~^~PEPPERIDGE FARM,FARMHOUSE OATMEAL BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28383~^~1800~^~PEPPERIDGE FARM, Whole Grain 100% Whole Wheat Bread~^~PEPPERIDGE FARM,WHL GRAIN 100% WHL WHEAT BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28384~^~1800~^~PEPPERIDGE FARM, Farmhouse Sourdough Bread~^~PEPPERIDGE FARM,FARMHOUSE SOURDOUGH BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28385~^~1800~^~PEPPERIDGE FARM, Jewish Rye Bread (Seedless)~^~PEPPERIDGE FARM,JEWISH RYE BREAD (SEEDLESS)~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28386~^~1800~^~PEPPERIDGE FARM, Pumpernickel Bread~^~PEPPERIDGE FARM,PUMPERNICKEL BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28387~^~1800~^~PEPPERIDGE FARM, Hamburger Buns w/Sesame~^~PEPPERIDGE FARM,HAMBURGER BUNS W/SESAME~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28388~^~1800~^~PEPPERIDGE FARM, Deli Swirl Bread~^~PEPPERIDGE FARM,DELI SWIRL BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28389~^~1800~^~PEPPERIDGE FARM, White Bread~^~PEPPERIDGE FARM,WHITE BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28390~^~1800~^~PEPPERIDGE FARM, Light Style Wheat Bread~^~PEPPERIDGE FARM,LT STYLE WHEAT BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28391~^~1800~^~PEPPERIDGE FARM, Seeded Jewish Rye Bread~^~PEPPERIDGE FARM,SEEDED JEWISH RYE BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28392~^~1800~^~PEPPERIDGE FARM, Farmhouse 100% Whole Wheat Bread~^~PEPPERIDGE FARM,FARMHOUSE 100% WHL WHEAT BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28393~^~1800~^~PEPPERIDGE FARM, White Hoagie Roll~^~PEPPERIDGE FARM,WHITE HOAGIE ROLL~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28394~^~1800~^~PEPPERIDGE FARM, Hamburger Bun~^~PEPPERIDGE FARM,HAMBURGER BUN~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28395~^~1800~^~PEPPERIDGE FARM, Whole Grain Honey Whole Wheat Bread~^~PEPPERIDGE FARM,WHL GRAIN HONEY WHL WHEAT BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28396~^~1800~^~PEPPERIDGE FARM, Whole Grain Oatmeal Bread~^~PEPPERIDGE FARM,WHL GRAIN OATMEAL BREAD~^~~^~Campbell Soup Co.~^~~^~~^0^~~^6.25^^^
+~28397~^~1800~^~Bread, multi-grain (includes whole-grain)~^~BREAD,MULTI-GRAIN (INCLUDES WHOLE-GRAIN)~^~~^~~^~Y~^~~^0^~~^^^^
+~28399~^~1800~^~Cookies, animal crackers (includes arrowroot, tea biscuits)~^~COOKIES,ANIMAL CRACKERS (INCL ARROWROOT,TEA BISCUITS,)~^~~^~~^~Y~^~~^0^~~^5.70^4.10^8.80^4.00
+~31032~^~1100~^~Vegetable smoothie, NAKED JUICE, KALE BLAZER~^~VEGETABLE SMOOTHIE,NAKED JUC,KALE BLAZER~^~~^~Naked Juice Co. of Glendora, Inc.~^~Y~^~~^0^~~^6.25^2.44^8.37^3.57
+~31033~^~1100~^~Ginger root, pickled, canned, with artificial sweetener~^~GINGER ROOT,PICKLED,CND,W/ ART SWTNR~^~~^~~^~Y~^~~^0^~~^6.25^2.78^8.37^3.84
+~31034~^~1100~^~Peppers, hot pickled, canned~^~PEPPERS,HOT PICKLED,CND~^~~^~~^~Y~^~~^0^~~^6.25^2.44^8.37^3.57
+~31035~^~1100~^~Vegetable juice, BOLTHOUSE FARMS, DAILY GREENS~^~VEGETABLE JUC,BOLTHOUSE FARMS,DAILY GRNS~^~~^~Bolthouse Farms~^~Y~^~~^0^~~^6.25^2.44^8.37^3.57
+~31036~^~1100~^~Potatoes, mashed, ready-to-eat~^~POTATOES,MSHD,RTE~^~~^~~^~Y~^~~^0^~~^^^^
+~32024~^~2200~^~Rice mix, cheese flavor, dry mix, unprepared~^~RICE MIX,CHS FLAVOR,DRY MIX,UNPREP~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32025~^~2200~^~Dumpling, potato- or cheese-filled, frozen~^~DUMPLING,POTATO- OR CHEESE-FILLED,FRZ~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32026~^~2200~^~Turnover, chicken- or turkey-, and vegetable-filled, reduced fat, frozen~^~TURNOVER,CHICKEN- OR TURKEY-,& VEGETABLE-FILLED,RED FAT,FRZ~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32027~^~2200~^~Turnover, meat- and cheese-filled, tomato-based sauce, reduced fat, frozen~^~TURNOVER,MEAT- & CHEESE-FILLED,TOMATO-BASED SAU,RED FAT,FRZ~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32028~^~2200~^~Turnover, filled with egg, meat and cheese, frozen~^~TURNOVER,FILLED W/ EGG,MEAT & CHS,FRZ~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32029~^~2200~^~Rice mix, white and wild, flavored, unprepared~^~RICE MIX,WHITE & WILD,FLAV,UNPREP~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32030~^~2200~^~KASHI Italian Vegetable Medley Pasta, frozen, unprepared~^~KASHI ITALIAN VEG MEDLEY PASTA,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~32031~^~2200~^~Salisbury steak with gravy, frozen~^~SALISBURY STEAK W/ GRAVY,FRZ~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32032~^~2200~^~Sausage, egg and cheese breakfast biscuit~^~SAUSAGE,EGG & CHS BRKFST BISCUIT~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32034~^~2200~^~HUNGRY MAN, Salisbury Steak With Gravy, frozen, unprepared~^~HUNGRY MAN,SALISBURY STEAK W/ GRAVY,FRZ,UNPREP~^~~^~Hungry Man~^~~^~~^0^~~^^^^
+~32035~^~2200~^~BANQUET, Salisbury Steak With Gravy, family size, frozen, unprepared~^~BANQUET,SALISBURY STEAK W/ GRAVY,FAMILY SIZE,FRZ,UNPREP~^~~^~Banquet Foods Corp.~^~~^~~^0^~~^^^^
+~32036~^~2200~^~JIMMY DEAN, Sausage, Egg, and Cheese Breakfast Biscuit, frozen, unprepared~^~JIMMY DEAN,SAUSAGE,EGG,& CHS BRKFST BISCUIT,FRZ,UNPREP~^~~^~Jimmy Dean Foods~^~~^~~^0^~~^^^^
+~33878~^~0300~^~Babyfood, GERBER, Banana with orange medley~^~BABYFOOD,GERBER,BANANA W/ ORANGE MEDLEY~^~~^~~^~Y~^~~^0^~~^^^^
+~36633~^~3600~^~Restaurant, Chinese, sesame chicken~^~RESTAURANT,CHINESE,SESAME CHICK~^~~^~~^~Y~^~~^0^~~^^^^
+~43027~^~1900~^~Jellies, no sugar (with sodium saccharin), any flavors~^~JELLIES,NO SUGAR (WITH NA SACCHARIN),ANY FLAVORS~^~~^~~^~Y~^~~^0^~~^^^^
+~43059~^~1900~^~Candies, chocolate covered, low sugar or low calorie~^~CANDIES,CHOC COVERED,LO SUGAR OR LO CAL~^~~^~~^~Y~^~~^0^~~^^4.00^9.00^4.00
+~43344~^~1900~^~Jams, preserves, marmalade, reduced sugar~^~JAMS,PRESERVES,MARMALADE,RED SUGAR~^~~^~~^~Y~^~~^0^~~^^^^

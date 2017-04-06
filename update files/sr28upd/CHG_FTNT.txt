@@ -1,0 +1,9 @@
+~03961~^~01~^~D~^~~^~Contain arachidonic acid (ARA, nutrient number 620) and docosahexaenoic acid nutrient number 621) fatty acids found to human breast milk~
+~12152~^~01~^~D~^~~^~Additional phytosterols total 89 mg/100 g; these include delta 5-avenasterol (26.2), sitostanol (2.3), campestanol (4.9), and other minor phytosterols (55.6 mg).~
+~12652~^~01~^~D~^~~^~Additional phytosterols total 89 mg/100 g; these include delta 5-avenasterol (26.2), sitostanol (2.3), campestanol (4.9), and other minor phytosterols (55.6 mg).~
+~15019~^~01~^~N~^~307~^~Samples were obtained from 12 retail stores using a probability-based sampling plan.  Some fish had been treated during processing to retain moisture on thawing.  Untreated fish = 109 mg sodium/100g.~
+~15066~^~01~^~N~^~307~^~Samples were obtained from 12 retail stores using a probability-based sampling plan.  Some fish had been treated during processing to retain moisture on thawing.  Untreated fish = 159 mg sodium/100g.~
+~15067~^~01~^~N~^~307~^~Samples were obtained from 12 retail stores using a probability-based sampling plan.  Some fish had been treated during processing to retain moisture on thawing.  Untreated fish = 166 mg sodium/100g.~
+~15149~^~01~^~N~^~307~^~Samples were obtained from 12 retail stores using a probability-based sampling plan.  Some fish had been treated during processing to retain moisture on thawing.  Untreated fish = 119 mg sodium/100g.~
+~15151~^~01~^~N~^~307~^~Samples were obtained from 12 retail stores using a probability-based sampling plan.  Some fish had been treated during processing to retain moisture on thawing.  Untreated fish = 111 mg sodium/100g.~
+~15192~^~01~^~N~^~307~^~Samples were obtained from 12 retail stores using a probability-based sampling plan.  Some fish had been treated during processing to retain moisture on thawing.  Untreated fish = 134 mg sodium/100g.~

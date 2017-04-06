@@ -1,0 +1,132 @@
+- hibányzó adatbázis táblák
+- hány/melyik fájlra van szükség
+- egyszerre egy vagy több fájl betöltése?
+- scriptek elkérése
+- adatbázis feltöltése az adatokkal
+- serialokhoz sequence?
+
+- felhasználó felület terv
+
+--------------------------------------------------------------------------------------------------
+
+___ TABLES TO INSERT/UPDATE/DELETE ___
+
+food
+food_content
+food_unit
+food_sets
+unit
+nutrient
+nutrient_content
+nutrient_sets
+______
+
+***food_loader***
+insert label		label_id | label_type_code										(labelID)seq_nextval | food_type_code
+insert label_text	label_id | lang_id | label_text | label_long_text				(labelID)seq_nextval | lang_code | short_desc | long_desc
+insert food			food_id | usda_ndb_no | refuse_percent | foodname_label_id		(foodID)seq_nextval | ndb_no | refuse percent | (labelID)seq_nextval
+
+
+***nutrient_loader***
+insert label		label_id | label_type_code										(labelID)seq_nextval | nutr_type_code
+insert label_text	label_id | lang_id | label_text | label_long_text				(labelID)seq_nextval | lang_code | 
+insert nutrient		nutr_id | usda_nutr_no | nutrname_label_id | unit_id			
+
+
+***weight_loader***
+////uj mertekegyseg
+insert label		label_id | label_type_code
+insert label_text	label_id | lang_id | label_text | label_long_text
+insert unit			unit_id | unit_label_id
+
+insert food_weight	food_id | unit_id | mass_dkg
+
+insert food_unit	food_id | lang_id | default_unit_id | second_unit_id
+
+
+---------------------------------------------------------------------------------------------------
+Extract Transform Load
+
+Classes that in need:
+Database handler
+File handler
+Interface that extract data from files
+Interface that load changes in database
+Logger
++
+GUI
+
+
+----------
+
+FUNKCIÓK:
+adatok(food, nutrient, weight) kézzel való bevitele/változtatása/törlése, keresés, stb.
+részleges(frissítés hibák kivételével) vagy teljes(hiba nélküli frissítés) adatbázis frissítés
+adatbázis adatok(port, user, password, dbname, schema) megadása belépéskor
+
+
+----------
+
+insert sorrend
+CREATE TABLE minta.label
+CREATE TABLE minta.language
+CREATE TABLE minta.label_text
+CREATE TABLE minta.food
+CREATE TABLE minta.unit
+CREATE TABLE minta.nutrient
+CREATE TABLE minta.source
+CREATE TABLE minta.set
+CREATE TABLE minta.food_content
+CREATE TABLE minta.food_sets
+CREATE TABLE minta.food_source
+CREATE TABLE minta.food_units
+CREATE TABLE minta.nutrient_content
+CREATE TABLE minta.nutrient_sets
+
+-----------
+
+FÁJLOK
+ADD_FOOD
+- nutrient databank id (leading zero'll be lost)	***KELL*** vagy nem
+- food group code	*** set-ből id és food_sets-be berakni vagy nem ***
+- long desc		*** label_text.label_long_text ***
+- short desc	*** label_text.label_text ***
+- Common name, other names that describe food item
+- manufac name, company that produce the food item	*** food.manufacturer_id vagy nem
+- survey
+- refuse desc, description of inedible parts
+- refuse, percentage of refuse		***KELL***
+- Scientific name
+- n_factor, factor for converting nitrogen to protein
+- pro_factor, factor for calculating calories from protein
+- fat_factor, factor for calculating calories from fat
+- cho_factor, factor for calculating calories from carbohydrate
+
+ADD_NUTRIENT
+- NDB_No, Nutrient Databank number that uniquely identifies a food item.	*** KELL ***
+- Nutr_No, identifier code for a nutrient.	*** KELL ***
+- Nutr_Val, Amount in 100 grams, edible portion †. *** KELL ***
+- Num_Data_Pts, Number of data points is the number of analyses used to calculate the nutrient value.
+- Std_Error, Standard error of the mean. 
+- Src_Cd, Code indicating type of data.
+- Deriv_Cd, Data Derivation Code giving specific information on how the value is determined.
+- Ref_NDB_No, NDB number of the item used to calculate a missing value.
+- Add_Nutr_Mark, Indicates a vitamin or mineral added for fortification or enrichment.
+- Num_Studies, Number of studies.
+- Min, Minimum value.
+- Max, Maximum value.
+- DF, Degrees of freedom.
+- Low_EB, Lower 95% error bound.
+- Up_EB, Upper 95% error bound.
+- Stat_cmt, Statistical comments.
+- AddMod_Date, Indicates when a value was either added to the database or last modified.
+- CC, Confidence Code indicating data quality
+
+ADD_WEIGHT
+- NDB_No, Nutrient Databank number that uniquely identifies a food item.
+- Seq, Sequence number.
+- Amount, Unit modifier (for example, 1 in “1 cup”).
+- Msre_Desc, Description (for example, cup, diced, and 1-inch pieces).
+- Gm_Wgt, Gram weight.
+- Num_Data_Pts, Number of data points.
+- Std_Dev, Standard deviation.

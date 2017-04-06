@@ -1,0 +1,26 @@
+~09178~^~01~^~N~^~307~^~Some brands contain sodium metabisulfite.~
+~11938~^~01~^~N~^~417~^~Mean value contains data based on the analysis of 5-methyltetrahydrofolate, 10-formyl folic acid, and 5-formyltetrahydrofolic acid plus total folate determined microbiologically~
+~11938~^~02~^~N~^~432~^~Mean value contains data based on the analysis of 5-methyltetrahydrofolate, 10-formyl folic acid, and 5-formyltetrahydrofolic acid plus total folate determined microbiologically~
+~11938~^~03~^~N~^~435~^~Mean value contains data based on the analysis of 5-methyltetrahydrofolate, 10-formyl folic acid, and 5-formyltetrahydrofolic acid plus total folate determined microbiologically~
+~13361~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~13362~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~13363~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~13364~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~13365~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~13366~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~13795~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~13796~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~13797~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~13798~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~13799~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~13800~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~14231~^~01~^~N~^~205~^~Contains other proximate components.~
+~23485~^~01~^~D~^~~^~This composite was determined based on market shares of 0" fat trim cuts~
+~23490~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~23491~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~23494~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~23495~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts.~
+~23496~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts~
+~23497~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 0” fat trim cuts~
+~23498~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~
+~23499~^~01~^~D~^~~^~Estimation of the nutrient profile for this composite were based upon the market shares of 1/8” fat trim cuts.~

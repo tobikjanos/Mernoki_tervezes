@@ -1,0 +1,25 @@
+create table minta.food as select * from diet.food limit 100
+create table minta.source as select * from diet.source
+create table minta.food_units as select * from diet.food_units where food_id in (select food_id from minta.food)
+create table minta.food_content as select * from diet.food_content where food_id in (select food_id from minta.food)
+create table minta.food_sets as select * from diet.food_sets where food_id in (select food_id from minta.food)
+create table minta.nutrient as select * from diet.nutrient where nutr_id in (select nutr_id from minta.food_content)
+create table minta.unit as select * from diet.unit where unit_id in (select unit_id from minta.nutrient union select unit_id from minta.food_units)
+create table minta.nutrient_sets as select * from diet.nutrient_sets where nutrient_id in (select nutr_id from minta.nutrient)
+create table minta.set as select * from diet.set where set_id in (select set_id from minta.food_sets union select set_id from minta.nutrient_sets )
+
+create table minta.label_text as select * from diet.label_text where label_id in(
+select unit_label_id from minta.unit union
+select foodname_label_id from minta.food union
+select fooddesc_label_id from minta.food union
+select nutrname_label_id from minta.nutrient union
+select setname_label_id from minta.set union
+select source_label_id from minta.source)
+
+create table minta.label as select * from diet.label where label_id in(
+select unit_label_id from minta.unit union
+select foodname_label_id from minta.food union
+select fooddesc_label_id from minta.food union
+select nutrname_label_id from minta.nutrient union
+select setname_label_id from minta.set union
+select source_label_id from minta.source)

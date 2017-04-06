@@ -1,0 +1,307 @@
+~01270~^~0100~^~Cheese, cheddar, sharp, sliced~^~CHEESE,CHEDDAR,SHARP,SLICED~^~~^~~^~Y~^~~^0^~~^^^^
+~01271~^~0100~^~Cheese, mozzarella, low moisture, part-skim, shredded~^~CHEESE,MOZZARELLA,LO MOIST,PART-SKIM,SHREDDED~^~~^~~^~Y~^~~^0^~~^^^^
+~01275~^~0100~^~Yogurt, Greek, non fat, vanilla, CHOBANI~^~YOGURT,GREEK,NON FAT,VANILLA,CHOBANI~^~~^~~^~~^~~^0^~~^^^^
+~01276~^~0100~^~Yogurt, Greek, strawberry, DANNON OIKOS~^~YOGURT,GREEK,STRAWBERRY,DANNON OIKOS~^~~^~~^~~^~~^0^~~^^^^
+~01278~^~0100~^~Yogurt, Greek, non fat, vanilla, DANNON OIKOS~^~YOGURT,GREEK,NON FAT,VANILLA,DANNON OIKOS~^~~^~~^~~^~~^0^~~^^^^
+~01280~^~0100~^~Yogurt, Greek, non fat, strawberry, DANNON OIKOS~^~YOGURT,GREEK,NON FAT,STRAWBERRY,DANNON OIKOS~^~~^~~^~~^~~^0^~~^^^^
+~01281~^~0100~^~Yogurt, Greek, non fat, strawberry, CHOBANI~^~YOGURT,GREEK,NON FAT,STRAWBERRY,CHOBANI~^~~^~~^~~^~~^0^~~^^^^
+~05111~^~0500~^~Canada Goose, breast meat, skinless, raw~^~CANADA GOOSE,BREAST MEAT,SKINLESS,RAW~^~Canadian geese~^~~^~~^~~^0^~Branta canadensis~^^^^
+~05363~^~0500~^~Ruffed Grouse, breast meat, skinless, raw~^~RUFFED GROUSE,BREAST MEAT,SKINLESS,RAW~^~Ruffed grouse~^~~^~~^~~^0^~Bonasa umbellus~^^^^
+~06588~^~0600~^~CAMPBELL'S Soup on the Go, Classic Tomato Soup~^~CAMPBELL'S SOUP ON THE GO,CLASSIC TOMATO SOUP~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~06619~^~0600~^~SMART SOUP, Santa Fe Corn Chowder~^~SMART SOUP,SANTA FE CORN CHOWDER~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~06620~^~0600~^~SMART SOUP, French Lentil~^~SMART SOUP,FRENCH LENTIL~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~06621~^~0600~^~SMART SOUP, Greek Minestrone~^~SMART SOUP,GREEK MINESTRONE~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~06622~^~0600~^~SMART SOUP, Indian Bean Masala~^~SMART SOUP,INDIAN BEAN MASALA~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~06623~^~0600~^~SMART SOUP, Moroccan Chick Pea~^~SMART SOUP,MOROCCAN CHICK PEA~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~06624~^~0600~^~SMART SOUP, Thai Coconut Curry~^~SMART SOUP,THAI COCNT CURRY~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~06625~^~0600~^~SMART SOUP, Vietnamese Carrot Lemongrass~^~SMART SOUP,VIETNAMESE CARROT LEMONGRASS~^~~^~Smart Soup~^~~^~~^0^~~^6.25^^^
+~07972~^~0700~^~Meatballs, frozen, Italian style~^~MEATBALLS,FRZ,ITALIAN STYLE~^~~^~~^~~^~~^0^~~^^^^
+~07973~^~0700~^~Turkey bacon, microwaved~^~TURKEY BACON,MICROWAVED~^~~^~~^~Y~^~~^0^~~^^^^
+~08453~^~0800~^~Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Chocolatey Strawberry~^~CEREALS RTE,KELLOGG,KELLOGG'S SPL K CHOCOLATEY STRAWBERRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08634~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, PEANUT BUTTER TOAST CRUNCH~^~CEREALS RTE,GENERAL MILLS,PNUT BUTTER TOAST CRUNCH~^~~^~General Mills Inc.~^~~^~~^0^~~^6.25^^^
+~08679~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, FROSTED TOAST CRUNCH~^~CEREALS RTE,GENERAL MILLS,FRSTD TOAST CRUNCH~^~~^~General Mills Inc.~^~~^~~^0^~~^6.25^^^
+~08680~^~0800~^~Cereals, oats, instant, fortified, maple and brown sugar, dry~^~CEREALS,OATS,INST,FORT,MAPLE & BROWN SUGAR,DRY~^~~^~~^~Y~^~~^0^~~^^^^
+~08681~^~0800~^~Cereals ready-to-eat, CASCADIAN FARM, Cinnamon Crunch~^~CEREALS RTE,CASCADIAN FARM,CINN CRUNCH~^~~^~General Mills Inc.~^~~^~~^0^~~^6.25^^^
+~08682~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, Multi Grain CHEERIOS, Peanut Butter~^~CEREALS RTE,GENERAL MILLS,MULTI GRAIN CHEERIOS,PNUT BUTTER~^~~^~General Mills Inc.~^~~^~~^0^~~^6.25^^^
+~08683~^~0800~^~Cereals ready-to-eat, CASCADIAN FARM, Multi-Grain Squares~^~CEREALS RTE,CASCADIAN FARM,MULTI-GRAIN SQUARES~^~~^~General Mills Inc.~^~~^~~^0^~~^6.25^^^
+~08684~^~0800~^~Cereals ready-to-eat, CASCADIAN FARM, honey nut O's~^~CEREALS RTE,CASCADIAN FARM,HONEY NUT O'S~^~~^~General Mills Inc.~^~~^~~^0^~~^6.25^^^
+~08685~^~0800~^~Cereals ready-to-eat, QUAKER WHOLE HEARTS oat cereal~^~CEREALS RTE,QUAKER WHL HEARTS OAT CRL~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08686~^~0800~^~Cereals, QUAKER, Weight Control Instant Oatmeal, maple and brown sugar~^~CEREALS,QUAKER,WT CONTROL INST OATMEAL,MAPLE & BROWN SUGAR~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08687~^~0800~^~Cereals, QUAKER, Weight Control Instant Oatmeal, banana bread~^~CEREALS,QUAKER,WEIGHT CONTROL INST OATMEAL,BANANA BREAD~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08688~^~0800~^~Cereals, QUAKER, Instant Oatmeal, Cinnamon Swirl, high fiber~^~CEREALS,QUAKER,INST OATMEAL,CINN SWIRL,HI FIBER~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08689~^~0800~^~Cereals, QUAKER, oatmeal, REAL MEDLEYS, blueberry hazelnut, dry~^~CEREALS,QUAKER,OATMEAL,REAL MEDLEYS,BLUEBERRY HAZELNUT,DRY~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08690~^~0800~^~Cereals, QUAKER, oatmeal, REAL MEDLEYS, apple walnut, dry~^~CEREALS,QUAKER,OATMEAL,REAL MEDLEYS,APPL WALNUT,DRY~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08691~^~0800~^~Cereals, QUAKER, oatmeal, REAL MEDLEYS, summer berry, dry~^~CEREALS,QUAKER,OATMEAL,REAL MEDLEYS,SMMR BERRY,DRY~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08692~^~0800~^~Cereals, QUAKER, oatmeal, REAL MEDLEYS, peach almond, dry~^~CEREALS,QUAKER,OATMEAL,REAL MEDLEYS,PEACH ALMOND,DRY~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08693~^~0800~^~Cereals, QUAKER, oatmeal, REAL MEDLEYS, cherry pistachio, dry~^~CEREALS,QUAKER,OATMEAL,REAL MEDLEYS,CHERRY PISTACHIO,DRY~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08694~^~0800~^~Cereals, QUAKER, Instant Oatmeal, weight control, cinnamon~^~CEREALS,QUAKER,INST OATMEAL,WEIGHT CONTROL,CINN~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08695~^~0800~^~Cereals ready-to-eat, KELLOGG, KELLOGG'S FROSTED MINI-WHEATS, little bites~^~CEREALS RTE,KELLOGG,KELLOGG'S FRSTD MINI-WHEATS,LITTLE BITES~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08696~^~0800~^~Cereals ready-to-eat, KELLOGG, KELLOGG'S RAISIN BRAN, Cinnamon Almond~^~CEREALS RTE,KELLOGG,KELLOGG'S RAISIN BRAN,CINN ALMOND~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08697~^~0800~^~Cereals ready-to-eat, KASHI ORGANIC PROMISE, RAISIN VINEYARD~^~CEREALS RTE,KASHI ORGANIC PROMISE,RAISIN VINEYARD~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08698~^~0800~^~Cereals ready-to-eat, KELLOGG, KELLOGG'S FROOT LOOPS TREASURES, Strawberry~^~CEREALS RTE,KELLOGG,KELLOGG'S FROOT LOOPS TREASURS,STRAWBRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08699~^~0800~^~Cereals ready-to-eat, KELLOGG'S KRAVE Smores~^~CEREALS RTE,KELLOGG'S KRAVE SMORES~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08700~^~0800~^~Cereals ready-to-eat, KELLOGG RAISIN BRAN with Omega-3 from flaxseed~^~CEREALS RTE,KELLOGG RAISIN BRAN W/ OMEGA-3 FROM FLAXSEED~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08701~^~0800~^~Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Multi-grain~^~CEREALS RTE,KELLOGG,KELLOGG'S SPL K MULTI-GRAIN~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08702~^~0800~^~Cereals, KELLOGG'S SPECIAL K NOURISH, Cinnamon Raisin Pecan, dry~^~CEREALS,KELLOGG'S SPL K NOURISH,CINN RAISIN PECAN,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08703~^~0800~^~Cereals, KELLOGG'S SPECIAL K NOURISH, Cranberry Almond, dry~^~CEREALS,KELLOGG'S SPL K NOURISH,CRANBERRY ALMOND,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08704~^~0800~^~Cereals, KELLOGG'S SPECIAL K NOURISH, Maple Brown Sugar Crunch, dry~^~CEREALS,KELLOGG'S SPL K NOURISH,MAPLE BROWN SUGAR CRUNCH,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08705~^~0800~^~Cereals ready-to-eat, KASHI GOLEAN Vanilla Graham Clusters~^~CEREALS RTE,KASHI GOLEAN VANILLA GRAHAM CLUSTERS~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08706~^~0800~^~Cereals ready-to-eat, KELLOGG SCOOBY-DOO! cereal~^~CEREALS RTE,KELLOGG SCOOBY-DOO! CRL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08707~^~0800~^~Cereals ready-to-eat, KELLOGG'S SPECIAL K Chocolate Almond~^~CEREALS RTE,KELLOGG'S SPL K CHOC ALMOND~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08708~^~0800~^~KELLOGG Mini-Wheats Frosted Bite Size Touch of Fruit Raisin~^~KELLOGG MINI-WHEATS FRSTD BITE SIZE TOUCH OF FRUIT RAISIN~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~09213~^~0900~^~Orange juice, frozen concentrate, unsweetened, undiluted, with added calcium~^~ORANGE JUC,FRZ CONC,UNSWTND,UNDIL,W/ ADDED CA~^~~^~~^~~^~~^0^~~^^^^
+~09506~^~0900~^~Orange juice, chilled, includes from concentrate, with added calcium and vitamins A, D, E~^~ORANGE JUC,CHILLED,INCL FROM CONC,W/ ADD CA & VITAMINS A,D,E~^~~^~~^~~^~~^0^~~^6.25^3.36^8.37^3.92
+~09507~^~0900~^~Juice Smoothie, NAKED JUICE, MIGHTY MANGO~^~JUICE SMOOTHIE,NAKED JUC,MIGHTY MANGO~^~~^~Naked Juice Co. of Glendora, Inc.~^~~^~~^0^~~^6.25^^^
+~09508~^~0900~^~Juice Smoothie, NAKED JUICE, GREEN MACHINE~^~JUICE SMOOTHIE,NAKED JUC,GRN MACHINE~^~~^~Naked Juice Co. of Glendora, Inc.~^~~^~~^0^~~^6.25^^^
+~09510~^~0900~^~Pineapple juice, DOLE, canned, not from concentrate, unsweetened, with added vitamins A, C and E~^~PINEAPPLE JUC,DOLE,CND,NOT FROM CONC,UNSWTND,W/ ADD VITA,C,E~^~~^~Dole Food Company~^~~^~~^0^~~^6.25^3.36^8.37^3.92
+~09511~^~0900~^~Juice Smoothie, NAKED JUICE, BLUE MACHINE~^~JUICE SMOOTHIE,NAKED JUC,BLUE MACHINE~^~~^~Naked Juice Co. of Glendora, Inc.~^~~^~~^0^~~^6.25^^^
+~09512~^~0900~^~Grape juice, canned or bottled, with added ascorbic acid and calcium~^~GRAPE JUC,CND OR BTLD,W/ ADDED VIT C & CA~^~~^~~^~~^~~^0^~~^6.25^^^
+~09513~^~0900~^~Juice Smoothie, ODWALLA, Original Superfood, fruit smoothie blend~^~JUICE SMTHIE,ODWALLA,ORIGINAL SUPERFD,FRUIT SMTHIE BLEND~^~~^~Odwalla~^~~^~~^^~~^6.25^^^
+~09514~^~0900~^~Juice Smoothie, BOLTHOUSE FARMS, BERRY BOOST~^~JUICE SMOOTHIE,BOLTHOUSE FARMS,BERRY BOOST~^~~^~Wm. Bolthouse Farms, Inc.~^~~^~~^0^~~^6.25^^^
+~09515~^~0900~^~Juice Smoothie, BOLTHOUSE FARMS, GREEN GOODNESS~^~JUICE SMOOTHIE,BOLTHOUSE FARMS,GRN GOODNESS~^~~^~Wm. Bolthouse Farms, Inc.~^~~^~~^0^~~^6.25^^^
+~09516~^~0900~^~Juice Smoothie, BOLTHOUSE FARMS, STRAWBERRY BANANA~^~JUICE SMOOTHIE,BOLTHOUSE FARMS,STRAWBERRY BANANA~^~~^~Wm. Bolthouse Farms, Inc.~^~~^~~^^~~^6.25^^^
+~09517~^~0900~^~Apple juice, canned or bottled, unsweetened, with added ascorbic acid, calcium, and potassium~^~APPLE JUC,CND OR BTLD,UNSWTND,W/ ADDED VIT C,CA,& K~^~~^~~^~~^~~^0^~~^^^^
+~09518~^~0900~^~Raspberries, frozen, unsweetened~^~RASPBERRIES,FRZ,UNSWTND~^~~^~~^~~^~~^0^~~^6.25^3.36^8.37^3.60
+~10094~^~1000~^~Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw~^~PORK,FRSH,LOIN,CNTR LOIN (CHOPS),BNLESS,LN,RAW~^~~^~~^~~^~separable fat 16%~^16^~~^^^^
+~10163~^~1000~^~Pork, fresh, loin, center loin (chops), boneless, separable lean only, cooked, pan-broiled~^~PORK,FRSH,LOIN,CNTR LOIN (CHOPS),BNLESS,LN,CKD,PAN-BROILED~^~~^~~^~~^~Separable lean 14%~^14^~~^^^^
+~10164~^~1000~^~Pork, fresh, loin, center loin (chops), boneless, separable lean and fat, raw~^~PORK,FRSH,LOIN,CNTR LOIN (CHOPS),BNLESS,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~10189~^~1000~^~Pork, fresh, loin, center loin (chops), boneless, separable lean and fat, cooked, pan-broiled~^~PORK,FRSH,LOIN,CNTR LON (CHPS),BNLESS,LN & FAT,CKD,PAN-BRLED~^~~^~~^~~^~~^0^~~^^^^
+~10980~^~1000~^~Pork loin, fresh, backribs, bone-in, raw, lean only~^~PORK LOIN,FRSH,BACKRIBS,BONE-IN,RAW,LN~^~~^~~^~~^~Bone 30%, Connective tissue 7%, Separable fat 9%~^50^~~^^^^
+~10981~^~1000~^~Pork loin, fresh, backribs, bone-in, cooked-roasted, lean only~^~PORK LOIN,FRSH,BACKRIBS,BONE-IN,COOKED-ROASTED,LN~^~~^~~^~~^~Bone 31%, Connective tissue 4%, Separable fat 5%~^40^~~^^^^
+~12536~^~1200~^~Seeds, sunflower seed kernels from shell, dry roasted, with salt added~^~SEEDS,SUNFLOWER SD KRNLS FROM SHELL,DRY RSTD,W/ SALT ADDED~^~~^~~^~~^~Hulls~^46^~~^5.30^3.47^8.37^4.07
+~12665~^~1200~^~Nuts, almonds, oil roasted, lightly salted~^~NUTS,ALMONDS,OIL RSTD,LIGHTLY SALTED~^~~^~~^~~^~~^0^~~^^^^
+~13493~^~1300~^~Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled~^~BEEF,RND,TOP RND STEAK,BNLESS,LN,0" FAT,SEL,CKD,GRILLED~^~URMIS #1553, Top Round Steak~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~14070~^~1400~^~Beverages, Green tea, LIPTON, brewed from bags~^~BEVERAGES,GRN TEA,LIPTON,BREWED FROM BAGS~^~~^~Lipton~^~~^~~^0^~~^^^^
+~14071~^~1400~^~Beverages, Green tea, SALADA brewed from bags~^~BEVERAGES,GRN TEA,SALADA BREWED FROM BAGS~^~~^~Salada~^~~^~~^0^~~^^^^
+~14072~^~1400~^~Beverages, Green tea, brewed, from bags~^~BEVERAGES,GRN TEA,BREWED,FROM BAGS~^~~^~~^~~^~~^0^~~^^^^
+~14073~^~1400~^~Beverages, ZEVIA, cola~^~BEVERAGES,ZEVIA,COLA~^~~^~Zevia~^~~^~~^0^~~^6.25^^^
+~14074~^~1400~^~Beverages, ZEVIA, cola, caffeine free~^~BEVERAGES,ZEVIA,COLA,CAFFEINE FREE~^~~^~Zevia~^~~^~~^0^~~^^^^
+~14075~^~1400~^~Beverages, water, bottled, naturally sparkling (carbonated), mineral~^~BEVERAGES,H2O,BTLD,NATURALLY SPARKLING (CARBONATED),MINERAL~^~~^~~^~~^~~^0^~~^6.25^^^
+~14076~^~1400~^~Beverages, ICELANDIC, Glacial Natural spring water~^~BEVERAGES,ICELANDIC,GLACIAL NAT SPRING H2O~^~~^~Icelandic Glacial Inc.~^~~^~~^0^~~^6.25^^^
+~14078~^~1400~^~Beverages, PEPSICO, Mountain Dew, Kickstart, Black Cherry~^~BEVERAGES,PEPSICO,MOUNTAIN DEW,KICKSTART,BLACK CHERRY~^~~^~Pepsi-Cola North America~^~~^~~^0^~~^6.25^^^
+~14079~^~1400~^~Beverages, PEPSICO, Mountain Dew Original~^~BEVERAGES,PEPSICO,MOUNTAIN DEW ORIGINAL~^~~^~Pepsi-Cola North America~^~~^~~^0^~~^6.25^^^
+~14080~^~1400~^~Beverages, NESTLE, Ovaltine, rich chocolate, powder~^~BEVERAGES,NESTLE,OVALTINE,RICH CHOC,PDR~^~~^~Nestle USA, Inc.~^~~^~~^0^~~^6.25^^^
+~14082~^~1400~^~Beverages, GEROLSTEINER BRUNNEN GmbH & Co.KG,Gerolsteiner, water, bottled, naturally sparkling, mineral~^~BEVERAGES,GEROLSTEINER BRUNNEN GMBH H2O,BTLD,NAT SPARK,MIN~^~~^~~^~~^~~^0^~~^^^^
+~14083~^~1400~^~Beverages, Chocolate malt, powder, prepared with fat free milk~^~BEVERAGES,CHOC MALT,PDR,PREP W/ FAT FREE MILK~^~~^~~^~~^~~^0^~~^^^^
+~14090~^~1400~^~Beverages, Coconut water, ready-to-drink~^~BEVERAGES,COCNT H2O,RTD~^~~^~~^~~^~~^0^~~^^^^
+~16581~^~1600~^~GARDENBURGER Flame Grilled Burger, frozen, unprepared~^~GARDENBURGER FLAME GRILLED BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16601~^~1600~^~MORNINGSTAR FARMS Grillers Chik'n Veggie Patties, frozen, unprepared~^~MORNINGSTAR FARMS GRILLERS CHIK'N VEGGIE PATTIES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16610~^~1600~^~MORNINGSTAR FARMS Roasted Garlic & Quinoa Burger, frozen, unprepared~^~MORNINGSTAR FARMS RSTD GARLIC & QUINOA BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16611~^~1600~^~MORNINGSTAR FARMS Parmesan Garlic Wings, frozen, unprepared~^~MORNINGSTAR FARMS PARMESAN GARLIC WINGS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~17354~^~1700~^~Lamb, New Zealand, imported, Intermuscular fat, cooked~^~LAMB,NZ,IMP,INTERMUSCULAR FAT,CKD~^~~^~~^~~^~~^^~~^6.25^^^
+~17355~^~1700~^~Lamb, New Zealand, imported, Intermuscular fat, raw~^~LAMB,NZ,IMP,INTERMUSCULAR FAT,RAW~^~~^~~^~~^~~^^~~^6.25^^^
+~17356~^~1700~^~Lamb, New Zealand, imported, subcutaneous fat, raw~^~LAMB,NZ,IMP,SUBCUTANEOUS FAT,RAW~^~~^~~^~~^~~^^~~^6.25^^^
+~17357~^~1700~^~Lamb, New Zealand, imported, brains, cooked, soaked and fried~^~LAMB,NZ,IMP,BRAINS,CKD,SOAKED & FRIED~^~~^~~^~~^~~^0^~~^6.25^^^
+~17358~^~1700~^~Lamb, New Zealand, imported, brains, raw~^~LAMB,NZ,IMP,BRAINS,RAW~^~~^~~^~~^~Connective tissue 2%~^2^~~^6.25^^^
+~17359~^~1700~^~Lamb, New Zealand, imported, breast, separable lean only, cooked, braised~^~LAMB,NZ,IMP,BREAST,LN,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue 28% Separable fat 37%~^65^~~^6.25^^^
+~17360~^~1700~^~Lamb, New Zealand, imported, breast, separable lean only, raw~^~LAMB,NZ,IMP,BREAST,LN,RAW~^~~^~~^~~^~Bone and connective tissue 26% Separable fat 39%~^65^~~^6.25^^^
+~17361~^~1700~^~Lamb, New Zealand, imported, chump, boneless, separable lean only, cooked, fast roasted~^~LAMB,NZ,IMP,CHUMP,BNLESS,LN,CKD,FAST RSTD~^~~^~~^~~^~Separable fat 21%~^21^~~^6.25^^^
+~17362~^~1700~^~Lamb, New Zealand, imported, subcutaneous fat, cooked~^~LAMB,NZ,IMP,SUBCUTANEOUS FAT,CKD~^~~^~~^~~^~~^0^~~^6.25^^^
+~17363~^~1700~^~Lamb, New Zealand, imported, chump, boneless, separable lean only, raw~^~LAMB,NZ,IMP,CHUMP,BNLESS,LN,RAW~^~~^~~^~~^~Connective tissue 1% Separable fat 22%~^23^~~^6.25^^^
+~17364~^~1700~^~Lamb, New Zealand, imported, kidney, cooked, soaked and fried~^~LAMB,NZ,IMP,KIDNEY,CKD,SOAKED & FRIED~^~~^~~^~~^~Connective tissue 5%~^5^~~^6.25^^^
+~17365~^~1700~^~Lamb, New Zealand, imported, flap, boneless, separable lean only, cooked, braised~^~LAMB,NZ,IMP,FLAP,BNLESS,LN,CKD,BRSD~^~~^~~^~~^~Connective tissue 1% Separable fat 34%~^35^~~^6.25^^^
+~17366~^~1700~^~Lamb, New Zealand, imported, flap, boneless, separable lean only, raw~^~LAMB,NZ,IMP,FLAP,BNLESS,LN,RAW~^~~^~~^~~^~Separable fat 32%~^32^~~^6.25^^^
+~17367~^~1700~^~Lamb, New Zealand, imported, kidney, raw~^~LAMB,NZ,IMP,KIDNEY,RAW~^~~^~~^~~^~Connectiv tissue 4%~^4^~~^6.25^^^
+~17368~^~1700~^~Lamb, New Zealand, imported, liver, cooked, soaked and fried~^~LAMB,NZ,IMP,LIVER,CKD,SOAKED & FRIED~^~~^~~^~~^~Connective tissue 1%~^1^~~^6.25^^^
+~17369~^~1700~^~Lamb, New Zealand, imported, liver, raw~^~LAMB,NZ,IMP,LIVER,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~17370~^~1700~^~Lamb, New Zealand, imported, ground lamb, cooked, braised~^~LAMB,NZ,IMP,GROUND LAMB,CKD,BRSD~^~~^~~^~~^~~^^~~^6.25^^^
+~17371~^~1700~^~Lamb, New Zealand, imported, ground lamb, raw~^~LAMB,NZ,IMP,GROUND LAMB,RAW~^~~^~~^~~^~~^^~~^6.25^^^
+~17372~^~1700~^~Lamb, New Zealand, imported, heart, cooked, soaked and simmered~^~LAMB,NZ,IMP,HEART,CKD,SOAKED & SIMMRD~^~~^~~^~~^~Connective tissue 11% Separable fat 17%~^28^~~^6.25^^^
+~17373~^~1700~^~Lamb, New Zealand, imported, heart, raw~^~LAMB,NZ,IMP,HEART,RAW~^~~^~~^~~^~Connective tissue 10% Separable fat 14%~^24^~~^6.25^^^
+~17374~^~1700~^~Lamb, New Zealand, imported, sweetbread, cooked, soaked and simmered~^~LAMB,NZ,IMP,SWEETBREAD,CKD,SOAKED & SIMMRD~^~~^~~^~~^~Separable fat 3%~^3^~~^6.25^^^
+~17375~^~1700~^~Lamb, New Zealand, imported, sweetbread, raw~^~LAMB,NZ,IMP,SWEETBREAD,RAW~^~~^~~^~~^~Separable fat 3%~^3^~~^6.25^^^
+~17376~^~1700~^~Lamb, New Zealand, imported, testes, cooked, soaked and fried~^~LAMB,NZ,IMP,TESTES,CKD,SOAKED & FRIED~^~~^~~^~~^~Connective tissue 25%~^25^~~^6.25^^^
+~17377~^~1700~^~Lamb, New Zealand, imported, testes, raw~^~LAMB,NZ,IMP,TESTES,RAW~^~~^~~^~~^~Connective tissue 17%~^17^~~^6.25^^^
+~17378~^~1700~^~Lamb, New Zealand, imported, tongue - swiss cut, cooked, soaked and simmered~^~LAMB,NZ,IMP,TONGUE - SWISS CUT,CKD,SOAKED & SIMMRD~^~~^~~^~~^~Connective tissue 12% Separable fat 6%~^18^~~^6.25^^^
+~17379~^~1700~^~Lamb, New Zealand, imported, tongue - swiss cut, raw~^~LAMB,NZ,IMP,TONGUE - SWISS CUT,RAW~^~~^~~^~~^~Connective tissue 18% Separable fat 8%~^26^~~^6.25^^^
+~17380~^~1700~^~Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, cooked, slow roasted~^~LAMB,NZ,IMP,TUNNEL-BNED LG,CHMP OFF,SHNK OFF,LN,CKD,SLW RSTD~^~~^~~^~~^~Separable fat 10%~^10^~~^6.25^^^
+~17381~^~1700~^~Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, raw~^~LAMB,NZ,IMP,TUNNEL-BONED LEG,CHUMP OFF,SHANK OFF,LN,RAW~^~~^~~^~~^~Separable fat 15%~^15^~~^6.25^^^
+~17382~^~1700~^~Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, cooked, braised~^~LAMB,NZ,IMP,SQUARE-CUT SHLDR CHOPS,LN,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue 26% Separable fat 13%~^39^~~^6.25^^^
+~17383~^~1700~^~Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, raw~^~LAMB,NZ,IMP,SQUARE-CUT SHLDR CHOPS,LN,RAW~^~~^~~^~~^~Bone and connective tissue 23% Separable fat 17%~^40^~~^6.25^^^
+~17384~^~1700~^~Lamb, New Zealand, imported, tenderloin, separable lean only, cooked, fast fried~^~LAMB,NZ,IMP,TENDERLOIN,LN,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^6.25^^^
+~17385~^~1700~^~Lamb, New Zealand, imported, tenderloin, separable lean only, raw~^~LAMB,NZ,IMP,TENDERLOIN,LN,RAW~^~~^~~^~~^~Separable fat 1%~^1^~~^6.25^^^
+~17386~^~1700~^~Lamb, New Zealand, imported, loin saddle, separable lean only, cooked, fast roasted~^~LAMB,NZ,IMP,LOIN SADDLE,LN,CKD,FAST RSTD~^~~^~~^~~^~Bone and connective tissue 25% Separable fat 17%~^42^~~^6.25^^^
+~17387~^~1700~^~Lamb, New Zealand, imported, loin saddle, separable lean only, raw~^~LAMB,NZ,IMP,LOIN SADDLE,LN,RAW~^~~^~~^~~^~Bone and connective tissue 24% Separable fat 19%~^43^~~^6.25^^^
+~17388~^~1700~^~Lamb, New Zealand, imported, loin, boneless, separable lean only, cooked, fast roasted~^~LAMB,NZ,IMP,LOIN,BNLESS,LN,CKD,FAST RSTD~^~~^~~^~~^~~^0^~~^6.25^^^
+~17389~^~1700~^~Lamb, New Zealand, imported, loin, boneless, separable lean only, raw~^~LAMB,NZ,IMP,LOIN,BNLESS,LN,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~17390~^~1700~^~Lamb, New Zealand, imported, hind-shank, separable lean only, cooked, braised~^~LAMB,NZ,IMP,HIND-SHANK,LN,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue 34% Separable fat 7%~^41^~~^6.25^^^
+~17391~^~1700~^~Lamb, New Zealand, imported, hind-shank, separable lean only, raw~^~LAMB,NZ,IMP,HIND-SHANK,LN,RAW~^~~^~~^~~^~Bone and connective tissue 28% Separable fat 9%~^37^~~^6.25^^^
+~17392~^~1700~^~Lamb, New Zealand, imported, neck chops, separable lean only, raw~^~LAMB,NZ,IMP,NECK CHOPS,LN,RAW~^~~^~~^~~^~Bone and connective tissue 32% Separable fat 10%~^42^~~^6.25^^^
+~17393~^~1700~^~Lamb, New Zealand, imported, neck chops, separable lean only, cooked, braised~^~LAMB,NZ,IMP,NECK CHOPS,LN,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue 34% Separable fat 8%~^42^~~^6.25^^^
+~17394~^~1700~^~Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, cooked, slow roasted~^~LAMB,NZ,IMP,NETTED SHLDR,ROLLED,BNLESS,LN,CKD,SLOW RSTD~^~~^~~^~~^~Connective tissue 3% Separable fat 20%~^23^~~^6.25^^^
+~17395~^~1700~^~Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, raw~^~LAMB,NZ,IMP,NETTED SHLDR,ROLLED,BNLESS,LN,RAW~^~~^~~^~~^~Connective tissue 3% Separable fat 20%~^23^~~^6.25^^^
+~17396~^~1700~^~Lamb, New Zealand, imported, rack - fully frenched, separable lean only, cooked, fast roasted~^~LAMB,NZ,IMP,RACK - FULLY FRENCHED,LN,CKD,FAST RSTD~^~~^~~^~~^~Bone and connective tissue 25% Separable fat 4%~^29^~~^6.25^^^
+~17397~^~1700~^~Lamb, New Zealand, imported, rack - fully frenched, separable lean only, raw~^~LAMB,NZ,IMP,RACK - FULLY FRENCHED,LN,RAW~^~~^~~^~~^~Bone and connective tissue 27% Separable fat 3%~^30^~~^6.25^^^
+~17398~^~1700~^~Lamb, New Zealand, imported, loin chop, separable lean only, cooked, fast fried~^~LAMB,NZ,IMP,LOIN CHOP,LN,CKD,FAST FRIED~^~~^~~^~~^~Bone and connective tissue 22% Separable fat 22%~^44^~~^6.25^^^
+~17399~^~1700~^~Lamb, New Zealand, imported, square-cut shoulder, separable lean only, cooked, slow roasted~^~LAMB,NZ,IMP,SQUARE-CUT SHLDR,LN,CKD,SLOW RSTD~^~~^~~^~~^~Bone and connective tissue 27% Separable fat 18%~^45^~~^6.25^^^
+~17400~^~1700~^~Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, cooked, fast fried~^~LAMB,NZ,IMP,LEG CHOP/STEAK,BONE-IN,LN,CKD,FAST FRIED~^~~^~~^~~^~Bone and connective tissue 12% Separable fat 9%~^21^~~^6.25^^^
+~17401~^~1700~^~Lamb, New Zealand, imported, flap, boneless, separable lean and fat, cooked, braised~^~LAMB,NZ,IMP,FLAP,BNLESS,LN & FAT,CKD,BRSD~^~~^~~^~~^~Connective tissue 1%~^1^~~^^^^
+~17402~^~1700~^~Lamb, New Zealand, imported, flap, boneless, separable lean and fat, raw~^~LAMB,NZ,IMP,FLAP,BNLESS,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~17403~^~1700~^~Lamb, New Zealand, imported, hind-shank, separable lean and fat, cooked, braised~^~LAMB,NZ,IMP,HIND-SHANK,LN & FAT,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue 34%~^34^~~^^^^
+~17404~^~1700~^~Lamb, New Zealand, imported, hind-shank, separable lean and fat, raw~^~LAMB,NZ,IMP,HIND-SHANK,LN & FAT,RAW~^~~^~~^~~^~Bone and connective tissue 29%~^29^~~^^^^
+~17405~^~1700~^~Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean and fat, cooked, fast fried~^~LAMB,NZ,IMP,LEG CHOP/STEAK,BONE-IN,LN & FAT,CKD,FAST FRIED~^~~^~~^~~^~Bone and connective tissue 12%~^12^~~^^^^
+~17406~^~1700~^~Lamb, New Zealand, imported, loin chop, separable lean and fat, cooked, fast fried~^~LAMB,NZ,IMP,LOIN CHOP,LN & FAT,CKD,FAST FRIED~^~~^~~^~~^~Bone and connective tissue 22%~^22^~~^^^^
+~17407~^~1700~^~Lamb, New Zealand, imported, loin saddle, separable lean and fat, cooked, fast roasted~^~LAMB,NZ,IMP,LOIN SADDLE,LN & FAT,CKD,FAST RSTD~^~~^~~^~~^~Bone and connective tissue 25%~^25^~~^^^^
+~17408~^~1700~^~Lamb, New Zealand, imported, loin saddle, separable lean and fat, raw~^~LAMB,NZ,IMP,LOIN SADDLE,LN & FAT,RAW~^~~^~~^~~^~Bone and connective tissue 24%~^24^~~^^^^
+~17409~^~1700~^~Lamb, New Zealand, imported, loin, boneless, separable lean and fat, cooked, fast roasted~^~LAMB,NZ,IMP,LOIN,BNLESS,LN & FAT,CKD,FAST RSTD~^~~^~~^~~^~~^0^~~^^^^
+~17410~^~1700~^~Lamb, New Zealand, imported, loin, boneless, separable lean and fat, raw~^~LAMB,NZ,IMP,LOIN,BNLESS,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~17411~^~1700~^~Lamb, New Zealand, imported, neck chops, separable lean and fat, cooked, braised~^~LAMB,NZ,IMP,NECK CHOPS,LN & FAT,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue 34%~^34^~~^^^^
+~17412~^~1700~^~Lamb, New Zealand, imported, neck chops, separable lean and fat, raw~^~LAMB,NZ,IMP,NECK CHOPS,LN & FAT,RAW~^~~^~~^~~^~Bone and connective tissue 32%~^32^~~^^^^
+~17413~^~1700~^~Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, cooked, slow roasted~^~LAMB,NZ,IMP,NETTED SHLDR,ROLLED,BNLESS,L & F,CKD,SLOW RSTD~^~~^~~^~~^~Connective tissue 2%~^2^~~^^^^
+~17414~^~1700~^~Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, raw~^~LAMB,NZ,IMP,NETTED SHLDR,ROLLED,BNLESS,LN & FAT,RAW~^~~^~~^~~^~Connective tissue 2%~^2^~~^^^^
+~17415~^~1700~^~Lamb, New Zealand, imported, square-cut shoulder chops, separable lean and fat, cooked, braised~^~LAMB,NZ,IMP,SQUARE-CUT SHLDR CHOPS,LN & FAT,CKD,BRSD~^~~^~~^~~^~Bone and connective tissue26~^26^~~^^^^
+~17416~^~1700~^~Lamb, New Zealand, imported, square-cut shoulder chops, separable lean and fat, raw~^~LAMB,NZ,IMP,SQUARE-CUT SHLDR CHOPS,LN & FAT,RAW~^~~^~~^~~^~Bone and connective tissue 23%~^23^~~^^^^
+~17417~^~1700~^~Lamb, New Zealand, imported, square-cut shoulder, separable lean and fat, cooked, slow roasted~^~LAMB,NZ,IMP,SQUARE-CUT SHLDR,LN & FAT,CKD,SLOW RSTD~^~~^~~^~~^~Bone and connective tissue 27%~^27^~~^^^^
+~17418~^~1700~^~Lamb, New Zealand, imported, tenderloin, separable lean and fat, cooked, fast fried~^~LAMB,NZ,IMP,TENDERLOIN,LN & FAT,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^^^^
+~17419~^~1700~^~Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, cooked, fast roasted~^~LAMB,NZ,IMP,RACK - FULLY FRENCHED,LN & FAT,CKD,FAST RSTD~^~~^~~^~~^~Bone and connective tissue 25%~^25^~~^^^^
+~17420~^~1700~^~Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, raw~^~LAMB,NZ,IMP,RACK - FULLY FRENCHED,LN & FAT,RAW~^~~^~~^~~^~Bone and connective tissue 26%~^26^~~^^^^
+~17421~^~1700~^~Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, cooked, slow roasted~^~LAMB,NZ,IMP,TUN-BND LG,CHMP OFF,SHNK OFF,L & F,CKD,SL RSTD~^~~^~~^~~^~~^0^~~^^^^
+~17422~^~1700~^~Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, raw~^~LAMB,NZ,IMP,TUNNEL-BONED LG,CHUMP OFF,SHANK OFF,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~17423~^~1700~^~Lamb, New Zealand, imported, tenderloin, separable lean and fat, raw~^~LAMB,NZ,IMP,TENDERLOIN,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~17424~^~1700~^~Veal, ground, cooked, pan-fried~^~VEAL,GROUND,CKD,PAN-FRIED~^~IMPS 396~^~~^~~^~~^^~~^^^^
+~17425~^~1700~^~Veal, leg, top round, cap off, cutlet, boneless, cooked, grilled~^~VEAL,LEG,TOP RND,CAP OFF,CUTLET,BNLESS,CKD,GRILLED~^~IMPS#1336~^~~^~~^~~^0^~~^^^^
+~17426~^~1700~^~Veal, leg, top round, cap off, cutlet, boneless, raw~^~VEAL,LEG,TOP RND,CAP OFF,CUTLET,BNLESS,RAW~^~IMPS# 1336~^~~^~~^~~^0^~~^^^^
+~17427~^~1700~^~Veal, loin, chop, separable lean only, cooked, grilled~^~VEAL,LOIN,CHOP,LN,CKD,GRILLED~^~IMPS #1332~^~~^~~^~Bone and connective tissue 30%, separable fat 8%~^38^~~^^^^
+~17428~^~1700~^~Veal, shank, separable lean only, raw~^~VEAL,SHANK,LN,RAW~^~IMPS #312~^~~^~~^~Bone and connective tissue 48%, separable fat 3%~^51^~~^^^^
+~17429~^~1700~^~Veal, foreshank, osso buco, separable lean only, cooked, braised~^~VEAL,FORESHANK,OSSO BUCO,LN,CKD,BRSD~^~IMPS # 1312~^~~^~~^~Bone and connective tissue 47%, separable fat 4%~^51^~~^^^^
+~17430~^~1700~^~Veal, shoulder, blade chop, separable lean only, cooked, grilled~^~VEAL,SHLDR,BLADE CHOP,LN,CKD,GRILLED~^~IMPS #1309A~^~~^~~^~Bone and connective tissue 25%, separable fat 8%~^33^~~^^^^
+~17431~^~1700~^~Veal, external fat only, raw~^~VEAL,EXTERNAL FAT ONLY,RAW~^~~^~~^~~^~~^^~~^^^^
+~17432~^~1700~^~Veal, external fat only, cooked~^~VEAL,EXTERNAL FAT ONLY,CKD~^~~^~~^~~^~~^^~~^^^^
+~17433~^~1700~^~Veal, seam fat only, raw~^~VEAL,SEAM FAT ONLY,RAW~^~~^~~^~~^~~^^~~^^^^
+~17434~^~1700~^~Veal, seam fat only, cooked~^~VEAL,SEAM FAT ONLY,CKD~^~~^~~^~~^~~^^~~^^^^
+~17435~^~1700~^~Veal, shank, separable lean and fat, raw~^~VEAL,SHANK,LN & FAT,RAW~^~IMPS# 312~^~~^~~^~Bone and connective tissue 49%~^49^~~^^^^
+~17436~^~1700~^~Veal, foreshank, osso buco, separable lean and fat, cooked, braised~^~VEAL,FORESHANK,OSSO BUCO,LN & FAT,CKD,BRSD~^~IMPS# 1312~^~~^~~^~Bone and connective tissue 47%~^47^~~^^^^
+~17437~^~1700~^~Veal, loin, chop, separable lean and fat, cooked, grilled~^~VEAL,LOIN,CHOP,LN & FAT,CKD,GRILLED~^~IMPS # 1332~^~~^~~^~Bone and connective tissue 30%~^30^~~^^^^
+~17438~^~1700~^~Veal, shoulder, blade chop, separable lean and fat, cooked, grilled~^~VEAL,SHLDR,BLADE CHOP,LN & FAT,CKD,GRILLED~^~IMPS# 1309A~^~~^~~^~Bone and connective tissue 25%~^25^~~^^^^
+~20650~^~2000~^~Sorghum flour, refined, unenriched~^~SORGHUM FLR,REFINED,UNENR~^~~^~~^~~^~~^0^~~^6.25^^^
+~21142~^~2100~^~Fast food, biscuit~^~FAST FD,BISCUIT~^~~^~~^~~^~~^0^~~^^^^
+~21143~^~2100~^~CHICK-FIL-A, Chick-n-Strips~^~CHICK-FIL-A,CHICK-N-STRIPS~^~~^~Chick-Fil-A~^~~^~~^0^~~^^^^
+~21144~^~2100~^~CHICK-FIL-A, hash browns~^~CHICK-FIL-A,HASH BROWNS~^~~^~Chick-Fil-A~^~~^~~^0^~~^^^^
+~21145~^~2100~^~School Lunch Pizza, BIG DADDY'S LS 16" 51% Whole Grain Rolled Edge Cheese Pizza- frozen~^~SLP,BIG DADDY'S LS 16" 51% WHL GRN RLLD EDGE CHS PIZZA- FRZ~^~school lunch~^~~^~~^~~^0^~~^6.25^^^
+~21146~^~2100~^~School Lunch Pizza, BIG DADDY'S LS 16" 51% Whole Grain Rolled Edge Turkey Pepperoni Pizza- frozen~^~SLP,BIG DADDY'S LS 16" 51% WHL GRN RLLD TRKY PEPP PZZA- FRZ~^~school lunch~^~~^~~^~~^0^~~^6.25^^^
+~21147~^~2100~^~School Lunch Pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Cheese Pizza 50/50 Cheese- frozen~^~SLP,TONY'S SMARTPIZZA WHL GRAIN 4X6 CHS PIZZA 50/50 CHS- FRZ~^~school lunch~^~~^~~^~~^0^~~^6.25^^^
+~21148~^~2100~^~School Lunch Pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Pepperoni Pizza 50/50 Cheese- frozen~^~SLP,TONY'S SMARTPIZZA WHL GRN 4X6 PEPP PZZ 50/50 CHEESE- FRZ~^~school lunch~^~~^~~^~~^0^~~^6.25^^^
+~21149~^~2100~^~School Lunch Pizza, TONY'S Breakfast Pizza Sausage- frozen~^~SCHOOL LUNCH PIZZA,TONY'S BRKFST PIZZA SAUSAGE- FRZ~^~school lunch~^~~^~~^~~^0^~~^6.25^^^
+~21513~^~2100~^~KASHI Pizza, Greek Tzatziki, single serve~^~KASHI PIZZA,GREEK TZATZIKI,SINGLE SERVE~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~21514~^~2100~^~KASHI Pizza, Tikka Masala, single serve~^~KASHI PIZZA,TIKKA MASALA,SINGLE SERVE~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~21515~^~2100~^~MORNINGSTAR FARMS Pizza, Baja Black Bean, single serve~^~MORNINGSTAR FARMS PIZZA,BAJA BLACK BEAN,SINGLE SERVE~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~22119~^~1600~^~MORNINGSTAR FARMS Veggie Dog, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE DOG,FRZ,UNPREP~^~~^~Worthington Foods, Inc.~^~~^~~^0^~~^6.25^4.00^9.00^4.00
+~23364~^~1300~^~Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw~^~BEEF,RND,EYE OF RND STEAK,BNLESS,LN,0" FAT,CHOIC,RAW~^~Eye of Round Steak, URMIS # 2296~^~~^~~^~Connective tissue 2%~^2^~~^6.25^^^
+~23397~^~1300~^~Beef, New Zealand, imported, bolar blade, separable lean only, cooked, fast roasted~^~BEEF,NZ,IMP,BOLAR BLADE,LN,CKD,FAST RSTD~^~~^~~^~~^~Bone and connective tissue 5%, Separable fat 7%~^12^~~^6.25^^^
+~23398~^~1300~^~Beef, New Zealand, imported, bolar blade, separable lean only, raw~^~BEEF,NZ,IMP,BOLAR BLADE,LN,RAW~^~~^~~^~~^~Bone and Connective tissue 2%, Separable fat 5%~^7^~~^6.25^^^
+~23399~^~1300~^~Beef, New Zealand, imported, brisket naval end, separable lean only, cooked, braised~^~BEEF,NZ,IMP,BRISKET NAVAL END,LN,CKD,BRSD~^~~^~~^~~^~Separable fat 29%~^29^~~^6.25^^^
+~23401~^~1300~^~Beef, New Zealand, imported, brisket naval end, separable lean only, raw~^~BEEF,NZ,IMP,BRISKET NAVAL END,LN,RAW~^~~^~~^~~^~Separable fat 27%~^27^~~^6.25^^^
+~23402~^~1300~^~Beef, New Zealand, imported, brisket point end, separable lean only, cooked, braised~^~BEEF,NZ,IMP,BRISKET POINT END,LN,CKD,BRSD~^~~^~~^~~^~Separable fat 8%~^8^~~^6.25^^^
+~23403~^~1300~^~Beef, New Zealand, imported, brisket point end, separable lean only, raw~^~BEEF,NZ,IMP,BRISKET POINT END,LN,RAW~^~~^~~^~~^~Separable fat 6%~^6^~~^6.25^^^
+~23404~^~1300~^~Beef, New Zealand, imported, chuck eye roll, separable lean only, raw~^~BEEF,NZ,IMP,CHUCK EYE ROLL,LN,RAW~^~~^~~^~~^~Separable fat 8%~^8^~~^6.25^^^
+~23405~^~1300~^~Beef, New Zealand, imported, chuck eye roll, separable lean only, cooked, braised~^~BEEF,NZ,IMP,CHUCK EYE ROLL,LN,CKD,BRSD~^~~^~~^~~^~Separable fat 8%~^8^~~^6.25^^^
+~23406~^~1300~^~Beef, New Zealand, imported, cube roll, separable lean only, cooked, fast roasted~^~BEEF,NZ,IMP,CUBE ROLL,LN,CKD,FAST RSTD~^~~^~~^~~^~Separable fat 9%~^9^~~^6.25^^^
+~23407~^~1300~^~Beef, New Zealand, imported, cube roll, separable lean only, raw~^~BEEF,NZ,IMP,CUBE ROLL,LN,RAW~^~~^~~^~~^~Separable fat 11%~^11^~~^6.25^^^
+~23408~^~1300~^~Beef, New Zealand, imported, eye round, separable lean only, cooked, slow roasted~^~BEEF,NZ,IMP,EYE RND,LN,CKD,SLOW RSTD~^~~^~~^~~^~~^0^~~^6.25^^^
+~23409~^~1300~^~Beef, New Zealand, imported, eye round, separable lean only, raw~^~BEEF,NZ,IMP,EYE RND,LN,RAW~^~~^~~^~~^~Separable fat 2%~^2^~~^6.25^^^
+~23410~^~1300~^~Beef, New Zealand, imported, flank, separable lean only, cooked, braised~^~BEEF,NZ,IMP,FLANK,LN,CKD,BRSD~^~~^~~^~~^~Separable fat 3%~^3^~~^6.25^^^
+~23411~^~1300~^~Beef, New Zealand, imported, flank, separable lean only, raw~^~BEEF,NZ,IMP,FLANK,LN,RAW~^~~^~~^~~^~Separable fat 3%~^3^~~^6.25^^^
+~23412~^~1300~^~Beef, New Zealand, imported, flat, separable lean only, cooked, braised~^~BEEF,NZ,IMP,FLAT,LN,CKD,BRSD~^~~^~~^~~^~Separable fat 5%~^5^~~^6.25^^^
+~23413~^~1300~^~Beef, New Zealand, imported, flat, separable lean only, raw~^~BEEF,NZ,IMP,FLAT,LN,RAW~^~~^~~^~~^~Separable fat 5%~^5^~~^6.25^^^
+~23414~^~1300~^~Beef, New Zealand, imported, heart, cooked, boiled~^~BEEF,NZ,IMP,HEART,CKD,BLD~^~~^~~^~~^~Separable fat 15%~^15^~~^6.25^^^
+~23415~^~1300~^~Beef, New Zealand, imported, heart, raw~^~BEEF,NZ,IMP,HEART,RAW~^~~^~~^~~^~Separable fat 12%~^12^~~^6.25^^^
+~23416~^~1300~^~Beef, New Zealand, imported, hind shin, separable lean only, cooked, braised~^~BEEF,NZ,IMP,HIND SHIN,LN,CKD,BRSD~^~~^~~^~~^~Connective tissue 2%, Separable fat 5%~^7^~~^6.25^^^
+~23417~^~1300~^~Beef, New Zealand, imported, hind shin, separable lean only, raw~^~BEEF,NZ,IMP,HIND SHIN,LN,RAW~^~~^~~^~~^~Conective tissue .91%, Separable fat 6%~^7^~~^6.25^^^
+~23418~^~1300~^~Beef, New Zealand, imported, inside, raw~^~BEEF,NZ,IMP,INSIDE,RAW~^~~^~~^~~^~Connective tissue .55% Separable fat 2%~^3^~~^6.25^^^
+~23419~^~1300~^~Beef, New Zealand, imported, intermuscular fat, cooked~^~BEEF,NZ,IMP,INTERMUSCULAR FAT,CKD~^~~^~~^~~^~~^^~~^6.25^^^
+~23420~^~1300~^~Beef, New Zealand, imported, intermuscular fat, raw~^~BEEF,NZ,IMP,INTERMUSCULAR FAT,RAW~^~~^~~^~~^~~^^~~^6.25^^^
+~23421~^~1300~^~Beef, New Zealand, imported, kidney, cooked, boiled~^~BEEF,NZ,IMP,KIDNEY,CKD,BLD~^~~^~~^~~^~Connective tissue 20%~^20^~~^6.25^^^
+~23422~^~1300~^~Beef, New Zealand, imported, knuckle, cooked, fast fried~^~BEEF,NZ,IMP,KNUCKLE,CKD,FAST FRIED~^~~^~~^~~^~Connective tissue .33%, Separable fat 5%~^5^~~^6.25^^^
+~23423~^~1300~^~Beef, New Zealand, imported, kidney, raw~^~BEEF,NZ,IMP,KIDNEY,RAW~^~~^~~^~~^~Connective tissue 10%~^10^~~^6.25^^^
+~23424~^~1300~^~Beef, New Zealand, imported, liver, cooked, boiled~^~BEEF,NZ,IMP,LIVER,CKD,BLD~^~~^~~^~~^~Connective tissue 2%~^2^~~^6.25^^^
+~23425~^~1300~^~Beef, New Zealand, imported, liver, raw~^~BEEF,NZ,IMP,LIVER,RAW~^~~^~~^~~^~Connective tissue 3%~^3^~~^6.25^^^
+~23426~^~1300~^~Beef, New Zealand, imported, manufacturing beef, cooked, boiled~^~BEEF,NZ,IMP,MANUFACTURING BF,CKD,BLD~^~~^~~^~~^~~^0^~~^6.25^^^
+~23427~^~1300~^~Beef, New Zealand, imported, manufacturing beef, raw~^~BEEF,NZ,IMP,MANUFACTURING BF,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~23428~^~1300~^~Beef, New Zealand, imported, oyster blade, separable lean only, cooked, braised~^~BEEF,NZ,IMP,OYSTER BLADE,LN,CKD,BRSD~^~~^~~^~~^~~^0^~~^6.25^^^
+~23429~^~1300~^~Beef, New Zealand, imported, oyster blade, separable lean only, raw~^~BEEF,NZ,IMP,OYSTER BLADE,LN,RAW~^~~^~~^~~^~Separable fat 4%~^4^~~^6.25^^^
+~23430~^~1300~^~Beef, New Zealand, imported, ribs prepared, cooked, fast roasted~^~BEEF,NZ,IMP,RIBS PREP,CKD,FAST RSTD~^~~^~~^~~^~Bone and Connective tissue 15%, Separable fat 10%~^25^~~^6.25^^^
+~23431~^~1300~^~Beef, New Zealand, imported, ribs prepared, raw~^~BEEF,NZ,IMP,RIBS PREP,RAW~^~~^~~^~~^~Bone and connective tissue 7%, Separable fat 15%~^22^~~^6.25^^^
+~23432~^~1300~^~Beef, New Zealand, imported, rump centre, separable lean only, cooked, fast fried~^~BEEF,NZ,IMP,RUMP CENTRE,LN,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^6.25^^^
+~23433~^~1300~^~Beef, New Zealand, imported, striploin, separable lean only, cooked, fast fried~^~BEEF,NZ,IMP,STRIPLOIN,LN,CKD,FAST FRIED~^~~^~~^~~^~Separable fat 14%~^14^~~^6.25^^^
+~23434~^~1300~^~Beef, New Zealand, imported, striploin, separable lean only, raw~^~BEEF,NZ,IMP,STRIPLOIN,LN,RAW~^~~^~~^~~^~Separable fat 16%~^16^~~^6.25^^^
+~23435~^~1300~^~Beef, New Zealand, imported, subcutaneous fat, cooked~^~BEEF,NZ,IMP,SUBCUTANEOUS FAT,CKD~^~~^~~^~~^~~^0^~~^6.25^^^
+~23436~^~1300~^~Beef, New Zealand, imported, subcutaneous fat, raw~^~BEEF,NZ,IMP,SUBCUTANEOUS FAT,RAW~^~~^~~^~~^~~^0^~~^6.25^^^
+~23437~^~1300~^~Beef, New Zealand, imported, sweetbread, cooked, boiled~^~BEEF,NZ,IMP,SWEETBREAD,CKD,BLD~^~~^~~^~~^~Conncetive tissue 4%, Separable fat 4%~^8^~~^^^^
+~23438~^~1300~^~Beef, New Zealand, imported, sweetbread, raw~^~BEEF,NZ,IMP,SWEETBREAD,RAW~^~~^~~^~~^~Conncetive tissue 2%, Separable fat 5%~^7^~~^6.25^^^
+~23439~^~1300~^~Beef, New Zealand, imported, tenderloin, separable lean only, cooked, fast fried~^~BEEF,NZ,IMP,TENDERLOIN,LN,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^6.25^^^
+~23440~^~1300~^~Beef, New Zealand, imported, oyster blade, separable lean and fat, raw~^~BEEF,NZ,IMP,OYSTER BLADE,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23441~^~1300~^~Beef, New Zealand, imported, tenderloin, separable lean only, raw~^~BEEF,NZ,IMP,TENDERLOIN,LN,RAW~^~~^~~^~~^~Separable fat 1%~^1^~~^6.25^^^
+~23442~^~1300~^~Beef, New Zealand, imported, tongue, cooked, boiled~^~BEEF,NZ,IMP,TONGUE,CKD,BLD~^~~^~~^~~^~Connective tissue 9%, Separable fat 2%~^11^~~^6.25^^^
+~23443~^~1300~^~Beef, New Zealand, imported, tongue, raw~^~BEEF,NZ,IMP,TONGUE,RAW~^~~^~~^~~^~Connective tissue 17%, Separable fat 3%~^20^~~^6.25^^^
+~23444~^~1300~^~Beef, New Zealand, imported, tripe uncooked, cooked, boiled~^~BEEF,NZ,IMP,TRIPE UNCKD,CKD,BLD~^~~^~~^~~^~Separable fat 8%~^8^~~^6.25^^^
+~23445~^~1300~^~Beef, New Zealand, imported, tripe uncooked, raw~^~BEEF,NZ,IMP,TRIPE UNCKD,RAW~^~~^~~^~~^~Separable fat 10%~^10^~~^6.25^^^
+~23446~^~1300~^~Beef, New Zealand, imported, bolar blade, separable lean and fat, cooked, fast roasted~^~BEEF,NZ,IMP,BOLAR BLADE,LN & FAT,CKD,FAST RSTD~^~~^~~^~~^~Bone and connective tissue 5%~^5^~~^^^^
+~23447~^~1300~^~Beef, New Zealand, imported, bolar blade, separable lean and fat, raw~^~BEEF,NZ,IMP,BOLAR BLADE,LN & FAT,RAW~^~~^~~^~~^~Bone and Connective tissue 2%~^2^~~^^^^
+~23448~^~1300~^~Beef, New Zealand, imported, brisket naval end, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,BRISKET NAVAL END,LN & FAT,CKD,BRSD~^~~^~~^~~^~~^0^~~^^^^
+~23449~^~1300~^~Beef, New Zealand, imported, brisket naval end, separable lean and fat, raw~^~BEEF,NZ,IMP,BRISKET NAVAL END,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23450~^~1300~^~Beef, New Zealand, imported, brisket point end, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,BRISKET POINT END,LN & FAT,CKD,BRSD~^~~^~~^~~^~~^0^~~^^^^
+~23451~^~1300~^~Beef, New Zealand, imported, brisket point end, separable lean and fat, raw~^~BEEF,NZ,IMP,BRISKET POINT END,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23452~^~1300~^~Beef, New Zealand, imported, chuck eye roll, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,CHUCK EYE ROLL,LN & FAT,CKD,BRSD~^~~^~~^~~^~~^0^~~^^^^
+~23453~^~1300~^~Beef, New Zealand, imported, chuck eye roll, separable lean and fat, raw~^~BEEF,NZ,IMP,CHUCK EYE ROLL,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23454~^~1300~^~Beef, New Zealand, imported, cube roll, separable lean and fat, cooked, fast roasted~^~BEEF,NZ,IMP,CUBE ROLL,LN & FAT,CKD,FAST RSTD~^~~^~~^~~^~~^0^~~^^^^
+~23455~^~1300~^~Beef, New Zealand, imported, cube roll, separable lean and fat, raw~^~BEEF,NZ,IMP,CUBE ROLL,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23456~^~1300~^~Beef, New Zealand, imported, eye round, separable lean and fat, cooked, slow roasted~^~BEEF,NZ,IMP,EYE RND,LN & FAT,CKD,SLOW RSTD~^~~^~~^~~^~~^0^~~^^^^
+~23457~^~1300~^~Beef, New Zealand, imported, eye round, separable lean and fat, raw~^~BEEF,NZ,IMP,EYE RND,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23458~^~1300~^~Beef, New Zealand, imported, flank, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,FLANK,LN & FAT,CKD,BRSD~^~~^~~^~~^~~^0^~~^^^^
+~23459~^~1300~^~Beef, New Zealand, imported, flank, separable lean and fat, raw~^~BEEF,NZ,IMP,FLANK,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23460~^~1300~^~Beef, New Zealand, imported, flat, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,FLAT,LN & FAT,CKD,BRSD~^~~^~~^~~^~~^0^~~^^^^
+~23461~^~1300~^~Beef, New Zealand, imported, flat, separable lean and fat, raw~^~BEEF,NZ,IMP,FLAT,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23462~^~1300~^~Beef, New Zealand, imported, hind shin, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,HIND SHIN,LN & FAT,CKD,BRSD~^~~^~~^~~^~Connective tissue 2%~^2^~~^^^^
+~23463~^~1300~^~Beef, New Zealand, imported, hind shin, separable lean and fat, raw~^~BEEF,NZ,IMP,HIND SHIN,LN & FAT,RAW~^~~^~~^~~^~Connective tissue 1%~^1^~~^6.25^^^
+~23464~^~1300~^~Beef, New Zealand, imported, oyster blade, separable lean and fat, cooked, braised~^~BEEF,NZ,IMP,OYSTER BLADE,LN & FAT,CKD,BRSD~^~~^~~^~~^~~^0^~~^^^^
+~23465~^~1300~^~Beef, New Zealand, imported, rump centre, separable lean and fat, cooked, fast fried~^~BEEF,NZ,IMP,RUMP CENTRE,LN & FAT,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^^^^
+~23466~^~1300~^~Beef, New Zealand, imported, rump centre, separable lean only, raw~^~BEEF,NZ,IMP,RUMP CENTRE,LN,RAW~^~~^~~^~~^~Separable fat 5%~^5^~~^6.25^^^
+~23467~^~1300~^~Beef, New Zealand, imported, rump centre, separable lean and fat, raw~^~BEEF,NZ,IMP,RUMP CENTRE,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23468~^~1300~^~Beef, New Zealand, imported, striploin, separable lean and fat, cooked, fast fried~^~BEEF,NZ,IMP,STRIPLOIN,LN & FAT,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^^^^
+~23469~^~1300~^~Beef, New Zealand, imported, striploin, separable lean and fat, raw~^~BEEF,NZ,IMP,STRIPLOIN,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23470~^~1300~^~Beef, New Zealand, imported, tenderloin, separable lean and fat, cooked, fast fried~^~BEEF,NZ,IMP,TENDERLOIN,LN & FAT,CKD,FAST FRIED~^~~^~~^~~^~~^0^~~^^^^
+~23471~^~1300~^~Beef, New Zealand, imported, tenderloin, separable lean and fat, raw~^~BEEF,NZ,IMP,TENDERLOIN,LN & FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~23472~^~1300~^~Beef, ground, 93% lean meat / 7% fat, raw~^~BEEF,GROUND,93% LN MEAT / 7% FAT~^~hamburger~^~~^~~^~~^^~~^^^^
+~23473~^~1300~^~Beef, ground, 93% lean meat / 7% fat, patty, cooked, broiled~^~BEEF,GROUND,93% LN MEAT / 7% FAT,PATTY,CKD,BRLD~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~23474~^~1300~^~Beef, ground, 93% lean meat /7% fat, patty, cooked, pan-broiled~^~BEEF,GROUND,93% LN MEAT /7% FAT,PATTY,CKD,PAN-BROILED~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~23475~^~1300~^~Beef, ground, 93% lean meat / 7% fat, loaf, cooked, baked~^~BEEF,GROUND,93% LN MEAT / 7% FAT,LOAF,CKD,BKD~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~23476~^~1300~^~Beef, ground, 93% lean meat / 7% fat, crumbles, cooked, pan-browned~^~BEEF,GROUND,93% LN MEAT / 7% FAT,CRUMBLES,CKD,PAN-BROWNED~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~23477~^~1300~^~Beef, ground, 97% lean meat / 3% fat, raw~^~BEEF,GROUND,97% LN MEAT / 3% FAT,RAW~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~23478~^~1300~^~Beef, ground, 97% lean meat / 3% fat, patty, cooked, broiled~^~BEEF,GROUND,97% LN MEAT / 3% FAT,PATTY,CKD,BRLD~^~hamburger~^~~^~~^~~^^~~^^^^
+~23479~^~1300~^~Beef, ground, 97% lean meat /3% fat, patty, cooked, pan-broiled~^~BEEF,GROUND,97% LN MEAT /3% FAT,PATTY,CKD,PAN-BROILED~^~hamburger~^~~^~~^~~^0^~~^6.25^^^
+~23480~^~1300~^~Beef, ground, 97% lean meat / 3% fat, loaf, cooked, baked~^~BEEF,GROUND,97% LN MEAT / 3% FAT,LOAF,CKD,BKD~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~23481~^~1300~^~Beef, ground, 97% lean meat / 3% fat, crumbles, cooked, pan-browned~^~BEEF,GROUND,97% LN MEAT / 3% FAT,CRUMBLES,CKD,PAN-BROWNED~^~hamburger~^~~^~~^~~^^~~^6.25^^^
+~27015~^~0600~^~CAMPBELL'S Red and White, PHINEAS and FERB Soup, condensed~^~CAMPBELL'S RED & WHITE,PHINEAS & FERB SOUP,COND~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~28308~^~1800~^~Crackers, standard snack-type, with whole wheat~^~CRACKERS,STD SNACK-TYPE,W/ WHL WHEAT~^~~^~~^~~^~~^0^~~^6.25^^^
+~28309~^~1800~^~Cookies, coconut macaroon~^~COOKIES,COCNT MACAROON~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~32018~^~2200~^~Spanish rice mix, dry mix, unprepared~^~SPANISH RICE MIX,DRY MIX,UNPREP~^~~^~~^~~^~~^0^~~^6.25^^^
+~32020~^~2200~^~Chicken, thighs, frozen, breaded, reheated~^~CHICKEN,THIGHS,FRZ,BREADED,REHTD~^~~^~~^~~^~~^0^~~^6.25^^^
+~32021~^~2200~^~Spanish rice mix, dry mix, prepared (with canola/vegetable oil blend or diced tomatoes and margarine)~^~SPANISH RICE MIX,DRY MIX,PREP (WITH CANOLA/VEGETABLE OIL BLE~^~~^~~^~~^~~^0^~~^6.25^^^
+~32022~^~2200~^~KASHI Three Cheese Ravioli with Mediterranean Tomato Sauce, frozen, unprepared~^~KASHI THREE CHS RAVIOLI W/ MEDITERRANEAN TOMATO SAU,FRZ,UNPR~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~32023~^~2200~^~KASHI Mushroom & Asparagus Risotto, frozen, unprepared~^~KASHI MUSHROOM & ASPARAGUS RISOTTO,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~36041~^~3600~^~Restaurant, Italian, lasagna with meat~^~RESTAURANT,ITALIAN,LASAGNA W/ MEAT~^~~^~~^~~^~~^0^~~^^^^
+~36042~^~3600~^~OLIVE GARDEN, lasagna classico~^~OLIVE GARDEN,LASAGNA CLASSICO~^~~^~Darden Group~^~~^~~^0^~~^^^^
+~36043~^~3600~^~CARRABBA'S ITALIAN GRILL, lasagne~^~CARRABBA'S ITALIAN GRILL,LASAGNE~^~lasagna~^~Carrabba's Italian Grill~^~~^~~^0^~~^^^^
+~36044~^~3600~^~ON THE BORDER, Mexican rice~^~ON THE BORDER,MEXICAN RICE~^~~^~~^~~^~~^0^~~^^^^
+~36045~^~3600~^~ON THE BORDER, refried beans~^~ON THE BORDER,REFRIED BNS~^~~^~~^~~^~~^0^~~^^^^
+~36046~^~3600~^~Restaurant, Italian, spaghetti with pomodoro sauce (no meat)~^~RESTAURANT,ITALIAN,SPAGHETTI W/ POMODORO SAU (NO MEAT)~^~~^~~^~~^~~^0^~~^^^^
+~36047~^~3600~^~OLIVE GARDEN, spaghetti with pomodoro sauce~^~OLIVE GARDEN,SPAGHETTI W/ POMODORO SAU~^~~^~Darden Group~^~~^~~^0^~~^^^^
+~36048~^~3600~^~CARRABBA'S ITALIAN GRILL, spaghetti with pomodoro sauce~^~CARRABBA'S ITALIAN GRILL,SPAGHETTI W/ POMODORO SAU~^~~^~Carrabba's Italian Grill~^~~^~~^0^~~^^^^
+~36049~^~3600~^~ON THE BORDER, cheese enchilada~^~ON THE BORDER,CHS ENCHILADA~^~~^~~^~~^~~^0^~~^^^^
+~36050~^~3600~^~Restaurant, Mexican, cheese enchilada~^~RESTAURANT,MEXICAN,CHS ENCHILADA~^~~^~~^~~^~~^0^~~^^^^
+~36051~^~3600~^~ON THE BORDER, cheese quesadilla~^~ON THE BORDER,CHS QUESADILLA~^~~^~~^~~^~~^0^~~^^^^
+~36052~^~3600~^~Restaurant, Mexican, cheese quesadilla~^~RESTAURANT,MEXICAN,CHS QUESADILLA~^~~^~~^~~^~~^0^~~^^^^
+~36053~^~3600~^~CARRABBA'S ITALIAN GRILL, cheese ravioli with marinara sauce~^~CARRABBA'S ITALIAN GRILL,CHS RAVIOLI W/ MARINARA SAU~^~~^~Carrabba's Italian Grill~^~~^~~^0^~~^^^^
+~36054~^~3600~^~OLIVE GARDEN, cheese ravioli with marinara sauce~^~OLIVE GARDEN,CHS RAVIOLI W/ MARINARA SAU~^~~^~Darden Group~^~~^~~^0^~~^^^^
+~36055~^~3600~^~Restaurant, Italian, cheese ravioli with marinara sauce~^~RESTAURANT,ITALIAN,CHS RAVIOLI W/ MARINARA SAU~^~~^~~^~~^~~^0^~~^^^^
+~36056~^~3600~^~Restaurant, Mexican, cheese tamales~^~RESTAURANT,MEXICAN,CHS TAMALES~^~~^~~^~~^~~^0^~~^^^^
+~36057~^~3600~^~CARRABBA'S ITALIAN GRILL, chicken parmesan without cavatappi pasta~^~CARRABBA'S ITALIAN GRILL,CHICK PARMESAN WO/ CAVATAPPI PASTA~^~~^~Carrabba's Italian Grill~^~~^~~^0^~~^^^^
+~36058~^~3600~^~OLIVE GARDEN, chicken parmigiana without pasta~^~OLIVE GARDEN,CHICK PARMIGIANA WO/ PASTA~^~~^~Darden Group~^~~^~~^0^~~^^^^
+~36059~^~3600~^~Restaurant, Italian, chicken parmesan without pasta~^~RESTAURANT,ITALIAN,CHICK PARMESAN WO/ PASTA~^~~^~~^~~^~~^0^~~^^^^
+~36060~^~3600~^~ON THE BORDER, soft taco with ground beef, cheese and lettuce~^~ON THE BORDER,SOFT TACO W/ GROUND BF,CHS & LETTUCE~^~~^~~^~~^~~^0^~~^^^^
+~36061~^~3600~^~Restaurant, Mexican, soft taco with ground beef, cheese and lettuce~^~RESTAURANT,MEXICAN,SOFT TACO W/ GROUND BF,CHS & LETTUCE~^~~^~~^~~^~~^0^~~^^^^
+~36417~^~3600~^~Restaurant, Mexican, spanish rice~^~RESTAURANT,MEXICAN,SPANISH RICE~^~~^~~^~~^~~^0^~~^^^^
+~36418~^~3600~^~Restaurant, Mexican, refried beans~^~RESTAURANT,MEXICAN,REFRIED BNS~^~~^~~^~~^~~^0^~~^^^^
+~36630~^~3600~^~Restaurant, Italian, spaghetti with meat sauce~^~RESTAURANT,ITALIAN,SPAGHETTI W/ MEAT SAU~^~~^~~^~~^~~^0^~~^^^^
+~36631~^~3600~^~OLIVE GARDEN, spaghetti with meat sauce~^~OLIVE GARDEN,SPAGHETTI W/ MEAT SAU~^~~^~Darden Group~^~~^~~^0^~~^^^^
+~36632~^~3600~^~CARRABBA'S ITALIAN GRILL, spaghetti with meat sauce~^~CARRABBA'S ITALIAN GRILL,SPAGHETTI W/ MEAT SAU~^~~^~Carrabba's Italian Grill~^~~^~~^0^~~^^^^

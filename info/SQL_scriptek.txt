@@ -1,0 +1,218 @@
+-- SQL SCRIPTS --
+
+-- ADD_FOOD --
+
+insert into diet.label (label_id, label_type_code) values (/*nextval_label_id*/, 3)	--3 is food name
+insert into diet.label_text (label_id, lang_id, label_text, label_long_text) values (/*nextval_label_id*/*/, 2, Shrt_desc, Long_desc) --2 is english
+insert into diet.food (food_id, foodname_label_id, sd_id) values (/*nextval_food_id*/, /*nextval_label_id*/, 36) --sd_id -> security desc
+insert into diet.food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)values()
+-- OPTIONAL -- insert into diet.food_sets(food_id, set_id)values()
+
+---------------------------------------------
+-- ADD NUTRIENT --
+
+insert into diet.food_content(food_id, source_id, nutr_id, fc_quantity)values()
+
+---------------------------------------------
+-- ADD WEIGHT --
+
+insert diet.food_units(food_id, source_id, unit_id, lang_id, scale, sort_order)values(/*from food_source*/, 2, )
+
+---------------------------------------------
+
+-- ADD_NEW_FOOD_STORED_PROCEDURE --
+-- create new type
+CREATE TYPE diet.file_food as(
+	NDB_No integer,
+    Shrt_desc text,
+	Long_desc text,
+	refuse_percent double precision
+);
+
+CREATE TYPE diet.wgtFILE as(
+	NDB_No,
+	Amount,
+	Msre_Desc,
+	Gm_Wgt
+);
+
+CREATE OR REPLACE FUNCTION diet.addfood(
+	ndb_no integer,
+	long_desc text,
+	shrt_desc text,
+	refuse_percent integer)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $function$
+
+DECLARE
+	var_retval integer;
+	var_food_id integer;
+	var_label_id integer;
+BEGIN
+	var_retval := 0;
+	
+	var_food_id := nextval('diet.food_food_id_seq');
+	var_label_id := nextval('diet.label_label_id_seq');
+	
+	insert into diet.label (label_id, label_type_code) values (var_label_id, 3);	-- 3 is food name
+	insert into diet.label_text (label_id, lang_id, label_text, label_long_text) values (var_label_id, 2, Shrt_Desc, Long_Desc); -- 2 is english
+	insert into diet.food (food_id, foodname_label_id, sd_id) values (var_food_id, var_label_id, 36); -- sd_id -> security desc
+	insert into diet.food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)
+	values(var_food_id, 1, 15, 10, Refuse_Percent, 'USDA:SR28:' || NDB_No || ' SOTE:null'); -- VERSION is from java code
+    
+	var_retval := 1;
+	return var_retval; -- return number of foods inserted
+END;
+
+$function$;
+
+
+
+
+-- ADD_NEW_NUTRIENT_TO_FOOD_STORED_PROCEDURE --
+CREATE TYPE diet.nutrFILE as(
+	NDB_No integer,
+	Nutr_No integer,
+	Nutr_Val double precision
+);
+
+CREATE OR REPLACE FUNCTION diet.addnutrient(
+	ndb_no integer,
+	nutr_no integer,
+	nutr_val double precision)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $function$
+
+DECLARE
+	var_retval integer;
+	var_food_id integer;
+    var_nutr_id integer;
+BEGIN
+	var_retval := 0;
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	var_nutr_id := (select _n.nutr_id from diet.nutrient _n where _n.usda_nutr_no like '%' || Nutr_No || '%');
+	
+	insert into diet.food_content(food_id, source_id, nutr_id, fc_quantity)
+	values(var_food_id, 1, var_nutr_id, Nutr_Val);
+    
+	var_retval := 1;
+	return var_retval; -- return number of nutrients inserted
+END;
+
+$function$; LANGUAGE plpgsql;
+---------------------------------------------
+select test_table.name into name from test_table where id = x;
+name := (SELECT t.name from test_table t where t.id = x);
+-- SOURCE ID:
+-- 1 or 29528 is USDA
+-- 2 or 29529 is EUROFIR
+-- 3 or 29530 is HUN
+-- 4 or 29531 is OTHER
+
+
+----------------------------------------------
+-- CHG_FOOD --
+
+CREATE OR REPLACE FUNCTION diet.chgfood(
+	ndb_no integer,
+	long_desc text,
+	shrt_desc text,
+	refuse_percent integer)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $function$
+
+DECLARE
+	var_retval integer;
+	var_food_id integer;
+	var_label_id integer;
+BEGIN
+	var_retval := 0;
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	var_label_id := (select _f.foodname_label_id from diet.food _f where food_id = var_food_id);
+	
+	update diet.label_text set label_text = shrt_desc, label_long_text = long_desc
+	where label_id = var_label_id;
+	
+	update diet.food_source set refuse_percent = refuse_percent, source_link_no = 'USDA:SR28:' || NDB_No || ' SOTE:null'
+	where food_id = var_food_id;	-- VERSION is from java code
+
+    var_retval := 1;
+	return var_retval; -- return number of foods inserted
+END;
+
+$function$;
+
+----------------------------------------------
+-- CHG_NUTR --
+
+CREATE OR REPLACE FUNCTION diet.chgnutrient(
+	ndb_no integer,
+	nutr_no integer,
+	nutr_val double precision)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $function$
+
+DECLARE
+	var_retval integer;
+	var_food_id integer;
+    var_nutr_id integer;
+BEGIN
+	var_retval := 0;
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	var_nutr_id := (select _n.nutr_id from diet.nutrient _n where _n.usda_nutr_no like '%' || Nutr_No || '%');
+	
+	update diet.food_content set fc_quantity = nutr_val
+	where food_id = var_food_id and nutr_id = var_nutr_id;
+	
+	var_retval := 1;
+	return var_retval; -- return number of nutrients inserted
+END;
+
+$function$;
+
+
+
+
+----------------------------------------------
+-- DEL_FOOD --
+-- TODO --
+CREATE OR REPLACE FUNCTION diet.delfood(
+	NDB_No integer,
+	Shrt_Desc text,
+	)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $function$
+
+DECLARE
+	var_retval integer;
+	var_food_id integer;
+BEGIN
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	
+	-- TODO: delete from label, label_text, food_source
+	delete from diet.food where food_id = var_food_id;
+	
+	var_retval := 1;
+	return var_retval; -- return number of nutrients inserted
+END;
+
+$function$;

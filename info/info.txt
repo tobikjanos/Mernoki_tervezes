@@ -1,0 +1,16 @@
+https://www.ars.usda.gov/northeast-area/beltsville-md/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/
+
+
+lavinia.hu
+
+
+Automatizált adatbázis-frissítés
+
+Írta: Vassányi István
+A feladat automatizált megoldás kidolgozása  a tanszéki fejlesztésű 
+táplálkozási szakértői rendszer adatbázisának frissítésére. 
+A tápanyagokat tartalmazó külső adatbázis újabb verzióiból a 
+változásokat és az új adatokat a már meglévő adatokkal egyeztetve 
+kell tárolni a helyi adatbázisban. A megoldáshoz alapul lehet venni 
+a meglévő, manuálisan futtatott scripteket. Adatbázis-kezelés iránt 
+érdeklődő hallgató jelentkezését várom.
