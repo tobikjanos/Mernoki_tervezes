@@ -60,58 +60,35 @@ select _fs.food_id from diet.food_source _fs where source_link_no like '%35052%'
 
 
 
-CREATE TYPE diet.file_nutr as(
-	NDB_No integer,
-	Nutr_No integer,
-	Nutr_Val double precision
-);
-
-CREATE OR REPLACE FUNCTION diet.nutrient_loader(nutrients diet.file_nutr[]) RETURNS int4 AS $printStrings$
-DECLARE
-	var_i integer;
-	var_food_id integer;
-BEGIN
-	for var_i in 0..nutrients.count loop
-		
-		var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || nutrients[i].NDB_No || '%');
-		
-		insert into diet.food_content(food_id, source_id, nutr_id, fc_quantity)
-		values(var_food_id, 1, nutrients[i].Nutr_No, nutrients[i].Nutr_Val);
-		
-	end loop;
-	
-	return var_i; -- return number of nutrients inserted
-	
-END;
-$printStrings$ LANGUAGE plpgsql;
 
 
 
 
-CREATE OR REPLACE FUNCTION diet.food_loader(NDB_No integer, Shrt_Desc text, Long_Desc text, Refuse_percent integer) RETURNS int4 AS $printStrings$
-DECLARE
-var_i integer;
-var_food_id integer;
-var_label_id integer;
-BEGIN
 
-var_food_id := nextval('diet.food_food_id_seq');
-var_label_id := nextval('diet.label_label_id_seq');
-                
-insert into diet.label (label_id, label_type_code) values (var_label_id, 3);	-- 3 is food name
-insert into diet.label_text (label_id, lang_id, label_text, label_long_text) values (var_label_id, 2, Shrt_Desc, Long_Desc); -- 2 is english
-insert into diet.food (food_id, foodname_label_id, sd_id) values (var_food_id, var_label_id, 36); -- sd_id -> security desc
-                
-insert into diet.food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)
-values(var_food_id, 1, 15, 10, Refuse_percent, 'USDA:SR28:' || NDB_No || ' SOTE:null'); -- VERSION is from java code
-           
-return var_i; -- return number of foods inserted
-                
-END;
-$printStrings$ LANGUAGE plpgsql;
+select * from diet.food_units
 
+select _lt.label_text, _lt.label_id
+from diet.unit _u inner join diet.label _l on _u.unit_label_id = _l.label_id
+inner join diet.label_text _lt on _l.label_id = _lt.label_id
+order by _lt.label_id
+
+select _f.food_id, _fs.source_link_no
+from diet.food _f inner join diet.food_source _fs on _f.food_id = _fs.food_id
+order by _fs.source_link_no asc
+
+select _lt.label_text, _lt.label_long_text
+from diet.food _f inner join diet.label _l on _f.foodname_label_id = _l.label_id
+inner join diet.label_text _lt on _l.label_id = _lt.label_id
+where _f.food_id = 15131
+
+select _fs.food_id from diet.food_source _fs where source_link_no like '%35052%'
+
+select _f.foodname_label_id from diet.food _f where food_id = 15770
 
 
+select * from minta.label_text order by label_id desc
+
+select * from minta.food_source order by source_link_no desc
 
 
 
