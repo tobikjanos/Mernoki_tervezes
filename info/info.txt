@@ -1,4 +1,4 @@
-https://www.ars.usda.gov/northeast-area/beltsville-md/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/
+﻿https://www.ars.usda.gov/northeast-area/beltsville-md/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/
 
 
 lavinia.hu
@@ -14,3 +14,10 @@ változásokat és az új adatokat a már meglévő adatokkal egyeztetve
 kell tárolni a helyi adatbázisban. A megoldáshoz alapul lehet venni 
 a meglévő, manuálisan futtatott scripteket. Adatbázis-kezelés iránt 
 érdeklődő hallgató jelentkezését várom.
+
+
+
+
+Olyan legyen a szerkezete bemutatónak, hogy összegzés, 
+probléma felvetés, felhasznált tech, és hogy miért az utána, 
+hogy mit csináltál részletesen, meg öszefoglalás
