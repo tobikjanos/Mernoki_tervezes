@@ -1,0 +1,117 @@
+**********************
+* 3. dia - Bevezetés *
+**********************
+
+- cél: naplózás
+- tudatos táplálkozás betegek és egészségesek számára is
+- mindennapi táplálék bevitel nyilvántartása
+
+********************************
+* 4. dia - Feladat ismertetése *
+********************************
+
+- naprakész legyen az új élelmiszerek terén
+- USDA amerikai kutatócsoport, élelmiszerek vizsgálata (tápanyag/súly, mennyiség)
+- folyamatos USDA adatbázis frissítés
+- feladat: Lavinia SR20 (2007) -> USDA SR28 (2015 szeptember)
+
+********************************
+* 5. dia - Feladat ismertetése *
+********************************
+
+- USDA adatbázist felhasználva egy szoftver segítségével frissíteni a
+lavinia adatbázist
+- két féle megoldás:
+- verziókról teljes adatbázist tároló fájlok
+- verziók közötti változásokat tároló fájlok
+
+********************************
+* 6. dia - Feladat ismertetése *
+********************************
+
+- 3 típus: ADD, CHANGE, DELETE műveleteihez szükséges adatok
+- software -> feldolgozás, átalakítás, betöltés (ETL)
+
+*************************
+* 7. dia - Specifikáció *
+*************************
+
+- változásokat tartalmazó fájlok felhasználása a rövidebb futási idő érdekében
+- könnyen kezelhető, átlátható grafikus felület
+- műveletek eredményeinek közlése
+- tárolt eljárások -> rövidebb futási idő, szerver oldali függvény, független a hívó környezettől
+- folyamat naplózás a hibák felfedése érdekében
+- adatbázis visszaállítása/visszagörgetése hiba esetén
+
+*************************
+* 8. dia - Rendszerterv *
+*************************
+
+- különböző modulok, különböző feladatok végrehajtására
+- adatbázis oldal: tárolt eljárások a műveletekhez
+- fájlok feldolgozása
+- modulokat közti kapcsolat és adatforgalom biztosítása
+
+*************************
+* 9. dia - Rendszerterv *
+*************************
+
+- szoftver és adatbázis közti kapcsolatot valósítja meg
+- reprezentálják a fájlokból kiolvasott adatstruktúrát
+- grafikus megjelenítést definiálja
+- komponenseket köti össze, azok közti adatforgalmat biztosítja
+- könnyen értelmezhető logolás, célszerű szöveges fájlokba menteni
+
+************************
+* 10. dia - Adatmodell *
+************************
+
+- fontosabb törzsállományok: food, nutrient
+- food_content és food_units
+
+**************************
+* 11. dia - Technológiák *
+**************************
+
+Postgres:
+- relációs adatbázis-kezelő rendszer, ezt használja a lavinia rendszere
+Java:
+- általános célú objektum orientált programozási nyelv
+- virtuális gép futtatja a fordított kódot -> bármilyen platform
+JDBC:
+- Java interfész az adatbázis hozzáféréshez
+- osztályok és metódusok az adatbázis manipulációjához
+JavaFx:
+- alapértelmezett Java GUI osztály
+- FXML fájl definiálja a grafikus felületet (objektumok elhelyezkedése, mérete, kinézete)
+Apache Commons IO:
+- Java könyvtár fájlműveletekhez
+- osztályok rövidebb, érthetőbb kód a fájlkezeléshez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
