@@ -10,9 +10,12 @@
 * 4. dia - Feladat ismertetése *
 ********************************
 
-- naprakész legyen az új élelmiszerek terén
+- naprakész legyen az élelmiszerek és tápanyagaik szempontjából
 - USDA amerikai kutatócsoport, élelmiszerek vizsgálata (tápanyag/súly, mennyiség)
+- mindenki számára szabadon elérhető
 - folyamatos USDA adatbázis frissítés
+- verziókról teljes adatbázist tároló fájlok
+- verziók közötti változásokat tároló fájlok
 - feladat: Lavinia SR20 (2007) -> USDA SR28 (2015 szeptember)
 
 ********************************
@@ -21,36 +24,32 @@
 
 - USDA adatbázist felhasználva egy szoftver segítségével frissíteni a
 lavinia adatbázist
-- két féle megoldás:
-- verziókról teljes adatbázist tároló fájlok
-- verziók közötti változásokat tároló fájlok
 
-********************************
-* 6. dia - Feladat ismertetése *
-********************************
+*************************
+* 6. dia - Specifikáció *
+*************************
 
-- 3 típus: ADD, CHANGE, DELETE műveleteihez szükséges adatok
-- software -> feldolgozás, átalakítás, betöltés (ETL)
+- változásokat tartalmazó fájlok felhasználása a rövidebb futási idő, kevesebb adat érdekében
+- műveletek végrehajtásához és nyomonkövetéséhez
+- tárolt eljárások -> rövidebb futási idő, szerver oldali függvény, független a hívó környezettől
+- folyamat naplózás a hibák felfedése érdekében
+- adatbázis visszaállítása/visszagörgetése hiba esetén
 
 *************************
 * 7. dia - Specifikáció *
 *************************
 
-- változásokat tartalmazó fájlok felhasználása a rövidebb futási idő érdekében
-- könnyen kezelhető, átlátható grafikus felület
-- műveletek eredményeinek közlése
-- tárolt eljárások -> rövidebb futási idő, szerver oldali függvény, független a hívó környezettől
-- folyamat naplózás a hibák felfedése érdekében
-- adatbázis visszaállítása/visszagörgetése hiba esetén
+- feldolgozandó fájlok 3 típusa: ADD, CHANGE, DELETE műveleteihez szükséges adatok
+- software -> feldolgozás, átalakítás, betöltés (ETL)
 
 *************************
 * 8. dia - Rendszerterv *
 *************************
 
 - különböző modulok, különböző feladatok végrehajtására
-- adatbázis oldal: tárolt eljárások a műveletekhez
+- adatbázis hozzáférés -> kapcsolat kiépítése, tárolt eljárások hívása
 - fájlok feldolgozása
-- modulokat közti kapcsolat és adatforgalom biztosítása
+- modulok közti kapcsolat és adatforgalom biztosítása
 
 *************************
 * 9. dia - Rendszerterv *
@@ -60,7 +59,8 @@ lavinia adatbázist
 - reprezentálják a fájlokból kiolvasott adatstruktúrát
 - grafikus megjelenítést definiálja
 - komponenseket köti össze, azok közti adatforgalmat biztosítja
-- könnyen értelmezhető logolás, célszerű szöveges fájlokba menteni
+- naplózó modul közli a felhasználó számára az elvégzett műveletek eredményét
+- // könnyen értelmezhető logolás, célszerű szöveges fájlokba menteni
 
 ************************
 * 10. dia - Adatmodell *
@@ -82,8 +82,8 @@ JDBC:
 - Java interfész az adatbázis hozzáféréshez
 - osztályok és metódusok az adatbázis manipulációjához
 JavaFx:
-- alapértelmezett Java GUI osztály
-- FXML fájl definiálja a grafikus felületet (objektumok elhelyezkedése, mérete, kinézete)
+- alapértelmezett Java GUI könyvtár
+- XML alapú fájl definiálja a grafikus felületet (objektumok elhelyezkedése, mérete, stb)
 Apache Commons IO:
 - Java könyvtár fájlműveletekhez
 - osztályok rövidebb, érthetőbb kód a fájlkezeléshez
