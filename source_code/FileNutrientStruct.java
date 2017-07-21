@@ -10,6 +10,7 @@ package automaticdatabaseupdate;
  * @author Dzsákom
  */
 public class FileNutrientStruct {
+    
     private int NDB_No;
     private int Nutr_No;
     private double Nutr_Val;
@@ -43,4 +44,13 @@ public class FileNutrientStruct {
     public void setNutr_Val(double Nutr_Val) {
         this.Nutr_Val = Nutr_Val;
     }
+    
+    @Override
+    public String toString()
+    {
+       return  this.NDB_No + "\t|\t" +
+               this.Nutr_No + "\t|\t" + 
+               this.Nutr_Val;
+    }
+    
 }

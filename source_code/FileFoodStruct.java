@@ -55,4 +55,13 @@ public class FileFoodStruct {
         this.refuse_percent = refuse_percent;
     }
     
+    @Override
+    public String toString()
+    {
+       return  this.NDB_No + "\t|\t" +
+               this.Shrt_desc + "\t|\t" + 
+               this.Long_desc + "\t|\t" +
+               this.refuse_percent;
+    }
+    
 }
