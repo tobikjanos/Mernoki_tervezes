@@ -26,13 +26,14 @@ import jdk.nashorn.internal.codegen.types.Type;
  */
 public class DatabaseController {
    
-   private static String IP_ADDRESS  = "localhost";
-   private static String PORT = "5432";
-   private static String DATABASE_NAME = "lavinia";
-   private static String USERNAME = "postgres";
-   private static String PASSWORD = "qaswed123";
-   private static String SCHEMA = "minta";
-   private static String VERSION = "28";
+   private static String IP_ADDRESS  = "";            /* localhost */
+   private static String PORT = "";                   /* 5432 */
+   private static String DATABASE_NAME = "";          /* lavinia */
+   private static String USERNAME = "";               /* postgres */
+   private static String PASSWORD = "";               /* qaswed123 */
+   private static String SCHEMA = "";                 /* minta */
+   private static String VERSION = "";                /* 28 */
+
    
    
    public static void executeAddFoodFunction(Connection conn, FileFoodStruct food) throws SQLException
@@ -325,6 +326,9 @@ public class DatabaseController {
       
    }
    
+   /*
+    * Setter methods 
+    */
    public static void setIP_ADDRESS(String IP_ADDRESS) {
       DatabaseController.IP_ADDRESS = IP_ADDRESS;
    }
@@ -352,4 +356,49 @@ public class DatabaseController {
    public static void setVERSION(String VERSION) {
       DatabaseController.VERSION = VERSION;
    }
+   
+   
+   /*
+    * Getter methods 
+    */
+   public static String getIP_ADDRESS() {
+      return IP_ADDRESS;
+   }
+
+   public static String getPORT() {
+      return PORT;
+   }
+
+   public static String getDATABASE_NAME() {
+      return DATABASE_NAME;
+   }
+
+   public static String getUSERNAME() {
+      return USERNAME;
+   }
+
+   public static String getPASSWORD() {
+      return PASSWORD;
+   }
+
+   public static String getSCHEMA() {
+      return SCHEMA;
+   }
+
+   public static String getVERSION() {
+      return VERSION;
+   }
+   
+   @Override
+   public String toString()
+   {
+      return IP_ADDRESS       + "\t" +
+              PORT            + "\t" + 
+              DATABASE_NAME   + "\t" + 
+              USERNAME        + "\t" + 
+              PASSWORD        + "\t" + 
+              SCHEMA          + "\t" + 
+              VERSION;
+   }
+   
 }

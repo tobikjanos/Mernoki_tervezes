@@ -1,14 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automaticdatabaseupdate.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@CSS_test.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automaticdatabaseupdate.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="800.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="150.0" tabMaxWidth="100.0" tabMinHeight="150.0" tabMinWidth="70.0">
+        <tabs>
+          <Tab text="Adatbázis&#10;beállítás">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="262.0" prefWidth="217.0">
+                     <children>
+                        <Label layoutX="175.0" layoutY="100.0" text="IP cím" />
+                        <Label layoutX="175.0" layoutY="140.0" text="Port" />
+                        <Label layoutX="175.0" layoutY="180.0" text="Adatbázis név" />
+                        <Label layoutX="175.0" layoutY="220.0" text="Felhasználó név" />
+                        <Label layoutX="175.0" layoutY="260.0" text="Jelszó" />
+                        <Label layoutX="175.0" layoutY="300.0" text="Adatbázis séma" />
+                        <TextField fx:id="t1TextIPaddress" layoutX="325.0" layoutY="96" promptText="localhost" />
+                        <TextField fx:id="t1TextPort" layoutX="325.0" layoutY="136.0" promptText="5432" />
+                        <TextField fx:id="t1TextDBname" layoutX="325.0" layoutY="176.0" promptText="lavinia" />
+                        <TextField fx:id="t1TextUsername" layoutX="325.0" layoutY="216.0" promptText="postgres" />
+                        <PasswordField fx:id="t1Password" layoutX="325.0" layoutY="256.0" promptText="*********" />
+                        <TextField fx:id="t1TextSchema" layoutX="325.0" layoutY="296.0" promptText="minta" />
+                        <Button fx:id="t1ButtonSave" layoutX="394.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#saveDatabaseConfig" prefHeight="39.0" prefWidth="80.0" text="Mentés" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Fájlok&#10;feldolgozása&#10;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="125.0" layoutY="50.0" text="ADD_FOOD" />
+                        <Label layoutX="125.0" layoutY="90.0" text="ADD_NUTR" />
+                        <Label layoutX="125.0" layoutY="130.0" text="ADD_WGT" />
+                        <Label layoutX="125.0" layoutY="170.0" text="CHG_FOOD" />
+                        <Label layoutX="125.0" layoutY="210.0" text="CHG_NUTR" />
+                        <Label layoutX="125.0" layoutY="250.0" text="CHG_WGT" />
+                        <Label layoutX="125.0" layoutY="290.0" text="DEL_FOOD" />
+                        <Label layoutX="125.0" layoutY="330.0" text="DEL_NUTR" />
+                        <Label layoutX="125.0" layoutY="370.0" text="DEL_WGT" />
+                        <TextField fx:id="t2TextAddFood" layoutX="200.0" layoutY="46.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextAddNutr" layoutX="200.0" layoutY="86.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextAddWgt" layoutX="200.0" layoutY="126.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextChgFood" layoutX="200.0" layoutY="166.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextChgNutr" layoutX="200.0" layoutY="206.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextChgWgt" layoutX="200.0" layoutY="246.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextDelFood" layoutX="200.0" layoutY="286.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextDelNutr" layoutX="200.0" layoutY="326.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <TextField fx:id="t2TextDelWgt" layoutX="200.0" layoutY="366.0" onDragDropped="#dragDroppedGetFilePath" onDragOver="#dragOverAcceptFile" />
+                        <Button fx:id="t2ButtonAddFood" layoutX="370.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonAddNutr" layoutX="370.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonAddWgt" layoutX="370.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonChgFood" layoutX="370.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonChgNutr" layoutX="370.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonChgWgt" layoutX="370.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonDelFood" layoutX="370.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonDelNutr" layoutX="370.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <Button fx:id="t2ButtonDelWgt" layoutX="370.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
+                        <ProgressIndicator fx:id="t2PiAddFood" layoutX="450.0" layoutY="46.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiAddNutr" layoutX="450.0" layoutY="86.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiAddWgt" layoutX="450.0" layoutY="126.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiChgFood" layoutX="450.0" layoutY="166.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiChgNutr" layoutX="450.0" layoutY="206.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiChgWgt" layoutX="450.0" layoutY="246.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiDelFood" layoutX="450.0" layoutY="286.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiDelNutr" layoutX="450.0" layoutY="326.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiDelWgt" layoutX="450.0" layoutY="366.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <Button fx:id="t2ButtonStart" layoutX="424.0" layoutY="421.0" mnemonicParsing="false" text="Indítás" onMouseClicked="#MouseClickStartRead" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Adatbázis&#10;frissítés">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ProgressBar layoutX="163.0" layoutY="93.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="129.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="161.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="189.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="216.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="250.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="279.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="163.0" layoutY="311.0" prefWidth="200.0" progress="0.0" />
+                        <ProgressBar layoutX="43.0" layoutY="377.0" prefHeight="18.0" prefWidth="536.0" progress="0.0" />
+                        <Button layoutX="482.0" layoutY="43.0" mnemonicParsing="false" text="Button" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Naplózás">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>
