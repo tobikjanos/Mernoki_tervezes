@@ -48,8 +48,8 @@ public class FileNutrientStruct {
     @Override
     public String toString()
     {
-       return  this.NDB_No + "\t|\t" +
-               this.Nutr_No + "\t|\t" + 
+       return  this.NDB_No + "   |   " +
+               this.Nutr_No + "   |   " + 
                this.Nutr_Val;
     }
     

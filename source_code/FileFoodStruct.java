@@ -58,9 +58,9 @@ public class FileFoodStruct {
     @Override
     public String toString()
     {
-       return  this.NDB_No + "\t|\t" +
-               this.Shrt_desc + "\t|\t" + 
-               this.Long_desc + "\t|\t" +
+       return  this.NDB_No + "   |   " +
+               this.Shrt_desc + "   |   " + 
+               this.Long_desc + "   |   " +
                this.refuse_percent;
     }
     

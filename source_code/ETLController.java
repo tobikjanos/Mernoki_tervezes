@@ -1,8 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
 package automaticdatabaseupdate;
 
 import java.sql.Connection;
@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.application.Platform;
 
 /**
  *
@@ -19,10 +20,25 @@ import java.util.logging.Logger;
  */
 public class ETLController {
    
-   public static enum FILETYPES{FileFoodStruct, FileNutrientStruct} /* TODO: add more file types*/
+   public static enum FILETYPES{ADD_FOOD, ADD_NUTR, ADD_WGT, CHG_FOOD, CHG_NUTR, CHG_WGT, DEL_FOOD, DEL_NUTR, DEL_WGT} /* TODO: add more file types*/
+   /**
+    * IDEAS:
+    * - enum tags might should be AddFood, AddNutr, ...
+    * - lists' name should be AddFood, AddNutr, ...
+    */
    
-   public static List<FileFoodStruct>       listFoodStruct     = new ArrayList<>();
-   public static List<FileNutrientStruct>   listNutrientStruct = new ArrayList<>();
+   public static List<FileFoodStruct>       listAddFood     = new ArrayList<>();
+   public static List<FileNutrientStruct>   listAddNutr     = new ArrayList<>();
+   public static List<Object>               listAddWgt      = new ArrayList<>();
+   public static List<Object>               listChgFood     = new ArrayList<>();
+   public static List<Object>               listChgNutr     = new ArrayList<>();
+   public static List<Object>               listChgWgt      = new ArrayList<>();
+   public static List<Object>               listDelFood     = new ArrayList<>();
+   public static List<Object>               listDelNutr     = new ArrayList<>();
+   public static List<Object>               listDelWgt      = new ArrayList<>();
+   
+   private static FXMLDocumentController controller;
+   
    
    public static void readFiles( String strFilePath , String strFileType )
    {
@@ -30,19 +46,54 @@ public class ETLController {
       
       switch(fileTypes)
       {
-         case FileFoodStruct:
+         case ADD_FOOD:
          {
-            FileHandler.readFile(strFilePath, listFoodStruct, strFileType);
+            FileHandler.readFile(strFilePath, listAddFood, strFileType);
             break;
          }
-         case FileNutrientStruct:
+         case ADD_NUTR:
          {
-            FileHandler.readFile(strFilePath, listNutrientStruct, strFileType);
+            FileHandler.readFile(strFilePath, listAddNutr, strFileType);
+            break;
+         }
+         case ADD_WGT:
+         {
+            FileHandler.readFile(strFilePath, listAddWgt, strFileType);
+            break;
+         }
+         case CHG_FOOD:
+         {
+            FileHandler.readFile(strFilePath, listChgFood, strFileType);
+            break;
+         }
+         case CHG_NUTR:
+         {
+            FileHandler.readFile(strFilePath, listChgNutr, strFileType);
+            break;
+         }
+         case CHG_WGT:
+         {
+            FileHandler.readFile(strFilePath, listChgWgt, strFileType);
+            break;
+         }
+         case DEL_FOOD:
+         {
+            FileHandler.readFile(strFilePath, listDelFood, strFileType);
+            break;
+         }
+         case DEL_NUTR:
+         {
+            FileHandler.readFile(strFilePath, listDelNutr, strFileType);
+            break;
+         }
+         case DEL_WGT:
+         {
+            FileHandler.readFile(strFilePath, listDelWgt, strFileType);
             break;
          }
          default:
          {
-            System.err.println("Type of file is not known!");
+            System.err.println("Type of file is not known!\tGiven type: " + strFileType);
          }
       }
       
@@ -70,7 +121,7 @@ public class ETLController {
    }
    
    /**
-    * 
+    *
     * @param conn -  database connection
     */
    public static void loadDatabase(Connection conn)
@@ -83,23 +134,26 @@ public class ETLController {
          try
          {
             /* ADD_FOOD */
-            for(FileFoodStruct ffs : listFoodStruct)
+            for(FileFoodStruct ffs : listAddFood)
             {
-               DatabaseController.executeAddFoodFunction(conn, ffs);
-            
+               //DatabaseController.executeAddFoodFunction(conn, ffs);
+               //System.out.println(ffs.toString());
+               SendTraceMessage("[OK]", ffs.toString());
             }
+            
             /* ADD_NUTR */
-            for(FileNutrientStruct fns : listNutrientStruct)
+            for(FileNutrientStruct fns : listAddNutr)
             {
-               DatabaseController.executeAddNutrientFunction(conn, fns);
+               //DatabaseController.executeAddNutrientFunction(conn, fns);
+               SendTraceMessage("[OK]", fns.toString());
             }
             
-            /* 
-               TODO
-               implement other execute function methods
+            /*
+            TODO
+            implement other execute function methods
             */
             
-         } catch (SQLException ex) {
+         } catch (/*SQLException*/Exception ex) {
             Logger.getLogger(ETLController.class.getName()).log(Level.SEVERE, null, ex);
             conn.rollback(savePoint1);
          }
@@ -111,8 +165,17 @@ public class ETLController {
       
    }
    
+   private static void SendTraceMessage(String status, String data)
+   {
+      controller.AddTraceMessage(status, data);
+   }
+   
+   public static void setController(FXMLDocumentController cntrlr) {
+      controller = cntrlr;
+   }
+   
    /*
-      main function for testing the class and functions
+   main function for testing the class and functions
    */
    public static void main(String[] args)
    {
@@ -121,26 +184,30 @@ public class ETLController {
       
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       System.out.println("Reading Foods started!");
-      readFiles( filePathFOOD ,"FileFoodStruct" );      
+      readFiles( filePathFOOD ,"ADD_FOOD" );
       System.out.println("Reading Foods ended!");
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
-      System.out.println("Reading Nutrients started!");      
-      readFiles( filePathNUTR , "FileNutrientStruct" );      
+      System.out.println("Reading Nutrients started!");
+      readFiles( filePathNUTR , "ADD_NUTR" );
       System.out.println("Reading Nutrients ended!");
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
+      
+      Connection conn = DatabaseController.Connect();
+      loadDatabase(conn);
+      
       /*
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       for( int idx=0 ; idx < listFoodStruct.size() ; idx++ )
       {
-         System.out.println(listFoodStruct.get(idx).toString());
+      System.out.println(listFoodStruct.get(idx).toString());
       }
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       for( int idx=0 ; idx < listNutrientStruct.size() ; idx++ )
       {
-         System.out.println(listNutrientStruct.get(idx).toString());
+      System.out.println(listNutrientStruct.get(idx).toString());
       }
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       */
