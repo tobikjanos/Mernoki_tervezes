@@ -17,6 +17,7 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.beans.value.ObservableValue;
@@ -27,6 +28,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.ProgressIndicator;
@@ -40,6 +42,9 @@ import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
 
@@ -50,7 +55,7 @@ import javafx.util.Callback;
 public class FXMLDocumentController implements Initializable {
    
    
-   /***************************
+   /****************************
     *           TAB 1          *
     ****************************/
    
@@ -76,7 +81,7 @@ public class FXMLDocumentController implements Initializable {
       
    }
    
-   /***************************
+   /****************************
     *           TAB 2          *
     ****************************/
    
@@ -172,25 +177,19 @@ public class FXMLDocumentController implements Initializable {
    
    @FXML
    private void MouseClickStartRead()
-   {
-      /*
-      Platform.runLater(() -> {
-      t2PiAddFood.setVisible(true);
-      });
-      */
-      
+   {  
       Task task = new Task<Void>() {
          @Override
          protected Void call() throws Exception {
             
             t2PiAddFood.setVisible(true);
-            ETLController.readFiles(t2TextAddFood.getText(), "ADD_FOOD");
+            ETLController.ReadFiles(t2TextAddFood.getText(), "ADD_FOOD");
             t2PiAddFood.setVisible(false);
             
             t2PiAddNutr.setVisible(true);
-            ETLController.readFiles(t2TextAddNutr.getText(), "ADD_NUTR");
+            ETLController.ReadFiles(t2TextAddNutr.getText(), "ADD_NUTR");
             t2PiAddNutr.setVisible(false);
-            
+            /*
             t2PiAddWgt.setVisible(true);
             Thread.sleep(500);
             t2PiAddWgt.setVisible(false);
@@ -218,98 +217,68 @@ public class FXMLDocumentController implements Initializable {
             t2PiDelWgt.setVisible(true);
             Thread.sleep(500);
             t2PiDelWgt.setVisible(false);
-            
+            */
             return null;
          }
       };
       
       new Thread(task).start();
-      
    }
    
-   /***************************
+   /****************************
     *           TAB 3          *
     ****************************/
-   
    @FXML
-   public TableView<TraceMessage> t3TableView = new TableView<>();
-   
-   @FXML
-   public TableColumn<TraceMessage, String> t3TableColumnStatus, t3TableColumnData;
+   ListView t3ListView;
    
    @FXML
    private Button t3ButtonStart, t3ButtonStop;
    
    @FXML
    private ProgressBar t3ProgressBar;
-   
-   
-   public static ObservableList<TraceMessage> observableList;
+      
+   @FXML
+   private Text t3TextSuccessCounter, t3TextTotal;
+      
    
    @FXML
    private void StartProcess()
    {
       ETLController.setController(this);
+      
       Task task = new Task<Void>() {
          @Override
          protected Void call() throws Exception {
+            
             Connection conn = DatabaseController.Connect();
-            ETLController.loadDatabase(conn);
+            ETLController.LoadDatabase(conn);
             
             return null;
          }
       };
       
-      t3ProgressBar.progressProperty().unbind();
-      t3ProgressBar.progressProperty().bind(task.progressProperty());
-      
-      task.run();
+      new Thread(task).start();
    }
    
    
    public void AddTraceMessage(String status, String data)
    {
-      t3TableView.getColumns().get(0).setVisible(false);
-      t3TableView.getColumns().get(1).setVisible(false);
-      t3TableView.getColumns().get(0).setVisible(true);
-      t3TableView.getColumns().get(1).setVisible(true);
-      
-      observableList.clear();
-      observableList.add(new TraceMessage(status, data));
-      
-      t3TableView.getItems().addAll(observableList);
-      t3TableView.getColumns().setAll(t3TableColumnStatus, t3TableColumnData);
-      
+      Platform.runLater(() -> {
+         String msg = status + "\t\t" + data;
+         t3ListView.getItems().add(msg);
+      });
    }
    
-   /*
-   public void AddTraceMessage(String status, String data)
+   public void SetProgressStatus(Integer currValue, Integer maxValue)
    {
-   ETLController etlController = new ETLController();
-   etlController.setController(this);
-   //t3TableView.getColumns().clear();
-   
-   TraceMessage dataRow = new TraceMessage(status, data);
-   //System.out.println( dataRow.get("[ OK ]") );
-   
-   ObservableList<TraceMessage> OList = FXCollections.observableArrayList();
-   OList.add(dataRow);
-   
-   //System.out.println( OList.get(0) );
-   //System.out.println( OList.get(1) );
-   
-   t3TableColumnStatus.setCellValueFactory( new PropertyValueFactory<>("status") );
-   t3TableColumnData.setCellValueFactory( new PropertyValueFactory<>("data") );
-   
-   t3TableView.getItems().addAll(OList);
-   
-   t3TableView.getColumns().setAll(t3TableColumnStatus, t3TableColumnData);
-   
-   //System.out.println(t3TableView.getItems());
+      Platform.runLater(() -> {
+         t3TextSuccessCounter.setText(String.valueOf(currValue));
+         t3TextTotal.setText("/" + String.valueOf(maxValue));
+         t3ProgressBar.setProgress(currValue.doubleValue() / maxValue.doubleValue());
+      });
    }
-   */
    
-   /***************************
+   /****************************
     *           TAB 4          *
     ****************************/
    
@@ -318,11 +287,10 @@ public class FXMLDocumentController implements Initializable {
    @Override
    public void initialize(URL url, ResourceBundle rb) {
       // TODO
-      observableList = FXCollections.observableArrayList();
-      t3TableColumnStatus.setCellValueFactory( new PropertyValueFactory<>("status") );
-      t3TableColumnData.setCellValueFactory( new PropertyValueFactory<>("data") );
       
-      //AddTraceMessage("[OK]", "data");
+      t3ListView.setPlaceholder(new Label(""));
+      
+      t3TextSuccessCounter.setFill(Color.GREEN);
       
    }
    

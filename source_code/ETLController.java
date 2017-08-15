@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.application.Platform;
 
 /**
  *
@@ -40,7 +39,7 @@ public class ETLController {
    private static FXMLDocumentController controller;
    
    
-   public static void readFiles( String strFilePath , String strFileType )
+   public static void ReadFiles( String strFilePath , String strFileType )
    {
       FILETYPES fileTypes = FILETYPES.valueOf(strFileType);
       
@@ -103,7 +102,7 @@ public class ETLController {
     * creates stored procedures
     * @param conn    -  database connection
     */
-   public static void createFunctions( Connection conn )
+   public static void CreateFunctions( Connection conn )
    {
       DatabaseController.createAddFoodFunction(conn);
       DatabaseController.createAddNutrientFunction(conn);
@@ -124,8 +123,21 @@ public class ETLController {
     *
     * @param conn -  database connection
     */
-   public static void loadDatabase(Connection conn)
+   public static void LoadDatabase(Connection conn)
    {
+      int totalData =   listAddFood.size() +
+              listAddNutr.size() +
+              listAddWgt.size() +
+              listChgFood.size() +
+              listChgNutr.size() +
+              listChgWgt.size() +
+              listDelFood.size() +
+              listDelNutr.size() +
+              listDelWgt.size();
+      
+      int successCounter = 0;
+      int errorCounter = 0;
+      
       try
       {
          conn.setAutoCommit(false);
@@ -134,19 +146,23 @@ public class ETLController {
          try
          {
             /* ADD_FOOD */
+            SendTraceMessage("[ INFO ]", "ADD_FOOD elkezdődött");
             for(FileFoodStruct ffs : listAddFood)
             {
                //DatabaseController.executeAddFoodFunction(conn, ffs);
-               //System.out.println(ffs.toString());
-               SendTraceMessage("[OK]", ffs.toString());
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
             }
-            
+            SendTraceMessage("[ INFO ]", "ADD_FOOD befejeződött");
             /* ADD_NUTR */
+            SendTraceMessage("[ INFO ]", "ADD_NUTR elkezdődött");
             for(FileNutrientStruct fns : listAddNutr)
             {
                //DatabaseController.executeAddNutrientFunction(conn, fns);
-               SendTraceMessage("[OK]", fns.toString());
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
             }
+            SendTraceMessage("[ INFO ]", "ADD_NUTR befejeződött");
             
             /*
             TODO
@@ -162,12 +178,17 @@ public class ETLController {
       } catch (SQLException ex) {
          Logger.getLogger(ETLController.class.getName()).log(Level.SEVERE, null, ex);
       }
-      
+         
    }
    
    private static void SendTraceMessage(String status, String data)
    {
       controller.AddTraceMessage(status, data);
+   }
+   
+   private static void SendCounterValue(Integer currValue, Integer maxValue)
+   {
+      controller.SetProgressStatus(currValue, maxValue);
    }
    
    public static void setController(FXMLDocumentController cntrlr) {
@@ -184,18 +205,18 @@ public class ETLController {
       
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       System.out.println("Reading Foods started!");
-      readFiles( filePathFOOD ,"ADD_FOOD" );
+      ReadFiles( filePathFOOD ,"ADD_FOOD" );
       System.out.println("Reading Foods ended!");
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       System.out.println("Reading Nutrients started!");
-      readFiles( filePathNUTR , "ADD_NUTR" );
+      ReadFiles( filePathNUTR , "ADD_NUTR" );
       System.out.println("Reading Nutrients ended!");
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
       
       Connection conn = DatabaseController.Connect();
-      loadDatabase(conn);
+      LoadDatabase(conn);
       
       /*
       System.out.println("|--------------------------------------------------------------------------------------------------------|");
