@@ -28,13 +28,13 @@ public class ETLController {
    
    public static List<FileFoodStruct>       listAddFood     = new ArrayList<>();
    public static List<FileNutrientStruct>   listAddNutr     = new ArrayList<>();
-   public static List<Object>               listAddWgt      = new ArrayList<>();
-   public static List<Object>               listChgFood     = new ArrayList<>();
-   public static List<Object>               listChgNutr     = new ArrayList<>();
-   public static List<Object>               listChgWgt      = new ArrayList<>();
-   public static List<Object>               listDelFood     = new ArrayList<>();
-   public static List<Object>               listDelNutr     = new ArrayList<>();
-   public static List<Object>               listDelWgt      = new ArrayList<>();
+   public static List<FileWeightStruct>     listAddWgt      = new ArrayList<>();
+   public static List<FileFoodStruct>       listChgFood     = new ArrayList<>();
+   public static List<FileNutrientStruct>   listChgNutr     = new ArrayList<>();
+   public static List<FileWeightStruct>     listChgWgt      = new ArrayList<>();
+   public static List<FileFoodStruct>       listDelFood     = new ArrayList<>();
+   public static List<FileNutrientStruct>   listDelNutr     = new ArrayList<>();
+   public static List<FileWeightStruct>     listDelWgt      = new ArrayList<>();
    
    private static FXMLDocumentController controller;
    
@@ -95,7 +95,6 @@ public class ETLController {
             System.err.println("Type of file is not known!\tGiven type: " + strFileType);
          }
       }
-      
    }
    
    /**
@@ -112,11 +111,9 @@ public class ETLController {
       DatabaseController.createChgNutrientFunction(conn);
       DatabaseController.createChgWeightFunction(conn);
       
-      /* TODO:
       DatabaseController.createDelFoodFunction(conn);
       DatabaseController.createDelNutrientFunction(conn);
       DatabaseController.createDelWeightFunction(conn);
-      */
    }
    
    /**
@@ -145,7 +142,9 @@ public class ETLController {
          
          try
          {
-            /* ADD_FOOD */
+            /**__________________________________________________________________________
+             * ADD_FOOD 
+             */
             SendTraceMessage("[ INFO ]", "ADD_FOOD elkezdődött");
             for(FileFoodStruct ffs : listAddFood)
             {
@@ -154,7 +153,9 @@ public class ETLController {
                SendCounterValue(successCounter, totalData);
             }
             SendTraceMessage("[ INFO ]", "ADD_FOOD befejeződött");
-            /* ADD_NUTR */
+            /**__________________________________________________________________________
+             * ADD_NUTR 
+             */
             SendTraceMessage("[ INFO ]", "ADD_NUTR elkezdődött");
             for(FileNutrientStruct fns : listAddNutr)
             {
@@ -164,10 +165,69 @@ public class ETLController {
             }
             SendTraceMessage("[ INFO ]", "ADD_NUTR befejeződött");
             
-            /*
-            TODO
-            implement other execute function methods
-            */
+            /**__________________________________________________________________________
+             * ADD_WGT 
+             */
+            for(FileWeightStruct fws : listAddWgt)
+            {
+               //DatabaseController.executeAddWeightFunction(conn, fws);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
+            /**__________________________________________________________________________
+             * CHG_FOOD 
+             */
+            for(FileFoodStruct ffs : listChgFood)
+            {
+               //DatabaseController.executeChgFoodFunction(conn, ffs);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
+            /**__________________________________________________________________________
+             * CHG_NUTR 
+             */
+            for(FileNutrientStruct fns : listChgNutr)
+            {
+               //DatabaseController.executeChgNutrientFunction(conn, fns);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
+            /**__________________________________________________________________________
+             * CHG_WGT 
+             */
+            for(FileWeightStruct fws : listChgWgt)
+            {
+               //DatabaseController.executeChgWeightFunction(conn, fws);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
+            /**__________________________________________________________________________
+             * DEL_FOOD 
+             */
+            for(FileFoodStruct ffs : listDelFood)
+            {
+               //DatabaseController.executeDelFoodFunction(conn, ffs);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
+            /**__________________________________________________________________________
+             * DEL_NUTR 
+             */
+            for(FileNutrientStruct fns : listDelNutr)
+            {
+               //DatabaseController.executeDelNutrientFunction(conn, fns);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
+            /**__________________________________________________________________________
+             * DEL_WGT 
+             */
+            for(FileWeightStruct fws : listDelWgt)
+            {
+               //DatabaseController.executeDelWeightFunction(conn, fws);
+               successCounter++;
+               SendCounterValue(successCounter, totalData);
+            }
             
          } catch (/*SQLException*/Exception ex) {
             Logger.getLogger(ETLController.class.getName()).log(Level.SEVERE, null, ex);

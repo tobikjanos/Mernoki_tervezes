@@ -25,17 +25,17 @@ public class FileHandler {
     * 
     * @param <T>            - type of the given struct    e.g. FileFoodStruct
     * @param strFilePath    - path of given file          e.g. "D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr28upd\\ADD_NUTR.txt"
-    * @param strFileType    - type of the given file      e.g. FileFoodStruct
+    * @param strFileType    - type of the given file      e.g. AddFood
     * @param TList          - list to fill with data      e.g. List<FileFoodStruct> ListFFS
     */
-   public static <T> void readFile( String strFilePath , List<T> TList , String strFileType )
+   public static <T> int readFile( String strFilePath , List<T> TList , String strFileType )
    {
+      int moduleCounter = 0;
+      
       try {
          
          File File = FileUtils.getFile(strFilePath);
          LineIterator iter = FileUtils.lineIterator(File);
-         
-         int lineCounter = 0;
          
          while( iter.hasNext() )
          {
@@ -44,46 +44,113 @@ public class FileHandler {
             ArrayList<String> strList = parseString( strLine );
             //System.out.println(strList.toString());
             
-            /**
-             * TEST START - seems OK
-             */
-            
             switch( strFileType )
             {
-               case "FileFoodStruct":
+               case "ADD_FOOD":
                {
                   FileFoodStruct Object = new FileFoodStruct(
-                       Integer.valueOf(strList.get(0)),
-                       strList.get(3),
-                       strList.get(2),
-                       Integer.valueOf(strList.get(8)));
+                          Integer.valueOf(strList.get(0)),
+                          strList.get(2),
+                          strList.get(3),
+                          Integer.valueOf(strList.get(8)));
                   TList.add( (T)Object );
+                  System.out.println(Object.toString());
                   break;
                }
-               case "FileNutrientStruct":
+               case "ADD_NUTR":
                {
                   FileNutrientStruct Object = new FileNutrientStruct(
-                       Integer.valueOf(strList.get(0)),
-                       Integer.valueOf(strList.get(1)),
-                       Double.valueOf(strList.get(2)));
+                          Integer.valueOf(strList.get(0)),
+                          Integer.valueOf(strList.get(1)),
+                          Double.valueOf(strList.get(2)));
                   TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "ADD_WGT":
+               {
+                  FileWeightStruct Object = new FileWeightStruct(
+                          Integer.valueOf(strList.get(0)),
+                          Double.valueOf(strList.get(2)),
+                          strList.get(3),
+                          Double.valueOf(strList.get(4)));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "CHG_FOOD":
+               {
+                  FileFoodStruct Object = new FileFoodStruct(
+                          Integer.valueOf(strList.get(0)),
+                          strList.get(2),
+                          strList.get(3),
+                          Integer.valueOf(strList.get(8)));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "CHG_NUTR":
+               {
+                  FileNutrientStruct Object = new FileNutrientStruct(
+                          Integer.valueOf(strList.get(0)),
+                          Integer.valueOf(strList.get(1)),
+                          Double.valueOf(strList.get(2)));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "CHG_WGT":
+               {
+                  FileWeightStruct Object = new FileWeightStruct(
+                          Integer.valueOf(strList.get(0)),
+                          Double.valueOf(strList.get(2)),
+                          strList.get(3),
+                          Double.valueOf(strList.get(4)));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "DEL_FOOD":
+               {
+                  FileFoodStruct Object = new FileFoodStruct(
+                          Integer.valueOf(strList.get(0)),
+                          strList.get(3));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "DEL_NUTR":
+               {
+                  FileNutrientStruct Object = new FileNutrientStruct(
+                          Integer.valueOf(strList.get(0)),
+                          Integer.valueOf(strList.get(1)));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
+                  break;
+               }
+               case "DEL_WGT":
+               {
+                  FileWeightStruct Object = new FileWeightStruct(
+                          Integer.valueOf(strList.get(0)),
+                          Double.valueOf(strList.get(2)),
+                          strList.get(3),
+                          Double.valueOf(strList.get(4)));
+                  TList.add( (T)Object );
+                  System.out.println(Object.toString());
                   break;
                }
             }
             
-            /**
-             * TEST END
-             */
-            
-            
-            lineCounter++;
+            moduleCounter++;
          }
-         System.out.println( "Total line: " + lineCounter );
+         System.out.println( "Total line: " + moduleCounter );
          iter.close();
-         
+                  
       } catch (IOException ex) {
          Logger.getLogger(FileHandler.class.getName()).log(Level.SEVERE, null, ex);
       }
+      
+      return moduleCounter;
    }
    /*
    public static void readFile(String FilePath) throws IOException
@@ -133,7 +200,6 @@ public class FileHandler {
    
    public static void main(String[] args) throws IOException
    {
-      FileHandler fileHandler = new FileHandler();
 
       /*
       TODO

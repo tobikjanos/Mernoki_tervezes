@@ -127,6 +127,6 @@ ADD_WEIGHT
 - Seq, Sequence number.
 - Amount, Unit modifier (for example, 1 in “1 cup”).
 - Msre_Desc, Description (for example, cup, diced, and 1-inch pieces).
-- Gm_Wgt, Gram weight.
+- Gm_Wgt, Gram weight. ***CONVERT TO DKG***
 - Num_Data_Pts, Number of data points.
 - Std_Dev, Standard deviation.

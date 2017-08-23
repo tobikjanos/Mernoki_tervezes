@@ -12,15 +12,22 @@ package automaticdatabaseupdate;
 public class FileFoodStruct {
     
     private int NDB_No;
-    private String Shrt_desc;
     private String Long_desc;
+    private String Shrt_desc;
     private int refuse_percent;
 
-    public FileFoodStruct(int NDB_No, String Shrt_desc, String Long_desc, int refuse_percent) {
+    public FileFoodStruct(int NDB_No, String Long_desc, String Shrt_desc, int refuse_percent) {
         this.NDB_No = NDB_No;
         this.Shrt_desc = Shrt_desc;
         this.Long_desc = Long_desc;
         this.refuse_percent = refuse_percent;
+    }
+    
+    public FileFoodStruct(int NDB_No, String Shrt_desc) {
+        this.NDB_No = NDB_No;
+        this.Shrt_desc = Shrt_desc;
+        this.Long_desc = "null";
+        this.refuse_percent = 0;
     }
 
     public int getNDB_No() {
@@ -59,8 +66,8 @@ public class FileFoodStruct {
     public String toString()
     {
        return  this.NDB_No + "   |   " +
-               this.Shrt_desc + "   |   " + 
                this.Long_desc + "   |   " +
+               this.Shrt_desc + "   |   " + 
                this.refuse_percent;
     }
     

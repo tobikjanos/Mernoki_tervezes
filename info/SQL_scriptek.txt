@@ -1,5 +1,17 @@
 -- SQL SCRIPTS --
 
+-- ERROR HANDLING -- treat it as string
+______________			________	___________
+Error Messages			Error ID	Error Place
+no error                00			01, 02, 03, ...
+select                  01
+insert                  02
+update                  03
+delete                  04
+sequence nextval        05
+assign value            06
+perform					07
+
 -- ADD_FOOD --
 
 insert into diet.label (label_id, label_type_code) values (/*nextval_label_id*/, 3)	--3 is food name
@@ -38,36 +50,48 @@ CREATE TYPE diet.wgtFILE as(
 
 CREATE OR REPLACE FUNCTION diet.addfood(
 	ndb_no integer,
-	long_desc text,
 	shrt_desc text,
-	refuse_percent integer)
-    RETURNS integer
+	long_desc text,
+	refuse_percent integer
+	)
+    RETURNS text
     LANGUAGE 'plpgsql'
     COST 100.0
     VOLATILE NOT LEAKPROOF 
-AS $function$
+AS $var_retval$
 
 DECLARE
-	var_retval integer;
 	var_food_id integer;
 	var_label_id integer;
+	var_retval text;
 BEGIN
-	var_retval := 0;
+	var_retval := '0000';
 	
+	perform _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || NDB_No || '%';
+    if found then var_retval := '0701'; end if;
+
 	var_food_id := nextval('diet.food_food_id_seq');
+	if not found then var_retval := var_retval || '0502'; end if;
+	
 	var_label_id := nextval('diet.label_label_id_seq');
+	if not found then var_retval := var_retval || '0503'; end if;
 	
 	insert into diet.label (label_id, label_type_code) values (var_label_id, 3);	-- 3 is food name
+	if not found then var_retval := var_retval || '0204'; end if;
+	
 	insert into diet.label_text (label_id, lang_id, label_text, label_long_text) values (var_label_id, 2, Shrt_Desc, Long_Desc); -- 2 is english
+	if not found then var_retval := var_retval || '0205'; end if;
+	
 	insert into diet.food (food_id, foodname_label_id, sd_id) values (var_food_id, var_label_id, 36); -- sd_id -> security desc
+	if not found then var_retval := var_retval || '0206'; end if;
+	
 	insert into diet.food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)
 	values(var_food_id, 1, 15, 10, Refuse_Percent, 'USDA:SR28:' || NDB_No || ' SOTE:null'); -- VERSION is from java code
+	if not found then var_retval := var_retval || '0207'; end if;
     
-	var_retval := 1;
 	return var_retval; -- return number of foods inserted
 END;
-
-$function$;
+$var_retval$;
 
 
 
@@ -82,31 +106,35 @@ CREATE TYPE diet.nutrFILE as(
 CREATE OR REPLACE FUNCTION diet.addnutrient(
 	ndb_no integer,
 	nutr_no integer,
-	nutr_val double precision)
-    RETURNS integer
+	nutr_val double precision
+	)
+    RETURNS text
     LANGUAGE 'plpgsql'
     COST 100.0
     VOLATILE NOT LEAKPROOF 
-AS $function$
+AS $var_retval$
 
 DECLARE
-	var_retval integer;
 	var_food_id integer;
     var_nutr_id integer;
+	var_retval text;
 BEGIN
-	var_retval := 0;
+	var_retval = '0000';
 	
 	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+	
 	var_nutr_id := (select _n.nutr_id from diet.nutrient _n where _n.usda_nutr_no like '%' || Nutr_No || '%');
+	if not found then var_retval := var_retval || '0602'; end if;
 	
 	insert into diet.food_content(food_id, source_id, nutr_id, fc_quantity)
 	values(var_food_id, 1, var_nutr_id, Nutr_Val);
+	if not found then var_retval := var_retval || '0203'; end if;
     
-	var_retval := 1;
 	return var_retval; -- return number of nutrients inserted
 END;
+$var_retval$;
 
-$function$; LANGUAGE plpgsql;
 ---------------------------------------------
 select test_table.name into name from test_table where id = x;
 name := (SELECT t.name from test_table t where t.id = x);
@@ -116,6 +144,68 @@ name := (SELECT t.name from test_table t where t.id = x);
 -- 3 or 29530 is HUN
 -- 4 or 29531 is OTHER
 
+----------------------------------------------
+-- ADD_WGT --
+CREATE OR REPLACE FUNCTION diet.addweight(
+	NDB_No integer,
+	Unit_label text,
+	Weight double precision
+	)
+	RETURNS text
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $var_retval$
+
+DECLARE
+	var_food_id integer;
+	var_unit_id integer;
+	var_label_id integer;
+	var_retval text;
+BEGIN
+	var_retval = '0000';
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+	
+	perform _lt.label_text from diet.label_text _lt where label_text = Unit_label;
+	if found then
+	
+		var_unit_id := (select _u.unit_id from diet.unit _u 
+						left outer join diet.label _l on _u.label_id = _l.label_id 
+						left outer join diet.label_text _lt on _l.label_id = _lt.label_id
+						where _lt.label_text = Unit_label);
+		if not found then var_retval := var_retval || '0602'; end if;
+		
+		insert into diet.food_units (food_id,source_id, unit_id, lang_id, scale) values (var_food_id, 1, var_unit_id, 2, Weight);
+		if not found then var_retval := var_retval || '0203'; end if;
+		
+	else
+	
+		var_unit_id := nextval('diet.unit_unit_id_seq');
+		if not found then var_retval := var_retval || '0504'; end if;
+	
+		var_label_id := nextval('diet.label_label_id_seq');
+		if not found then var_retval := var_retval || '0505'; end if;
+		
+		
+		insert into diet.label (label_id, label_type_code) values (var_label_id, 1);	-- 1 is unit name
+		if not found then var_retval := var_retval || '0206'; end if;
+		
+		insert into diet.label_text (label_id, lang_id, label_text) values (var_label_id, 2, Unit_label); -- 2 is english
+		if not found then var_retval := var_retval || '0207'; end if;
+		
+		insert into diet.unit (unit_id, unit_label_id) values (var_unit_id, var_label_id);
+		if not found then var_retval := var_retval || '0208'; end if;
+		
+		insert into diet.food_units (food_id,source_id, unit_id, lang_id, scale) values (var_food_id, 1, var_unit_id, 2, Weight);
+		if not found then var_retval := var_retval || '0209'; end if;
+	
+	end if;
+	
+	return var_retval;
+END;
+$var_retval$;
 
 ----------------------------------------------
 -- CHG_FOOD --
@@ -124,34 +214,38 @@ CREATE OR REPLACE FUNCTION diet.chgfood(
 	ndb_no integer,
 	long_desc text,
 	shrt_desc text,
-	refuse_percent integer)
-    RETURNS integer
+	refuse_percent integer
+	)
+    RETURNS text
     LANGUAGE 'plpgsql'
     COST 100.0
     VOLATILE NOT LEAKPROOF 
-AS $function$
+AS $var_retval$
 
 DECLARE
-	var_retval integer;
 	var_food_id integer;
 	var_label_id integer;
+	var_retval text;
 BEGIN
-	var_retval := 0;
+	var_retval = '0000';
 	
 	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+		
 	var_label_id := (select _f.foodname_label_id from diet.food _f where food_id = var_food_id);
+	if not found then var_retval := var_retval || '0602'; end if;
 	
 	update diet.label_text set label_text = shrt_desc, label_long_text = long_desc
 	where label_id = var_label_id;
+	if not found then var_retval := var_retval || '0303'; end if;
 	
 	update diet.food_source set refuse_percent = refuse_percent, source_link_no = 'USDA:SR28:' || NDB_No || ' SOTE:null'
 	where food_id = var_food_id;	-- VERSION is from java code
+	if not found then var_retval := var_retval || '0304'; end if;
 
-    var_retval := 1;
-	return var_retval; -- return number of foods inserted
+	return var_retval;
 END;
-
-$function$;
+$var_retval$;
 
 ----------------------------------------------
 -- CHG_NUTR --
@@ -159,60 +253,185 @@ $function$;
 CREATE OR REPLACE FUNCTION diet.chgnutrient(
 	ndb_no integer,
 	nutr_no integer,
-	nutr_val double precision)
-    RETURNS integer
+	nutr_val double precision
+	)
+    RETURNS text
     LANGUAGE 'plpgsql'
     COST 100.0
     VOLATILE NOT LEAKPROOF 
-AS $function$
+AS $var_retval$
 
 DECLARE
-	var_retval integer;
 	var_food_id integer;
     var_nutr_id integer;
+	var_retval text;
 BEGIN
-	var_retval := 0;
+	var_retval = '0000';
 	
 	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+	
 	var_nutr_id := (select _n.nutr_id from diet.nutrient _n where _n.usda_nutr_no like '%' || Nutr_No || '%');
+	if not found then var_retval := var_retval || '0602'; end if;
 	
 	update diet.food_content set fc_quantity = nutr_val
 	where food_id = var_food_id and nutr_id = var_nutr_id;
+	if not found then var_retval := var_retval || '0303'; end if;
 	
-	var_retval := 1;
-	return var_retval; -- return number of nutrients inserted
+	return var_retval;
 END;
+$var_retval$;
 
-$function$;
+----------------------------------------------
+-- CHG_WGT --
 
+CREATE OR REPLACE FUNCTION diet.chgweight(
+	NDB_No integer,
+	Unit_label text,
+	Weight double precision
+	)
+	RETURNS text
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $var_retval$
 
+DECLARE
+	var_food_id integer;
+	var_unit_id integer;
+	var_retval text;
+BEGIN
+	var_retval = '0000';
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+	
+	var_unit_id := (select _u.unit_id from diet.unit _u 
+					left outer join diet.label _l on _u.label_id = _l.label_id 
+					left outer join diet.label_text _lt on _l.label_id = _lt.label_id
+					where _lt.label_text = Unit_label);
+	if not found then var_retval := var_retval || '0602'; end if;
+	
+	update diet.food_units set scale = Weight;
+	where food_id = var_food_id and unit_id = var_unit_id;
+	if not found then var_retval := var_retval || '0303'; end if;
 
+	return var_retval;
+END;
+$var_retval$;
 
 ----------------------------------------------
 -- DEL_FOOD --
 -- TODO --
 CREATE OR REPLACE FUNCTION diet.delfood(
 	NDB_No integer,
-	Shrt_Desc text,
+	Shrt_Desc text
 	)
-    RETURNS integer
+    RETURNS text
     LANGUAGE 'plpgsql'
     COST 100.0
     VOLATILE NOT LEAKPROOF 
-AS $function$
+AS $var_retval$
 
 DECLARE
-	var_retval integer;
 	var_food_id integer;
+	var_label_id integer;
+	var_retval text;
 BEGIN
+	var_retval = '0000';
 	
 	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
 	
-	-- TODO: delete from label, label_text, food_source
+	var_label_id := (select _f.foodname_label_id from diet.food _f where food_id = var_food_id);
+	if not found then var_retval := var_retval || '0602'; end if;
+	
+	
+	delete from diet.food_source where food_id = var_food_id;
+	if not found then var_retval := var_retval || '0403'; end if;
+	
 	delete from diet.food where food_id = var_food_id;
+	if not found then var_retval := var_retval || '0404'; end if;
 	
-	var_retval := 1;
-	return var_retval; -- return number of nutrients inserted
+	delete from diet.label_text where label_id = var_label_id and label_text = Shrt_Desc;
+	if not found then var_retval := var_retval || '0405'; end if;
+	
+	delete from diet.label where label_id = var_label_id;
+	if not found then var_retval := var_retval || '0406'; end if;
+	
+	return var_retval;
 END;
+$var_retval$;
 
-$function$;
+
+
+----------------------------------------------
+-- DEL_NUTR--
+-- TODO --
+CREATE OR REPLACE FUNCTION diet.delnutrient(
+	NDB_No integer,
+	nutr_no integer
+	)
+    RETURNS text
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $var_retval$
+
+DECLARE
+	var_food_id integer;
+	var_nutr_id integer;
+	var_retval text;
+BEGIN
+	var_retval = '0000';
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+	
+	var_nutr_id := (select _n.nutr_id from diet.nutrient _n where _n.usda_nutr_no like '%' || Nutr_No || '%');
+	if not found then var_retval := var_retval || '0602'; end if;
+	
+	delete from diet.food_content where food_id = var_food_id and nutr_id = var_nutr_id;
+	if not found then var_retval := var_retval || '0403'; end if;
+	
+	return var_retval;
+END;
+$var_retval$;
+
+----------------------------------------------
+-- DEL_WGT--
+
+CREATE OR REPLACE FUNCTION diet.delweight(
+	NDB_No integer,
+	Unit_label text,
+	Weight double precision
+	)
+    RETURNS text
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $var_retval$
+
+DECLARE
+	var_food_id integer;
+	var_unit_id integer;
+	var_retval text;
+BEGIN
+	var_retval = '0000';
+	
+	var_food_id := (select _fs.food_id from diet.food_source _fs where source_link_no like '%' || NDB_No || '%');
+	if not found then var_retval := '0601'; end if;
+	
+	var_unit_id := (select _u.unit_id from diet.unit _u 
+					left outer join diet.label _l on _u.label_id = _l.label_id 
+					left outer join diet.label_text _lt on _l.label_id = _lt.label_id
+					where _lt.label_text = Unit_label);
+	if not found then var_retval := var_retval || '0602'; end if;
+	
+	delete from diet.food_units where food_id = var_food_id and unit_id = var_unit_id and scale = Weight;
+	if not found then var_retval := var_retval || '0403'; end if;
+	
+	return var_retval;
+END;
+$var_retval$;
+

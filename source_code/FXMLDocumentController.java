@@ -181,43 +181,52 @@ public class FXMLDocumentController implements Initializable {
       Task task = new Task<Void>() {
          @Override
          protected Void call() throws Exception {
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("ADD_FOOD");
             t2PiAddFood.setVisible(true);
             ETLController.ReadFiles(t2TextAddFood.getText(), "ADD_FOOD");
             t2PiAddFood.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("ADD_NUTR");
             t2PiAddNutr.setVisible(true);
             ETLController.ReadFiles(t2TextAddNutr.getText(), "ADD_NUTR");
             t2PiAddNutr.setVisible(false);
-            /*
+            System.out.println("________________________________________________________________________");
+            System.out.println("ADD_WGT");
             t2PiAddWgt.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextAddWgt.getText(), "ADD_WGT");
             t2PiAddWgt.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("CHG_FOOD");
             t2PiChgFood.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextChgFood.getText(), "CHG_FOOD");
             t2PiChgFood.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("CHG_NUTR");
             t2PiChgNutr.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextChgNutr.getText(), "CHG_NUTR");
             t2PiChgNutr.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("CHG_WGT");
             t2PiChgWgt.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextChgWgt.getText(), "CHG_WGT");
             t2PiChgWgt.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("DEL_FOOD");
             t2PiDelFood.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextDelFood.getText(), "DEL_FOOD");
             t2PiDelFood.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("DEL_NUTR");
             t2PiDelNutr.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextDelNutr.getText(), "DEL_NUTR");
             t2PiDelNutr.setVisible(false);
-            
+            System.out.println("________________________________________________________________________");
+            System.out.println("DEL_WGT");
             t2PiDelWgt.setVisible(true);
-            Thread.sleep(500);
+            ETLController.ReadFiles(t2TextDelWgt.getText(), "DEL_WGT");
             t2PiDelWgt.setVisible(false);
-            */
+            
             return null;
          }
       };

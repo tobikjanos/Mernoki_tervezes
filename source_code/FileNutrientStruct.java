@@ -20,6 +20,12 @@ public class FileNutrientStruct {
         this.Nutr_No = Nutr_No;
         this.Nutr_Val = Nutr_Val;
     }
+    
+    public FileNutrientStruct(int NDB_No, int Nutr_No) {
+        this.NDB_No = NDB_No;
+        this.Nutr_No = Nutr_No;
+        this.Nutr_Val = 0.0;
+    }
 
     public int getNDB_No() {
         return NDB_No;
