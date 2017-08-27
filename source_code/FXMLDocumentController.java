@@ -88,7 +88,8 @@ public class FXMLDocumentController implements Initializable {
    @FXML
    private TextField t2TextAddFood, t2TextAddNutr, t2TextAddWgt,
            t2TextChgFood, t2TextChgNutr, t2TextChgWgt,
-           t2TextDelFood, t2TextDelNutr, t2TextDelWgt;
+           t2TextDelFood, t2TextDelNutr, t2TextDelWgt,
+           t2TextRevisonNumber;
    @FXML
    private Button t2ButtonAddFood, t2ButtonAddNutr, t2ButtonAddWgt,
            t2ButtonChgFood, t2ButtonChgNutr, t2ButtonChgWgt,
@@ -177,7 +178,12 @@ public class FXMLDocumentController implements Initializable {
    
    @FXML
    private void MouseClickStartRead()
-   {  
+   {
+      
+      DatabaseController.setVERSION(t2TextRevisonNumber.getText());
+      System.out.println("________________________________________________________________________");
+      System.out.println("REVISION: " + DatabaseController.getVERSION());
+            
       Task task = new Task<Void>() {
          @Override
          protected Void call() throws Exception {

@@ -77,6 +77,8 @@
                         <ProgressIndicator fx:id="t2PiDelNutr" layoutX="450.0" layoutY="326.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
                         <ProgressIndicator fx:id="t2PiDelWgt" layoutX="450.0" layoutY="366.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
                         <Button fx:id="t2ButtonStart" layoutX="424.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#MouseClickStartRead" text="Indítás" />
+                        <Label layoutX="175.0" layoutY="425.0" text="Revíziószám" />
+                        <TextField fx:id="t2TextRevisionNumber" layoutX="250.0" layoutY="421.0" prefHeight="4.0" prefWidth="34.0" />
                      </children></AnchorPane>
             </content>
           </Tab>

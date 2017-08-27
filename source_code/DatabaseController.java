@@ -40,7 +40,7 @@ public class DatabaseController {
    {      
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addFood( ?, ?, ?, ? )}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
@@ -53,7 +53,7 @@ public class DatabaseController {
          System.out.println("***LOG: execute addFood has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -65,7 +65,7 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addNutrient(?, ?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
@@ -77,7 +77,7 @@ public class DatabaseController {
          System.out.println("***LOG: execute addNutrient has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -89,19 +89,19 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addWeight(?, ?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
          cstmt.setInt(2, weight.getNDB_No());
          cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
-         cstmt.setDouble(4, weight.getGm_Wgt()/100.0);
+         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
          
          cstmt.execute();
          System.out.println("***LOG: execute addWeight has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -112,7 +112,7 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgFood(?, ?, ?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
@@ -125,7 +125,7 @@ public class DatabaseController {
          System.out.println("***LOG: execute chgFood has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -136,7 +136,7 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgNutrient(?, ?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
@@ -148,7 +148,7 @@ public class DatabaseController {
          System.out.println("***LOG: execute chgNutrient has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -159,19 +159,19 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgWeight(?, ?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
          cstmt.setInt(2, weight.getNDB_No());
          cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
-         cstmt.setDouble(4, weight.getGm_Wgt()/100.0);
+         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
          
          cstmt.execute();
          System.out.println("***LOG: execute chgWeight has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -182,7 +182,7 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delFood(?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
@@ -193,7 +193,7 @@ public class DatabaseController {
          System.out.println("***LOG: execute delFood has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -204,7 +204,7 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delNutrient(?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
@@ -215,7 +215,7 @@ public class DatabaseController {
          System.out.println("***LOG: execute delNutrient has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -226,19 +226,19 @@ public class DatabaseController {
    {
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delWeight(?, ?, ?)}");
          cstmt.registerOutParameter(1, Types.VARCHAR);
          cstmt.setInt(2, weight.getNDB_No());
          cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
-         cstmt.setDouble(4, weight.getGm_Wgt()/100.0);
+         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
          
          cstmt.execute();
          System.out.println("***LOG: execute delWeight has been succeeded and returned: " + cstmt.getString(1));
          
          cstmt.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -266,43 +266,40 @@ public class DatabaseController {
               "   var_label_id integer;" + "\n" +
               "   var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "   var_retval := '0000';" + "\n" +
+              "   var_retval := '';" + "\n\n" +
               
               "   perform _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%';" + "\n" +
-              "   if found then var_retval := var_retval || '0701'; end if;" + "\n" +
+              "   if found then RAISE EXCEPTION 'Food already exists with NDB_No: %', $1; end if;" + "\n\n" +
               
               "   var_food_id := nextval('"+SCHEMA+".food_food_id_seq');" + "\n" +
-              "   if not found then var_retval := var_retval || '0502'; end if;" + "\n" +
-              
-              "   var_label_id := nextval('"+SCHEMA+".label_label_id_seq');" + "\n" +
-              "   if not found then var_retval := var_retval || '0503'; end if;" + "\n" +
+              "   var_label_id := nextval('"+SCHEMA+".label_label_id_seq');" + "\n\n" +
               
               "   insert into "+SCHEMA+".label (label_id, label_type_code) values (var_label_id, 3);	-- 3 is food name" + "\n" +
-              "   if not found then var_retval := var_retval || '0204'; end if;" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Insert into label was not succeeded'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".label_text (label_id, lang_id, label_text, label_long_text) values (var_label_id, 2, $2, $3); -- 2 is english" + "\n" +
-              "   if not found then var_retval := var_retval || '0205'; end if;" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Insert into label_text was not succeeded'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".food (food_id, foodname_label_id, sd_id) values (var_food_id, var_label_id, 36); -- sd_id -> security desc" + "\n" +
-              "   if not found then var_retval := var_retval || '0206'; end if;" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Insert into food was not succeeded'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)" + "\n" +
               "   values(var_food_id, 1, 15, 10, $4, 'USDA:"+VERSION+":' || $1 || ' SOTE:null'); -- VERSION is from java code" + "\n" +
-              "   if not found then var_retval := var_retval || '0207'; end if;" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Insert into food_source was not succeeded'; end if;" + "\n\n" +
               
               "   return var_retval; -- return number of foods inserted" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> addFood");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -329,31 +326,31 @@ public class DatabaseController {
               "     var_nutr_id integer;" + "\n" +
               "     var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "     var_retval = '0000';" + "\n" +
+              "     var_retval := '';" + "\n\n" +
               
               "     var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "     if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "     if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "     var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $2 || '%');" + "\n" +
-              "     if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "     if var_nutr_id = null then RAISE EXCEPTION 'nutr_id does not exist with Nutr_No: %', $2; end if;" + "\n\n" +
               
               "     insert into "+SCHEMA+".food_content(food_id, source_id, nutr_id, fc_quantity)" + "\n" +
               "     values(var_food_id, 1, var_nutr_id, $3);" + "\n" +
-              "     if not found then var_retval := var_retval || '0203'; end if;" + "\n" +
+              "     if not found then RAISE EXCEPTION 'Insert into food_content was not succeeded'; end if;" + "\n\n" +
               
               "     return var_retval; -- return number of nutrients inserted" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> addNutrient");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -386,59 +383,55 @@ public class DatabaseController {
               "     var_label_id integer;" + "\n" +
               "     var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "   var_retval = '0000';" + "\n" +
+              "   var_retval := '';" + "\n\n" +
               
               "   var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "   if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "   if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "   perform _lt.label_text from "+SCHEMA+".label_text _lt where label_text = $2;" + "\n" +
-              "   if found then" + "\n" +
+              "   if found then" + "\n\n" +
               
               "      var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u " + "\n" +
               "                     left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id " + "\n" +
               "                     left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
               "                     where _lt.label_text = $2);" + "\n" +
-              "      if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "      if var_unit_id = null then RAISE EXCEPTION 'unit_id does not exist with label: %', $2; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".food_units (food_id,source_id, unit_id, lang_id, scale) values (var_food_id, 1, var_unit_id, 2, $3);" + "\n" +
-              "      if not found then var_retval := var_retval || '0203'; end if;" + "\n" +
+              "      if not found then RAISE EXCEPTION 'Insert into food_units was not succeeded'; end if;" + "\n" +
               
-              "   else" + "\n" +
+              "   else" + "\n\n" +
               
-              "      var_unit_id := nextval('"+SCHEMA+".unit_unit_id_seq');" + "\n" +
-              "      if not found then var_retval := var_retval || '0504'; end if;" + "\n" +
-              
-              "      var_label_id := nextval('"+SCHEMA+".label_label_id_seq');" + "\n" +
-              "      if not found then var_retval := var_retval || '0505'; end if;" + "\n" +
-              
+              "      var_unit_id := nextval('"+SCHEMA+".unit_unit_id_seq');" + "\n" +              
+              "      var_label_id := nextval('"+SCHEMA+".label_label_id_seq');" + "\n\n" +
               
               "      insert into "+SCHEMA+".label (label_id, label_type_code) values (var_label_id, 1);	-- 1 is unit name" + "\n" +
-              "      if not found then var_retval := var_retval || '0206'; end if;" + "\n" +
+              "      if not found then RAISE EXCEPTION 'Insert into label was not succeeded'; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".label_text (label_id, lang_id, label_text) values (var_label_id, 2, $2); -- 2 is english" + "\n" +
-              "      if not found then var_retval := var_retval || '0207'; end if;" + "\n" +
+              "      if not found then RAISE EXCEPTION 'Insert into label_text was not succeeded'; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".unit (unit_id, unit_label_id) values (var_unit_id, var_label_id);" + "\n" +
-              "      if not found then var_retval := var_retval || '0208'; end if;" + "\n" +
+              "      if not found then RAISE EXCEPTION 'Insert into unit was not succeeded'; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".food_units (food_id,source_id, unit_id, lang_id, scale) values (var_food_id, 1, var_unit_id, 2, $3);" + "\n" +
-              "      if not found then var_retval := var_retval || '0209'; end if;" + "\n" +
+              "      if not found then RAISE EXCEPTION 'Insert into food_units was not succeeded'; end if;" + "\n\n" +
               
-              "   end if;" + "\n" +
+              "   end if;" + "\n\n" +
               
               "   return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> addWeight");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -466,35 +459,35 @@ public class DatabaseController {
               "   var_label_id integer;" + "\n" +
               "   var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "   var_retval = '0000';" + "\n" +
+              "   var_retval := '';" + "\n\n" +
               
               "   var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "   if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "   if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "   var_label_id := (select _f.foodname_label_id from "+SCHEMA+".food _f where food_id = var_food_id);" + "\n" +
-              "   if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "   if var_label_id = null then RAISE EXCEPTION 'label_id does not exist with food_id: %', var_food_id; end if;" + "\n\n" +
               
               "   update "+SCHEMA+".label_text set label_text = $2, label_long_text = $3" + "\n" +
               "   where label_id = var_label_id;" + "\n" +
-              "   if not found then var_retval := var_retval || '0303'; end if;" + "\n" +
+              "   if not found then var_retval := var_retval || ' 0303'; end if;" + "\n\n" +
               
               "   update "+SCHEMA+".food_source set refuse_percent = $4, source_link_no = 'USDA:"+VERSION+":' || $1 || ' SOTE:null'" + "\n" +
               "   where food_source.food_id = var_food_id;	-- VERSION is from java code" + "\n" +
-              "   if not found then var_retval := var_retval || '0304'; end if;" + "\n" +
+              "   if not found then var_retval := var_retval || ' 0304'; end if;" + "\n\n" +
               
               "   return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> chgFood");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -522,31 +515,31 @@ public class DatabaseController {
               "    var_nutr_id integer;" + "\n" +
               "	var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "	var_retval = '0000';" + "\n" +
+              "	var_retval := '';" + "\n\n" +
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "	var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $2 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "	if var_nutr_id = null then RAISE EXCEPTION 'nutr_id does not exist with Nutr_No: %', $2; end if;" + "\n\n" +
               
               "	update "+SCHEMA+".food_content set fc_quantity = $3" + "\n" +
               "	where food_id = var_food_id and nutr_id = var_nutr_id;" + "\n" +
-              "	if not found then var_retval := var_retval || '0303'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Update food_content was not succeeded'; end if;" + "\n\n" +
               
               "	return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> chgNutrient");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -573,34 +566,34 @@ public class DatabaseController {
               "	var_unit_id integer;" + "\n" +
               "	var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "	var_retval = '0000';" + "\n" +
+              "	var_retval := '';" + "\n\n" +
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "	var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u" + "\n" +
               "					left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id" + "\n" +
               "					left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
-              "					where _lt.label_text = $2);" + "\n" +
-              "	if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "					where _lt.label_text = $2);" + "\n\n" +
+              "	if var_unit_id = null then RAISE EXCEPTION 'unit_id does not exist with label: %', $2; end if;" + "\n\n" +
               
               "	update "+SCHEMA+".food_units set scale = $3" + "\n" +
-              "	where food_units.food_id = var_food_id and food_units.unit_id = var_unit_id;" + "\n" +
-              "	if not found then var_retval := var_retval || '0303'; end if;" + "\n" +
+              "	where food_id = var_food_id and unit_id = var_unit_id;" + "\n" +              
+              "	if not found then RAISE EXCEPTION 'Update food_units was not succeeded'; end if;" + "\n\n" +
               
               "	return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> chgWeight");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -626,40 +619,40 @@ public class DatabaseController {
               "	var_label_id integer;" + "\n" +
               "	var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "	var_retval = '0000';" + "\n" +
+              "	var_retval := '';" + "\n\n" +
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "	var_label_id := (select _f.foodname_label_id from "+SCHEMA+".food _f where food_id = var_food_id);" + "\n" +
-              "	if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "	if var_label_id = null then RAISE EXCEPTION 'label_id does not exist with food_id: %', var_food_id; end if;" + "\n\n" +
               
               
               "	delete from "+SCHEMA+".food_source where food_id = var_food_id;" + "\n" +
-              "	if not found then var_retval := var_retval || '0403'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Delete from food_source was not succeded'; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".food where food_id = var_food_id;" + "\n" +
-              "	if not found then var_retval := var_retval || '0404'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Delete from food was not succeded'; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".label_text where label_id = var_label_id and label_text = $2;" + "\n" +
-              "	if not found then var_retval := var_retval || '0405'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Delete from label_text was not succeded'; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".label where label_id = var_label_id;" + "\n" +
-              "	if not found then var_retval := var_retval || '0406'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Delete from label was not succeded'; end if;" + "\n\n" +
               
               "	return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> delFood");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -685,30 +678,30 @@ public class DatabaseController {
               "	var_nutr_id integer;" + "\n" +
               "	var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "	var_retval = '0000';" + "\n" +
+              "	var_retval := '';" + "\n\n" +
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "	var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $2 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "	if var_nutr_id = null then RAISE EXCEPTION 'nutr_id does not exist with Nutr_No: %', $2; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".food_content where food_id = var_food_id and nutr_id = var_nutr_id;" + "\n" +
-              "	if not found then var_retval := var_retval || '0403'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Delete from food_content was not succeeded'; end if;" + "\n\n" +
               
               "	return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> delNutrient");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -735,33 +728,33 @@ public class DatabaseController {
               "	var_unit_id integer;" + "\n" +
               "	var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "	var_retval = '0000';" + "\n" +
+              "	var_retval := '';" + "\n\n" +
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if not found then var_retval := var_retval || '0601'; end if;" + "\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
               
               "	var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u" + "\n" +
               "					left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id" + "\n" +
               "					left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
               "					where _lt.label_text = $2);" + "\n" +
-              "	if not found then var_retval := var_retval || '0602'; end if;" + "\n" +
+              "	if var_unit_id = null then RAISE EXCEPTION 'unit_id does not exist with label: %', $2; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".food_units where food_id = var_food_id and unit_id = var_unit_id and scale = $3;" + "\n" +
-              "	if not found then var_retval := var_retval || '0403'; end if;" + "\n" +
+              "	if not found then RAISE EXCEPTION 'Delete from food_units was not succeeded'; end if;" + "\n\n" +
               
               "	return var_retval;" + "\n" +
               "END;" + "\n" +
               "$var_retval$;";
       try
       {
-         conn = Connect();
+         if(conn.isClosed()) conn = Connect();
          
          PreparedStatement ps = conn.prepareStatement(createFunction);
          ps.execute();
          System.out.println("***LOG: function has been created -> delWeight");
          
          ps.close();
-         conn.close();
+         // conn.close();
          
       } catch (SQLException ex) {
          Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
@@ -815,63 +808,70 @@ public class DatabaseController {
    {
       Connection conn = null;
       
-      System.out.println("________________________________________________");
-      createAddFoodFunction(conn);
-      createAddNutrientFunction(conn);
-      createAddWeightFunction(conn);
-
-      System.out.println("________________________________________________");
-      createChgFoodFunction(conn);
-      createChgNutrientFunction(conn);
-      createChgWeightFunction(conn);
       
-      System.out.println("________________________________________________");
-      createDelFoodFunction(conn);
-      createDelNutrientFunction(conn);
-      createDelWeightFunction(conn);
-
-
       //test foods: 50001, 50002, 50003, 50004
       try
       {
-         System.out.println("________________________________________________");
-//         executeAddFoodFunction(conn, new FileFoodStruct(50014, "test_food10", "TEST_FOOD10", 0));
-//         executeAddFoodFunction(conn, new FileFoodStruct(50015, "test_food11", "TEST_FOOD11", 0));
+         conn = Connect();
          
          System.out.println("________________________________________________");
-         executeChgFoodFunction(conn, new FileFoodStruct(50014, "test_food10_0", "TEST_FOOD10_0", 10));
-         executeChgFoodFunction(conn, new FileFoodStruct(50015, "test_food11_0", "TEST_FOOD11_0", 10));
+         createAddFoodFunction(conn);
+         createAddNutrientFunction(conn);
+         createAddWeightFunction(conn);
          
          System.out.println("________________________________________________");
-         executeDelFoodFunction(conn, new FileFoodStruct(50014, "test_food10_0"));
-         executeDelFoodFunction(conn, new FileFoodStruct(50015, "test_food11_0"));
+         createChgFoodFunction(conn);
+         createChgNutrientFunction(conn);
+         createChgWeightFunction(conn);
          
          System.out.println("________________________________________________");
-//         executeAddNutrientFunction(conn, new FileNutrientStruct(50014, 208, 999.99));
-//         executeAddNutrientFunction(conn, new FileNutrientStruct(50015, 209, 999.99));
+         createDelFoodFunction(conn);
+         createDelNutrientFunction(conn);
+         createDelWeightFunction(conn);
          
-         System.out.println("________________________________________________");
-         executeChgNutrientFunction(conn, new FileNutrientStruct(50014, 208, 999.99));
-         executeChgNutrientFunction(conn, new FileNutrientStruct(50015, 209, 999.99));
          
-         System.out.println("________________________________________________");
-         executeDelNutrientFunction(conn, new FileNutrientStruct(50014, 208));
-         executeDelNutrientFunction(conn, new FileNutrientStruct(50015, 209));
          
-         System.out.println("________________________________________________");
-//         executeAddWeightFunction(conn, new FileWeightStruct(50014, 100.0, "testing desc10", 1000.0));
-//         executeAddWeightFunction(conn, new FileWeightStruct(50015, 100.0, "testing desc11", 1200.0));
          
-         System.out.println("________________________________________________");
-         executeChgWeightFunction(conn, new FileWeightStruct(50014, 100.0, "testing desc10", 1000.0));
-         executeChgWeightFunction(conn, new FileWeightStruct(50015, 100.0, "testing desc11", 1200.0));
+//         System.out.println("________________________________________________");
+//         executeAddFoodFunction(conn, new FileFoodStruct(50016, "test_food10", "TEST_FOOD10", 0));
+//         executeAddFoodFunction(conn, new FileFoodStruct(50017, "test_food11", "TEST_FOOD11", 0));
          
-         System.out.println("________________________________________________");
-         executeDelWeightFunction(conn, new FileWeightStruct(50014, 100.0, "testing desc10", 1000.0));
-         executeDelWeightFunction(conn, new FileWeightStruct(50015, 100.0, "testing desc11", 1200.0));
+//         System.out.println("________________________________________________");
+//         executeChgFoodFunction(conn, new FileFoodStruct(50016, "test_food10_1", "TEST_FOOD10_1", 100));
+//         executeChgFoodFunction(conn, new FileFoodStruct(50017, "test_food11_1", "TEST_FOOD11_1", 100));
          
-         conn.close();
+//         System.out.println("________________________________________________");
+//         executeDelFoodFunction(conn, new FileFoodStruct(50016, "TEST_FOOD10_1"));
+//         executeDelFoodFunction(conn, new FileFoodStruct(50017, "TEST_FOOD11_1"));
          
+//         System.out.println("________________________________________________");
+//         executeAddNutrientFunction(conn, new FileNutrientStruct(50016, 208, 999.99));
+//         executeAddNutrientFunction(conn, new FileNutrientStruct(50017, 209, 999.99));
+         
+//         System.out.println("________________________________________________");
+//         executeChgNutrientFunction(conn, new FileNutrientStruct(50016, 208, 10));
+//         executeChgNutrientFunction(conn, new FileNutrientStruct(50017, 209, 10));
+         
+//         System.out.println("________________________________________________");
+//         executeDelNutrientFunction(conn, new FileNutrientStruct(50016, 208));
+//         executeDelNutrientFunction(conn, new FileNutrientStruct(50017, 209));
+         
+//         System.out.println("________________________________________________");
+//         executeAddWeightFunction(conn, new FileWeightStruct(50016, 100.0, "testing desc10", 1000.0));
+//         executeAddWeightFunction(conn, new FileWeightStruct(50017, 100.0, "testing desc11", 1200.0));
+         
+//         System.out.println("________________________________________________");
+//         executeChgWeightFunction(conn, new FileWeightStruct(50016, 100.0, "testing desc10", 700.0));
+//         executeChgWeightFunction(conn, new FileWeightStruct(50017, 100.0, "testing desc11", 600.0));
+         
+//         System.out.println("________________________________________________");
+//         executeDelWeightFunction(conn, new FileWeightStruct(50016, 100.0, "testing desc10", 700.0));
+//         executeDelWeightFunction(conn, new FileWeightStruct(50017, 100.0, "testing desc11", 600.0));
+         
+         if(!conn.isClosed())
+         {
+            conn.close();
+         }
       }catch(SQLException e){
          System.out.println("SQLException has been caught");
       }
