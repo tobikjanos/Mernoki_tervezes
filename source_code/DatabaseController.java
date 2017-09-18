@@ -33,218 +33,10 @@ public class DatabaseController {
    private static String PASSWORD = "qaswed123";               /* qaswed123 */
    private static String SCHEMA = "minta";                 /* minta */
    private static String VERSION = "30";                /* 28 */
+   
+   private static FXMLDocumentController controller;
 
    
-   
-   public static void executeAddFoodFunction(Connection conn, FileFoodStruct food)
-   {      
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addFood( ?, ?, ?, ? )}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, food.getNDB_No());
-         cstmt.setString(3, food.getShrt_desc());
-         cstmt.setString(4, food.getLong_desc());
-         cstmt.setInt(5, food.getRefuse_percent());
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute addFood has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute addFood function caused error");
-      }
-   }
-   
-   public static void executeAddNutrientFunction(Connection conn, FileNutrientStruct nutrient)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addNutrient(?, ?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, nutrient.getNDB_No());
-         cstmt.setInt(3, nutrient.getNutr_No());
-         cstmt.setDouble(4, nutrient.getNutr_Val());
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute addNutrient has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute addNutrient function caused error");
-      }
-   }
-   
-   public static void executeAddWeightFunction(Connection conn, FileWeightStruct weight)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addWeight(?, ?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, weight.getNDB_No());
-         cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
-         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute addWeight has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute addWeight function caused error");
-      }
-   }
-   public static void executeChgFoodFunction(Connection conn, FileFoodStruct food)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgFood(?, ?, ?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, food.getNDB_No());
-         cstmt.setString(3, food.getShrt_desc());
-         cstmt.setString(4, food.getLong_desc());
-         cstmt.setInt(5, food.getRefuse_percent());
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute chgFood has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute chgFood function caused error");
-      }
-   }
-   public static void executeChgNutrientFunction(Connection conn, FileNutrientStruct nutrient)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgNutrient(?, ?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, nutrient.getNDB_No());
-         cstmt.setInt(3, nutrient.getNutr_No());
-         cstmt.setDouble(4, nutrient.getNutr_Val());
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute chgNutrient has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute chgNutrient function caused error");
-      }
-   }
-   public static void executeChgWeightFunction(Connection conn, FileWeightStruct weight)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgWeight(?, ?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, weight.getNDB_No());
-         cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
-         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute chgWeight has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute chgWeight function caused error");
-      }
-   }
-   public static void executeDelFoodFunction(Connection conn, FileFoodStruct food)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delFood(?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, food.getNDB_No());
-         cstmt.setString(3, food.getShrt_desc());
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute delFood has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute delFood function caused error");
-      }
-   }
-   public static void executeDelNutrientFunction(Connection conn, FileNutrientStruct nutrient)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delNutrient(?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, nutrient.getNDB_No());
-         cstmt.setInt(3, nutrient.getNutr_No());
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute delNutrient has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute delNutrient function caused error");
-      }
-   }
-   public static void executeDelWeightFunction(Connection conn, FileWeightStruct weight)
-   {
-      try
-      {
-         if(conn.isClosed()) conn = Connect();
-         
-         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delWeight(?, ?, ?)}");
-         cstmt.registerOutParameter(1, Types.VARCHAR);
-         cstmt.setInt(2, weight.getNDB_No());
-         cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
-         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
-         
-         cstmt.execute();
-         System.out.println("***LOG: execute delWeight has been succeeded and returned: " + cstmt.getString(1));
-         
-         cstmt.close();
-         // conn.close();
-         
-      } catch (SQLException ex) {
-         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
-         System.out.println("***LOG: execute delWeight function caused error");
-      }
-   }
    
    public static void createAddFoodFunction(Connection conn)
    {
@@ -284,7 +76,7 @@ public class DatabaseController {
               "   if not found then RAISE EXCEPTION 'Insert into food was not succeeded'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)" + "\n" +
-              "   values(var_food_id, 1, 15, 10, $4, 'USDA:"+VERSION+":' || $1 || ' SOTE:null'); -- VERSION is from java code" + "\n" +
+              "   values(var_food_id, 1, 15, 10, $4, 'USDA:SR"+VERSION+":' || $1 || ' SOTE:null'); -- VERSION is from java code" + "\n" +
               "   if not found then RAISE EXCEPTION 'Insert into food_source was not succeeded'; end if;" + "\n\n" +
               
               "   return var_retval; -- return number of foods inserted" + "\n" +
@@ -471,7 +263,7 @@ public class DatabaseController {
               "   where label_id = var_label_id;" + "\n" +
               "   if not found then var_retval := var_retval || ' 0303'; end if;" + "\n\n" +
               
-              "   update "+SCHEMA+".food_source set refuse_percent = $4, source_link_no = 'USDA:"+VERSION+":' || $1 || ' SOTE:null'" + "\n" +
+              "   update "+SCHEMA+".food_source set refuse_percent = $4, source_link_no = 'USDA:SR"+VERSION+":' || $1 || ' SOTE:null'" + "\n" +
               "   where food_source.food_id = var_food_id;	-- VERSION is from java code" + "\n" +
               "   if not found then var_retval := var_retval || ' 0304'; end if;" + "\n\n" +
               
@@ -762,6 +554,318 @@ public class DatabaseController {
       }
    }
    
+   public static void executeAddFoodFunction(Connection conn, FileFoodStruct food) throws SQLException
+   {      
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addFood( ?, ?, ?, ? )}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, food.getNDB_No());
+         cstmt.setString(3, food.getShrt_desc());
+         cstmt.setString(4, food.getLong_desc());
+         cstmt.setInt(5, food.getRefuse_percent());
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute addFood has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", food.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute addFood function caused error");
+         SendTraceMessage("[ FAILED ]", food.toString());
+         LogHandler.AddElement("[ FAILED ]", food.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   
+   public static void executeAddNutrientFunction(Connection conn, FileNutrientStruct nutrient) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addNutrient(?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, nutrient.getNDB_No());
+         cstmt.setInt(3, nutrient.getNutr_No());
+         cstmt.setDouble(4, nutrient.getNutr_Val());
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute addNutrient has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", nutrient.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute addNutrient function caused error");
+         SendTraceMessage("[ FAILED ]", nutrient.toString());
+         LogHandler.AddElement("[ FAILED ]", nutrient.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   
+   public static void executeAddWeightFunction(Connection conn, FileWeightStruct weight) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".addWeight(?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, weight.getNDB_No());
+         if( (weight.getAmount() % 1.0f) == 0)
+         {
+            cstmt.setString(3, String.valueOf(weight.getAmount().intValue()) + " " + weight.getMsre_Desc());
+         }
+         else
+         {
+            cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
+         }
+         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute addWeight has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", weight.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute addWeight function caused error");
+         SendTraceMessage("[ FAILED ]", weight.toString());
+         LogHandler.AddElement("[ FAILED ]", weight.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   public static void executeChgFoodFunction(Connection conn, FileFoodStruct food) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgFood(?, ?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, food.getNDB_No());
+         cstmt.setString(3, food.getShrt_desc());
+         cstmt.setString(4, food.getLong_desc());
+         cstmt.setInt(5, food.getRefuse_percent());
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute chgFood has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", food.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute chgFood function caused error");
+         SendTraceMessage("[ FAILED ]", food.toString());
+         LogHandler.AddElement("[ FAILED ]", food.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   public static void executeChgNutrientFunction(Connection conn, FileNutrientStruct nutrient) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgNutrient(?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, nutrient.getNDB_No());
+         cstmt.setInt(3, nutrient.getNutr_No());
+         cstmt.setDouble(4, nutrient.getNutr_Val());
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute chgNutrient has been succeeded and returned: " + cstmt.getString(1));
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", nutrient.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute chgNutrient function caused error");
+         System.out.println("Message: " + ex.getMessage());
+         SendTraceMessage("[ FAILED ]", nutrient.toString());
+         LogHandler.AddElement("[ FAILED ]", nutrient.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   public static void executeChgWeightFunction(Connection conn, FileWeightStruct weight) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgWeight(?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, weight.getNDB_No());
+         if( (weight.getAmount() % 1.0f) == 0)
+         {
+            cstmt.setString(3, String.valueOf(weight.getAmount().intValue()) + " " + weight.getMsre_Desc());
+         }
+         else
+         {
+            cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
+         }
+         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute chgWeight has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", weight.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute chgWeight function caused error");
+         SendTraceMessage("[ FAILED ]", weight.toString());
+         LogHandler.AddElement("[ FAILED ]", weight.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   public static void executeDelFoodFunction(Connection conn, FileFoodStruct food) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delFood(?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, food.getNDB_No());
+         cstmt.setString(3, food.getShrt_desc());
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute delFood has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", food.toString());
+         
+      } catch (SQLException ex) {
+//         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute delFood function caused error");
+         SendTraceMessage("[ FAILED ]", food.toString());
+         LogHandler.AddElement("[ FAILED ]", food.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   public static void executeDelNutrientFunction(Connection conn, FileNutrientStruct nutrient) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delNutrient(?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, nutrient.getNDB_No());
+         cstmt.setInt(3, nutrient.getNutr_No());
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute delNutrient has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+		 
+         LogHandler.AddElement("[   OK   ]", nutrient.toString());
+         
+      } catch (SQLException ex) {
+         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute delNutrient function caused error");
+         SendTraceMessage("[ FAILED ]", nutrient.toString());
+         LogHandler.AddElement("[ FAILED ]", nutrient.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException(ex.getMessage());
+      }
+   }
+   public static void executeDelWeightFunction(Connection conn, FileWeightStruct weight) throws SQLException
+   {
+      try
+      {
+         if(conn.isClosed()){
+            SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat megszakadt");
+            conn = Connect();
+         }
+         
+         CallableStatement cstmt = conn.prepareCall("{? = call "+SCHEMA+".delWeight(?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.VARCHAR);
+         cstmt.setInt(2, weight.getNDB_No());
+         if( (weight.getAmount() % 1.0f) == 0)
+         {
+            cstmt.setString(3, String.valueOf(weight.getAmount().intValue()) + " " + weight.getMsre_Desc());
+         }
+         else
+         {
+            cstmt.setString(3, String.valueOf(weight.getAmount()) + " " + weight.getMsre_Desc());
+         }
+         cstmt.setDouble(4, weight.getGm_Wgt()/10.0);
+         
+         cstmt.execute();
+         System.out.println("***LOG: execute delWeight has been succeeded and returned: " + cstmt.getString(1));
+         
+         cstmt.close();
+         // conn.close();
+         
+         LogHandler.AddElement("[   OK   ]", weight.toString());
+         
+      } catch (SQLException ex) {
+//         Logger.getLogger(DatabaseController.class.getName()).log(Level.SEVERE, null, ex);
+         System.out.println("***LOG: execute delWeight function caused error");
+         SendTraceMessage("[ FAILED ]", weight.toString());
+         LogHandler.AddElement("[ FAILED ]", weight.toString());
+         LogHandler.AddElement("[ERRORMSG]", ex.getMessage());
+         throw new SQLException("REASON");
+      }
+   }
+   
    public static Connection Connect()
    {
       Connection conn = null;
@@ -795,13 +899,35 @@ public class DatabaseController {
       if (conn != null)
       {
          System.out.println("Connection has established to " + DATABASE_NAME);
+         SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat létrehozása sikeres");
       }
       else
       {
          System.out.println("Failed to make connection!");
+         SendTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat létrehozása sikertelen");
       }
       
       return conn;
+   }
+   
+   private static void SendTraceMessage(String status, String data)
+   {
+      controller.AddTraceMessage(status, data);
+   }
+   
+   public static void setController(FXMLDocumentController cntrlr) {
+      controller = cntrlr;
+   }
+   
+   public static void ClearDatabaseSetup()
+   {
+      IP_ADDRESS  = "";
+      PORT = "";
+      DATABASE_NAME = "";
+      USERNAME = "";
+      PASSWORD = "";
+      SCHEMA = "";
+      VERSION = "";
    }
    
    public static void main(String[] args) throws IOException
@@ -848,9 +974,9 @@ public class DatabaseController {
 //         executeAddNutrientFunction(conn, new FileNutrientStruct(50016, 208, 999.99));
 //         executeAddNutrientFunction(conn, new FileNutrientStruct(50017, 209, 999.99));
          
-//         System.out.println("________________________________________________");
-//         executeChgNutrientFunction(conn, new FileNutrientStruct(50016, 208, 10));
-//         executeChgNutrientFunction(conn, new FileNutrientStruct(50017, 209, 10));
+         System.out.println("________________________________________________");
+         executeChgNutrientFunction(conn, new FileNutrientStruct(50020, 208, 10));
+         executeChgNutrientFunction(conn, new FileNutrientStruct(50021, 209, 10));
          
 //         System.out.println("________________________________________________");
 //         executeDelNutrientFunction(conn, new FileNutrientStruct(50016, 208));
@@ -945,11 +1071,11 @@ public class DatabaseController {
    public String toString()
    {
       return IP_ADDRESS       + "\t" +
-              PORT            + "\t" + 
-              DATABASE_NAME   + "\t" + 
-              USERNAME        + "\t" + 
-              PASSWORD        + "\t" + 
-              SCHEMA          + "\t" + 
+              PORT            + "\t" +
+              DATABASE_NAME   + "\t" +
+              USERNAME        + "\t" +
+              PASSWORD        + "\t" +
+              SCHEMA          + "\t" +
               VERSION;
    }
    

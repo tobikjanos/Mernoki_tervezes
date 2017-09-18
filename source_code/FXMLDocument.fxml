@@ -31,7 +31,8 @@
                         <TextField fx:id="t1TextUsername" layoutX="325.0" layoutY="216.0" promptText="postgres" />
                         <PasswordField fx:id="t1Password" layoutX="325.0" layoutY="256.0" promptText="*********" />
                         <TextField fx:id="t1TextSchema" layoutX="325.0" layoutY="296.0" promptText="minta" />
-                        <Button fx:id="t1ButtonSave" layoutX="394.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#MouseClickSaveDatabaseConfig" prefHeight="39.0" prefWidth="80.0" text="Mentés" />
+                        <Button fx:id="t1ButtonSave" layoutX="394.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#MouseClickSaveDatabaseConfig" prefHeight="40.0" prefWidth="80.0" text="Mentés" />
+                        <Button fx:id="t1ButtonTest" layoutX="325.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#MouseClickTestDatabaseConnection" prefHeight="40.0" prefWidth="66.0" text="Teszt" />
                      </children>
                   </AnchorPane>
             </content>
@@ -58,24 +59,24 @@
                         <TextField fx:id="t2TextDelFood" layoutX="250.0" layoutY="286.0" onDragDropped="#DragDroppedGetFilePath" onDragOver="#DragOverAcceptFile" />
                         <TextField fx:id="t2TextDelNutr" layoutX="250.0" layoutY="326.0" onDragDropped="#DragDroppedGetFilePath" onDragOver="#DragOverAcceptFile" />
                         <TextField fx:id="t2TextDelWgt" layoutX="250.0" layoutY="366.0" onDragDropped="#DragDroppedGetFilePath" onDragOver="#DragOverAcceptFile" />
-                        <Button fx:id="t2ButtonAddFood" layoutX="415.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonAddNutr" layoutX="415.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonAddWgt" layoutX="415.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonChgFood" layoutX="415.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonChgNutr" layoutX="415.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonChgWgt" layoutX="415.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonDelFood" layoutX="415.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonDelNutr" layoutX="415.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <Button fx:id="t2ButtonDelWgt" layoutX="415.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="..." />
-                        <ProgressIndicator fx:id="t2PiAddFood" layoutX="450.0" layoutY="46.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiAddNutr" layoutX="450.0" layoutY="86.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiAddWgt" layoutX="450.0" layoutY="126.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiChgFood" layoutX="450.0" layoutY="166.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiChgNutr" layoutX="450.0" layoutY="206.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiChgWgt" layoutX="450.0" layoutY="246.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiDelFood" layoutX="450.0" layoutY="286.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiDelNutr" layoutX="450.0" layoutY="326.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
-                        <ProgressIndicator fx:id="t2PiDelWgt" layoutX="450.0" layoutY="366.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <Button fx:id="t2ButtonAddFood" layoutX="415.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonAddNutr" layoutX="415.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonAddWgt" layoutX="415.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonChgFood" layoutX="415.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonChgNutr" layoutX="415.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonChgWgt" layoutX="415.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonDelFood" layoutX="415.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonDelNutr" layoutX="415.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <Button fx:id="t2ButtonDelWgt" layoutX="415.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseFile" text="Fájl" />
+                        <ProgressIndicator fx:id="t2PiAddFood" layoutX="460.0" layoutY="46.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiAddNutr" layoutX="460.0" layoutY="86.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiAddWgt" layoutX="460.0" layoutY="126.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiChgFood" layoutX="460.0" layoutY="166.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiChgNutr" layoutX="460.0" layoutY="206.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiChgWgt" layoutX="460.0" layoutY="246.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiDelFood" layoutX="460.0" layoutY="286.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiDelNutr" layoutX="460.0" layoutY="326.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                        <ProgressIndicator fx:id="t2PiDelWgt" layoutX="460.0" layoutY="366.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
                         <Button fx:id="t2ButtonStart" layoutX="424.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#MouseClickStartRead" text="Indítás" />
                         <Label layoutX="175.0" layoutY="425.0" text="Revíziószám" />
                         <TextField fx:id="t2TextRevisionNumber" layoutX="250.0" layoutY="421.0" prefHeight="4.0" prefWidth="34.0" />
@@ -87,8 +88,7 @@
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <ProgressBar fx:id="t3ProgressBar" layoutX="47.0" layoutY="404.0" prefHeight="18.0" prefWidth="550.0" progress="0.0" />
-                        <Button fx:id="t3ButtonStart" layoutX="477.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#StartProcess" text="Indítás" />
-                        <Button fx:id="t3ButtonStop" layoutX="538.0" layoutY="442.0" mnemonicParsing="false" text="Leállítás" />
+                        <Button fx:id="t3ButtonStart" layoutX="522.0" layoutY="441.0" mnemonicParsing="false" onMouseClicked="#StartProcess" prefHeight="25.0" prefWidth="75.0" text="Indítás" />
                         <ListView fx:id="t3ListView" layoutX="47.0" layoutY="36.0" prefHeight="330.0" prefWidth="550.0" />
                         <Label fx:id="t3LabelSuccessCounter" layoutX="47.0" layoutY="381.0" />
                         <TextFlow fx:id="t3TextFlow" layoutX="47.0" layoutY="380.0" prefHeight="20.0" prefWidth="148.0">
@@ -102,7 +102,11 @@
             </Tab>
             <Tab text="Naplózás">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="t4ButtonChooseFile" layoutX="45.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#MouseClickChooseLogFile" text="Fájl kiválasztása" />
+                        <ListView fx:id="t4ListView" layoutX="45.0" layoutY="64.0" prefHeight="410.0" prefWidth="550.0" />
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>

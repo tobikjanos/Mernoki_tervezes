@@ -39,55 +39,56 @@ public class ETLController {
    private static FXMLDocumentController controller;
    
    
-   public static void ReadFiles( String strFilePath , String strFileType )
+   public static int ReadFiles( String strFilePath , String strFileType )
    {
       FILETYPES fileTypes = FILETYPES.valueOf(strFileType);
+      int intRetVal = 0;
       
       switch(fileTypes)
       {
          case ADD_FOOD:
          {
-            FileHandler.readFile(strFilePath, listAddFood, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listAddFood, strFileType);
             break;
          }
          case ADD_NUTR:
          {
-            FileHandler.readFile(strFilePath, listAddNutr, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listAddNutr, strFileType);
             break;
          }
          case ADD_WGT:
          {
-            FileHandler.readFile(strFilePath, listAddWgt, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listAddWgt, strFileType);
             break;
          }
          case CHG_FOOD:
          {
-            FileHandler.readFile(strFilePath, listChgFood, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listChgFood, strFileType);
             break;
          }
          case CHG_NUTR:
          {
-            FileHandler.readFile(strFilePath, listChgNutr, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listChgNutr, strFileType);
             break;
          }
          case CHG_WGT:
          {
-            FileHandler.readFile(strFilePath, listChgWgt, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listChgWgt, strFileType);
             break;
          }
          case DEL_FOOD:
          {
-            FileHandler.readFile(strFilePath, listDelFood, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listDelFood, strFileType);
             break;
          }
          case DEL_NUTR:
          {
-            FileHandler.readFile(strFilePath, listDelNutr, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listDelNutr, strFileType);
             break;
          }
          case DEL_WGT:
          {
-            FileHandler.readFile(strFilePath, listDelWgt, strFileType);
+            intRetVal = FileHandler.readFile(strFilePath, listDelWgt, strFileType);
             break;
          }
          default:
@@ -95,6 +96,7 @@ public class ETLController {
             System.err.println("Type of file is not known!\tGiven type: " + strFileType);
          }
       }
+      return intRetVal;
    }
    
    /**
@@ -122,7 +124,7 @@ public class ETLController {
     */
    public static void LoadDatabase(Connection conn)
    {
-      int totalData =   listAddFood.size() +
+      int totalData = listAddFood.size() +
               listAddNutr.size() +
               listAddWgt.size() +
               listChgFood.size() +
@@ -132,8 +134,11 @@ public class ETLController {
               listDelNutr.size() +
               listDelWgt.size();
       
-      int successCounter = 0;
-      int errorCounter = 0;
+      int progressCounter = 0;
+      int moduleCounter = 0;
+      
+      LogHandler.ClearLogList();
+      LogHandler.CreateLogFile();
       
       try
       {
@@ -145,99 +150,146 @@ public class ETLController {
             /**__________________________________________________________________________
              * ADD_FOOD 
              */
-            SendTraceMessage("[ INFO ]", "ADD_FOOD elkezdődött");
+            SendTraceMessage("[  INFO  ]", "ADD_FOOD elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "ADD_FOOD elkezdődött");
             for(FileFoodStruct ffs : listAddFood)
             {
-               //DatabaseController.executeAddFoodFunction(conn, ffs);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeAddFoodFunction(conn, ffs);
+               //if execute done cnt+1
+               //if not cnt not increment
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
-            SendTraceMessage("[ INFO ]", "ADD_FOOD befejeződött");
+            SendTraceMessage("[  INFO  ]", "ADD_FOOD befejeződött: " + moduleCounter + " adat");
             /**__________________________________________________________________________
              * ADD_NUTR 
              */
-            SendTraceMessage("[ INFO ]", "ADD_NUTR elkezdődött");
+            SendTraceMessage("[  INFO  ]", "ADD_NUTR elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "ADD_NUTR elkezdődött");
+            moduleCounter = 0;
             for(FileNutrientStruct fns : listAddNutr)
             {
-               //DatabaseController.executeAddNutrientFunction(conn, fns);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeAddNutrientFunction(conn, fns);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
-            SendTraceMessage("[ INFO ]", "ADD_NUTR befejeződött");
+            SendTraceMessage("[  INFO  ]", "ADD_NUTR befejeződött: " + moduleCounter + " adat");
             
             /**__________________________________________________________________________
              * ADD_WGT 
              */
+            SendTraceMessage("[  INFO  ]", "ADD_WGT elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "ADD_WGT elkezdődött");
+            moduleCounter = 0;
             for(FileWeightStruct fws : listAddWgt)
             {
-               //DatabaseController.executeAddWeightFunction(conn, fws);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeAddWeightFunction(conn, fws);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
+            SendTraceMessage("[  INFO  ]", "ADD_WGT befejeződött: " + moduleCounter + " adat");
             /**__________________________________________________________________________
              * CHG_FOOD 
              */
+            SendTraceMessage("[  INFO  ]", "CHG_FOOD elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "CHG_FOOD elkezdődött");
+            moduleCounter = 0;
             for(FileFoodStruct ffs : listChgFood)
             {
-               //DatabaseController.executeChgFoodFunction(conn, ffs);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeChgFoodFunction(conn, ffs);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
+            SendTraceMessage("[  INFO  ]", "CHG_FOOD befejeződött: " + moduleCounter + " adat");
             /**__________________________________________________________________________
              * CHG_NUTR 
              */
+            SendTraceMessage("[  INFO  ]", "CHG_NUTR elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "CHG_NUTR elkezdődött");
+            moduleCounter = 0;
             for(FileNutrientStruct fns : listChgNutr)
             {
-               //DatabaseController.executeChgNutrientFunction(conn, fns);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeChgNutrientFunction(conn, fns);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
+            SendTraceMessage("[  INFO  ]", "CHG_NUTR befejeződött: " + moduleCounter + " adat");
             /**__________________________________________________________________________
              * CHG_WGT 
              */
+            SendTraceMessage("[  INFO  ]", "CHG_WGT elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "CHG_WGT elkezdődött");
+            moduleCounter = 0;
             for(FileWeightStruct fws : listChgWgt)
             {
-               //DatabaseController.executeChgWeightFunction(conn, fws);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeChgWeightFunction(conn, fws);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
-            /**__________________________________________________________________________
-             * DEL_FOOD 
-             */
-            for(FileFoodStruct ffs : listDelFood)
-            {
-               //DatabaseController.executeDelFoodFunction(conn, ffs);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
-            }
-            /**__________________________________________________________________________
-             * DEL_NUTR 
-             */
-            for(FileNutrientStruct fns : listDelNutr)
-            {
-               //DatabaseController.executeDelNutrientFunction(conn, fns);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
-            }
+            SendTraceMessage("[  INFO  ]", "CHG_WGT befejeződött: " + moduleCounter + " adat");
             /**__________________________________________________________________________
              * DEL_WGT 
              */
+            SendTraceMessage("[  INFO  ]", "DEL_WGT elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "DEL_WGT elkezdődött");
+            moduleCounter = 0;
             for(FileWeightStruct fws : listDelWgt)
             {
-               //DatabaseController.executeDelWeightFunction(conn, fws);
-               successCounter++;
-               SendCounterValue(successCounter, totalData);
+               DatabaseController.executeDelWeightFunction(conn, fws);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
             }
+            SendTraceMessage("[  INFO  ]", "DEL_WGT befejeződött: " + moduleCounter + " adat");
+            /**__________________________________________________________________________
+             * DEL_NUTR 
+             */
+            SendTraceMessage("[  INFO  ]", "DEL_NUTR elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "DEL_NUTR elkezdődött");
+            moduleCounter = 0;
+            for(FileNutrientStruct fns : listDelNutr)
+            {
+               DatabaseController.executeDelNutrientFunction(conn, fns);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
+            }
+            SendTraceMessage("[  INFO  ]", "DEL_NUTR befejeződött: " + moduleCounter + " adat");
+            /**__________________________________________________________________________
+             * DEL_FOOD 
+             */
+            SendTraceMessage("[  INFO  ]", "DEL_FOOD elkezdődött");
+            LogHandler.AddElement("[  INFO  ]", "DEL_FOOD elkezdődött");
+            moduleCounter = 0;
+            for(FileFoodStruct ffs : listDelFood)
+            {
+               DatabaseController.executeDelFoodFunction(conn, ffs);
+               moduleCounter++;
+               progressCounter++;
+               SendCounterValue(progressCounter, totalData);
+            }
+            SendTraceMessage("[  INFO  ]", "DEL_FOOD befejeződött: " + moduleCounter + " adat");
             
-         } catch (/*SQLException*/Exception ex) {
+            conn.commit();
+            conn.close();
+            
+         } catch (SQLException ex) {
             Logger.getLogger(ETLController.class.getName()).log(Level.SEVERE, null, ex);
             conn.rollback(savePoint1);
+            SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
          }
-         
          
       } catch (SQLException ex) {
          Logger.getLogger(ETLController.class.getName()).log(Level.SEVERE, null, ex);
       }
+      
+      LogHandler.WriteLogFile();
          
    }
    
@@ -251,7 +303,8 @@ public class ETLController {
       controller.SetProgressStatus(currValue, maxValue);
    }
    
-   public static void setController(FXMLDocumentController cntrlr) {
+   public static void setController(FXMLDocumentController cntrlr) 
+   {
       controller = cntrlr;
    }
    

@@ -10,19 +10,11 @@ import java.net.URL;
 import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -32,21 +24,14 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.ProgressIndicator;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableColumn.CellDataFeatures;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
-import javafx.util.Callback;
 
 /**
  *
@@ -63,12 +48,12 @@ public class FXMLDocumentController implements Initializable {
    private TextField t1TextIPaddress, t1TextPort, t1TextDBname, t1TextUsername, t1TextSchema;
    @FXML
    private PasswordField t1Password;
-   @FXML
-   private Button t1ButtonSave;
    
    @FXML
    private void MouseClickSaveDatabaseConfig()
    {
+//      DatabaseController.ClearDatabaseSetup();
+      
       DatabaseController.setIP_ADDRESS(      t1TextIPaddress.getText()  );
       DatabaseController.setPORT(            t1TextPort.getText()       );
       DatabaseController.setDATABASE_NAME(   t1TextDBname.getText()     );
@@ -81,6 +66,39 @@ public class FXMLDocumentController implements Initializable {
       
    }
    
+   @FXML
+   private void MouseClickTestDatabaseConnection()
+   {
+      
+      //      DatabaseController.ClearDatabaseSetup();
+      
+      DatabaseController.setIP_ADDRESS(      t1TextIPaddress.getText()  );
+      DatabaseController.setPORT(            t1TextPort.getText()       );
+      DatabaseController.setDATABASE_NAME(   t1TextDBname.getText()     );
+      DatabaseController.setUSERNAME(        t1TextUsername.getText()   );
+      DatabaseController.setPASSWORD(        t1Password.getText()       );
+      DatabaseController.setSCHEMA(          t1TextSchema.getText()     );
+      
+      
+      try {
+         Connection conn = DatabaseController.Connect();
+         if(conn.isValid(7))
+         {
+            SystemMessageController.DisplayInformationMessage("Adatbázis kapcsolat tesztelése","Teszt sikeres!");
+            System.out.println("Connected");
+         }
+         else
+         {
+            SystemMessageController.DisplayErrorMessage("Adatbázis kapcsolat tesztelése","Teszt sikertelen!");
+            System.out.println("Not connected");
+         }
+      } catch (Exception ex) {
+         SystemMessageController.DisplayErrorMessage("Adatbázis kapcsolat tesztelése","Teszt sikertelen!");
+         Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+      }
+      
+   }
+   
    /****************************
     *           TAB 2          *
     ****************************/
@@ -89,12 +107,11 @@ public class FXMLDocumentController implements Initializable {
    private TextField t2TextAddFood, t2TextAddNutr, t2TextAddWgt,
            t2TextChgFood, t2TextChgNutr, t2TextChgWgt,
            t2TextDelFood, t2TextDelNutr, t2TextDelWgt,
-           t2TextRevisonNumber;
+           t2TextRevisionNumber;
    @FXML
    private Button t2ButtonAddFood, t2ButtonAddNutr, t2ButtonAddWgt,
            t2ButtonChgFood, t2ButtonChgNutr, t2ButtonChgWgt,
-           t2ButtonDelFood, t2ButtonDelNutr, t2ButtonDelWgt,
-           t2ButtonStart;
+           t2ButtonDelFood, t2ButtonDelNutr, t2ButtonDelWgt;
    @FXML
    private ProgressIndicator t2PiAddFood, t2PiAddNutr, t2PiAddWgt,
            t2PiChgFood, t2PiChgNutr, t2PiChgWgt,
@@ -173,14 +190,12 @@ public class FXMLDocumentController implements Initializable {
       {
          System.err.println("File has not been choosen!");
       }
-      
    }
    
    @FXML
    private void MouseClickStartRead()
-   {
-      
-      DatabaseController.setVERSION(t2TextRevisonNumber.getText());
+   {      
+      DatabaseController.setVERSION(t2TextRevisionNumber.getText());
       System.out.println("________________________________________________________________________");
       System.out.println("REVISION: " + DatabaseController.getVERSION());
             
@@ -190,47 +205,47 @@ public class FXMLDocumentController implements Initializable {
             System.out.println("________________________________________________________________________");
             System.out.println("ADD_FOOD");
             t2PiAddFood.setVisible(true);
-            ETLController.ReadFiles(t2TextAddFood.getText(), "ADD_FOOD");
+            System.out.println(ETLController.ReadFiles(t2TextAddFood.getText(), "ADD_FOOD"));
             t2PiAddFood.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("ADD_NUTR");
             t2PiAddNutr.setVisible(true);
-            ETLController.ReadFiles(t2TextAddNutr.getText(), "ADD_NUTR");
+            System.out.println(ETLController.ReadFiles(t2TextAddNutr.getText(), "ADD_NUTR"));
             t2PiAddNutr.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("ADD_WGT");
             t2PiAddWgt.setVisible(true);
-            ETLController.ReadFiles(t2TextAddWgt.getText(), "ADD_WGT");
+            System.out.println(ETLController.ReadFiles(t2TextAddWgt.getText(), "ADD_WGT"));
             t2PiAddWgt.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("CHG_FOOD");
             t2PiChgFood.setVisible(true);
-            ETLController.ReadFiles(t2TextChgFood.getText(), "CHG_FOOD");
+            System.out.println(ETLController.ReadFiles(t2TextChgFood.getText(), "CHG_FOOD"));
             t2PiChgFood.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("CHG_NUTR");
             t2PiChgNutr.setVisible(true);
-            ETLController.ReadFiles(t2TextChgNutr.getText(), "CHG_NUTR");
+            System.out.println(ETLController.ReadFiles(t2TextChgNutr.getText(), "CHG_NUTR"));
             t2PiChgNutr.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("CHG_WGT");
             t2PiChgWgt.setVisible(true);
-            ETLController.ReadFiles(t2TextChgWgt.getText(), "CHG_WGT");
+            System.out.println(ETLController.ReadFiles(t2TextChgWgt.getText(), "CHG_WGT"));
             t2PiChgWgt.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("DEL_FOOD");
             t2PiDelFood.setVisible(true);
-            ETLController.ReadFiles(t2TextDelFood.getText(), "DEL_FOOD");
+            System.out.println(ETLController.ReadFiles(t2TextDelFood.getText(), "DEL_FOOD"));
             t2PiDelFood.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("DEL_NUTR");
             t2PiDelNutr.setVisible(true);
-            ETLController.ReadFiles(t2TextDelNutr.getText(), "DEL_NUTR");
+            System.out.println(ETLController.ReadFiles(t2TextDelNutr.getText(), "DEL_NUTR"));
             t2PiDelNutr.setVisible(false);
             System.out.println("________________________________________________________________________");
             System.out.println("DEL_WGT");
             t2PiDelWgt.setVisible(true);
-            ETLController.ReadFiles(t2TextDelWgt.getText(), "DEL_WGT");
+            System.out.println(ETLController.ReadFiles(t2TextDelWgt.getText(), "DEL_WGT"));
             t2PiDelWgt.setVisible(false);
             
             return null;
@@ -244,7 +259,7 @@ public class FXMLDocumentController implements Initializable {
     *           TAB 3          *
     ****************************/
    @FXML
-   ListView t3ListView;
+   private ListView t3ListView;
    
    @FXML
    private Button t3ButtonStart, t3ButtonStop;
@@ -259,13 +274,12 @@ public class FXMLDocumentController implements Initializable {
    @FXML
    private void StartProcess()
    {
-      ETLController.setController(this);
-      
       Task task = new Task<Void>() {
          @Override
          protected Void call() throws Exception {
             
             Connection conn = DatabaseController.Connect();
+            ETLController.CreateFunctions(conn);
             ETLController.LoadDatabase(conn);
             
             return null;
@@ -293,11 +307,51 @@ public class FXMLDocumentController implements Initializable {
       });
    }
    
+   public void SetProgressBar(Integer value, Integer maxValue)
+   {
+      t3ProgressBar.setProgress(value.doubleValue() / maxValue.doubleValue());
+   }
    /****************************
     *           TAB 4          *
     ****************************/
    
+   @FXML
+   Button t4ButtonChooseFile;
    
+   @FXML
+   ListView t4ListView;
+   
+   @FXML
+   private void MouseClickChooseLogFile(MouseEvent event)
+   {
+      t4ListView.setPlaceholder(new Label(""));
+      
+      FileChooser fileChooser = new FileChooser();
+      File defaultDir = new File("LOG\\");
+      fileChooser.setInitialDirectory(defaultDir);
+      
+      File selectedFile = fileChooser.showOpenDialog(null);
+      
+      List<TraceMessage> listTraceMessages = new ArrayList<>();
+      
+      if(selectedFile != null)
+      {
+         t4ListView.getItems().clear();
+         FileHandler.readFile(selectedFile.getPath(), listTraceMessages, "LOG_FILE");
+         
+         Platform.runLater(() -> {
+            for(TraceMessage msg : listTraceMessages)
+            {
+               t4ListView.getItems().add(msg.getStatus() + "   " + msg.getData());
+            }
+         });
+      }
+      else
+      {
+         System.err.println("File has not been choosen!");
+      }
+      
+   }
    
    @Override
    public void initialize(URL url, ResourceBundle rb) {
@@ -306,6 +360,30 @@ public class FXMLDocumentController implements Initializable {
       t3ListView.setPlaceholder(new Label(""));
       
       t3TextSuccessCounter.setFill(Color.GREEN);
+      
+      ETLController.setController(this);
+      DatabaseController.setController(this);
+      
+      
+      t1TextIPaddress.setText("localhost");
+      t1TextPort.setText("5432");
+      t1TextDBname.setText("lavinia");
+      t1TextUsername.setText("postgres");
+      t1Password.setText("qaswed123");
+      t1TextSchema.setText("minta");
+      
+      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_FOOD.txt");
+      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_NUTR.txt"); 
+      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_WGT.txt");
+      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_FOOD.txt");
+      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_NUTR.txt");
+      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_WGT.txt");
+      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_FOOD.txt");
+      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_NUTR.txt");
+      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_WGT.txt");
+      t2TextRevisionNumber.setText("60");
+      
+      
       
    }
    
