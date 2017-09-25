@@ -21,3 +21,12 @@ and open the template in the editor.
 .tab {
     
 }
+
+#AnchorPane {
+    -fx-background-color: whitesmoke;
+}
+/*
+#t3ButtonStart {
+    -fx-background-color: skyblue;
+}
+*/

@@ -60,26 +60,9 @@ public class LogHandler {
       FileHandler.WriteTraceMessagesToFile(logFile, (ArrayList<TraceMessage>) listMessages);
    }
    
-   private static void test()
-   {
-      try{
-         int var = 10/0;
-         System.out.println(var);
-      }catch(ArithmeticException ex){
-         System.err.println(ex.getMessage());
-         System.out.println("inner");
-         throw new ArithmeticException();
-      }
-   }
-   
    public static void main(String[] args) throws IOException
    {
-      try{
-         test();
-      }catch(ArithmeticException ex){
-         System.err.println(ex.getMessage());
-         System.out.println("outer");
-      }
+      
    }
    
 }

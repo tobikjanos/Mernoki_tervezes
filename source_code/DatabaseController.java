@@ -47,41 +47,37 @@ public class DatabaseController {
               "   long_desc text," + "\n" +
               "   refuse_percent integer" + "\n" +
               ")" + "\n" +
-              "RETURNS text" + "\n" +
+              "RETURNS void" + "\n" +
               "LANGUAGE 'plpgsql'" + "\n" +
               "COST 100.0" + "\n" +
               "VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "   var_food_id integer;" + "\n" +
               "   var_label_id integer;" + "\n" +
-              "   var_retval text;" + "\n" +
-              "BEGIN" + "\n" +
-              "   var_retval := '';" + "\n\n" +
-              
+              "BEGIN" + "\n" +              
               "   perform _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%';" + "\n" +
-              "   if found then RAISE EXCEPTION 'Food already exists with NDB_No: %', $1; end if;" + "\n\n" +
+              "   if found then RAISE EXCEPTION 'food_id már létezik (NDB_No = %)', $1; end if;" + "\n\n" +
               
               "   var_food_id := nextval('"+SCHEMA+".food_food_id_seq');" + "\n" +
               "   var_label_id := nextval('"+SCHEMA+".label_label_id_seq');" + "\n\n" +
               
               "   insert into "+SCHEMA+".label (label_id, label_type_code) values (var_label_id, 3);	-- 3 is food name" + "\n" +
-              "   if not found then RAISE EXCEPTION 'Insert into label was not succeeded'; end if;" + "\n\n" +
+              "   if not found then RAISE EXCEPTION 'Insert nem sikerült( label )'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".label_text (label_id, lang_id, label_text, label_long_text) values (var_label_id, 2, $2, $3); -- 2 is english" + "\n" +
-              "   if not found then RAISE EXCEPTION 'Insert into label_text was not succeeded'; end if;" + "\n\n" +
+              "   if not found then RAISE EXCEPTION 'Insert nem sikerült( label_text )'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".food (food_id, foodname_label_id, sd_id) values (var_food_id, var_label_id, 36); -- sd_id -> security desc" + "\n" +
-              "   if not found then RAISE EXCEPTION 'Insert into food was not succeeded'; end if;" + "\n\n" +
+              "   if not found then RAISE EXCEPTION 'Insert nem sikerült( food )'; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".food_source(food_id, source_id, content_unit_id, content_unit_q, refuse_percent, source_link_no)" + "\n" +
               "   values(var_food_id, 1, 15, 10, $4, 'USDA:SR"+VERSION+":' || $1 || ' SOTE:null'); -- VERSION is from java code" + "\n" +
-              "   if not found then RAISE EXCEPTION 'Insert into food_source was not succeeded'; end if;" + "\n\n" +
+              "   if not found then RAISE EXCEPTION 'Insert nem sikerült( food_source )'; end if;" + "\n\n" +
               
-              "   return var_retval; -- return number of foods inserted" + "\n" +
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -107,32 +103,29 @@ public class DatabaseController {
               "     nutr_no integer," + "\n" +
               "     nutr_val double precision" + "\n" +
               ")" + "\n" +
-              "RETURNS text" + "\n" +
+              "RETURNS void" + "\n" +
               "LANGUAGE 'plpgsql'" + "\n" +
               "COST 100.0" + "\n" +
               "VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "     var_food_id integer;" + "\n" +
               "     var_nutr_id integer;" + "\n" +
-              "     var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "     var_retval := '';" + "\n\n" +
               
               "     var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "     if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "     if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "     var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $2 || '%');" + "\n" +
-              "     if var_nutr_id = null then RAISE EXCEPTION 'nutr_id does not exist with Nutr_No: %', $2; end if;" + "\n\n" +
+              "     if var_nutr_id = null then RAISE EXCEPTION 'nutr_id nem létezik ( Nutr_No = % )', $2; end if;" + "\n\n" +
               
               "     insert into "+SCHEMA+".food_content(food_id, source_id, nutr_id, fc_quantity)" + "\n" +
               "     values(var_food_id, 1, var_nutr_id, $3);" + "\n" +
-              "     if not found then RAISE EXCEPTION 'Insert into food_content was not succeeded'; end if;" + "\n\n" +
+              "     if not found then RAISE EXCEPTION 'Insert nem sikerült ( food_content )'; end if;" + "\n\n" +
               
-              "     return var_retval; -- return number of nutrients inserted" + "\n" +
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -163,22 +156,20 @@ public class DatabaseController {
               "     Unit_label text," + "\n" +
               "     Weight double precision" + "\n" +
               ")" + "\n" +
-              "RETURNS text" + "\n" +
+              "RETURNS void" + "\n" +
               "LANGUAGE 'plpgsql'" + "\n" +
               "COST 100.0" + "\n" +
               "VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "     var_food_id integer;" + "\n" +
               "     var_unit_id integer;" + "\n" +
               "     var_label_id integer;" + "\n" +
-              "     var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "   var_retval := '';" + "\n\n" +
               
               "   var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "   if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "   if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "   perform _lt.label_text from "+SCHEMA+".label_text _lt where label_text = $2;" + "\n" +
               "   if found then" + "\n\n" +
@@ -187,10 +178,10 @@ public class DatabaseController {
               "                     left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id " + "\n" +
               "                     left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
               "                     where _lt.label_text = $2);" + "\n" +
-              "      if var_unit_id = null then RAISE EXCEPTION 'unit_id does not exist with label: %', $2; end if;" + "\n\n" +
+              "      if var_unit_id = null then RAISE EXCEPTION 'unit_id nem létezik ( label_text = % )', $2; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".food_units (food_id,source_id, unit_id, lang_id, scale) values (var_food_id, 1, var_unit_id, 2, $3);" + "\n" +
-              "      if not found then RAISE EXCEPTION 'Insert into food_units was not succeeded'; end if;" + "\n" +
+              "      if not found then RAISE EXCEPTION 'Insert nem sikerült ( food_units )'; end if;" + "\n" +
               
               "   else" + "\n\n" +
               
@@ -198,22 +189,21 @@ public class DatabaseController {
               "      var_label_id := nextval('"+SCHEMA+".label_label_id_seq');" + "\n\n" +
               
               "      insert into "+SCHEMA+".label (label_id, label_type_code) values (var_label_id, 1);	-- 1 is unit name" + "\n" +
-              "      if not found then RAISE EXCEPTION 'Insert into label was not succeeded'; end if;" + "\n\n" +
+              "      if not found then RAISE EXCEPTION 'Insert nem sikerült ( label )'; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".label_text (label_id, lang_id, label_text) values (var_label_id, 2, $2); -- 2 is english" + "\n" +
-              "      if not found then RAISE EXCEPTION 'Insert into label_text was not succeeded'; end if;" + "\n\n" +
+              "      if not found then RAISE EXCEPTION 'Insert nem sikerült ( label_text )'; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".unit (unit_id, unit_label_id) values (var_unit_id, var_label_id);" + "\n" +
-              "      if not found then RAISE EXCEPTION 'Insert into unit was not succeeded'; end if;" + "\n\n" +
+              "      if not found then RAISE EXCEPTION 'Insert nem sikerült ( unit )'; end if;" + "\n\n" +
               
               "      insert into "+SCHEMA+".food_units (food_id,source_id, unit_id, lang_id, scale) values (var_food_id, 1, var_unit_id, 2, $3);" + "\n" +
-              "      if not found then RAISE EXCEPTION 'Insert into food_units was not succeeded'; end if;" + "\n\n" +
+              "      if not found then RAISE EXCEPTION 'Insert nem sikerült ( food_units )'; end if;" + "\n\n" +
               
               "   end if;" + "\n\n" +
               
-              "   return var_retval;" + "\n" +
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -240,36 +230,33 @@ public class DatabaseController {
               "   long_desc text," + "\n" +
               "   refuse_percent integer" + "\n" +
               ")" + "\n" +
-              "RETURNS text" + "\n" +
+              "RETURNS void" + "\n" +
               "LANGUAGE 'plpgsql'" + "\n" +
               "COST 100.0" + "\n" +
               "VOLATILE NOT LEAKPROOF " + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "   var_food_id integer;" + "\n" +
               "   var_label_id integer;" + "\n" +
-              "   var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "   var_retval := '';" + "\n\n" +
               
               "   var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "   if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "   if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "   var_label_id := (select _f.foodname_label_id from "+SCHEMA+".food _f where food_id = var_food_id);" + "\n" +
-              "   if var_label_id = null then RAISE EXCEPTION 'label_id does not exist with food_id: %', var_food_id; end if;" + "\n\n" +
+              "   if var_label_id = null then RAISE EXCEPTION 'label_id nem létezik ( food_id = % )', var_food_id; end if;" + "\n\n" +
               
               "   update "+SCHEMA+".label_text set label_text = $2, label_long_text = $3" + "\n" +
               "   where label_id = var_label_id;" + "\n" +
-              "   if not found then var_retval := var_retval || ' 0303'; end if;" + "\n\n" +
+              "   if not found then RAISE EXCEPTION 'Update nem sikerült ( label_text )'; end if;" + "\n\n" +
               
-              "   update "+SCHEMA+".food_source set refuse_percent = $4, source_link_no = 'USDA:SR"+VERSION+":' || $1 || ' SOTE:null'" + "\n" +
-              "   where food_source.food_id = var_food_id;	-- VERSION is from java code" + "\n" +
-              "   if not found then var_retval := var_retval || ' 0304'; end if;" + "\n\n" +
+              "   update "+SCHEMA+".food_source set refuse_percent = $4, source_link_no = 'USDA:SR"+VERSION+":' || $1 || ' %'" + "\n" +
+              "   where food_id = var_food_id;	-- VERSION is from java code" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Update nem sikerült ( food_source )'; end if;" + "\n\n" +
               
-              "   return var_retval;" + "\n" +
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -296,32 +283,29 @@ public class DatabaseController {
               "	nutr_no integer," + "\n" +
               "	nutr_val double precision" + "\n" +
               "	)" + "\n" +
-              "    RETURNS text" + "\n" +
+              "    RETURNS void" + "\n" +
               "    LANGUAGE 'plpgsql'" + "\n" +
               "    COST 100.0" + "\n" +
               "    VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "	var_food_id integer;" + "\n" +
               "    var_nutr_id integer;" + "\n" +
-              "	var_retval text;" + "\n" +
               "BEGIN" + "\n" +
-              "	var_retval := '';" + "\n\n" +
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "	var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $2 || '%');" + "\n" +
-              "	if var_nutr_id = null then RAISE EXCEPTION 'nutr_id does not exist with Nutr_No: %', $2; end if;" + "\n\n" +
+              "	if var_nutr_id = null then RAISE EXCEPTION 'nutr_id nem létezik ( Nutr_No = % )', $2; end if;" + "\n\n" +
               
               "	update "+SCHEMA+".food_content set fc_quantity = $3" + "\n" +
               "	where food_id = var_food_id and nutr_id = var_nutr_id;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Update food_content was not succeeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Update nem sikerült ( food_content )'; end if;" + "\n\n" +
               
-              "	return var_retval;" + "\n" +
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -347,35 +331,34 @@ public class DatabaseController {
               "	Unit_label text," + "\n" +
               "	Weight double precision" + "\n" +
               "	)    " + "\n" +
-              "	RETURNS text" + "\n" +
+              "	RETURNS void" + "\n" +
               "    LANGUAGE 'plpgsql'" + "\n" +
               "    COST 100.0" + "\n" +
               "    VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "	var_food_id integer;" + "\n" +
               "	var_unit_id integer;" + "\n" +
-              "	var_retval text;" + "\n" +
+
               "BEGIN" + "\n" +
-              "	var_retval := '';" + "\n\n" +
+
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "	var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u" + "\n" +
               "					left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id" + "\n" +
               "					left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
               "					where _lt.label_text = $2);" + "\n\n" +
-              "	if var_unit_id = null then RAISE EXCEPTION 'unit_id does not exist with label: %', $2; end if;" + "\n\n" +
+              "	if var_unit_id = null then RAISE EXCEPTION 'unit_id nem létezik ( label = % )', $2; end if;" + "\n\n" +
               
               "	update "+SCHEMA+".food_units set scale = $3" + "\n" +
               "	where food_id = var_food_id and unit_id = var_unit_id;" + "\n" +              
-              "	if not found then RAISE EXCEPTION 'Update food_units was not succeeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Update nem sikerült ( food_units )'; end if;" + "\n\n" +
               
-              "	return var_retval;" + "\n" +
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -400,41 +383,41 @@ public class DatabaseController {
               "	NDB_No integer," + "\n" +
               "   Shrt_Desc text" + "\n" +
               "	)" + "\n" +
-              "    RETURNS text" + "\n" +
+              "    RETURNS void" + "\n" +
               "    LANGUAGE 'plpgsql'" + "\n" +
               "    COST 100.0" + "\n" +
               "    VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "	var_food_id integer;" + "\n" +
               "	var_label_id integer;" + "\n" +
-              "	var_retval text;" + "\n" +
+
               "BEGIN" + "\n" +
-              "	var_retval := '';" + "\n\n" +
+
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "	var_label_id := (select _f.foodname_label_id from "+SCHEMA+".food _f where food_id = var_food_id);" + "\n" +
-              "	if var_label_id = null then RAISE EXCEPTION 'label_id does not exist with food_id: %', var_food_id; end if;" + "\n\n" +
+              "	if var_label_id = null then RAISE EXCEPTION 'label_id nem létezik ( food_id = % )', var_food_id; end if;" + "\n\n" +
               
               
               "	delete from "+SCHEMA+".food_source where food_id = var_food_id;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Delete from food_source was not succeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Delete nem sikerült ( food_source )'; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".food where food_id = var_food_id;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Delete from food was not succeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Delete nem sikerült ( food )'; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".label_text where label_id = var_label_id and label_text = $2;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Delete from label_text was not succeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Delete nem sikerült ( label_text )'; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".label where label_id = var_label_id;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Delete from label was not succeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Delete nem sikerült ( label )'; end if;" + "\n\n" +
               
-              "	return var_retval;" + "\n" +
+
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -459,31 +442,31 @@ public class DatabaseController {
               "	NDB_No integer," + "\n" +
               "	nutr_no integer" + "\n" +
               "	)" + "\n" +
-              "	RETURNS text" + "\n" +
+              "	RETURNS void" + "\n" +
               "	LANGUAGE 'plpgsql'" + "\n" +
               "	COST 100.0" + "\n" +
               "	VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "	var_food_id integer;" + "\n" +
               "	var_nutr_id integer;" + "\n" +
-              "	var_retval text;" + "\n" +
+
               "BEGIN" + "\n" +
-              "	var_retval := '';" + "\n\n" +
+
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "	var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $2 || '%');" + "\n" +
-              "	if var_nutr_id = null then RAISE EXCEPTION 'nutr_id does not exist with Nutr_No: %', $2; end if;" + "\n\n" +
+              "	if var_nutr_id = null then RAISE EXCEPTION 'nutr_id nem létezik ( Nutr_No = % )', $2; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".food_content where food_id = var_food_id and nutr_id = var_nutr_id;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Delete from food_content was not succeeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Delete nem sikerült ( food_content )'; end if;" + "\n\n" +
               
-              "	return var_retval;" + "\n" +
+
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -509,34 +492,34 @@ public class DatabaseController {
               "	Unit_label text," + "\n" +
               "	Weight double precision" + "\n" +
               "	)" + "\n" +
-              "    RETURNS text" + "\n" +
+              "    RETURNS void" + "\n" +
               "    LANGUAGE 'plpgsql'" + "\n" +
               "    COST 100.0" + "\n" +
               "    VOLATILE NOT LEAKPROOF" + "\n" +
-              "AS $var_retval$" + "\n" +
+              "AS $$" + "\n" +
               
               "DECLARE" + "\n" +
               "	var_food_id integer;" + "\n" +
               "	var_unit_id integer;" + "\n" +
-              "	var_retval text;" + "\n" +
+
               "BEGIN" + "\n" +
-              "	var_retval := '';" + "\n\n" +
+
               
               "	var_food_id := (select _fs.food_id from "+SCHEMA+".food_source _fs where source_link_no like '%' || $1 || '%');" + "\n" +
-              "	if var_food_id = null then RAISE EXCEPTION 'food_id does not exist with NDB_No: %', $1; end if;" + "\n\n" +
+              "	if var_food_id = null then RAISE EXCEPTION 'food_id nem létezik ( NDB_No = % )', $1; end if;" + "\n\n" +
               
               "	var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u" + "\n" +
               "					left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id" + "\n" +
               "					left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
               "					where _lt.label_text = $2);" + "\n" +
-              "	if var_unit_id = null then RAISE EXCEPTION 'unit_id does not exist with label: %', $2; end if;" + "\n\n" +
+              "	if var_unit_id = null then RAISE EXCEPTION 'unit_id nem létezik ( label_text = % )', $2; end if;" + "\n\n" +
               
               "	delete from "+SCHEMA+".food_units where food_id = var_food_id and unit_id = var_unit_id and scale = $3;" + "\n" +
-              "	if not found then RAISE EXCEPTION 'Delete from food_units was not succeeded'; end if;" + "\n\n" +
+              "	if not found then RAISE EXCEPTION 'Delete nem sikerült ( food_units )'; end if;" + "\n\n" +
               
-              "	return var_retval;" + "\n" +
+
               "END;" + "\n" +
-              "$var_retval$;";
+              "$$;";
       try
       {
          if(conn.isClosed()) conn = Connect();
@@ -935,7 +918,6 @@ public class DatabaseController {
       Connection conn = null;
       
       
-      //test foods: 50001, 50002, 50003, 50004
       try
       {
          conn = Connect();
@@ -974,9 +956,9 @@ public class DatabaseController {
 //         executeAddNutrientFunction(conn, new FileNutrientStruct(50016, 208, 999.99));
 //         executeAddNutrientFunction(conn, new FileNutrientStruct(50017, 209, 999.99));
          
-         System.out.println("________________________________________________");
-         executeChgNutrientFunction(conn, new FileNutrientStruct(50020, 208, 10));
-         executeChgNutrientFunction(conn, new FileNutrientStruct(50021, 209, 10));
+//         System.out.println("________________________________________________");
+//         executeChgNutrientFunction(conn, new FileNutrientStruct(50020, 208, 10));
+//         executeChgNutrientFunction(conn, new FileNutrientStruct(50021, 209, 10));
          
 //         System.out.println("________________________________________________");
 //         executeDelNutrientFunction(conn, new FileNutrientStruct(50016, 208));

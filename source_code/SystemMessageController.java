@@ -5,9 +5,10 @@
  */
 package automaticdatabaseupdate;
 
+import java.util.Optional;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.stage.Modality;
+import javafx.scene.control.ButtonType;
 
 /**
  * FXML Controller class
@@ -27,14 +28,24 @@ public class SystemMessageController {
       alert.showAndWait();
    }
    
-   public static void DisplayWarningMessage(String title, String msg)
+   public static boolean DisplayWarningMessage(String title, String msg)
    {
       Alert alert = new Alert(AlertType.WARNING);
       alert.setTitle(null);
       alert.setHeaderText(title);
       alert.setContentText(msg);
       
-      alert.showAndWait();
+      ButtonType buttonTypeOK = new ButtonType("OK");
+      ButtonType buttonTypeCancel = new ButtonType("Vissza");
+      
+      alert.getButtonTypes().setAll(buttonTypeOK, buttonTypeCancel);
+      
+      Optional<ButtonType> result = alert.showAndWait();
+      
+      if(result.get() == buttonTypeOK)
+         return true;
+      else
+         return false;
    }
    
    

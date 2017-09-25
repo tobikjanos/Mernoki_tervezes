@@ -25,7 +25,7 @@ public class AutomaticDatabaseUpdate extends Application {
         scene.getStylesheets().add("AutomaticDatabaseUpdate/CSS_test.css");
         
         stage.setWidth(800);
-        stage.setHeight(500);
+        stage.setHeight(525);
         stage.setResizable(false);
         stage.sizeToScene();
         
