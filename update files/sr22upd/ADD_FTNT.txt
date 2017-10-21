@@ -1,0 +1,40 @@
+~03685~^~01~^~D~^~~^~Prepared with 1/4 cup dry cereal and 1/2 cup whole milk.~
+~03859~^~01~^~D~^~~^~Contains arachidonic acid (ARA, nutrient number 620) and docosahexaenoic acid (DHA, nutrient number 621), fatty acids found in human breast milk.~
+~03867~^~01~^~D~^~~^~Contain arachidonic acid (ARA, nutrient number 620) and docosahexaenoic acid (DHA, nutrient number 621) fatty acids found in human breast milk.~
+~03956~^~01~^~D~^~~^~Contains arachidonic acid (ARA,  number 620) and docosahexaenoic acid (DHA, nutrient number 621) fatty acids found in human breast milk~
+~03961~^~01~^~D~^~~^~Contain arachidonic acid (ARA, nutrient number 620) and docosohexanoic acid nutrient number 621) fatty acids found to human breast milk~
+~09129~^~01~^~D~^~~^~Includes analysis of Higgins, Jumbo, and Roanoke varieties.~
+~09210~^~01~^~N~^~305~^~Phosphorus content varies among brands depending upon the calcium compound used (calcium phosphate, calcium citrate, etc.).~
+~09211~^~01~^~N~^~305~^~Phosphorus content varies among brands depending upon the calcium compound used (calcium phosphate, calcium citrate, etc.).~
+~09445~^~01~^~D~^~~^~Samples grown in New Zealand; cultivar is Hort 16A.~
+~09446~^~01~^~D~^~~^~Fatty acid values reflect plantains fried in corn oil.~
+~12016~^~01~^~D~^~~^~Other phytosterols total 248.8 mg/100g; these include delta 5-avenasterol (3.5), sitostanol (3.5), campestanol (.8), and other minor phytosterols (241 mg).~
+~12516~^~01~^~D~^~~^~Other phytosterols total 248.8 mg/100g; these include delta 5-avenasterol (3.5), sitostanol (3.5), campestanol (.8), and other minor phytosterols (241 mg).~
+~12516~^~02~^~N~^~307~^~Sodium level varies by brand, depending on the amount of salt added.~
+~12663~^~01~^~N~^~307~^~Sodium value reflects edible shells infused with salt.  Brands vary in sodium level.~
+~20062~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate and tetrahydrofolate.~
+~20063~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate and tetrahydrofolate.~
+~20064~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate and tetrahydrofolate.~
+~20065~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate and tetrahydrofolate.~
+~22522~^~01~^~N~^~328~^~Mean of fortified and unfortified products. Values range from 0.1 mcg (unfortified) to 0.4 mcg (fortified).~
+~22522~^~02~^~N~^~324~^~Mean of fortified and unfortified products. Values range from 5 IU (unfortified) to 16 IU (fortified).~
+~22907~^~01~^~N~^~328~^~Mean of fortified and unfortified products. Values range from 0.0 mcg (unfortified) to 1 mcg (highest fortification level)~
+~22907~^~02~^~N~^~324~^~Mean of fortified and unfortified products. Values range from 1.7 IU (unfortified) to 40 IU (at highest fortification level of 25% DV per serving)~
+~22914~^~01~^~N~^~301~^~Mean of fortified and unfortified products.  Values range from 12.8 mg (unfortified) to 119 mg (fortified at 30% DV per serving)~
+~22914~^~02~^~N~^~328~^~Mean of fortified and unfortified products.  Values range from 0.0 mcg (unfortified) to 1 mcg (fortified)~
+~22914~^~03~^~N~^~324~^~Mean of fortified and unfortified products.  Values range from 0 IU (unfortified) to 40 IU (fortified at 25% DV per serving)~
+~25040~^~01~^~D~^~~^~Made with potatoes, tomatoes, spinach and beets.~
+~35130~^~01~^~M~^~~^~Serving weight is based on limited samples and may vary widely.~
+~35133~^~01~^~M~^~~^~Weight of serving based on limited sampling and may vary widely.~
+~35142~^~01~^~M~^~~^~Weight of serving based on limited samples and may vary widely.~
+~35143~^~01~^~M~^~~^~Weight of serving based on limited samples and may vary widely.~
+~35144~^~01~^~M~^~~^~Weight of serving based on limited sampling and may vary widely.~
+~35145~^~01~^~M~^~~^~Weight of serving based on limited samples and may vary widely.~
+~35146~^~01~^~M~^~~^~Weight of serving based on limited sampling and may vary widely.~
+~35147~^~01~^~M~^~~^~Weight of serving based on limited samples and may vary widely.~
+~35205~^~01~^~N~^~417~^~Includes only 5-methyl tetrahydrofolate (THF).~
+~35232~^~01~^~N~^~417~^~Food folate is the sum of 5-Methyl Tetrahydrofolate, 10-Formyl Folic Acid, 5-Formyl Tetrahydrofolic Acid and Tetrahydrofolic Acid~
+~35232~^~01~^~N~^~432~^~Food folate is the sum of 5-Methyl Tetrahydrofolate, 10-Formyl Folic Acid, 5-Formyl Tetrahydrofolic Acid and Tetrahydrofolic Acid~
+~35234~^~07~^~M~^~~^~Weight of serving (piece) based on limited samples and may vary widely.~
+~35235~^~01~^~N~^~432~^~Food folate is the sum of 5-Methyl Tetrahydrofolate, 10-Formyl Folic Acid, 5-Formyl Tetrahydrofolic Acid and Tetrahydrofolic Acid~
+~35235~^~01~^~N~^~417~^~Food folate is the sum of 5-Methyl Tetrahydrofolate, 10-Formyl Folic Acid, 5-Formyl Tetrahydrofolic Acid and Tetrahydrofolic Acid~

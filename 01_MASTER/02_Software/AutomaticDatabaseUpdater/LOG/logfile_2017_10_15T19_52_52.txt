@@ -1,0 +1,217 @@
+[  INFO  ]   -   ADD_FOOD elkezdődött
+[   OK   ]   -   01210   |   Egg Mix, USDA Commodity   |   EGG MIX,USDA CMDTY   |   0
+[   OK   ]   -   04688   |   Salad dressing, spray-style dressing, assorted flavors   |   SALAD DRSNG,SPRAY-STYLE DRSNG,ASSORTED FLAVORS   |   0
+[   OK   ]   -   05341   |   Chicken, broilers or fryers, back, meat only, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,BACK,MEAT ONLY,CKD,ROTISSERIE,ORI   |   56
+[   OK   ]   -   05342   |   Chicken, broilers or fryers, breast, meat only, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,BREAST,MEAT ONLY,CKD,ROTISSERIE,O   |   24
+[   OK   ]   -   05343   |   Chicken, broilers or fryers, drumstick, meat only, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,DRUMSTK,MEAT ONLY,CKD,ROTISSERIE,   |   41
+[   OK   ]   -   05344   |   Chicken, broilers or fryers, skin only, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,SKN ONLY,CKD,ROTISSERIE,ORIGINAL   |   0
+[   OK   ]   -   05345   |   Chicken, broilers or fryers, thigh, meat only, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,THIGH,MEAT ONLY,CKD,ROTISSERIE,OR   |   29
+[   OK   ]   -   05346   |   Chicken, broilers or fryers, wing, meat only, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,WING,MEAT ONLY,CKD,ROTISSERIE,ORI   |   57
+[   OK   ]   -   05347   |   Chicken, broilers or fryers, back, meat and skin, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,BACK,MEAT & SKN,CKD,ROTISSERIE,OR   |   0
+[   OK   ]   -   05348   |   Chicken, broilers or fryers, breast, meat and skin, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,BREAST,MEAT & SKN,CKD,ROTISSERIE,   |   0
+[   OK   ]   -   05349   |   Chicken, broilers or fryers, drumstick, meat and skin, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,DRUMSTK,MEAT & SKN,CKD,ROTISSERIE   |   0
+[   OK   ]   -   05351   |   Chicken, broilers or fryers, thigh, meat and skin, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,THIGH,MEAT & SKN,CKD,ROTISSERIE,O   |   0
+[   OK   ]   -   05352   |   Chicken, broilers or fryers, wing, meat and skin, cooked, rotisserie, original seasoning   |   CHICKEN,BROILERS OR FRYERS,WING,MEAT & SKN,CKD,ROTISSERIE,OR   |   0
+[   OK   ]   -   05353   |   USDA Commodity, chicken fajita strips, frozen   |   USDA CMDTY,CHICK FAJITA STRIPS,FRZ   |   0
+[   OK   ]   -   05354   |   USDA Commodity, turkey taco meat, frozen, cooked   |   USDA CMDTY,TURKEY TACO MEAT,FRZ,CKD   |   0
+[   OK   ]   -   07044   |   USDA Commodity, luncheon meat, canned   |   USDA CMDTY,LUNCHEON MEAT,CND   |   0
+[   OK   ]   -   08555   |   Cereal wafer straws, KELLOGG, APPLE JACKS Cereal straws   |   CEREAL WAFER STRAWS,KELLOGG,APPL JACKS CRL STRAWS   |   0
+[   OK   ]   -   08556   |   Cereal Wafer Straws, KELLOGG, FROOT LOOPS Cereal Straws   |   CEREAL WAFER STRAWS,KELLOGG,FROOT LOOPS CRL STRAWS   |   0
+[   OK   ]   -   08557   |   Cereals ready-to-eat, KELLOGG's MINI-WHEATS Frosted Strawberry Delight Cereal   |   CEREALS RTE,KELLOGG'S MINI-WHEATS FRSTD STRAWBERRY DELIGHT   |   0
+[   OK   ]   -   08558   |   Cereals ready-to-eat, KELLOGG, MINI SWIRLZ Peanut Butter Cereal   |   CEREALS RTE,KELLOGG,MINI SWIRLZ PNUT BUTTER CRL   |   0
+[   OK   ]   -   08559   |   Cereal Wafer Straws, KELLOGG, COCOA KRISPIES Cereal Straws   |   CEREAL WAFER STRAWS,KELLOGG,COCOA KRISPIES CRL STRAWS   |   0
+[   OK   ]   -   08560   |   Cereals ready-to-eat, KASHI GO LEAN CRUNCH!, Honey Almond Flax   |   CEREALS RTE,KASHI GO LN CRUNCH!,HONEY ALMOND FLAX   |   0
+[   OK   ]   -   08561   |   Cereals, KASHI GO LEAN Hot Cereal, Hearty Honey & Cinnamon, dry   |   CEREALS,KASHI GO LN HOT CRL,HEARTY HONEY & CINN,DRY   |   0
+[   OK   ]   -   08562   |   Cereals, KASHI, KASHI GO LEAN Hot Cereal, Truly Vanilla, dry   |   CEREALS,KASHI,KASHI GO LN HOT CRL,TRULY VANILLA,DRY   |   0
+[   OK   ]   -   08563   |   Cereals ready-to-eat, KASHI GRANOLA, COCOA BEACH Cereal   |   CEREALS RTE,KASHI GRANOLA,COCOA BEACH CRL   |   0
+[   OK   ]   -   08564   |   Cereals ready-to-eat, KASHI GRANOLA, ORCHARD SPICE CEREAL   |   CEREALS RTE,KASHI GRANOLA,ORCHARD SPICE CRL   |   0
+[   OK   ]   -   08565   |   Cereals ready-to-eat, KASHI GRANOLA, Summer Berry Cereal   |   CEREALS RTE,KASHI GRANOLA,SMMR BERRY CRL   |   0
+[   OK   ]   -   08566   |   Cereals ready-to-eat, KASHI GRANOLA, Mountain Medley Cereal   |   CEREALS RTE,KASHI GRANOLA,MOUNTAIN MEDLEY CRL   |   0
+[   OK   ]   -   08567   |   Cereals ready-to-eat, KASHI 7 Whole Grain Nuggets   |   CEREALS RTE,KASHI 7 WHL GRAIN NUGGETS   |   0
+[   OK   ]   -   08568   |   Cereals, KASHI HEART TO HEART, Instant Oatmeal, Apple Cinnamon, dry   |   CEREALS,KASHI HEART TO HEART,INST OATMEAL,APPL CINN,DRY   |   0
+[   OK   ]   -   08569   |   Cereals, KASHI HEART TO HEART, Instant Oatmeal, maple, dry   |   CEREALS,KASHI HEART TO HEART,INST OATMEAL,MAPLE,DRY   |   0
+[   OK   ]   -   08570   |   Cereals, KASHI HEART TO HEART, Instant Oatmeal, Raisin Spice, dry   |   CEREALS,KASHI HEART TO HEART,INST OATMEAL,RAISIN SPICE,DRY   |   0
+[   OK   ]   -   09053   |   Blueberries, wild, frozen   |   BLUEBERRIES,WILD,FRZ   |   0
+[   OK   ]   -   09130   |   Grape juice, canned or bottled, unsweetened, with added ascorbic acid   |   GRAPE JUC,CND OR BTLD,UNSWTND,W/ ADDED VIT C   |   0
+[   OK   ]   -   09352   |   Blueberries, canned, light syrup, drained   |   BLUEBERRIES,CND,LT SYRUP,DRND   |   0
+[   OK   ]   -   09353   |   Blueberries, wild, canned, heavy syrup, drained   |   BLUEBERRIES,WILD,CND,HVY SYRUP,DRND   |   0
+[   OK   ]   -   09442   |   Pomegranate juice, bottled   |   POMEGRANATE JUC,BTLD   |   0
+[   OK   ]   -   09443   |   Juice, apple and grape blend, with added ascorbic acid   |   JUICE,APPL & GRAPE BLEND,W/ ADDED VIT C   |   0
+[   OK   ]   -   09444   |   Juice, apple, grape and pear blend, with added ascorbic acid and calcium   |   JUICE,APPL,GRAPE & PEAR BLEND,W/ ADDED VIT C & CA   |   0
+[   OK   ]   -   10158   |   USDA Commodity, pork, canned   |   USDA CMDTY,PORK,CND   |   0
+[   OK   ]   -   10956   |   Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled   |   PORK,LOIN,LEG CAP STEAK,BNLESS,LN & FAT,CKD,BRLD   |   0
+[   OK   ]   -   10957   |   Pork, Leg Cap Steak, boneless, separable lean and fat, raw   |   PORK,LEG CAP STEAK,BNLESS,LN & FAT,RAW   |   0
+[   OK   ]   -   10958   |   Pork, Shoulder breast, boneless, separable lean and fat, raw   |   PORK,SHLDR BREAST,BNLESS,LN & FAT,RAW   |   0
+[   OK   ]   -   10959   |   Pork, Shoulder breast, boneless, separable lean and fat, cooked, broiled   |   PORK,SHLDR BREAST,BNLESS,LN & FAT,CKD,BRLD   |   0
+[   OK   ]   -   10960   |   Pork, shoulder, petite tender, boneless, separable lean and fat, cooked, broiled   |   PORK,SHLDR,PETITE TENDER,BNLESS,LN & FAT,CKD,BRLD   |   0
+[   OK   ]   -   10961   |   Pork, Shoulder petite tender, boneless, separable lean and fat, raw   |   PORK,SHLDR PETITE TENDER,BNLESS,LN & FAT,RAW   |   0
+[   OK   ]   -   10962   |   Pork, Leg sirloin tip roast, boneless, separable lean and fat, cooked, braised   |   PORK,LEG SIRLOIN TIP RST,BNLESS,LN & FAT,CKD,BRSD   |   0
+[   OK   ]   -   10963   |   Pork, Leg sirloin tip roast, boneless, separable lean and fat, raw   |   PORK,LEG SIRLOIN TIP RST,BNLESS,LN & FAT,RAW   |   0
+[   OK   ]   -   11062   |   Beans, snap, green, frozen, all styles, microwaved   |   BEANS,SNAP,GRN,FRZ,ALL STYLES,MICROWAVED   |   0
+[   OK   ]   -   11182   |   Corn, yellow, whole kernel, frozen, microwaved   |   CORN,YEL,WHL KERNEL,FRZ,MICROWAVED   |   0
+[   OK   ]   -   13000   |   Beef, grass-fed, strip steaks, lean only, raw   |   BEEF,GRASS-FED,STRIP STEAKS,LN,RAW   |   34
+[   OK   ]   -   13047   |   Beef, grass-fed, ground, raw   |   BEEF,GRASS-FED,GROUND,RAW   |   0
+[   OK   ]   -   13166   |   USDA Commodity, beef, canned   |   USDA CMDTY,BF,CND   |   0
+[   OK   ]   -   14623   |   CAMPBELL Soup Company, V8 V. FUSION Juices, Acai Berry   |   CAMPBELL SOUP COMPANY,V8 V. FUSION JUICES,ACAI BERRY   |   0
+[   OK   ]   -   14624   |   Coffee substitute, roasted grain beverage, NATURAL TOUCH KAFFREE ROMA, powder   |   COFFEE SUB,RSTD GRAIN BEV,NAT TOUCH KAFFREE ROMA,PDR   |   0
+[   OK   ]   -   16171   |   Refried beans, canned, vegetarian   |   REFRIED BNS,CND,VEGETARIAN   |   0
+[   OK   ]   -   16172   |   Refried beans, canned, fat-free   |   REFRIED BNS,CND,FAT-FREE   |   0
+[   OK   ]   -   16173   |   Frijoles rojos volteados (Refried beans, red, canned)   |   FRIJOLES ROJOS VOLTEADOS (REFRIED BNS,RED,CANNED)   |   0
+[   OK   ]   -   16235   |   SILK Plain, soymilk   |   SILK PLN,SOYMILK   |   0
+[   OK   ]   -   16236   |   SILK Vanilla, soymilk   |   SILK VANILLA,SOYMILK   |   0
+[   OK   ]   -   16237   |   SILK Chocolate, soymilk   |   SILK CHOC,SOYMILK   |   0
+[   OK   ]   -   16238   |   SILK Light Plain, soymilk   |   SILK LT PLN,SOYMILK   |   0
+[   OK   ]   -   16239   |   SILK Light Vanilla, soymilk   |   SILK LT VANILLA,SOYMILK   |   0
+[   OK   ]   -   16240   |   SILK Light Chocolate, soymilk   |   SILK LT CHOC,SOYMILK   |   0
+[   OK   ]   -   16241   |   SILK Plus Omega-3 DHA, soymilk   |   SILK PLUS OMEGA-3 DHA,SOYMILK   |   0
+[   OK   ]   -   16242   |   SILK Plus for Bone Health, soymilk   |   SILK PLUS FOR BONE HEALTH,SOYMILK   |   0
+[   OK   ]   -   16243   |   SILK Plus Fiber, soymilk   |   SILK PLUS FIBER,SOYMILK   |   0
+[   OK   ]   -   16244   |   SILK Unsweetened, soymilk   |   SILK UNSWTND,SOYMILK   |   0
+[   OK   ]   -   16245   |   SILK Very Vanilla, soymilk   |   SILK VERY VANILLA,SOYMILK   |   0
+[   OK   ]   -   16246   |   SILK Nog, soymilk   |   SILK NOG,SOYMILK   |   0
+[   OK   ]   -   16247   |   SILK Chai, soymilk   |   SILK CHAI,SOYMILK   |   0
+[   OK   ]   -   16248   |   SILK Mocha, soymilk   |   SILK MOCHA,SOYMILK   |   0
+[   OK   ]   -   16249   |   SILK Coffee, soymilk   |   SILK COFFEE,SOYMILK   |   0
+[   OK   ]   -   16250   |   SILK Vanilla soy Yogurt (Family size)   |   SILK VANILLA SOY YOGURT (FAMILY SIZE)   |   0
+[   OK   ]   -   16251   |   SILK Vanilla soy yogurt (single serving size)   |   SILK VANILLA SOY YOGURT (SINGLE SERVING SIZE)   |   0
+[   OK   ]   -   16252   |   SILK Plain soy yogurt   |   SILK PLN SOY YOGURT   |   0
+[   OK   ]   -   16253   |   SILK Strawberry soy yogurt   |   SILK STRAWBERRY SOY YOGURT   |   0
+[   OK   ]   -   16254   |   SILK Raspberry soy yogurt   |   SILK RASPBERRY SOY YOGURT   |   0
+[   OK   ]   -   16255   |   SILK Peach soy Yogurt   |   SILK PEACH SOY YOGURT   |   0
+[   OK   ]   -   16256   |   SILK Black Cherry soy Yogurt   |   SILK BLACK CHERRY SOY YOGURT   |   0
+[   OK   ]   -   16257   |   SILK Blueberry soy Yogurt   |   SILK BLUEBERRY SOY YOGURT   |   0
+[   OK   ]   -   16258   |   SILK Key Lime soy Yogurt   |   SILK KEY LIME SOY YOGURT   |   0
+[   OK   ]   -   16259   |   SILK Banana-Strawberry soy Yogurt   |   SILK BANANA-STRAWBERRY SOY YOGURT   |   0
+[   OK   ]   -   16260   |   SILK Original Creamer   |   SILK ORIGINAL CREAMER   |   0
+[   OK   ]   -   16261   |   SILK French Vanilla Creamer   |   SILK FRENCH VANILLA CREAMER   |   0
+[   OK   ]   -   16262   |   SILK Hazelnut Creamer   |   SILK HAZELNUT CREAMER   |   0
+[   OK   ]   -   16500   |   LOMA LINDA Little Links, canned, unprepared   |   LOMA LINDA LITTLE LINKS,CND,UNPREP   |   0
+[   OK   ]   -   16501   |   LOMA LINDA Fried Chik'n with Gravy, canned, unprepared   |   LOMA LINDA FRIED CHIK'N W/ GRAVY,CND,UNPREP   |   0
+[   OK   ]   -   16502   |   LOMA LINDA Low Fat Big Franks, canned, unprepared   |   LOMA LINDA LOFAT BIG FRANKS,CND,UNPREP   |   0
+[   OK   ]   -   16503   |   LOMA LINDA Dinner Cuts, canned, unprepared   |   LOMA LINDA DINNER CUTS,CND,UNPREP   |   0
+[   OK   ]   -   16504   |   LOMA LINDA Tender Rounds with Gravy, canned, unprepared   |   LOMA LINDA TENDER ROUNDS W/ GRAVY,CND,UNPREP   |   0
+[   OK   ]   -   16505   |   LOMA LINDA Swiss Stake with Gravy, canned, unprepared   |   LOMA LINDA SWISS STAKE W/ GRAVY,CND,UNPREP   |   0
+[   OK   ]   -   16506   |   LOMA LINDA Vege-Burger, canned, unprepared   |   LOMA LINDA VEGE-BURGER,CND,UNPREP   |   0
+[   OK   ]   -   16507   |   LOMA LINDA Redi-Burger, canned, unprepared   |   LOMA LINDA REDI-BURGER,CND,UNPREP   |   0
+[   OK   ]   -   16508   |   LOMA LINDA Tender Bits, canned, unprepared   |   LOMA LINDA TENDER BITS,CND,UNPREP   |   0
+[   OK   ]   -   16509   |   LOMA LINDA Linketts, canned, unprepared   |   LOMA LINDA LINKETTS,CND,UNPREP   |   0
+[   OK   ]   -   16510   |   WORTHINGTON Chili, canned, unprepared   |   WORTHINGTON CHILI,CND,UNPREP   |   0
+[   OK   ]   -   16511   |   WORTHINGTON Choplets, canned, unprepared   |   WORTHINGTON CHOPLETS,CND,UNPREP   |   0
+[   OK   ]   -   16512   |   WORTHINGTON Diced Chik, canned, unprepared   |   WORTHINGTON DICED CHIK,CND,UNPREP   |   0
+[   OK   ]   -   16513   |   WORTHINGTON FriChik, canned, unprepared   |   WORTHINGTON FRICHIK,CND,UNPREP   |   0
+[   OK   ]   -   16514   |   WORTHINGTON Low Fat Fri Chik, canned, unprepared   |   WORTHINGTON LOFAT FRI CHIK,CND,UNPREP   |   0
+[   OK   ]   -   16515   |   WORTHINGTON Low Fat Veja-Links, canned, unprepared   |   WORTHINGTON LOFAT VEJA-LINKS,CND,UNPREP   |   0
+[   OK   ]   -   16516   |   WORTHINGTON Multigrain Cutlets, canned, unprepared   |   WORTHINGTON MULTIGRAIN CUTLETS,CND,UNPREP   |   0
+[   OK   ]   -   16517   |   WORTHINGTON Prime Stakes, canned, unprepared   |   WORTHINGTON PRIME STAKES,CND,UNPREP   |   0
+[   OK   ]   -   16518   |   WORTHINGTON Saucettes, canned, unprepared   |   WORTHINGTON SAUCETTES,CND,UNPREP   |   0
+[   OK   ]   -   16519   |   WORTHINGTON Super Links, canned, unprepared   |   WORTHINGTON SUPER LINKS,CND,UNPREP   |   0
+[   OK   ]   -   16520   |   WORTHINGTON Turkee Slices, canned, unprepared   |   WORTHINGTON TURKEE SLICES,CND,UNPREP   |   0
+[   OK   ]   -   16521   |   WORTHINGTON Vegetable Skallops, canned, unprepared   |   WORTHINGTON VEG SKALLOPS,CND,UNPREP   |   0
+[   OK   ]   -   16522   |   WORTHINGTON Vegetable Steaks, canned, unprepared   |   WORTHINGTON VEG STEAKS,CND,UNPREP   |   0
+[   OK   ]   -   16523   |   WORTHINGTON Vegetarian Burger, canned, unprepared   |   WORTHINGTON VEGETARIAN BURGER,CND,UNPREP   |   0
+[   OK   ]   -   16524   |   WORTHINGTON Veja-Links, canned, unprepared   |   WORTHINGTON VEJA-LINKS,CND,UNPREP   |   0
+[   OK   ]   -   16525   |   WORTHINGTON Chic-Ketts, frozen, unprepared   |   WORTHINGTON CHIC-KETTS,FRZ,UNPREP   |   0
+[   OK   ]   -   16526   |   WORTHINGTON Meatless Chicken, frozen, unprepared   |   WORTHINGTON MEATLESS CHICK,FRZ,UNPREP   |   0
+[   OK   ]   -   16527   |   WORTHINGTON Meatless Corned Beef, frozen, unprepared   |   WORTHINGTON MEATLESS CORNED BF,FRZ,UNPREP   |   0
+[   OK   ]   -   16528   |   WORTHINGTON Dinner Roast, frozen, unprepared   |   WORTHINGTON DINNER RST,FRZ,UNPREP   |   0
+[   OK   ]   -   16529   |   WORTHINGTON FriPats, frozen, unprepared   |   WORTHINGTON FRIPATS,FRZ,UNPREP   |   0
+[   OK   ]   -   16530   |   WORTHINGTON Dinner Roast, frozen, unprepared   |   WORTHINGTON DINNER RST,FRZ,UNPREP   |   0
+[   OK   ]   -   16531   |   WORTHINGTON Prosage Links, frozen, unprepared   |   WORTHINGTON PROSAGE LINKS,FRZ,UNPREP   |   0
+[   OK   ]   -   16532   |   WORTHINGTON Prosage Roll, frozen, unprepared   |   WORTHINGTON PROSAGE ROLL,FRZ,UNPREP   |   0
+[   OK   ]   -   16533   |   WORTHINGTON Smoked Turkey, frozen, unprepared   |   WORTHINGTON SMOKED TURKEY,FRZ,UNPREP   |   0
+[   OK   ]   -   16534   |   WORTHINGTON Stakelets, frozen, unprepared   |   WORTHINGTON STAKELETS,FRZ,UNPREP   |   0
+[   OK   ]   -   16535   |   WORTHINGTON Stripples, frozen, unprepared   |   WORTHINGTON STRIPPLES,FRZ,UNPREP   |   0
+[   OK   ]   -   16536   |   WORTHINGTON Wham, frozen, unprepared   |   WORTHINGTON WHAM,FRZ,UNPREP   |   0
+[   OK   ]   -   16537   |   MORNINGSTAR FARMS Veggie Corn Dogs made w/ Natural Ingredients, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE CORN DOGS W/ NAT INGR,FRZ,UNPREP   |   0
+[   OK   ]   -   16538   |   MORNINGSTAR FARMS Breakfast Pattie made with Organic Soy, frozen, unprepared   |   MORNINGSTAR FARMS BRKFST PATTIE MADE W/ ORG SOY,FRZ,UNPREP   |   0
+[   OK   ]   -   16539   |   MORNINGSTAR FARMS Okara Patties made with Organic Soy, frozen, unprepared   |   MORNINGSTAR FARMS OKARA PATTIES MADE W/ ORG SOY,FRZ,UNPREP   |   0
+[   OK   ]   -   16540   |   MORNINGSTAR FARMS Roasted Herb Chik'n made with Organic Soy, frozen, unprepared   |   MORNINGSTAR FARMS RSTD HERB CHIK'N W/ ORG SOY,FRZ,UNPREP   |   0
+[   OK   ]   -   16542   |   MORNINGSTAR FARMS Veggie Bacon Strips, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE BACON STRIPS,FRZ,UNPREP   |   0
+[   OK   ]   -   16544   |   MORNINGSTAR FARMS Veggie Bites Country Scramble, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE BITES COUNTRY SCRAMBLE,FRZ,UNPREP   |   0
+[   OK   ]   -   16545   |   MORNINGSTAR FARMS Veggie Bites Eggs Florentine, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE BITES EGGS FLORENTINE,FRZ,UNPREP   |   0
+[   OK   ]   -   16546   |   MORNINGSTAR FARMS Veggie Sausage Links, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE SAUSAGE LINKS,FRZ,UNPREP   |   0
+[   OK   ]   -   16547   |   MORNINGSTAR FARMS Cheddar Burger, frozen, unprepared   |   MORNINGSTAR FARMS CHEDDAR BURGER,FRZ,UNPREP   |   0
+[   OK   ]   -   16548   |   MORNINGSTAR FARMS Grillers Original, frozen, unprepared   |   MORNINGSTAR FARMS GRILLERS ORIGINAL,FRZ,UNPREP   |   0
+[   OK   ]   -   16549   |   MORNINGSTAR FARMS Grillers Prime, frozen, unprepared   |   MORNINGSTAR FARMS GRILLERS PRIME,FRZ,UNPREP   |   0
+[   OK   ]   -   16550   |   MORNINGSTAR FARMS Philly Cheesesteak Burger, frozen, unprepared   |   MORNINGSTAR FARMS PHILLY CHEESESTEAK BURGER,FRZ,UNPREP   |   0
+[   OK   ]   -   16551   |   MORNINGSTAR FARMS Asian Veggie Patties, frozen, unprepared   |   MORNINGSTAR FARMS ASIAN VEGGIE PATTIES,FRZ,UNPREP   |   0
+[   OK   ]   -   16552   |   MORNINGSTAR FARMS Mushroom Lover's Burger, frozen, unprepared   |   MORNINGSTAR FARMS MUSHROOM LOVER'S BURGER,FRZ,UNPREP   |   0
+[   OK   ]   -   16554   |   MORNINGSTAR FARMS Tomato & Basil Pizza Burger, frozen, unprepared   |   MORNINGSTAR FARMS TOMATO & BASIL PIZZA BURGER,FRZ,UNPREP   |   0
+[   OK   ]   -   16555   |   MORNINGSTAR FARMS MeatFree Buffalo Wings, frozen, unprepared   |   MORNINGSTAR FARMS MEATFREE BUFFALO WINGS,FRZ,UNPREP   |   0
+[   OK   ]   -   16556   |   MORNINGSTAR FARMS Chik'n Nuggets, frozen, unprepared   |   MORNINGSTAR FARMS CHIK'N NUGGETS,FRZ,UNPREP   |   0
+[   OK   ]   -   16557   |   MORNINGSTAR FARMS Chik Patties Original, frozen, unprepared   |   MORNINGSTAR FARMS CHIK PATTIES ORIGINAL,FRZ,UNPREP   |   0
+[   OK   ]   -   16558   |   MORNINGSTAR FARMS Italian Herb Chik Patties, frozen, unprepared   |   MORNINGSTAR FARMS ITALIAN HERB CHIK PATTIES,FRZ,UNPREP   |   0
+[   OK   ]   -   16559   |   MORNINGSTAR FARMS Original Chik'n Tenders, frozen, unprepared   |   MORNINGSTAR FARMS ORIGINAL CHIK'N TENDERS,FRZ,UNPREP   |   0
+[   OK   ]   -   16560   |   MORNINGSTAR FARMS Meatless Corn Dogs, frozen, unprepared   |   MORNINGSTAR FARMS MEATLESS CORN DOGS,FRZ,UNPREP   |   0
+[   OK   ]   -   16561   |   MORNINGSTAR FARMS Meatless Mini Corn Dogs, frozen, unprepared   |   MORNINGSTAR FARMS MEATLESS MINI CORN DOGS,FRZ,UNPREP   |   0
+[   OK   ]   -   16563   |   MORNINGSTAR FARMS Meal Starters Chik'n Strips, frozen, unprepared   |   MORNINGSTAR FARMS MEAL STARTERS CHIK'N STRIPS,FRZ,UNPREP   |   0
+[   OK   ]   -   16564   |   MORNINGSTAR FARMS Meal Starters Steak Strips, frozen, unprepared   |   MORNINGSTAR FARMS MEAL STARTERS STEAK STRIPS,FRZ,UNPREP   |   0
+[   OK   ]   -   16565   |   MORNINGSTAR FARMS Sausage Style Recipe Crumbles, frozen, unprepared   |   MORNINGSTAR FARMS SAUSAGE STYLE RECIPE CRUMBLES,FRZ,UNPREP   |   0
+[   OK   ]   -   16566   |   MORNINGSTAR FARMS Veggie Bites Broccoli Cheddar, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE BITES BROCCOLI CHEDDAR,FRZ,UNPREP   |   0
+[   OK   ]   -   16567   |   MORNINGSTAR FARMS Veggie Bites Spinach Artichoke, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE BITES SPINACH ARTICHOKE,FRZ,UNPREP   |   0
+[   OK   ]   -   16568   |   MORNINGSTAR FARMS Veggie Cakes Ginger Teriyaki, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE CAKES GINGER TERIYAKI,FRZ,UNPREP   |   0
+[   OK   ]   -   16569   |   MORNINGSTAR FARMS Veggie Cakes Southwestern Style, frozen, unprepared   |   MORNINGSTAR FARMS VEGGIE CAKES SOUTHWESTERN STYLE,FRZ,UNPREP   |   0
+[   OK   ]   -   17148   |   Bison, ground, grass-fed, cooked   |   BISON,GROUND,GRASS-FED,CKD   |   0
+[   OK   ]   -   17149   |   Bison, ground, grass-fed, raw   |   BISON,GROUND,GRASS-FED,RAW   |   0
+[   OK   ]   -   18942   |   Pie Crust, Cookie-type, Graham Cracker, Ready Crust   |   PIE CRUST,COOKIE-TYPE,GRAHAM CRACKER,READY CRUST   |   0
+[   OK   ]   -   18943   |   Pie Crust, Cookie-type, Chocolate, Ready Crust   |   PIE CRUST,COOKIE-TYPE,CHOC,READY CRUST   |   0
+[   OK   ]   -   18944   |   Pie, Dutch Apple, Commercially Prepared   |   PIE,DUTCH APPL,COMMLY PREP   |   0
+[   OK   ]   -   18945   |   Pie crust, deep dish, frozen, unbaked, made with enriched flour   |   PIE CRUST,DEEP DISH,FRZ,UNBAKED,MADE W/ ENR FLR   |   0
+[   OK   ]   -   18946   |   Pie crust, refrigerated, regular, baked   |   PIE CRUST,REFR,REG,BKD   |   0
+[   OK   ]   -   18947   |   Pie crust, deep dish, frozen, baked, made with enriched flour   |   PIE CRUST,DEEP DISH,FRZ,BKD,MADE W/ ENR FLR   |   0
+[   OK   ]   -   18948   |   Pie crust, refrigerated, regular, unbaked   |   PIE CRUST,REFR,REG,UNBAKED   |   0
+[   OK   ]   -   19902   |   Candies, chocolate, dark, 45-59% cacao solids   |   CANDIES,CHOC,DK,45-59% CACAO SOL   |   0
+[   OK   ]   -   19903   |   Candies, chocolate, dark, 60-69% cacao solids   |   CANDIES,CHOC,DK,60-69% CACAO SOL   |   0
+[   OK   ]   -   19904   |   Candies, chocolate, dark, 70-85% cacao solids   |   CANDIES,CHOC,DK,70-85% CACAO SOL   |   0
+[   OK   ]   -   19905   |   Candies, chocolate, dark, not further specified   |   CANDIES,CHOC,DK,NFS   |   0
+[   OK   ]   -   20002   |   Amaranth grain, cooked   |   AMARANTH GRAIN,CKD   |   0
+[   OK   ]   -   20058   |   Rice, white, steamed, Chinese restaurant   |   RICE,WHITE,STMD,CHINESE RESTAURANT   |   0
+[   OK   ]   -   20118   |   Noodles, flat, crunchy, Chinese restaurant   |   NOODLES,FLAT,CRUNCHY,CHINESE RESTAURANT   |   0
+[   OK   ]   -   20315   |   Corn flour, whole-grain, blue (harina de maiz morado)   |   CORN FLR,WHOLE-GRAIN,BLUE (HARINA DE MAIZ MORADO)   |   0
+[   OK   ]   -   21460   |   McDONALD'S, Biscuit, large size   |   MCDONALD'S,BISCUIT,LRG SIZE   |   0
+[   OK   ]   -   22957   |   Turkey, stuffing, mashed potatoes w/gravy, assorted vegetables, frozen, microwaved   |   TKY,STUFFING,MSHD POTATOE W/GRAVY,ASSORTED VEG,FRZ,MICROWAVE   |   0
+[   OK   ]   -   22958   |   Rice bowl with chicken, frozen entree, prepared (includes fried, teriyaki, and sweet and sour varieties)   |   RICE BOWL W/ CHICK,FRZ ENTREE,PREP   |   0
+[   OK   ]   -   25022   |   Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, French Onion flavor   |   SNACKS,FRITOLAY,SUNCHIPS,MULTIGRAIN SNACK,FRENCH ONION FLAVR   |   0
+[   OK   ]   -   25023   |   Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, Harvest Cheddar flavor   |   SNACKS,FRITOLAY,SUNCHIPS,MULTIGRAIN,HARVEST CHEDDAR   |   0
+[   OK   ]   -   25026   |   Popcorn, microwave, regular (butter) flavor, made with palm oil   |   POPCORN,MICROWAVE,REG (BUTTER) FLAVOR,MADE W/ PALM OIL   |   0
+[   OK   ]   -   25027   |   Plantain chips   |   PLANTAIN CHIPS   |   0
+[   OK   ]   -   25028   |   Snacks, tortilla chips, plain, yellow corn   |   SNACKS,TORTILLA CHIPS,PLN,YEL CORN   |   0
+[   OK   ]   -   27000   |   Soup, egg drop, Chinese restaurant   |   SOUP,EGG DROP,CHINESE RESTAURANT   |   0
+[   OK   ]   -   27001   |   Soup, hot and sour, Chinese restaurant   |   SOUP,HOT & SOUR,CHINESE RESTAURANT   |   0
+[   OK   ]   -   27002   |   Soup, wonton, Chinese restaurant   |   SOUP,WONTON,CHINESE RESTAURANT   |   0
+[   OK   ]   -   27004   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Beef Stew - Fully Loaded   |   CAMPBELL,CAMPBELL'S CHUNKY SOUPS,BF STEW - FULL   |   0
+[   OK   ]   -   27005   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Beef Stroganof - Fully Loaded   |   CAMPBELL,CAMPBELL'S CHUNKY SOUPS,BF STROGANOF -   |   0
+[   OK   ]   -   27006   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST Beef Barley Soup   |   CAMPBELL,CAMPBELL'S CHUNKY,HEALTHY REQUEST BF BARLEY SOUP   |   0
+[   OK   ]   -   27007   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST Microwavable Bowls, Chicken Noodle Soup   |   CAMPBELL'S CHNKY,HEALTHY REQUST MICROWAVBL ,CHICK NODLE SOUP   |   0
+[   OK   ]   -   27008   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST Microwavable Bowls, Grilled Chicken & Sausage Gumbo Soup   |   CAMPBELL SOUPS,HLTHY RQST MCRWVBL BWL,GRLL CHICK SSAGE GMB   |   0
+[   OK   ]   -   27009   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST New England Clam Chowder   |   CAMPBELL,CAMPBELL'S CHUNKY SOUPS,HEALTHY REQUES   |   0
+[   OK   ]   -   27010   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Rigatoni & Meatballs - Fully Loaded   |   CAMPBELL,CAMPBELL'S CHUNKY SOUPS,RIGATONI & MEA   |   0
+[   OK   ]   -   27011   |   CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Turkey Pot Pie - Fully Loaded   |   CAMPBELL,CAMPBELL'S CHUNKY SOUPS,TURKEY POT PIE   |   0
+[   OK   ]   -   27012   |   CAMPBELL Soup Company, CAMPBELL'S Red and White, Cheddar Cheese Soup, condensed   |   CAMPBELL,CAMPBELL'S RED & WHITE,CHEDDAR CHS SOU   |   0
+[   OK   ]   -   27013   |   CAMPBELL Soup Company, CAMPBELL'S Red and White, Chicken Barley with Mushrooms Soup, condensed   |   CAMPBELL,CAMPBELL'S RED & WHITE,CHICK BARLEY W/   |   0
+[   OK   ]   -   27014   |   CAMPBELL Soup Company, CAMPBELL'S Red and White, Italian Style Wedding Soup, condensed   |   CAMPBELL,CAMPBELL'S RED & WHITE,ITALIAN STYLE W   |   0
+[   OK   ]   -   27015   |   CAMPBELL Soup Company, CAMPBELL'S Red and White, SHREK shaped pasta with Chicken in Chicken Broth Soup, condensed   |   CAMPBELL,CAMPBELL'S RED & WHITE,SHREK SHAPED PA   |   0
+[   OK   ]   -   27016   |   CAMPBELL Soup Company, CAMPBELL's Red and White, Souper Shapes Soup - Cars, condensed   |   CAMPBELL,CAMPBELL'S RED & WHITE,SOUPER SHAPES S   |   0
+[   OK   ]   -   27017   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Microwaveable Bowls, HEALTHY REQUEST Italian Wedding Soup   |   CAMPBELL,CAMPBELL'S SEL MICROWAVEABLE BOWLS,HEA   |   0
+[   OK   ]   -   27018   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Microwaveable Bowls, HEALTHY REQUEST Mexican Style Tortilla   |   CAMPBELL,CAMPBELL'S SEL MICROWAVEABLE BOWLS,HEA   |   0
+[   OK   ]   -   27019   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Soup, Harvest Tomato with Basil Soup   |   CAMPBELL, SEL SOUP,HARVEST TOMATO W/ BASIL SOUP   |   0
+[   OK   ]   -   27020   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Soup, Zesty Azteca Meatballs & Rice   |   CAMPBELL,CAMPBELL'S SEL SOUP,ZESTY AZTECA MEATB   |   0
+[   OK   ]   -   27021   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Soups, HEALTHY REQUEST Chicken with Egg Noodles   |   CAMPBELL,CAMPBELL'S SEL SOUPS,HEALTHY REQUEST C   |   0
+[   OK   ]   -   27022   |   CAMPBELL Soup Company, CAMPBELL'S SOUP AT HAND, 25% Less Sodium Chicken with Mini Noodles Soup   |   CAMPBELL,CAMPBELL'S SOUP AT HAND,25% LESS NA CH   |   0
+[   OK   ]   -   27023   |   CAMPBELL Soup Company, CAMPBELL'S SOUP AT HAND, 25% Less Sodium Classic Tomato   |   CAMPBELL,CAMPBELL'S SOUP AT HAND,25% LESS NA CL   |   0
+[   OK   ]   -   27024   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Gold Label Soups, Creamy Tomato Parmesan   |   CAMPBEL,CAMPBELL'S SEL GOLD LABEL SOUPS,CREAMY   |   0
+[   OK   ]   -   27025   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Gold Label Soups, Italian Tomato & Basil Soup   |   CAMPBELL,CAMPBELL'S SEL GOLD LABEL SOUPS,ITALIA   |   0
+[   OK   ]   -   27026   |   CAMPBELL Soup Company, CAMPBELL'S SELECT Gold Label Soups, Southwestern Corn Chowder   |   CAMPBELL,CAMPBELL'S SEL GOLD LABEL SOUPS,SOUTHW   |   0
+[   OK   ]   -   27027   |   CAMPBELL Soup Company, PACE, Pico De Gallo   |   CAMPBELL SOUP COMPANY,PACE,PICO DE GALLO   |   0
+[   OK   ]   -   27028   |   CAMPBELL Soup Company, PACE, Salsa Verde   |   CAMPBELL SOUP COMPANY,PACE,SALSA VERDE   |   0
+[   OK   ]   -   27029   |   CAMPBELL Soup Company, PACE, Tequila Lime Salsa   |   CAMPBELL SOUP COMPANY,PACE,TEQUILA LIME SALSA   |   0
+[   OK   ]   -   27030   |   CAMPBELL Soup Company, PACE, Triple Pepper Salsa   |   CAMPBELL SOUP COMPANY,PACE,TRIPLE PEPPER SALSA   |   0
+[   OK   ]   -   27032   |   CAMPBELL Soup Company, CAMPBELL'S Red and White, Lentil Soup, condensed   |   CAMPBELL,CAMPBELL'S RED & WHITE,LENTIL SOUP,COND   |   0
+[   OK   ]   -   27033   |   CAMPBELL Soup Company, PREGO Pasta, Heart Smart- Traditional Sauce, ready-to-serve   |   CAMPBELL,PREGO PASTA,HEART SMART- TRADITIONAL S   |   0
+[   OK   ]   -   27034   |   CAMPBELL Soup Company, CAMPBELL'S Red and White, 98% Fat Free Cream of Mushroom Soup, condensed   |   CAMPBELL,RED & WHITE,98% FAT FREE CRM OF MUSHROOM SOUP,COND   |   0
+[   OK   ]   -   35226   |   Sea lion, stellar, liver (Alaska Native)   |   Sea lion, stellar, liver (Alaska Native)   |   0
+[   OK   ]   -   35227   |   Sea lion, stellar, kidney (Alaska Native)   |   SEA LION,STELLAR,KIDNEY (ALASKA NATIVE)   |   0
+[   OK   ]   -   35228   |   Sea lion, stellar, heart (Alaska Native)   |   SEA LION,STELLAR,HEART (ALASKA NATIVE)   |   0
+[   OK   ]   -   35229   |   Sea lion, stellar, meat (Alaska Native)   |   SEA LION,STELLAR,MEAT (ALASKA NATIVE)   |   0
+[   OK   ]   -   35230   |   Sea lion, stellar, meat with fat (Alaska Native)   |   SEA LION,STELLAR,MEAT W/ FAT (ALASKA NATIVE)   |   0
+[   OK   ]   -   35231   |   Sea lion, stellar, fat (Alaska Native)   |   SEA LION,STELLAR,FAT (ALASKA NATIVE)   |   0

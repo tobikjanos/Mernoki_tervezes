@@ -1,0 +1,6 @@
+~03939~^~01~^~D~^~~^~Contains arachidonic acid ( ARA, nutrient number 620) and Docosahexaenoic acid ( DHA nutrient number 621) fatty acids found in human breast milk.~
+~06285~^~01~^~D~^~~^~Recipe No. G-05 from NFSMI, Healthy School Meals Resource System, and Team Nutrition~
+~16147~^~01~^~D~^~~^~Profile represents several different brands and types; check label for the brand and type purchased.~
+~16147~^~02~^~N~^~404~^~Vitamin added to some products; check label for product purchased~
+~16147~^~03~^~N~^~406~^~Vitamin added to some products; check label for product purchased~
+~16223~^~01~^~D~^~~^~Product may also have omega-3 fatty acids, vitamin C, vitamin B6, folate, and vitamin E added.  Check label.~

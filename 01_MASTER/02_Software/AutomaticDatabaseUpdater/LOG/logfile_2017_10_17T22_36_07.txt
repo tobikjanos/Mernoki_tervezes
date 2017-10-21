@@ -1,0 +1,43 @@
+[  INFO  ]   -   CHG_FOOD elkezdődött
+[   OK   ]   -   60000   |   test_name00   |   TEST_NAME00   |   1
+[   OK   ]   -   60001   |   test_name01   |   TEST_NAME01   |   1
+[   OK   ]   -   60002   |   test_name02   |   TEST_NAME02   |   1
+[   OK   ]   -   60003   |   test_name03   |   TEST_NAME03   |   1
+[   OK   ]   -   60004   |   test_name04   |   TEST_NAME04   |   1
+[   OK   ]   -   60005   |   test_name05   |   TEST_NAME05   |   1
+[   OK   ]   -   60006   |   test_name06   |   TEST_NAME06   |   1
+[   OK   ]   -   60007   |   test_name07   |   TEST_NAME07   |   1
+[   OK   ]   -   60008   |   test_name08   |   TEST_NAME08   |   1
+[   OK   ]   -   60009   |   test_name09   |   TEST_NAME09   |   1
+[  INFO  ]   -   CHG_NUTR elkezdődött
+[ FAILED ]   -   60000   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60001   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60002   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60003   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60004   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60005   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60006   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60007   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60008   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[ FAILED ]   -   60009   |   208   |   1.0
+[ERRORMSG]   -   ERROR: function minta2.chgnutrient(character varying, character varying, double precision) does not exist
+[  INFO  ]   -   CHG_WGT elkezdődött
+[   OK   ]   -   60000   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60001   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60002   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60003   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60004   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60005   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60006   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60007   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60008   |   1.0   |   container (5.3 oz)   |   200.0
+[   OK   ]   -   60009   |   1.0   |   container (5.3 oz)   |   200.0

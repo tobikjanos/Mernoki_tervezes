@@ -1,0 +1,24 @@
+~03945~^~02~^~N~^~573~^~Added vitamin E is RRR alpha tocopherol.~
+~09003~^~01~^~D~^~~^~Based on analytical data for red delicious, golden delicious, gala, granny smith, and fuji varieties.~
+~09016~^~01~^~D~^~~^~Includes juice box~
+~09130~^~01~^~D~^~~^~Includes purple and white grape juice~
+~09135~^~01~^~D~^~~^~Includes purple and white grape juice~
+~09286~^~01~^~D~^~~^~Based on samples of California Wonderful variety.~
+~09443~^~01~^~N~^~401~^~Various brands and package sizes may have different vitamin C levels due to different fortification practices.~
+~11371~^~01~^~D~^~~^~Recipe:  Potatoes, 80%; whole milk, 14%; margarine, 5%; and salt, 1%.~
+~11372~^~01~^~D~^~~^~Recipe:  Potatoes, 59%; whole milk, 36%; butter, 2%; flour, 2%; and salt, 1%.~
+~11373~^~01~^~D~^~~^~Recipe:  Potatoes, 55%; whole milk, 30%; cheddar cheese, 9%; butter, 3%; flour , 2%; and salt, 1%.~
+~11414~^~01~^~D~^~~^~Recipe:  Potatoes, 62%; egg, 12%; mayonnaise, 8%; celery, 7%; sweet pickle relish, 6%; onion, 2%; green pepper, 1%; pimiento, 1%; salt, 1%; and dry mustard.~
+~11657~^~01~^~D~^~~^~Recipe:  Potatoes, 84%; whole milk, 15%; and salt, 1%.~
+~11671~^~01~^~D~^~~^~Recipe:  Potatoes, 63%; whole milk, 19%; onions, 8%; green pepper, 7%; bread crumbs, 2%; salt, butter, and black pepper, 1%.~
+~11672~^~01~^~D~^~~^~Recipe:  Potatoes, 72%; eggs, 12%; onions, 7%; margarine, 7%; flour, 2%; and salt, 1%.~
+~11843~^~01~^~D~^~~^~Recipe:  Potatoes, 55%; whole milk, 30%; cheddar cheese, 9%; margarine, 3%; flour , 2%; and salt, 1%.~
+~11934~^~01~^~D~^~~^~Recipe:  Potatoes, 80%; whole milk, 14%; butter, 5%; and salt, 1%.~
+~16173~^~01~^~N~^~417~^~Value based on the analysis of  5-methyltetrahydrofolic acid~
+~19008~^~01~^~D~^~~^~product made with oil that is not partially hydrogenated.~
+~20058~^~01~^~D~^~~^~Analytical results indicate rice is unenriched.~
+~22957~^~01~^~D~^~~^~includes dinners w/cranberry sauce~
+~35230~^~01~^~D~^~~^~Based on limited sampling. Nutrient values, particularly fat and protein, vary widely with variations in proportion of meat to fat.~
+~35231~^~01~^~D~^~~^~Nutrient values vary, depending on proportion of fat to meat.~
+~35231~^~02~^~N~^~207~^~If salted fat, ash could be higher and fat lower on a 100-gram basis.~
+~43483~^~01~^~D~^~~^~Made from proso millet~

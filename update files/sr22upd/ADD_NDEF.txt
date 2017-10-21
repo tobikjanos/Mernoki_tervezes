@@ -1,0 +1,3 @@
+~325~^~mcg~^~ERGCAL~^~Vitamin D2 (ergocalciferol)~^~1~^~8710~
+~326~^~mcg~^~CHOCAL~^~Vitamin D3 (cholecalciferol)~^~1~^~8720~
+~328~^~mcg~^~VITD~^~Vitamin D (D2 + D3)~^~1~^~8700~

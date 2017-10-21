@@ -1,0 +1,706 @@
+~03070~^~1~^1.00^~cup~^229.00^^
+~03104~^~5~^1.00^~container~^67.00^8^2.02
+~03105~^~5~^1.00^~container~^67.00^8^2.02
+~04140~^~1~^1.00^~tablespoon~^15.00^^
+~04140~^~2~^1.00^~cup~^245.00^^
+~06009~^~3~^1.00^~can (10.75 oz)~^305.00^^
+~06013~^~3~^1.00^~can (10.75 oz)~^305.00^^
+~06015~^~2~^1.00^~cup (8 fl oz)~^251.00^^
+~06015~^~3~^1.00^~can (10.75 oz)~^305.00^^
+~06015~^~4~^1.00^~can (19 oz), ready-to-serve~^539.00^^
+~06025~^~3~^1.00^~can 10.7 oz~^303.00^^
+~06027~^~3~^1.00^~can (19 oz), ready-to-serve~^539.00^^
+~06032~^~3~^1.00^~cup 8 oz~^238.00^^
+~06039~^~3~^1.00^~can (19 oz), ready-to-serve~^539.00^^
+~06044~^~3~^0.50^~cup~^126.00^^
+~06066~^~3~^1.00^~can (10.5 oz)~^298.00^^
+~06073~^~1~^1.00^~cup~^14.20^^
+~06073~^~2~^1.00^~packet~^64.00^^
+~06074~^~1~^1.00^~cup (8 fl oz)~^28.00^^
+~06075~^~3~^1.00^~packet~^6.00^^
+~06075~^~4~^1.00^~portion, amount of dry mix to make 8 fl oz prepared~^8.00^^
+~06076~^~2~^1.00^~cube (6 fl oz prepared)~^3.60^^
+~06077~^~2~^1.00^~packet~^9.20^^
+~06078~^~1~^1.00^~cup (8 fl oz)~^19.00^^
+~06079~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06080~^~3~^1.00^~cube~^4.00^^
+~06080~^~4~^1.00^~packet (6 fl oz prepared)~^6.00^^
+~06080~^~5~^1.00^~portion, amount of dry mix to make 8 fl oz prepared~^8.00^^
+~06081~^~2~^1.00^~cube~^4.80^^
+~06083~^~1~^1.00^~cup (8 fl oz)~^24.00^^
+~06083~^~2~^1.00^~packet~^18.00^^
+~06085~^~1~^1.00^~cup (8 fl oz)~^16.00^^
+~06086~^~1~^1.00^~cup~^14.10^^
+~06086~^~2~^1.00^~packet~^10.60^^
+~06087~^~1~^1.00^~cup (8 fl oz)~^19.00^^
+~06088~^~1~^1.00^~cup (8 fl oz)~^23.00^^
+~06089~^~1~^1.00^~cup~^12.60^^
+~06089~^~2~^1.00^~packet~^57.00^^
+~06090~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06090~^~2~^1.00^~packet~^78.00^^
+~06092~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06092~^~2~^1.00^~packet~^78.00^^
+~06093~^~1~^1.00^~packet, regular~^74.00^^
+~06093~^~2~^1.00^~packet, instant~^17.00^^
+~06095~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06095~^~2~^1.00^~packet~^74.00^^
+~06096~^~1~^1.00^~packet~^113.00^^
+~06096~^~2~^1.00^~packet (6 fl oz)~^28.00^^
+~06098~^~1~^1.00^~cup (8 fl oz)~^23.00^^
+~06098~^~2~^1.00^~packet (6 fl oz)~^21.00^^
+~06099~^~3~^1.00^~packet~^39.00^^
+~06099~^~4~^1.00^~portion, amount of dry mix to make 8 fl oz prepared~^19.00^^
+~06100~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06100~^~2~^1.00^~packet~^74.00^^
+~06101~^~2~^1.00^~packet (6 fl oz prepared)~^18.00^^
+~06101~^~3~^1.00^~portion, amount of dry mix to make 8 fl oz prepared~^24.00^^
+~06102~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06102~^~2~^1.00^~packet~^25.00^^
+~06104~^~1~^1.00^~cup (8 fl oz)~^28.00^^
+~06104~^~2~^1.00^~packet~^35.00^^
+~06106~^~1~^1.00^~cup (8 fl oz)~^23.00^^
+~06106~^~2~^1.00^~packet~^28.00^^
+~06107~^~1~^1.00^~packet~^42.00^^
+~06107~^~2~^1.00^~serving~^10.00^^
+~06108~^~1~^1.00^~packet~^39.00^^
+~06108~^~2~^1.00^~serving~^10.00^^
+~06109~^~1~^1.00^~cup (8 fl oz)~^56.00^^
+~06109~^~2~^1.00^~packet~^46.00^^
+~06110~^~1~^1.00^~cup (8 fl oz)~^76.00^^
+~06110~^~2~^1.00^~packet~^57.00^^
+~06111~^~1~^1.00^~packet~^46.00^^
+~06113~^~1~^1.00^~cup (8 fl oz)~^20.00^^
+~06113~^~2~^1.00^~packet~^50.00^^
+~06136~^~1~^1.00^~cup, sauce~^242.00^^
+~06136~^~2~^0.50^~cup~^125.00^^
+~06137~^~2~^0.50^~cup~^127.00^^
+~06142~^~2~^0.50^~cup~^103.00^^
+~06152~^~2~^1.00^~serving~^63.00^^
+~06152~^~3~^0.25^~cup~^63.00^^
+~06154~^~1~^1.00^~cup (8 fl oz)~^17.00^^
+~06154~^~2~^1.00^~packet~^25.00^^
+~06155~^~1~^1.00^~cup (8 fl oz)~^45.00^^
+~06155~^~2~^1.00^~packet~^34.00^^
+~06179~^~2~^1.00^~fl oz~^28.40^^
+~06402~^~3~^1.00^~can (11 oz), prepared~^600.00^^
+~06409~^~3~^1.00^~can (10.75 oz), prepared~^593.00^^
+~06412~^~3~^1.00^~can (10.5 oz), prepared~^586.00^^
+~06413~^~3~^1.00^~fl oz~^30.00^^
+~06413~^~4~^1.00^~can (10.75 oz), prepared~^593.00^^
+~06413~^~5~^1.00^~envelope yields~^182.00^^
+~06417~^~3~^1.00^~can (10.75 oz), prepared~^593.00^^
+~06419~^~2~^1.00^~fl oz~^31.00^^
+~06423~^~2~^1.00^~fl oz~^30.40^^
+~06425~^~2~^1.00^~fl oz~^31.00^^
+~06473~^~1~^1.00^~cup (8 fl oz)~^251.00^^
+~06473~^~2~^1.00^~packet~^1129.00^^
+~06474~^~2~^1.00^~fl oz~^33.10^^
+~06477~^~1~^1.00^~cup~^251.00^^
+~06477~^~2~^1.00^~fl oz~^31.40^^
+~06477~^~3~^1.00^~packet (6 fl oz prepared)~^187.00^^
+~06478~^~1~^1.00^~cup (8 fl oz)~^256.00^^
+~06479~^~1~^1.00^~cup (8 fl oz)~^254.00^^
+~06483~^~3~^1.00^~packet (6 fl oz prepared)~^196.00^^
+~06485~^~3~^1.00^~packet, prepared~^190.00^^
+~06486~^~1~^1.00^~cup (8 fl oz)~^251.00^^
+~06486~^~2~^1.00^~packet (6 fl oz)~^188.00^^
+~06489~^~3~^1.00^~packet (36 fl oz prepared)~^1121.00^^
+~06490~^~1~^1.00^~cup~^254.00^^
+~06490~^~2~^1.00^~cup (8 fl oz)~^254.00^^
+~06490~^~3~^1.00^~packet (36 fl oz prepared)~^1143.00^^
+~06492~^~1~^1.00^~cup (8 fl oz)~^254.00^^
+~06492~^~2~^1.00^~packet (36 fl oz prepared)~^1143.00^^
+~06495~^~2~^1.00^~cup (8 fl oz)~^253.00^^
+~06495~^~3~^1.00^~fl oz~^30.50^^
+~06495~^~4~^1.00^~packet (36 fl oz prepared)~^1139.00^^
+~06496~^~1~^1.00^~cup~^271.00^^
+~06496~^~2~^1.00^~packet (6 fl oz prepared)~^206.00^^
+~06498~^~2~^1.00^~packet, prepared~^199.00^^
+~06499~^~2~^1.00^~cup (8 fl oz)~^253.00^^
+~06499~^~3~^1.00^~packet (6 fl oz prepared)~^189.00^^
+~06500~^~2~^1.00^~packet (36 fl oz prepared)~^1139.00^^
+~06501~^~1~^1.00^~cup (8 fl oz)~^260.00^^
+~06501~^~2~^1.00^~packet (6 fl oz prepared)~^195.00^^
+~06528~^~2~^1.00^~cup (8 fl oz)~^252.00^^
+~06528~^~3~^1.00^~packet (6 fl oz prepared)~^189.00^^
+~08100~^~2~^1.00^~tbsp~^10.20^^
+~08385~^~1~^1.00^~cup (1 NLEA serving)~^55.00^1^
+~08454~^~1~^1.00^~cup~^29.00^^
+~08455~^~1~^1.00^~cup~^29.00^^
+~08465~^~1~^1.00^~cup~^29.00^1^
+~08473~^~1~^1.00^~cup~^29.00^1^
+~08474~^~1~^1.00^~cup~^29.00^1^
+~08522~^~1~^1.00^~cup (1 NLEA serving)~^29.00^1^
+~08523~^~1~^1.00^~cup (1 NLEA serving)~^29.00^1^
+~09367~^~2~^1.00^~cup, with pits, yields~^184.00^^
+~11334~^~3~^0.50^~cup, chopped~^68.00^^
+~11577~^~2~^0.50^~cup~^86.00^^
+~13003~^~1~^1.00^~oz~^28.35^^
+~13003~^~2~^1.00^~lb~^453.60^^
+~13004~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^285.00^^
+~13004~^~2~^3.00^~oz~^85.00^^
+~13005~^~1~^1.00^~oz~^28.35^^
+~13005~^~2~^1.00^~lb~^453.60^^
+~13006~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^283.00^^
+~13006~^~2~^3.00^~oz~^85.00^^
+~13007~^~1~^1.00^~oz~^28.35^^
+~13007~^~2~^1.00^~lb~^453.60^^
+~13008~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^283.00^^
+~13008~^~2~^3.00^~oz~^85.00^^
+~13009~^~1~^1.00^~oz~^28.35^^
+~13009~^~2~^1.00^~lb~^453.60^^
+~13010~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^289.00^^
+~13010~^~2~^3.00^~oz~^85.00^^
+~13011~^~1~^1.00^~oz~^28.35^^
+~13011~^~2~^1.00^~lb~^453.60^^
+~13013~^~1~^1.00^~oz~^28.35^^
+~13013~^~2~^1.00^~lb~^453.60^^
+~13014~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^226.00^^
+~13014~^~2~^3.00^~oz~^85.00^^
+~13015~^~1~^1.00^~oz~^28.35^^
+~13015~^~2~^1.00^~lb~^453.60^^
+~13016~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^232.00^^
+~13016~^~2~^3.00^~oz~^85.00^^
+~13017~^~1~^1.00^~oz~^28.35^^
+~13017~^~2~^1.00^~lb~^453.60^^
+~13018~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^236.00^^
+~13018~^~2~^3.00^~oz~^85.00^^
+~13021~^~1~^1.00^~oz~^28.35^^
+~13021~^~2~^1.00^~lb~^453.60^^
+~13022~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^330.00^^
+~13022~^~2~^3.00^~oz~^85.00^^
+~13024~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^232.00^^
+~13024~^~2~^3.00^~oz~^85.00^^
+~13029~^~1~^1.00^~oz~^28.35^^
+~13029~^~2~^1.00^~lb~^453.60^^
+~13030~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^328.00^^
+~13030~^~2~^3.00^~oz~^85.00^^
+~13031~^~1~^1.00^~oz~^28.35^^
+~13031~^~2~^1.00^~lb~^453.60^^
+~13032~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^215.00^^
+~13032~^~2~^3.00^~oz~^85.00^^
+~13039~^~1~^1.00^~lb~^453.60^2^
+~13039~^~2~^1.00^~oz~^28.35^2^
+~13049~^~1~^1.00^~oz~^28.35^^
+~13049~^~2~^1.00^~lb~^453.60^^
+~13051~^~1~^1.00^~oz~^28.35^^
+~13051~^~2~^1.00^~lb~^453.60^^
+~13052~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^248.00^^
+~13052~^~2~^3.00^~oz~^85.00^^
+~13053~^~1~^1.00^~oz~^28.35^^
+~13053~^~2~^1.00^~lb~^453.60^^
+~13054~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^248.00^^
+~13054~^~2~^3.00^~oz~^85.00^^
+~13057~^~1~^1.00^~oz~^28.35^^
+~13057~^~2~^1.00^~lb~^453.60^^
+~13058~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^193.00^^
+~13058~^~2~^3.00^~oz~^85.00^^
+~13059~^~1~^1.00^~oz~^28.35^^
+~13059~^~2~^1.00^~lb~^453.60^^
+~13060~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^187.00^^
+~13060~^~2~^3.00^~oz~^85.00^^
+~13061~^~1~^1.00^~oz~^28.35^^
+~13061~^~2~^1.00^~lb~^453.60^^
+~13062~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^200.00^^
+~13062~^~2~^3.00^~oz~^85.00^^
+~13071~^~1~^1.00^~oz~^28.35^^
+~13071~^~2~^1.00^~lb~^453.60^^
+~13072~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^269.00^^
+~13072~^~2~^3.00^~oz~^85.00^^
+~13073~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^290.00^^
+~13073~^~2~^3.00^~oz~^85.00^^
+~13074~^~1~^1.00^~oz~^28.35^^
+~13074~^~2~^1.00^~lb~^453.60^^
+~13075~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^269.00^^
+~13075~^~2~^3.00^~oz~^85.00^^
+~13076~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^290.00^^
+~13076~^~2~^3.00^~oz~^85.00^^
+~13077~^~1~^1.00^~oz~^28.35^^
+~13077~^~2~^1.00^~lb~^453.60^^
+~13078~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^265.00^^
+~13078~^~2~^3.00^~oz~^85.00^^
+~13079~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^290.00^^
+~13079~^~2~^3.00^~oz~^85.00^^
+~13080~^~1~^1.00^~oz~^28.35^^
+~13080~^~2~^1.00^~lb~^453.60^^
+~13081~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^276.00^^
+~13081~^~2~^3.00^~oz~^85.00^^
+~13082~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^279.00^^
+~13082~^~2~^3.00^~oz~^85.00^^
+~13083~^~1~^1.00^~oz~^28.35^^
+~13083~^~2~^1.00^~lb~^453.60^^
+~13084~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^197.00^^
+~13084~^~2~^3.00^~oz~^85.00^^
+~13085~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^206.00^^
+~13085~^~2~^3.00^~oz~^85.00^^
+~13086~^~1~^1.00^~oz~^28.35^^
+~13086~^~2~^1.00^~lb~^453.60^^
+~13087~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^194.00^^
+~13087~^~2~^3.00^~oz~^85.00^^
+~13088~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^203.00^^
+~13088~^~2~^3.00^~oz~^85.00^^
+~13089~^~1~^1.00^~oz~^28.35^^
+~13089~^~2~^1.00^~lb~^453.60^^
+~13090~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^201.00^^
+~13090~^~2~^3.00^~oz~^85.00^^
+~13091~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^213.00^^
+~13091~^~2~^3.00^~oz~^85.00^^
+~13092~^~1~^1.00^~oz~^28.35^^
+~13092~^~2~^1.00^~lb~^453.60^^
+~13093~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^197.00^^
+~13093~^~2~^3.00^~oz~^85.00^^
+~13094~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^197.00^^
+~13094~^~2~^3.00^~oz~^85.00^^
+~13099~^~1~^1.00^~oz~^28.35^^
+~13099~^~2~^1.00^~lb~^453.60^^
+~13100~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^269.00^^
+~13100~^~2~^3.00^~oz~^85.00^^
+~13102~^~1~^1.00^~oz~^28.35^^
+~13102~^~2~^1.00^~lb~^453.60^^
+~13103~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^269.00^^
+~13103~^~2~^3.00^~oz~^85.00^^
+~13104~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^297.00^^
+~13104~^~2~^3.00^~oz~^85.00^^
+~13105~^~1~^1.00^~oz~^28.35^^
+~13105~^~2~^1.00^~lb~^453.60^^
+~13106~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^269.00^^
+~13106~^~2~^3.00^~oz~^85.00^^
+~13107~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^293.00^^
+~13107~^~2~^3.00^~oz~^85.00^^
+~13108~^~1~^1.00^~oz~^28.35^^
+~13108~^~2~^1.00^~lb~^453.60^^
+~13109~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^279.00^^
+~13109~^~2~^3.00^~oz~^85.00^^
+~13110~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^283.00^^
+~13110~^~2~^3.00^~oz~^85.00^^
+~13111~^~1~^1.00^~oz~^28.35^^
+~13111~^~2~^1.00^~lb~^453.60^^
+~13112~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^197.00^^
+~13112~^~2~^3.00^~oz~^85.00^^
+~13113~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^210.00^^
+~13113~^~2~^3.00^~oz~^85.00^^
+~13114~^~1~^1.00^~oz~^28.35^^
+~13114~^~2~^1.00^~lb~^453.60^^
+~13115~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^191.00^^
+~13115~^~2~^3.00^~oz~^85.00^^
+~13116~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^203.00^^
+~13116~^~2~^3.00^~oz~^85.00^^
+~13117~^~1~^1.00^~oz~^28.35^^
+~13117~^~2~^1.00^~lb~^453.60^^
+~13118~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^204.00^^
+~13118~^~2~^3.00^~oz~^85.00^^
+~13119~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^217.00^^
+~13119~^~2~^3.00^~oz~^85.00^^
+~13120~^~1~^1.00^~oz~^28.35^^
+~13120~^~2~^1.00^~lb~^453.60^^
+~13121~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^194.00^^
+~13121~^~2~^3.00^~oz~^85.00^^
+~13122~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^196.00^^
+~13122~^~2~^3.00^~oz~^85.00^^
+~13125~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^283.00^^
+~13125~^~2~^3.00^~oz~^85.00^^
+~13128~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^279.00^^
+~13128~^~2~^3.00^~oz~^85.00^^
+~13131~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^286.00^^
+~13131~^~2~^3.00^~oz~^85.00^^
+~13132~^~1~^1.00^~oz~^28.35^^
+~13132~^~2~^1.00^~lb~^453.60^^
+~13133~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^272.00^^
+~13133~^~2~^3.00^~oz~^85.00^^
+~13134~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^276.00^^
+~13134~^~2~^3.00^~oz~^85.00^^
+~13137~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^203.00^^
+~13137~^~2~^3.00^~oz~^85.00^^
+~13140~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^196.00^^
+~13140~^~2~^3.00^~oz~^85.00^^
+~13143~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^210.00^^
+~13143~^~2~^3.00^~oz~^85.00^^
+~13144~^~1~^1.00^~oz~^28.35^^
+~13144~^~2~^1.00^~lb~^453.60^^
+~13145~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^208.00^^
+~13145~^~2~^3.00^~oz~^85.00^^
+~13146~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^192.00^^
+~13146~^~2~^3.00^~oz~^85.00^^
+~13151~^~1~^1.00^~oz~^28.35^^
+~13151~^~2~^1.00^~lb~^453.60^^
+~13152~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^313.00^^
+~13152~^~2~^3.00^~oz~^85.00^^
+~13153~^~1~^1.00^~oz~^28.35^^
+~13153~^~2~^1.00^~lb~^453.60^^
+~13154~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^313.00^^
+~13154~^~2~^3.00^~oz~^85.00^^
+~13155~^~1~^1.00^~oz~^28.35^^
+~13155~^~2~^1.00^~lb~^453.60^^
+~13156~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^285.00^^
+~13156~^~2~^3.00^~oz~^85.00^^
+~13157~^~1~^1.00^~oz~^28.35^^
+~13157~^~2~^1.00^~lb~^453.60^^
+~13158~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^282.00^^
+~13158~^~2~^3.00^~oz~^85.00^^
+~13191~^~1~^1.00^~oz~^28.35^^
+~13191~^~2~^1.00^~lb~^453.60^^
+~13192~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^323.00^^
+~13192~^~2~^3.00^~oz~^85.00^^
+~13193~^~1~^1.00^~oz~^28.35^^
+~13193~^~2~^1.00^~lb~^453.60^^
+~13194~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^320.00^^
+~13194~^~2~^3.00^~oz~^85.00^^
+~13195~^~1~^1.00^~oz~^28.35^^
+~13195~^~2~^1.00^~lb~^453.60^^
+~13196~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^323.00^^
+~13196~^~2~^3.00^~oz~^85.00^^
+~13197~^~1~^1.00^~oz~^28.35^^
+~13197~^~2~^1.00^~lb~^453.60^^
+~13198~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^327.00^^
+~13198~^~2~^3.00^~oz~^85.00^^
+~13199~^~1~^1.00^~oz~^28.35^^
+~13199~^~2~^1.00^~lb~^453.60^^
+~13200~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^290.00^^
+~13200~^~2~^3.00^~oz~^85.00^^
+~13201~^~1~^1.00^~oz~^28.35^^
+~13201~^~2~^1.00^~lb~^453.60^^
+~13202~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^282.00^^
+~13202~^~2~^3.00^~oz~^85.00^^
+~13203~^~1~^1.00^~oz~^28.35^^
+~13203~^~2~^1.00^~lb~^453.60^^
+~13204~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^293.00^^
+~13204~^~2~^3.00^~oz~^85.00^^
+~13205~^~1~^1.00^~oz~^28.35^^
+~13205~^~2~^1.00^~lb~^453.60^^
+~13206~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^286.00^^
+~13206~^~2~^3.00^~oz~^85.00^^
+~13211~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^283.00^^
+~13211~^~2~^3.00^~oz~^85.00^^
+~13214~^~1~^1.00^~oz~^28.35^^
+~13214~^~2~^1.00^~lb~^453.60^^
+~13215~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^329.00^^
+~13215~^~2~^3.00^~oz~^85.00^^
+~13220~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^252.00^^
+~13220~^~2~^3.00^~oz~^85.00^^
+~13223~^~1~^1.00^~oz~^28.35^^
+~13223~^~2~^1.00^~lb~^453.60^^
+~13224~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^319.00^^
+~13224~^~2~^3.00^~oz~^85.00^^
+~13225~^~1~^1.00^~oz~^28.35^^
+~13225~^~2~^3.00^~oz~^85.00^^
+~13226~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^194.00^^
+~13226~^~2~^3.00^~oz~^85.00^^
+~13227~^~1~^1.00^~oz~^28.35^^
+~13227~^~2~^1.00^~lb~^453.60^^
+~13228~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^170.00^^
+~13228~^~2~^3.00^~oz~^85.00^^
+~13229~^~1~^1.00^~lb~^453.60^^
+~13229~^~2~^1.00^~oz~^28.35^^
+~13230~^~1~^3.00^~oz ( 1serving )~^85.00^^
+~13230~^~2~^1.00^~lb~^453.60^^
+~13231~^~1~^1.00^~lb~^453.60^^
+~13231~^~2~^1.00^~oz~^28.35^^
+~13232~^~1~^3.00^~oz~^85.00^^
+~13232~^~2~^1.00^~serving~^85.00^^
+~13232~^~3~^1.00^~piece, cooked, excluding refuse~^206.00^1^
+~13233~^~1~^1.00^~lb~^453.60^^
+~13233~^~2~^1.00^~oz~^28.35^^
+~13234~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13234~^~2~^1.00^~lb~^453.60^^
+~13235~^~1~^1.00^~lb~^453.60^^
+~13235~^~2~^1.00^~oz~^28.35^^
+~13236~^~1~^3.00^~oz~^85.00^^
+~13236~^~2~^1.00^~serving~^85.00^^
+~13236~^~3~^1.00^~piece, cooked, excluding refuse~^201.00^1^
+~13239~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^330.00^^
+~13239~^~2~^3.00^~oz~^85.00^^
+~13242~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^329.00^^
+~13242~^~2~^3.00^~oz~^85.00^^
+~13245~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^331.00^^
+~13245~^~2~^3.00^~oz~^85.00^^
+~13246~^~1~^1.00^~oz~^28.35^^
+~13246~^~2~^1.00^~lb~^453.60^^
+~13247~^~1~^3.00^~oz~^85.00^^
+~13247~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 174 g)~^120.00^^
+~13248~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^326.00^^
+~13248~^~2~^3.00^~oz~^85.00^^
+~13251~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^251.00^^
+~13251~^~2~^3.00^~oz~^85.00^^
+~13254~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^250.00^^
+~13254~^~2~^3.00^~oz~^85.00^^
+~13257~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^251.00^^
+~13257~^~2~^3.00^~oz~^85.00^^
+~13258~^~1~^1.00^~oz~^28.35^^
+~13258~^~2~^1.00^~lb~^453.60^^
+~13259~^~1~^3.00^~oz~^85.00^^
+~13259~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 174 g)~^98.00^^
+~13260~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^250.00^^
+~13260~^~2~^3.00^~oz~^85.00^^
+~13261~^~1~^1.00^~lb~^453.60^^
+~13261~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 261 g)~^238.00^^
+~13267~^~1~^1.00^~lb~^453.60^^
+~13267~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 261 g)~^247.00^^
+~13268~^~1~^3.00^~oz~^85.00^^
+~13268~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 261 g)~^180.00^^
+~13275~^~1~^1.00^~oz~^28.35^^
+~13275~^~2~^1.00^~lb~^453.60^^
+~13276~^~1~^3.00^~oz~^85.00^^
+~13276~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 261 g)~^147.00^^
+~13281~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^307.00^^
+~13281~^~2~^3.00^~oz~^85.00^^
+~13290~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^247.00^^
+~13290~^~2~^3.00^~oz~^85.00^^
+~13427~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^286.00^^
+~13427~^~2~^3.00^~oz~^85.00^^
+~13429~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^289.00^^
+~13429~^~2~^3.00^~oz~^85.00^^
+~13431~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^286.00^^
+~13431~^~2~^3.00^~oz~^85.00^^
+~13433~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^259.00^^
+~13433~^~2~^3.00^~oz~^85.00^^
+~13435~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^260.00^^
+~13435~^~2~^3.00^~oz~^85.00^^
+~13437~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^262.00^^
+~13437~^~2~^3.00^~oz~^85.00^^
+~13457~^~1~^1.00^~lb~^453.60^^
+~13457~^~2~^1.00^~oz~^28.35^^
+~13458~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13458~^~2~^1.00^~lb~^453.60^^
+~13461~^~1~^1.00^~oz~^28.35^^
+~13461~^~2~^1.00^~lb~^453.60^^
+~13462~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13462~^~2~^1.00^~lb~^453.60^^
+~13464~^~1~^1.00^~lb~^453.60^^
+~13464~^~2~^1.00^~oz~^28.35^^
+~13465~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13465~^~2~^1.00^~lb~^453.60^^
+~13468~^~1~^1.00^~lb~^453.60^^
+~13468~^~2~^1.00^~oz~^28.35^^
+~13469~^~1~^3.00^~oz~^85.00^^
+~13469~^~2~^1.00^~serving~^85.00^^
+~13469~^~3~^1.00^~piece, cooked, excluding refuse~^219.00^1^
+~13471~^~1~^1.00^~oz~^28.35^^
+~13471~^~2~^1.00^~lb~^453.60^^
+~13472~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13472~^~2~^1.00^~lb~^453.60^^
+~13475~^~1~^1.00^~lb~^453.60^^
+~13475~^~2~^1.00^~oz~^28.35^^
+~13476~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13476~^~2~^1.00^~lb~^453.60^^
+~13478~^~1~^1.00^~lb~^453.60^^
+~13478~^~2~^1.00^~oz~^28.35^^
+~13479~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13479~^~2~^1.00^~lb~^453.60^^
+~13482~^~1~^1.00^~lb~^453.60^^
+~13482~^~2~^1.00^~oz~^28.35^^
+~13483~^~1~^3.00^~oz~^85.00^^
+~13483~^~2~^1.00^~serving~^85.00^^
+~13483~^~3~^1.00^~piece, cooked, excluding refuse~^242.00^1^
+~13509~^~1~^1.00^~oz~^28.35^^
+~13509~^~2~^1.00^~lb~^453.60^^
+~13510~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^279.00^^
+~13510~^~2~^3.00^~oz~^85.00^^
+~13517~^~1~^1.00^~oz~^28.35^^
+~13517~^~2~^1.00^~lb~^453.60^^
+~13518~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^179.00^^
+~13518~^~2~^3.00^~oz~^85.00^^
+~13539~^~1~^1.00^~oz~^28.35^^
+~13539~^~2~^1.00^~lb~^453.60^^
+~13540~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^277.00^^
+~13540~^~2~^3.00^~oz~^85.00^^
+~13547~^~1~^1.00^~oz~^28.35^^
+~13547~^~2~^1.00^~lb~^453.60^^
+~13548~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^191.00^^
+~13548~^~2~^3.00^~oz~^85.00^^
+~13555~^~1~^1.00^~oz~^28.35^^
+~13555~^~2~^1.00^~lb~^453.60^^
+~13556~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^247.00^^
+~13556~^~2~^3.00^~oz~^85.00^^
+~13563~^~1~^1.00^~oz~^28.35^^
+~13563~^~2~^1.00^~lb~^453.60^^
+~13564~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^179.00^^
+~13564~^~2~^3.00^~oz~^85.00^^
+~13580~^~1~^1.00^~oz~^28.35^^
+~13580~^~2~^1.00^~lb~^453.60^^
+~13581~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^294.00^^
+~13581~^~2~^3.00^~oz~^85.00^^
+~13582~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^280.00^^
+~13582~^~2~^3.00^~oz~^85.00^^
+~13593~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^201.00^^
+~13593~^~2~^3.00^~oz~^85.00^^
+~13594~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^184.00^^
+~13594~^~2~^3.00^~oz~^85.00^^
+~13608~^~1~^1.00^~oz~^28.35^^
+~13608~^~2~^1.00^~lb~^453.60^^
+~13609~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^298.00^^
+~13609~^~2~^3.00^~oz~^85.00^^
+~13610~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^279.00^^
+~13610~^~2~^3.00^~oz~^85.00^^
+~13621~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^196.00^^
+~13621~^~2~^3.00^~oz~^85.00^^
+~13622~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^192.00^^
+~13622~^~2~^3.00^~oz~^85.00^^
+~13632~^~1~^1.00^~oz~^28.35^^
+~13632~^~2~^1.00^~lb~^453.60^^
+~13633~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^286.00^^
+~13633~^~2~^3.00^~oz~^85.00^^
+~13634~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^272.00^^
+~13634~^~2~^3.00^~oz~^85.00^^
+~13645~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^215.00^^
+~13645~^~2~^3.00^~oz~^85.00^^
+~13646~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^188.00^^
+~13646~^~2~^3.00^~oz~^85.00^^
+~13665~^~1~^1.00^~oz~^28.35^^
+~13665~^~2~^1.00^~lb~^453.60^^
+~13666~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^287.00^^
+~13666~^~2~^3.00^~oz~^85.00^^
+~13673~^~1~^1.00^~oz~^28.35^^
+~13673~^~2~^1.00^~lb~^453.60^^
+~13674~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^250.00^^
+~13674~^~2~^3.00^~oz~^85.00^^
+~13681~^~1~^1.00^~oz~^28.35^^
+~13681~^~2~^1.00^~lb~^453.60^^
+~13682~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^355.00^^
+~13682~^~2~^3.00^~oz~^85.00^^
+~13689~^~1~^1.00^~oz~^28.35^^
+~13689~^~2~^1.00^~lb~^453.60^^
+~13690~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^317.00^^
+~13690~^~2~^3.00^~oz~^85.00^^
+~13697~^~1~^1.00^~oz~^28.35^^
+~13697~^~2~^1.00^~lb~^453.60^^
+~13698~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^328.00^^
+~13698~^~2~^3.00^~oz~^85.00^^
+~13706~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^278.00^^
+~13706~^~2~^3.00^~oz~^85.00^^
+~13714~^~1~^1.00^~oz~^28.35^^
+~13714~^~2~^1.00^~lb~^453.60^^
+~13715~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^331.00^^
+~13715~^~2~^3.00^~oz~^85.00^^
+~13724~^~1~^1.00^~piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)~^315.00^^
+~13724~^~2~^3.00^~oz~^85.00^^
+~13746~^~1~^1.00^~lb~^453.60^^
+~13746~^~2~^1.00^~steak~^156.00^^
+~13747~^~1~^3.00^~oz~^85.00^^
+~13747~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 162 g)~^114.00^^
+~13748~^~1~^3.00^~oz~^85.00^^
+~13748~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 162 g)~^116.00^^
+~13759~^~1~^3.00^~oz~^85.00^^
+~13759~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 162 g)~^92.00^^
+~13760~^~1~^3.00^~oz~^85.00^^
+~13760~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 162 g)~^88.00^^
+~13767~^~1~^1.00^~lb~^453.60^^
+~13767~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 320 g)~^304.00^^
+~13768~^~1~^3.00^~oz~^85.00^^
+~13768~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 320 g)~^228.00^^
+~13776~^~1~^3.00^~oz~^85.00^^
+~13776~^~2~^1.00^~steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 320 g)~^179.00^^
+~13936~^~1~^1.00^~lb~^453.60^^
+~13936~^~2~^1.00^~oz~^28.35^^
+~13938~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13939~^~1~^1.00^~lb~^453.60^^
+~13939~^~2~^1.00^~oz~^28.35^^
+~13941~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13942~^~1~^1.00^~lb~^453.60^^
+~13942~^~2~^1.00^~oz~^28.35^^
+~13944~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13944~^~2~^1.00^~lb~^453.60^^
+~13945~^~1~^1.00^~lb~^453.60^^
+~13945~^~2~^1.00^~oz~^28.35^^
+~13947~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~13947~^~2~^1.00^~lb~^453.60^^
+~13960~^~1~^1.00^~lb~^453.60^^
+~13960~^~2~^1.00^~oz~^28.35^^
+~13962~^~1~^1.00^~lb~^453.60^^
+~13962~^~2~^1.00^~oz~^28.35^^
+~13964~^~1~^1.00^~lb~^453.60^^
+~13964~^~2~^1.00^~oz~^28.35^^
+~13966~^~1~^1.00^~lb~^453.60^^
+~13966~^~2~^1.00^~oz~^28.35^^
+~13976~^~1~^1.00^~lb~^453.60^^
+~13976~^~2~^1.00^~oz~^28.35^^
+~13978~^~1~^1.00^~lb~^453.60^^
+~13978~^~2~^1.00^~oz~^28.35^^
+~14203~^~3~^1.00^~serving (1 round tsp)~^1.50^^
+~14214~^~3~^1.00^~serving (1 round tsp)~^1.50^^
+~14356~^~2~^4.00^~tbsp (1/4 cup)~^14.40^^
+~14382~^~1~^1.00^~fluid ounce~^30.00^2^
+~14382~^~2~^1.00^~serving 8 fl oz~^244.00^3^
+~14530~^~2~^2.00^~fl oz~^65.00^^
+~14531~^~3~^1.00^~portion (2 oz mix + 1.5 oz whiskey)~^106.00^^
+~16011~^~2~^1.00^~tbsp~^16.00^1^
+~18159~^~5~^1.00^~cookie, medium (2-1/4" dia)~^10.00^^
+~18159~^~6~^1.00^~cookie, bite size (include Mini Chips Ahoy!)~^2.20^^
+~18160~^~2~^1.00^~cookie~^15.00^^
+~18229~^~6~^0.50^~oz~^14.20^^
+~18334~^~2~^1.00^~piece (1/8 of 9" crust)~^18.00^^
+~18335~^~2~^1.00^~piece (1/8 of 9" crust)~^16.00^^
+~19033~^~1~^1.00^~oz (approx 2/3 cup)~^28.35^^
+~19033~^~2~^2.00^~oz~^57.00^^
+~19141~^~6~^10.00^~pieces~^7.00^^
+~19155~^~4~^1.00^~package~^9072.00^^
+~21308~^~3~^10.00^~pieces 15.6 oz~^442.00^^
+~21309~^~4~^20.00^~pieces 11.3 oz~^320.00^^
+~21355~^~1~^1.00^~item~^147.00^^
+~21373~^~1~^1.00^~item 11.7 oz~^335.00^^
+~21374~^~1~^1.00^~item 11.9 oz~^338.00^^
+~21375~^~1~^1.00^~item~^237.00^^
+~22118~^~2~^1.00^~patty~^71.00^1^
+~22118~^~3~^1.00^~package yields~^3175.00^^
+~22119~^~2~^1.00^~package yields~^4536.00^^
+~22120~^~2~^1.00^~package yields~^1814.00^^
+~22120~^~3~^1.00^~serving~^55.00^^
+~22121~^~2~^1.00^~package yields~^4082.00^^
+~22122~^~2~^1.00^~patty~^38.00^^
+~22123~^~2~^1.00^~patty~^78.00^^
+~22123~^~3~^1.00^~serving~^43.00^^
+~22123~^~4~^1.00^~package without refuse (11 oz)~^312.00^^
+~22126~^~2~^1.00^~package~^567.00^^
+~22126~^~3~^1.00^~serving~^51.00^^
+~22128~^~2~^1.00^~patty~^85.00^^
+~22217~^~2~^1.00^~package yields~^3033.00^^
+~22529~^~2~^1.00^~serving~^198.00^^
+~23510~^~1~^1.00^~lb~^453.60^^
+~23510~^~2~^1.00^~oz~^28.35^^
+~23512~^~1~^1.00^~lb~^453.60^^
+~23512~^~2~^1.00^~oz~^28.35^^
+~23513~^~1~^1.00^~lb~^453.60^^
+~23513~^~2~^1.00^~oz~^28.35^^
+~23515~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23515~^~2~^1.00^~lb~^453.60^^
+~23517~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23517~^~2~^1.00^~lb~^453.60^^
+~23518~^~1~^1.00^~lb~^453.60^^
+~23518~^~2~^1.00^~oz~^28.35^^
+~23520~^~1~^1.00^~lb~^453.60^^
+~23520~^~2~^1.00^~oz~^28.35^^
+~23524~^~1~^1.00^~lb~^453.60^^
+~23524~^~2~^1.00^~oz~^28.35^^
+~23526~^~1~^1.00^~lb~^453.60^^
+~23526~^~2~^1.00^~oz~^28.35^^
+~23527~^~1~^1.00^~lb~^453.60^^
+~23527~^~2~^1.00^~oz~^28.35^^
+~23529~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23529~^~2~^1.00^~lb~^453.60^^
+~23530~^~1~^1.00^~lb~^453.60^^
+~23530~^~2~^1.00^~oz~^28.35^^
+~23532~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23532~^~2~^1.00^~lb~^453.60^^
+~23534~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23534~^~2~^1.00^~lb~^453.60^^
+~23535~^~1~^1.00^~lb~^453.60^^
+~23535~^~2~^1.00^~oz~^28.35^^
+~23537~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23537~^~2~^1.00^~lb~^453.60^^
+~23538~^~1~^1.00^~lb~^453.60^^
+~23538~^~2~^1.00^~oz~^28.35^^
+~23539~^~1~^1.00^~lb~^453.60^^
+~23539~^~2~^1.00^~oz~^28.35^^
+~23542~^~1~^1.00^~lb~^453.60^^
+~23542~^~2~^1.00^~oz~^28.35^^
+~23548~^~1~^1.00^~lb~^453.60^^
+~23548~^~2~^1.00^~oz~^28.35^^
+~23550~^~1~^1.00^~lb~^453.60^^
+~23550~^~2~^1.00^~oz~^28.35^^
+~23551~^~1~^1.00^~lb~^453.60^^
+~23551~^~2~^1.00^~oz~^28.35^^
+~23553~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23553~^~2~^1.00^~lb~^453.60^^
+~23555~^~1~^3.00^~oz ( 1 serving )~^85.00^^
+~23555~^~2~^1.00^~lb~^453.60^^
+~23556~^~1~^1.00^~lb~^453.60^^
+~23556~^~2~^1.00^~oz~^28.35^^

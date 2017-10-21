@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AutomaticDatabaseUpdater.jnlp">
+  <information>
+    <title>AutomaticDatabaseUpdater</title>
+    <vendor>TobikJanos</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AutomaticDatabaseUpdater.jar" size="36003" download="eager" />
+    <jar href="lib\commons-io-2.5-javadoc.jar" size="765022" download="eager" />
+    <jar href="lib\commons-io-2.5.jar" size="208696" download="eager" />
+    <jar href="lib\hamcrest-core-1.3.jar" size="45280" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="316791" download="eager" />
+    <jar href="lib\postgresql-42.0.0.jar" size="707261" download="eager" />
+    <jar href="lib\postgresql-9.4.1209.jar" size="678049" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AutomaticDatabaseUpdater" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="automaticdatabaseupdater.AutomaticDatabaseUpdater"  name="AutomaticDatabaseUpdater" />
+  <update check="always"/>
+</jnlp>

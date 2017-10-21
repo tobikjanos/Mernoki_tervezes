@@ -1,0 +1,216 @@
+~01210~^~0100~^~Egg Mix, USDA Commodity~^~EGG MIX,USDA CMDTY~^~~^~~^~~^~~^0^~~^^^^
+~04688~^~0400~^~Salad dressing, spray-style dressing, assorted flavors~^~SALAD DRSNG,SPRAY-STYLE DRSNG,ASSORTED FLAVORS~^~~^~~^~~^~~^0^~~^^^^9.99
+~05341~^~0500~^~Chicken, broilers or fryers, back, meat only, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,BACK,MEAT ONLY,CKD,ROTISSERIE,ORI~^~~^~~^~Y~^~40.14% bone and cartilage, 16.08% skin and separable fat~^56^~~^^^^
+~05342~^~0500~^~Chicken, broilers or fryers, breast, meat only, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,BREAST,MEAT ONLY,CKD,ROTISSERIE,O~^~~^~~^~Y~^~12.07% bone and cartilage, 12.09% skin and separable fat~^24^~~^^^^
+~05343~^~0500~^~Chicken, broilers or fryers, drumstick, meat only, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,DRUMSTK,MEAT ONLY,CKD,ROTISSERIE,~^~~^~~^~Y~^~29.34% bone and cartilage, 11.75% skin and separable fat~^41^~~^^^^
+~05344~^~0500~^~Chicken, broilers or fryers, skin only, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,SKN ONLY,CKD,ROTISSERIE,ORIGINAL~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~05345~^~0500~^~Chicken, broilers or fryers, thigh, meat only, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,THIGH,MEAT ONLY,CKD,ROTISSERIE,OR~^~~^~~^~Y~^~14.24% bone and cartilage, 14.88% skin and separable fat~^29^~~^^^^
+~05346~^~0500~^~Chicken, broilers or fryers, wing, meat only, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,WING,MEAT ONLY,CKD,ROTISSERIE,ORI~^~~^~~^~Y~^~32.51% bone and cartilage, 24.10% skin and separable fat~^57^~~^^^^
+~05347~^~0500~^~Chicken, broilers or fryers, back, meat and skin, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,BACK,MEAT & SKN,CKD,ROTISSERIE,OR~^~~^~~^~Y~^~~^0^~~^^^^
+~05348~^~0500~^~Chicken, broilers or fryers, breast, meat and skin, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,BREAST,MEAT & SKN,CKD,ROTISSERIE,~^~~^~~^~Y~^~~^0^~~^^^^
+~05349~^~0500~^~Chicken, broilers or fryers, drumstick, meat and skin, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,DRUMSTK,MEAT & SKN,CKD,ROTISSERIE~^~~^~~^~Y~^~~^0^~~^^^^
+~05351~^~0500~^~Chicken, broilers or fryers, thigh, meat and skin, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,THIGH,MEAT & SKN,CKD,ROTISSERIE,O~^~~^~~^~Y~^~~^0^~~^^^^
+~05352~^~0500~^~Chicken, broilers or fryers, wing, meat and skin, cooked, rotisserie, original seasoning~^~CHICKEN,BROILERS OR FRYERS,WING,MEAT & SKN,CKD,ROTISSERIE,OR~^~~^~~^~Y~^~~^0^~~^^^^
+~05353~^~0500~^~USDA Commodity, chicken fajita strips, frozen~^~USDA CMDTY,CHICK FAJITA STRIPS,FRZ~^~~^~~^~~^~~^0^~~^^^^
+~05354~^~0500~^~USDA Commodity, turkey taco meat, frozen, cooked~^~USDA CMDTY,TURKEY TACO MEAT,FRZ,CKD~^~~^~~^~~^~~^0^~~^^^^
+~07044~^~0700~^~USDA Commodity, luncheon meat, canned~^~USDA CMDTY,LUNCHEON MEAT,CND~^~~^~~^~~^~~^0^~~^^^^
+~08555~^~0800~^~Cereal wafer straws, KELLOGG, APPLE JACKS Cereal straws~^~CEREAL WAFER STRAWS,KELLOGG,APPL JACKS CRL STRAWS~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08556~^~0800~^~Cereal Wafer Straws, KELLOGG, FROOT LOOPS Cereal Straws~^~CEREAL WAFER STRAWS,KELLOGG,FROOT LOOPS CRL STRAWS~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08557~^~0800~^~Cereals ready-to-eat, KELLOGG's MINI-WHEATS Frosted Strawberry Delight Cereal~^~CEREALS RTE,KELLOGG'S MINI-WHEATS FRSTD STRAWBERRY DELIGHT~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08558~^~0800~^~Cereals ready-to-eat, KELLOGG, MINI SWIRLZ Peanut Butter Cereal~^~CEREALS RTE,KELLOGG,MINI SWIRLZ PNUT BUTTER CRL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08559~^~0800~^~Cereal Wafer Straws, KELLOGG, COCOA KRISPIES Cereal Straws~^~CEREAL WAFER STRAWS,KELLOGG,COCOA KRISPIES CRL STRAWS~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08560~^~0800~^~Cereals ready-to-eat, KASHI GO LEAN CRUNCH!, Honey Almond Flax~^~CEREALS RTE,KASHI GO LN CRUNCH!,HONEY ALMOND FLAX~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08561~^~0800~^~Cereals, KASHI GO LEAN Hot Cereal, Hearty Honey & Cinnamon, dry~^~CEREALS,KASHI GO LN HOT CRL,HEARTY HONEY & CINN,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08562~^~0800~^~Cereals, KASHI, KASHI GO LEAN Hot Cereal, Truly Vanilla, dry~^~CEREALS,KASHI,KASHI GO LN HOT CRL,TRULY VANILLA,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08563~^~0800~^~Cereals ready-to-eat, KASHI GRANOLA, COCOA BEACH Cereal~^~CEREALS RTE,KASHI GRANOLA,COCOA BEACH CRL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08564~^~0800~^~Cereals ready-to-eat, KASHI GRANOLA, ORCHARD SPICE CEREAL~^~CEREALS RTE,KASHI GRANOLA,ORCHARD SPICE CRL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08565~^~0800~^~Cereals ready-to-eat, KASHI GRANOLA, Summer Berry Cereal~^~CEREALS RTE,KASHI GRANOLA,SMMR BERRY CRL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08566~^~0800~^~Cereals ready-to-eat, KASHI GRANOLA, Mountain Medley Cereal~^~CEREALS RTE,KASHI GRANOLA,MOUNTAIN MEDLEY CRL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08567~^~0800~^~Cereals ready-to-eat, KASHI 7 Whole Grain Nuggets~^~CEREALS RTE,KASHI 7 WHL GRAIN NUGGETS~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08568~^~0800~^~Cereals, KASHI HEART TO HEART, Instant Oatmeal, Apple Cinnamon, dry~^~CEREALS,KASHI HEART TO HEART,INST OATMEAL,APPL CINN,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08569~^~0800~^~Cereals, KASHI HEART TO HEART, Instant Oatmeal, maple, dry~^~CEREALS,KASHI HEART TO HEART,INST OATMEAL,MAPLE,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~08570~^~0800~^~Cereals, KASHI HEART TO HEART, Instant Oatmeal, Raisin Spice, dry~^~CEREALS,KASHI HEART TO HEART,INST OATMEAL,RAISIN SPICE,DRY~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~09053~^~0900~^~Blueberries, wild, frozen~^~BLUEBERRIES,WILD,FRZ~^~~^~~^~~^~~^0^~~^6.25^3.36^8.37^3.60
+~09130~^~0900~^~Grape juice, canned or bottled, unsweetened, with added ascorbic acid~^~GRAPE JUC,CND OR BTLD,UNSWTND,W/ ADDED VIT C~^~~^~~^~Y~^~~^0^~~^6.25^3.36^8.37^3.92
+~09352~^~0900~^~Blueberries, canned, light syrup, drained~^~BLUEBERRIES,CND,LT SYRUP,DRND~^~~^~~^~~^~~^0^~~^6.25^3.36^8.37^3.60
+~09353~^~0900~^~Blueberries, wild, canned, heavy syrup, drained~^~BLUEBERRIES,WILD,CND,HVY SYRUP,DRND~^~~^~~^~~^~~^0^~~^6.25^3.36^8.37^3.60
+~09442~^~0900~^~Pomegranate juice, bottled~^~POMEGRANATE JUC,BTLD~^~~^~~^~Y~^~~^0^~~^6.25^3.36^8.37^3.92
+~09443~^~0900~^~Juice, apple and grape blend, with added ascorbic acid~^~JUICE,APPL & GRAPE BLEND,W/ ADDED VIT C~^~~^~~^~~^~~^0^~~^^3.36^8.37^3.92
+~09444~^~0900~^~Juice, apple, grape and pear blend, with added ascorbic acid and calcium~^~JUICE,APPL,GRAPE & PEAR BLEND,W/ ADDED VIT C & CA~^~~^~~^~~^~~^0^~~^6.25^3.36^8.37^3.92
+~10158~^~1000~^~USDA Commodity, pork, canned~^~USDA CMDTY,PORK,CND~^~~^~~^~~^~~^^~~^^^^
+~10956~^~1000~^~Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled~^~PORK,LOIN,LEG CAP STEAK,BNLESS,LN & FAT,CKD,BRLD~^~Gracilis, Leg cap steak, URMIS #3646~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10957~^~1000~^~Pork, Leg Cap Steak, boneless, separable lean and fat, raw~^~PORK,LEG CAP STEAK,BNLESS,LN & FAT,RAW~^~Gracilis, Leg cap steak, URMIS #3646~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10958~^~1000~^~Pork, Shoulder breast, boneless, separable lean and fat, raw~^~PORK,SHLDR BREAST,BNLESS,LN & FAT,RAW~^~Pectoralis Profundi, Shoulder breast, URMIS #3604~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10959~^~1000~^~Pork, Shoulder breast, boneless, separable lean and fat, cooked, broiled~^~PORK,SHLDR BREAST,BNLESS,LN & FAT,CKD,BRLD~^~Pectoralis profundi, Shoulder breast, URMIS #3604~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10960~^~1000~^~Pork, shoulder, petite tender, boneless, separable lean and fat, cooked, broiled~^~PORK,SHLDR,PETITE TENDER,BNLESS,LN & FAT,CKD,BRLD~^~Shoulder petite tender, Teres major, URMIS #3605~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10961~^~1000~^~Pork, Shoulder petite tender, boneless, separable lean and fat, raw~^~PORK,SHLDR PETITE TENDER,BNLESS,LN & FAT,RAW~^~Shoulder petite tender, Teres major, URMIS #3605~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10962~^~1000~^~Pork, Leg sirloin tip roast, boneless, separable lean and fat, cooked, braised~^~PORK,LEG SIRLOIN TIP RST,BNLESS,LN & FAT,CKD,BRSD~^~Leg sirloin tip roast, URMIS #3647, Vastas Lateralis/Rectus femoris~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~10963~^~1000~^~Pork, Leg sirloin tip roast, boneless, separable lean and fat, raw~^~PORK,LEG SIRLOIN TIP RST,BNLESS,LN & FAT,RAW~^~Leg sirloin tip roast, URMIS #3647, Vastas lateralis\Rectus Femoris~^~~^~~^~~^0^~~^6.25^4.27^9.02^3.87
+~11062~^~1100~^~Beans, snap, green, frozen, all styles, microwaved~^~BEANS,SNAP,GRN,FRZ,ALL STYLES,MICROWAVED~^~~^~~^~~^~~^0^~~^^^^
+~11182~^~1100~^~Corn, yellow, whole kernel, frozen, microwaved~^~CORN,YEL,WHL KERNEL,FRZ,MICROWAVED~^~~^~~^~~^~~^0^~~^^^^
+~13000~^~1300~^~Beef, grass-fed, strip steaks, lean only, raw~^~BEEF,GRASS-FED,STRIP STEAKS,LN,RAW~^~~^~~^~~^~23% Bone and connective tissue, 11% Separable fat~^34^~~^^^^
+~13047~^~1300~^~Beef, grass-fed, ground, raw~^~BEEF,GRASS-FED,GROUND,RAW~^~~^~~^~~^~~^0^~~^^^^
+~13166~^~1300~^~USDA Commodity, beef, canned~^~USDA CMDTY,BF,CND~^~~^~~^~~^~Total refuse 0%~^0^~~^6.25^4.27^9.02^3.87
+~14623~^~1400~^~CAMPBELL Soup Company, V8 V. FUSION Juices, Acai Berry~^~CAMPBELL SOUP COMPANY,V8 V. FUSION JUICES,ACAI BERRY~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~14624~^~1400~^~Coffee substitute, roasted grain beverage, NATURAL TOUCH KAFFREE ROMA, powder~^~COFFEE SUB,RSTD GRAIN BEV,NAT TOUCH KAFFREE ROMA,PDR~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16171~^~1600~^~Refried beans, canned, vegetarian~^~REFRIED BNS,CND,VEGETARIAN~^~~^~~^~~^~~^0^~~^^^^
+~16172~^~1600~^~Refried beans, canned, fat-free~^~REFRIED BNS,CND,FAT-FREE~^~~^~~^~~^~~^0^~~^^^^
+~16173~^~1600~^~Frijoles rojos volteados (Refried beans, red, canned)~^~FRIJOLES ROJOS VOLTEADOS (REFRIED BNS,RED,CANNED)~^~~^~~^~~^~~^0^~~^^^^
+~16235~^~1600~^~SILK Plain, soymilk~^~SILK PLN,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16236~^~1600~^~SILK Vanilla, soymilk~^~SILK VANILLA,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16237~^~1600~^~SILK Chocolate, soymilk~^~SILK CHOC,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16238~^~1600~^~SILK Light Plain, soymilk~^~SILK LT PLN,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16239~^~1600~^~SILK Light Vanilla, soymilk~^~SILK LT VANILLA,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16240~^~1600~^~SILK Light Chocolate, soymilk~^~SILK LT CHOC,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16241~^~1600~^~SILK Plus Omega-3 DHA, soymilk~^~SILK PLUS OMEGA-3 DHA,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16242~^~1600~^~SILK Plus for Bone Health, soymilk~^~SILK PLUS FOR BONE HEALTH,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16243~^~1600~^~SILK Plus Fiber, soymilk~^~SILK PLUS FIBER,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16244~^~1600~^~SILK Unsweetened, soymilk~^~SILK UNSWTND,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16245~^~1600~^~SILK Very Vanilla, soymilk~^~SILK VERY VANILLA,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16246~^~1600~^~SILK Nog, soymilk~^~SILK NOG,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16247~^~1600~^~SILK Chai, soymilk~^~SILK CHAI,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16248~^~1600~^~SILK Mocha, soymilk~^~SILK MOCHA,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16249~^~1600~^~SILK Coffee, soymilk~^~SILK COFFEE,SOYMILK~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16250~^~1600~^~SILK Vanilla soy Yogurt (Family size)~^~SILK VANILLA SOY YOGURT (FAMILY SIZE)~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16251~^~1600~^~SILK Vanilla soy yogurt (single serving size)~^~SILK VANILLA SOY YOGURT (SINGLE SERVING SIZE)~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16252~^~1600~^~SILK Plain soy yogurt~^~SILK PLN SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16253~^~1600~^~SILK Strawberry soy yogurt~^~SILK STRAWBERRY SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16254~^~1600~^~SILK Raspberry soy yogurt~^~SILK RASPBERRY SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16255~^~1600~^~SILK Peach soy Yogurt~^~SILK PEACH SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16256~^~1600~^~SILK Black Cherry soy Yogurt~^~SILK BLACK CHERRY SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16257~^~1600~^~SILK Blueberry soy Yogurt~^~SILK BLUEBERRY SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16258~^~1600~^~SILK Key Lime soy Yogurt~^~SILK KEY LIME SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16259~^~1600~^~SILK Banana-Strawberry soy Yogurt~^~SILK BANANA-STRAWBERRY SOY YOGURT~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16260~^~1600~^~SILK Original Creamer~^~SILK ORIGINAL CREAMER~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16261~^~1600~^~SILK French Vanilla Creamer~^~SILK FRENCH VANILLA CREAMER~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16262~^~1600~^~SILK Hazelnut Creamer~^~SILK HAZELNUT CREAMER~^~~^~WhiteWave Foods Company~^~~^~~^0^~~^6.25^^^
+~16500~^~1600~^~LOMA LINDA Little Links, canned, unprepared~^~LOMA LINDA LITTLE LINKS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16501~^~1600~^~LOMA LINDA Fried Chik'n with Gravy, canned, unprepared~^~LOMA LINDA FRIED CHIK'N W/ GRAVY,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16502~^~1600~^~LOMA LINDA Low Fat Big Franks, canned, unprepared~^~LOMA LINDA LOFAT BIG FRANKS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16503~^~1600~^~LOMA LINDA Dinner Cuts, canned, unprepared~^~LOMA LINDA DINNER CUTS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16504~^~1600~^~LOMA LINDA Tender Rounds with Gravy, canned, unprepared~^~LOMA LINDA TENDER ROUNDS W/ GRAVY,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16505~^~1600~^~LOMA LINDA Swiss Stake with Gravy, canned, unprepared~^~LOMA LINDA SWISS STAKE W/ GRAVY,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16506~^~1600~^~LOMA LINDA Vege-Burger, canned, unprepared~^~LOMA LINDA VEGE-BURGER,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16507~^~1600~^~LOMA LINDA Redi-Burger, canned, unprepared~^~LOMA LINDA REDI-BURGER,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16508~^~1600~^~LOMA LINDA Tender Bits, canned, unprepared~^~LOMA LINDA TENDER BITS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16509~^~1600~^~LOMA LINDA Linketts, canned, unprepared~^~LOMA LINDA LINKETTS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16510~^~1600~^~WORTHINGTON Chili, canned, unprepared~^~WORTHINGTON CHILI,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16511~^~1600~^~WORTHINGTON Choplets, canned, unprepared~^~WORTHINGTON CHOPLETS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16512~^~1600~^~WORTHINGTON Diced Chik, canned, unprepared~^~WORTHINGTON DICED CHIK,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16513~^~1600~^~WORTHINGTON FriChik, canned, unprepared~^~WORTHINGTON FRICHIK,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16514~^~1600~^~WORTHINGTON Low Fat Fri Chik, canned, unprepared~^~WORTHINGTON LOFAT FRI CHIK,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16515~^~1600~^~WORTHINGTON Low Fat Veja-Links, canned, unprepared~^~WORTHINGTON LOFAT VEJA-LINKS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16516~^~1600~^~WORTHINGTON Multigrain Cutlets, canned, unprepared~^~WORTHINGTON MULTIGRAIN CUTLETS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16517~^~1600~^~WORTHINGTON Prime Stakes, canned, unprepared~^~WORTHINGTON PRIME STAKES,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16518~^~1600~^~WORTHINGTON Saucettes, canned, unprepared~^~WORTHINGTON SAUCETTES,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16519~^~1600~^~WORTHINGTON Super Links, canned, unprepared~^~WORTHINGTON SUPER LINKS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16520~^~1600~^~WORTHINGTON Turkee Slices, canned, unprepared~^~WORTHINGTON TURKEE SLICES,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16521~^~1600~^~WORTHINGTON Vegetable Skallops, canned, unprepared~^~WORTHINGTON VEG SKALLOPS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16522~^~1600~^~WORTHINGTON Vegetable Steaks, canned, unprepared~^~WORTHINGTON VEG STEAKS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16523~^~1600~^~WORTHINGTON Vegetarian Burger, canned, unprepared~^~WORTHINGTON VEGETARIAN BURGER,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16524~^~1600~^~WORTHINGTON Veja-Links, canned, unprepared~^~WORTHINGTON VEJA-LINKS,CND,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16525~^~1600~^~WORTHINGTON Chic-Ketts, frozen, unprepared~^~WORTHINGTON CHIC-KETTS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16526~^~1600~^~WORTHINGTON Meatless Chicken, frozen, unprepared~^~WORTHINGTON MEATLESS CHICK,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16527~^~1600~^~WORTHINGTON Meatless Corned Beef, frozen, unprepared~^~WORTHINGTON MEATLESS CORNED BF,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16528~^~1600~^~WORTHINGTON Dinner Roast, frozen, unprepared~^~WORTHINGTON DINNER RST,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16529~^~1600~^~WORTHINGTON FriPats, frozen, unprepared~^~WORTHINGTON FRIPATS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16530~^~1600~^~WORTHINGTON Dinner Roast, frozen, unprepared~^~WORTHINGTON DINNER RST,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16531~^~1600~^~WORTHINGTON Prosage Links, frozen, unprepared~^~WORTHINGTON PROSAGE LINKS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16532~^~1600~^~WORTHINGTON Prosage Roll, frozen, unprepared~^~WORTHINGTON PROSAGE ROLL,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16533~^~1600~^~WORTHINGTON Smoked Turkey, frozen, unprepared~^~WORTHINGTON SMOKED TURKEY,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16534~^~1600~^~WORTHINGTON Stakelets, frozen, unprepared~^~WORTHINGTON STAKELETS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16535~^~1600~^~WORTHINGTON Stripples, frozen, unprepared~^~WORTHINGTON STRIPPLES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16536~^~1600~^~WORTHINGTON Wham, frozen, unprepared~^~WORTHINGTON WHAM,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16537~^~1600~^~MORNINGSTAR FARMS Veggie Corn Dogs made w/ Natural Ingredients, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE CORN DOGS W/ NAT INGR,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16538~^~1600~^~MORNINGSTAR FARMS Breakfast Pattie made with Organic Soy, frozen, unprepared~^~MORNINGSTAR FARMS BRKFST PATTIE MADE W/ ORG SOY,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16539~^~1600~^~MORNINGSTAR FARMS Okara Patties made with Organic Soy, frozen, unprepared~^~MORNINGSTAR FARMS OKARA PATTIES MADE W/ ORG SOY,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16540~^~1600~^~MORNINGSTAR FARMS Roasted Herb Chik'n made with Organic Soy, frozen, unprepared~^~MORNINGSTAR FARMS RSTD HERB CHIK'N W/ ORG SOY,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16542~^~1600~^~MORNINGSTAR FARMS Veggie Bacon Strips, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE BACON STRIPS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16544~^~1600~^~MORNINGSTAR FARMS Veggie Bites Country Scramble, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE BITES COUNTRY SCRAMBLE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16545~^~1600~^~MORNINGSTAR FARMS Veggie Bites Eggs Florentine, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE BITES EGGS FLORENTINE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16546~^~1600~^~MORNINGSTAR FARMS Veggie Sausage Links, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE SAUSAGE LINKS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16547~^~1600~^~MORNINGSTAR FARMS Cheddar Burger, frozen, unprepared~^~MORNINGSTAR FARMS CHEDDAR BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16548~^~1600~^~MORNINGSTAR FARMS Grillers Original, frozen, unprepared~^~MORNINGSTAR FARMS GRILLERS ORIGINAL,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16549~^~1600~^~MORNINGSTAR FARMS Grillers Prime, frozen, unprepared~^~MORNINGSTAR FARMS GRILLERS PRIME,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16550~^~1600~^~MORNINGSTAR FARMS Philly Cheesesteak Burger, frozen, unprepared~^~MORNINGSTAR FARMS PHILLY CHEESESTEAK BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16551~^~1600~^~MORNINGSTAR FARMS Asian Veggie Patties, frozen, unprepared~^~MORNINGSTAR FARMS ASIAN VEGGIE PATTIES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16552~^~1600~^~MORNINGSTAR FARMS Mushroom Lover's Burger, frozen, unprepared~^~MORNINGSTAR FARMS MUSHROOM LOVER'S BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16554~^~1600~^~MORNINGSTAR FARMS Tomato & Basil Pizza Burger, frozen, unprepared~^~MORNINGSTAR FARMS TOMATO & BASIL PIZZA BURGER,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16555~^~1600~^~MORNINGSTAR FARMS MeatFree Buffalo Wings, frozen, unprepared~^~MORNINGSTAR FARMS MEATFREE BUFFALO WINGS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16556~^~1600~^~MORNINGSTAR FARMS Chik'n Nuggets, frozen, unprepared~^~MORNINGSTAR FARMS CHIK'N NUGGETS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16557~^~1600~^~MORNINGSTAR FARMS Chik Patties Original, frozen, unprepared~^~MORNINGSTAR FARMS CHIK PATTIES ORIGINAL,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16558~^~1600~^~MORNINGSTAR FARMS Italian Herb Chik Patties, frozen, unprepared~^~MORNINGSTAR FARMS ITALIAN HERB CHIK PATTIES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16559~^~1600~^~MORNINGSTAR FARMS Original Chik'n Tenders, frozen, unprepared~^~MORNINGSTAR FARMS ORIGINAL CHIK'N TENDERS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16560~^~1600~^~MORNINGSTAR FARMS Meatless Corn Dogs, frozen, unprepared~^~MORNINGSTAR FARMS MEATLESS CORN DOGS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16561~^~1600~^~MORNINGSTAR FARMS Meatless Mini Corn Dogs, frozen, unprepared~^~MORNINGSTAR FARMS MEATLESS MINI CORN DOGS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16563~^~1600~^~MORNINGSTAR FARMS Meal Starters Chik'n Strips, frozen, unprepared~^~MORNINGSTAR FARMS MEAL STARTERS CHIK'N STRIPS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16564~^~1600~^~MORNINGSTAR FARMS Meal Starters Steak Strips, frozen, unprepared~^~MORNINGSTAR FARMS MEAL STARTERS STEAK STRIPS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16565~^~1600~^~MORNINGSTAR FARMS Sausage Style Recipe Crumbles, frozen, unprepared~^~MORNINGSTAR FARMS SAUSAGE STYLE RECIPE CRUMBLES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16566~^~1600~^~MORNINGSTAR FARMS Veggie Bites Broccoli Cheddar, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE BITES BROCCOLI CHEDDAR,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16567~^~1600~^~MORNINGSTAR FARMS Veggie Bites Spinach Artichoke, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE BITES SPINACH ARTICHOKE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16568~^~1600~^~MORNINGSTAR FARMS Veggie Cakes Ginger Teriyaki, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE CAKES GINGER TERIYAKI,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16569~^~1600~^~MORNINGSTAR FARMS Veggie Cakes Southwestern Style, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE CAKES SOUTHWESTERN STYLE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~17148~^~1700~^~Bison, ground, grass-fed, cooked~^~BISON,GROUND,GRASS-FED,CKD~^~~^~~^~Y~^~~^0^~~^^^^
+~17149~^~1700~^~Bison, ground, grass-fed, raw~^~BISON,GROUND,GRASS-FED,RAW~^~~^~~^~Y~^~~^0^~~^^^^
+~18942~^~1800~^~Pie Crust, Cookie-type, Graham Cracker, Ready Crust~^~PIE CRUST,COOKIE-TYPE,GRAHAM CRACKER,READY CRUST~^~~^~~^~~^~~^0^~~^^^^
+~18943~^~1800~^~Pie Crust, Cookie-type, Chocolate, Ready Crust~^~PIE CRUST,COOKIE-TYPE,CHOC,READY CRUST~^~~^~~^~~^~~^0^~~^^^^
+~18944~^~1800~^~Pie, Dutch Apple, Commercially Prepared~^~PIE,DUTCH APPL,COMMLY PREP~^~~^~~^~~^~~^0^~~^^^^
+~18945~^~1800~^~Pie crust, deep dish, frozen, unbaked, made with enriched flour~^~PIE CRUST,DEEP DISH,FRZ,UNBAKED,MADE W/ ENR FLR~^~~^~~^~~^~~^0^~~^^^^
+~18946~^~1800~^~Pie crust, refrigerated, regular, baked~^~PIE CRUST,REFR,REG,BKD~^~~^~~^~~^~~^0^~~^^^^
+~18947~^~1800~^~Pie crust, deep dish, frozen, baked, made with enriched flour~^~PIE CRUST,DEEP DISH,FRZ,BKD,MADE W/ ENR FLR~^~~^~~^~~^~~^0^~~^^^^
+~18948~^~1800~^~Pie crust, refrigerated, regular, unbaked~^~PIE CRUST,REFR,REG,UNBAKED~^~~^~~^~~^~~^0^~~^^^^
+~19902~^~1900~^~Candies, chocolate, dark, 45-59% cacao solids~^~CANDIES,CHOC,DK,45-59% CACAO SOL~^~~^~~^~~^~~^0^~~^^^^
+~19903~^~1900~^~Candies, chocolate, dark, 60-69% cacao solids~^~CANDIES,CHOC,DK,60-69% CACAO SOL~^~~^~~^~~^~~^0^~~^^^^
+~19904~^~1900~^~Candies, chocolate, dark, 70-85% cacao solids~^~CANDIES,CHOC,DK,70-85% CACAO SOL~^~~^~~^~~^~~^0^~~^^^^
+~19905~^~1900~^~Candies, chocolate, dark, not further specified~^~CANDIES,CHOC,DK,NFS~^~~^~~^~~^~~^0^~~^^^^
+~20002~^~2000~^~Amaranth grain, cooked~^~AMARANTH GRAIN,CKD~^~~^~~^~~^~~^0^~Amaranthus spp.~^5.85^3.47^8.37^4.07
+~20058~^~2000~^~Rice, white, steamed, Chinese restaurant~^~RICE,WHITE,STMD,CHINESE RESTAURANT~^~~^~~^~~^~~^0^~~^^^^
+~20118~^~2000~^~Noodles, flat, crunchy, Chinese restaurant~^~NOODLES,FLAT,CRUNCHY,CHINESE RESTAURANT~^~~^~~^~~^~~^0^~~^5.73^4.05^8.37^4.12
+~20315~^~2000~^~Corn flour, whole-grain, blue (harina de maiz morado)~^~CORN FLR,WHOLE-GRAIN,BLUE (HARINA DE MAIZ MORADO)~^~~^~~^~~^~~^0^~~^6.25^2.73^8.37^4.03
+~21460~^~2100~^~McDONALD'S, Biscuit, large size~^~MCDONALD'S,BISCUIT,LRG SIZE~^~~^~McDonald's Corporation~^~~^~~^0^~~^^^^
+~22957~^~2200~^~Turkey, stuffing, mashed potatoes w/gravy, assorted vegetables, frozen, microwaved~^~TKY,STUFFING,MSHD POTATOE W/GRAVY,ASSORTED VEG,FRZ,MICROWAVE~^~~^~~^~~^~~^0^~~^^^^
+~22958~^~2200~^~Rice bowl with chicken, frozen entree, prepared (includes fried, teriyaki, and sweet and sour varieties)~^~RICE BOWL W/ CHICK,FRZ ENTREE,PREP~^~~^~~^~~^~~^0^~~^^^^
+~25022~^~2500~^~Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, French Onion flavor~^~SNACKS,FRITOLAY,SUNCHIPS,MULTIGRAIN SNACK,FRENCH ONION FLAVR~^~~^~~^~~^~~^0^~~^^^^
+~25023~^~2500~^~Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, Harvest Cheddar flavor~^~SNACKS,FRITOLAY,SUNCHIPS,MULTIGRAIN,HARVEST CHEDDAR~^~~^~~^~~^~~^0^~~^^^^
+~25026~^~2500~^~Popcorn, microwave, regular (butter) flavor, made with palm oil~^~POPCORN,MICROWAVE,REG (BUTTER) FLAVOR,MADE W/ PALM OIL~^~~^~~^~~^~~^0^~~^^^^
+~25027~^~2500~^~Plantain chips~^~PLANTAIN CHIPS~^~~^~~^~~^~~^0^~~^6.25^^^
+~25028~^~2500~^~Snacks, tortilla chips, plain, yellow corn~^~SNACKS,TORTILLA CHIPS,PLN,YEL CORN~^~~^~~^~~^~~^0^~~^^^^
+~27000~^~0600~^~Soup, egg drop, Chinese restaurant~^~SOUP,EGG DROP,CHINESE RESTAURANT~^~~^~~^~~^~~^0^~~^^^^
+~27001~^~0600~^~Soup, hot and sour, Chinese restaurant~^~SOUP,HOT & SOUR,CHINESE RESTAURANT~^~~^~~^~~^~~^0^~~^^^^
+~27002~^~0600~^~Soup, wonton, Chinese restaurant~^~SOUP,WONTON,CHINESE RESTAURANT~^~~^~~^~~^~~^0^~~^^^^
+~27004~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Beef Stew - Fully Loaded~^~CAMPBELL,CAMPBELL'S CHUNKY SOUPS,BF STEW - FULL~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27005~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Beef Stroganof - Fully Loaded~^~CAMPBELL,CAMPBELL'S CHUNKY SOUPS,BF STROGANOF -~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27006~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST Beef Barley Soup~^~CAMPBELL,CAMPBELL'S CHUNKY,HEALTHY REQUEST BF BARLEY SOUP~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27007~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST Microwavable Bowls, Chicken Noodle Soup~^~CAMPBELL'S CHNKY,HEALTHY REQUST MICROWAVBL ,CHICK NODLE SOUP~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27008~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST Microwavable Bowls, Grilled Chicken & Sausage Gumbo Soup~^~CAMPBELL SOUPS,HLTHY RQST MCRWVBL BWL,GRLL CHICK SSAGE GMB~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27009~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, HEALTHY REQUEST New England Clam Chowder~^~CAMPBELL,CAMPBELL'S CHUNKY SOUPS,HEALTHY REQUES~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27010~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Rigatoni & Meatballs - Fully Loaded~^~CAMPBELL,CAMPBELL'S CHUNKY SOUPS,RIGATONI & MEA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27011~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S CHUNKY Soups, Turkey Pot Pie - Fully Loaded~^~CAMPBELL,CAMPBELL'S CHUNKY SOUPS,TURKEY POT PIE~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27012~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S Red and White, Cheddar Cheese Soup, condensed~^~CAMPBELL,CAMPBELL'S RED & WHITE,CHEDDAR CHS SOU~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27013~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S Red and White, Chicken Barley with Mushrooms Soup, condensed~^~CAMPBELL,CAMPBELL'S RED & WHITE,CHICK BARLEY W/~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27014~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S Red and White, Italian Style Wedding Soup, condensed~^~CAMPBELL,CAMPBELL'S RED & WHITE,ITALIAN STYLE W~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27015~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S Red and White, SHREK shaped pasta with Chicken in Chicken Broth Soup, condensed~^~CAMPBELL,CAMPBELL'S RED & WHITE,SHREK SHAPED PA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27016~^~0600~^~CAMPBELL Soup Company, CAMPBELL's Red and White, Souper Shapes Soup - Cars, condensed~^~CAMPBELL,CAMPBELL'S RED & WHITE,SOUPER SHAPES S~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27017~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Microwaveable Bowls, HEALTHY REQUEST Italian Wedding Soup~^~CAMPBELL,CAMPBELL'S SEL MICROWAVEABLE BOWLS,HEA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27018~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Microwaveable Bowls, HEALTHY REQUEST Mexican Style Tortilla~^~CAMPBELL,CAMPBELL'S SEL MICROWAVEABLE BOWLS,HEA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27019~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Soup, Harvest Tomato with Basil Soup~^~CAMPBELL, SEL SOUP,HARVEST TOMATO W/ BASIL SOUP~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27020~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Soup, Zesty Azteca Meatballs & Rice~^~CAMPBELL,CAMPBELL'S SEL SOUP,ZESTY AZTECA MEATB~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27021~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Soups, HEALTHY REQUEST Chicken with Egg Noodles~^~CAMPBELL,CAMPBELL'S SEL SOUPS,HEALTHY REQUEST C~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27022~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SOUP AT HAND, 25% Less Sodium Chicken with Mini Noodles Soup~^~CAMPBELL,CAMPBELL'S SOUP AT HAND,25% LESS NA CH~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27023~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SOUP AT HAND, 25% Less Sodium Classic Tomato~^~CAMPBELL,CAMPBELL'S SOUP AT HAND,25% LESS NA CL~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27024~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Gold Label Soups, Creamy Tomato Parmesan~^~CAMPBEL,CAMPBELL'S SEL GOLD LABEL SOUPS,CREAMY~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27025~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Gold Label Soups, Italian Tomato & Basil Soup~^~CAMPBELL,CAMPBELL'S SEL GOLD LABEL SOUPS,ITALIA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27026~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S SELECT Gold Label Soups, Southwestern Corn Chowder~^~CAMPBELL,CAMPBELL'S SEL GOLD LABEL SOUPS,SOUTHW~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27027~^~0600~^~CAMPBELL Soup Company, PACE, Pico De Gallo~^~CAMPBELL SOUP COMPANY,PACE,PICO DE GALLO~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27028~^~0600~^~CAMPBELL Soup Company, PACE, Salsa Verde~^~CAMPBELL SOUP COMPANY,PACE,SALSA VERDE~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27029~^~0600~^~CAMPBELL Soup Company, PACE, Tequila Lime Salsa~^~CAMPBELL SOUP COMPANY,PACE,TEQUILA LIME SALSA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27030~^~0600~^~CAMPBELL Soup Company, PACE, Triple Pepper Salsa~^~CAMPBELL SOUP COMPANY,PACE,TRIPLE PEPPER SALSA~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27032~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S Red and White, Lentil Soup, condensed~^~CAMPBELL,CAMPBELL'S RED & WHITE,LENTIL SOUP,COND~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27033~^~0600~^~CAMPBELL Soup Company, PREGO Pasta, Heart Smart- Traditional Sauce, ready-to-serve~^~CAMPBELL,PREGO PASTA,HEART SMART- TRADITIONAL S~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~27034~^~0600~^~CAMPBELL Soup Company, CAMPBELL'S Red and White, 98% Fat Free Cream of Mushroom Soup, condensed~^~CAMPBELL,RED & WHITE,98% FAT FREE CRM OF MUSHROOM SOUP,COND~^~~^~Campbell Soup Co.~^~~^~~^0^~~^^^^
+~35226~^~3500~^~Sea lion, stellar, liver (Alaska Native)~^~Sea lion, stellar, liver (Alaska Native)~^~~^~~^~~^~~^0^~~^6.25^^^
+~35227~^~3500~^~Sea lion, stellar, kidney (Alaska Native)~^~SEA LION,STELLAR,KIDNEY (ALASKA NATIVE)~^~~^~~^~~^~~^0^~Eumetopias jubatus~^6.25^^^
+~35228~^~3500~^~Sea lion, stellar, heart (Alaska Native)~^~SEA LION,STELLAR,HEART (ALASKA NATIVE)~^~~^~~^~~^~~^0^~Eumetopias jubatus~^6.25^^^
+~35229~^~3500~^~Sea lion, stellar, meat (Alaska Native)~^~SEA LION,STELLAR,MEAT (ALASKA NATIVE)~^~~^~~^~~^~~^0^~~^6.25^^^
+~35230~^~3500~^~Sea lion, stellar, meat with fat (Alaska Native)~^~SEA LION,STELLAR,MEAT W/ FAT (ALASKA NATIVE)~^~~^~~^~~^~~^0^~~^6.25^^^
+~35231~^~3500~^~Sea lion, stellar, fat (Alaska Native)~^~SEA LION,STELLAR,FAT (ALASKA NATIVE)~^~~^~~^~~^~~^0^~~^6.25^^^

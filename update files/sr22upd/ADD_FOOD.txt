@@ -1,0 +1,228 @@
+~01174~^~0100~^~Milk, reduced fat, fluid, 2% milkfat, without added vitamin A and vitamin D~^~MILK,RED FAT,FLUID,2% MILKFAT,WO/ ADDED VIT A & VIT D~^~~^~~^~Y~^~~^0^~~^0.00^4.27^8.79^3.87
+~01175~^~0100~^~Milk, fluid, 1% fat, without added vitamin A and vitamin D~^~MILK,FLUID,1% FAT,WO/ ADDED VIT A & VIT D~^~~^~~^~Y~^~~^0^~~^0.00^4.27^8.79^3.87
+~01211~^~0100~^~Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D~^~MILK,WHL,3.25% MILKFAT, W/O VIT A & VIT D~^~~^~~^~Y~^~~^0^~~^^^^
+~01212~^~0100~^~Milk, dry, whole, without added vitamin D~^~MILK,DRY,WHL,WO/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01214~^~0100~^~Milk, canned, evaporated, without added vitamin A and vitamin D~^~MILK,CND,EVAP,WO/ ADDED VIT A & VITAMIN D~^~~^~~^~Y~^~~^0^~~^^^^
+~01215~^~0100~^~Cheese product, pasteurized process, american, reduced fat, fortified with vitamin D~^~CHEESE PRODUCT,PAST PROCESS,AMERICAN,RED FAT,FORT W/ VIT D~^~~^~~^~Y~^~~^0^~~^^^^
+~01216~^~0100~^~Yogurt, fruit, low fat, 9 grams protein per 8 ounce, fortified with vitamin D~^~YOGURT,FRUIT,LOFAT,9 GRAMS PROT PER 8 OZ,FORT W/ VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01217~^~0100~^~Yogurt, fruit, low fat, 10 grams protein per 8 ounce, fortified with vitamin D~^~YOGURT,FRUIT,LOFAT,10 GRAMS PROT PER 8 OZ,FORT W/ VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01218~^~0100~^~Yogurt, fruit variety, nonfat, fortified with vitamin D~^~YOGURT,FRUIT VAR,NONFAT,FORT W/ VITAMIN D~^~~^~~^~Y~^~~^0^~~^^^^
+~01219~^~0100~^~Yogurt, fruit, lowfat, with low calorie sweetener, fortified with vitamin D~^~YOGURT,FRUIT,LOWFAT,W/ LO CAL SWTNR,FORT W/ VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01220~^~0100~^~Yogurt, vanilla, low fat, 11 grams protein per 8 ounce, fortified with vitamin D~^~YOGURT,VANILLA,LOFAT,11 GRAMS PROT PER 8 OZ,FORT W/ VIT D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.79^3.87
+~01221~^~0100~^~Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener, fortified with vitamin D~^~YOGURT,VAN/LEM FLAV,NONFAT MILK,W/ LO-CAL SWTNR,FORT W/VIT D~^~~^~~^~Y~^~~^0^~~^^^^
+~01222~^~0100~^~Yogurt, chocolate, nonfat milk, fortified with vitamin D~^~YOGURT,CHOC,NONFAT MILK,FORT W/ VITAMIN D~^~~^~~^~Y~^~~^0^~~^^^^
+~01223~^~0100~^~Protein supplement, milk based, Muscle Milk, powder~^~PROTEIN SUPP,MILK BSD,MUSCLE MILK,PDR~^~~^~~^~Y~^~~^0^~~^6.38^^^
+~01224~^~0100~^~Protein supplement, milk based, Muscle Milk Light, powder~^~PROTEIN SUPP,MILK BSD,MUSCLE MILK LT,PDR~^~~^~~^~Y~^~~^0^~~^6.38^^^
+~01225~^~0100~^~Dulce de Leche~^~DULCE DE LECHE~^~~^~~^~~^~~^0^~~^^^^
+~01226~^~0100~^~Egg substitute, liquid or frozen, fat free~^~EGG SUB,LIQ OR FRZ,FAT FREE~^~~^~~^~Y~^~~^0^~~^6.25^4.36^8.84^3.68
+~03001~^~0300~^~Babyfood, juice treats, fruit medley, toddler~^~BABYFOOD,JUC TREATS,FRUIT MEDLEY,TODD~^~~^~~^~Y~^~~^0^~~^^^^
+~03019~^~0300~^~Gerber graduates Fruit Strips Real Fruit Bars~^~GERBER GRADUATES FRUIT STRIPS REAL FRUIT BARS~^~~^~~^~Y~^~~^0^~~^^^^
+~03859~^~0300~^~Infant formula, NESTLE, GOOD START SOY, with DHA and ARA, ready-to-feed~^~INF FORMULA,NESTLE,GOOD START SOY,W/ DHA & ARA,RTF~^~~^~~^~Y~^~~^0^~~^^^^
+~03867~^~0300~^~Infant formula, NESTLE, GOOD START SOY, with DHA AND ARA, powder~^~INF FORMULA,NESTLE,GOOD START SOY,W/ DHA & ARA,PDR~^~~^~~^~Y~^~~^0^~~^^^^
+~03870~^~0300~^~Child formula, ABBOTT NUTRITION, PEDIASURE, ready-to-feed, with iron and fiber (formerly ROSS)~^~CHI FORMU,ABBT NUTR,PEDIASU,RTF,W/ IRON & FIB (FORMER ROSS)~^~~^~~^~Y~^~~^0^~~^^^^
+~03956~^~0300~^~Babyfood, yogurt, whole milk, with fruit, multigrain cereal and added DHA~^~BABYFOOD,YOGURT,WHL MILK,W/ FRUIT,MULTIGRAIN CRL & ADDED DHA~^~~^~~^~Y~^~~^0^~~^^^^
+~03959~^~0300~^~Babyfood, mashed cheddar potatoes and broccoli, toddlers~^~BABYFOOD,MSHD CHEDDAR POTATOES&BROCCOLI,TODDLER~^~~^~~^~Y~^~~^0^~~^^^^
+~03960~^~0300~^~Infant formula, NESTLE, GOOD START SUPREME, with iron, DHA and ARA, ready-to-feed~^~INF FORMULA,NESTLE,GOOD START SUPREME,W/ IRON,DHA & ARA,RTF~^~~^~~^~Y~^~~^0^~~^^^^
+~03961~^~0300~^~Infant formula, NESTLE, GOOD START SUPREME, with iron, DHA and ARA, prepared from liquid concentrate~^~INF FORM,NESTLE,GOOD START SUPREME,IRON,DHA&ARA,PRP FR LC~^~~^~~^~~^~~^0^~~^^^^
+~03963~^~0300~^~Infant Formula, MEAD JOHNSON, ENFAMIL GENTLEASE LIPIL, with iron, prepared from powder~^~INFFORM,MEADJOHNSON,ENFAMIL GENTLEASE LIPIL,W/IRON,PREPFRPDR~^~~^~~^~Y~^~~^0^~~^1.36^^^
+~03964~^~0300~^~Baby food, fortified cereal bar, fruit filling~^~BABY FD,FORT CRL BAR,FRUIT FILLING~^~~^~~^~Y~^~~^0^~~^^^^
+~03965~^~0300~^~Babyfood, yogurt, whole milk, with fruit, multigrain cereal and added iron~^~BABYFOOD,YOGURT,WHL MILK,W/ FRUIT,MULTIGRAIN CRL & IRON~^~~^~~^~Y~^~~^0^~~^^^^
+~03966~^~0300~^~Infant formula, NESTLE, GOOD START SOY, with DHA and ARA, liquid concentrate~^~INF FORMULA,NESTLE,GOOD START SOY,W/ DHA & ARA,LIQ CONC~^~~^~~^~Y~^~~^0^~~^^^^
+~04689~^~0400~^~Salad Dressing, mayonnaise, light, SMART BALANCE, Omega Plus light~^~SALAD DRSNG,MAYO,LT,SMART BALANCE,OMEGA PLUS LT~^~~^~Smart Balance Foods~^~~^~~^0^~~^^^^
+~04690~^~0400~^~Margarine-like, vegetable oil spread, approximately 37% fat, unspecified oils, with salt, with added vitamin D~^~VEG OIL SPRD,37% FAT,UNSPEC OILS,W/ SALT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^^4.27^8.84^3.80
+~04691~^~0400~^~Margarine, regular, 80% fat, composite, stick, with salt, with added vitamin D~^~MARGARINE,REG,80% FAT,COMP,STK,W/ SALT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.84^3.80
+~04692~^~0400~^~Margarine, regular, 80% fat, composite, tub, with salt, with added vitamin D~^~MARGARINE,REG,80% FAT,COMP,TUB,W/ SALT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.84^3.80
+~04693~^~0400~^~Margarine-like, vegetable oil spread, 60% fat, stick, with salt, with added vitamin D~^~VEG OIL SPRD,60% FAT,STK,W/ SALT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.93^4.27^8.84^3.80
+~04694~^~0400~^~Margarine-like, vegetable oil spread, 60% fat, tub, with salt, with added vitamin D~^~VEG OIL SPRD,60% FAT,TUB,W/ SALT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.93^4.27^8.84^3.84
+~04695~^~0400~^~Margarine-like vegetable-oil spread, stick/tub/bottle, 60% fat, with added vitamin D~^~VEG-OIL SPRD,STICK/TUB/BOTTLE,60% FAT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^^^^
+~04696~^~0400~^~Margarine, regular, 80% fat, composite, stick, without salt, with added vitamin D~^~MARGARINE,REG,80% FAT,COMP,STK,WO/ SALT,W/ ADDED VITAMIN D~^~~^~~^~Y~^~~^0^~~^6.38^4.27^8.84^3.80
+~04697~^~0400~^~Margarine-like, vegetable oil spread, 60% fat, stick/tub/bottle, without salt, with added vitamin D~^~VEG OIL SPRD,60% FAT,STICK/TUB/BOTTLE,WO/ SALT,W/VIT D~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~05314~^~0500~^~Chicken, broilers or fryers, breast, meat only, raw, enhanced~^~CHICKEN,BROILERS OR FRYERS,BREAST,MEAT ONLY,RAW,ENHANCED~^~~^~~^~~^~~^0^~~^6.25^^^
+~07046~^~0700~^~Turkey breast, low salt, prepackaged or deli, luncheon meat~^~TURKEY BREAST,LO SALT,PREPACKAGED OR DELI,LUNCHEON MEAT~^~~^~~^~Y~^~~^0^~~^6.25^4.00^9.00^4.00
+~08365~^~0800~^~Cereals ready-to-eat, QUAKER, Shredded Wheat, bagged cereal~^~CEREALS RTE,QUAKER,SHREDDED WHEAT,BAGGED CRL~^~~^~The Quaker Oats, Co.~^~~^~~^0^~~^6.25^^^
+~08573~^~0800~^~Cereals, Cream of Wheat, 2 1/2 minute cook time, dry~^~CEREALS,CRM OF WHEAT,2 1/2 MINUTE COOK TIME,DRY~^~~^~B&G Foods, distributor~^~~^~~^0^~~^^4.05^8.37^4.12
+~08574~^~0800~^~Cereals, Cream of Wheat, 2 1/2 minute cook time, cooked with water, stove-top, without salt~^~CEREALS,CRM OF WHEAT,2 1/2 MIN,CKD,STOVE-TOP,WO/ SALT~^~~^~~^~~^~~^0^~~^^4.05^8.37^4.12
+~08575~^~0800~^~Cereals, Cream of Wheat, 2 1/2 minute cook time, cooked with water, microwaved, without salt~^~CEREALS,CRM OF WHEAT,2 1/2 MIN,CKD W/H2O,MICROWAVED~^~~^~~^~~^~~^0^~~^^4.05^8.37^4.12
+~08576~^~0800~^~Cereals, CREAM OF WHEAT, 1 minute cook time, dry~^~CEREALS,CRM OF WHEAT,1 MINUTE COOK TIME,DRY~^~~^~B&G Foods, distributor~^~~^~~^0^~~^^4.05^8.37^4.12
+~08577~^~0800~^~Cereals, CREAM OF WHEAT, 1 minute cook time, cooked with water, stove-top, without salt~^~CEREALS,CRM OF WHEAT,1 MINUTE,CKD W/ H2O,STOVE-TOP,WO/ SALT~^~~^~~^~~^~~^0^~~^^4.05^8.37^4.12
+~08578~^~0800~^~Cereals, CREAM OF WHEAT, 1 minute cook time, cooked with water, microwaved, without salt~^~CEREALS,CRM OF WHEAT,1 MINUTE,CKD W/ H2O,MICROWAVED,WO/ SALT~^~~^~B&G Foods, distributor~^~~^~~^0^~~^^4.05^8.37^4.12
+~08579~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, Cinnamon Toast Crunch, reduced sugar~^~CEREALS RTE,GENERAL MILLS,CINN TOAST CRUNCH,RED SUGAR~^~~^~General Mills Inc.~^~Y~^~~^0^~~^6.25^^^
+~08580~^~0800~^~Incaparina, dry mix (corn and soy flours), unprepared~^~INCAPARINA,DRY MIX (CORN & SOY FLOURS),UNPREP~^~~^~~^~~^~~^0^~~^6.25^^^
+~08581~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, Curves Fruit & Nut Crunch cereal~^~CEREALS RTE,GENERAL MILLS,CURVES FRUIT & NUT CRUNCH CRL~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~08582~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, DORA THE EXPLORER~^~CEREALS RTE,GENERAL MILLS,DORA THE EXPLORER~^~~^~~^~Y~^~~^0^~~^^^^
+~08583~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, Fruity CHEERIOS~^~CEREALS RTE,GENERAL MILLS,FRUITY CHEERIOS~^~~^~~^~Y~^~~^0^~~^^^^
+~08584~^~0800~^~Cereals ready-to-eat, KELLOGG'S SPECIAL K Chocolatey Delight~^~CEREALS RTE,KELLOGG'S SPL K CHOCOLATEY DELIGHT~^~~^~~^~Y~^~~^0^~~^^^^
+~08585~^~0800~^~Cereals ready-to-eat, GENERAL MILLS TOTAL, Cranberry Crunch~^~CEREALS RTE,GENERAL MILLS TOTAL,CRANBERRY CRUNCH~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~08586~^~0800~^~Cereals ready-to-eat, GENERAL MILLS, TRIX, reduced sugar, bowlpak~^~CEREALS RTE,GENERAL MILLS,TRIX,RED SUGAR,BOWLPAK~^~~^~~^~Y~^~~^0^~~^^^^
+~09129~^~0900~^~Grapes, muscadine, raw~^~GRAPES,MUSCADINE,RAW~^~~^~~^~~^~Seeds~^4^~Vitis rotundifolia~^6.25^3.36^8.37^3.60
+~09211~^~0900~^~Orange juice, chilled, includes from concentrate, fortified with calcium~^~ORANGE JUC,CHILLED,INCL FROM CONC,FORT W/ CA~^~~^~~^~Y~^~~^0^~~^6.25^3.36^8.37^3.92
+~09445~^~0900~^~Kiwifruit, gold, raw~^~KIWIFRUIT,GOLD,RAW~^~~^~~^~~^~Skin~^26^~Actinidia chinensis~^6.25^3.36^8.37^3.60
+~09446~^~0900~^~Plantains, green, fried~^~PLANTAINS,GRN,FRIED~^~tostones de platano~^~~^~~^~~^0^~~^6.25^4.00^9.00^4.00
+~09447~^~0900~^~Plantains, yellow, fried, Latino restaurant~^~PLANTAINS,YEL,FRIED,LATINO RESTAURANT~^~platanos maduros~^~~^~~^~~^0^~~^6.25^4.00^9.00^4.00
+~10971~^~1000~^~Pork, ground, 72% lean / 28% fat, raw~^~PORK,GROUND,72% LN / 28% FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~10972~^~1000~^~Pork, ground, 84% lean / 16% fat, raw~^~PORK,GROUND,84% LN / 16% FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~10973~^~1000~^~Pork, ground, 96% lean / 4% fat, raw~^~PORK,GROUND,96% LN / 4% FAT,RAW~^~~^~~^~~^~~^0^~~^^^^
+~10974~^~1000~^~Pork, ground, 72% lean / 28% fat, cooked, crumbles~^~PORK,GROUND,72% LN / 28% FAT,CKD,CRUMBLES~^~~^~~^~~^~~^0^~~^^^^
+~10975~^~1000~^~Pork, ground, 84% lean / 16% fat, cooked, crumbles~^~PORK,GROUND,84% LN / 16% FAT,CKD,CRUMBLES~^~~^~~^~~^~~^0^~~^^^^
+~10976~^~1000~^~Pork, ground, 96% lean / 4% fat, cooked, crumbles~^~PORK,GROUND,96% LN / 4% FAT,CKD,CRUMBLES~^~~^~~^~~^~~^0^~~^^^^
+~10977~^~1000~^~Pork, ground, 72% lean / 28% fat, cooked, pan-broiled~^~PORK,GROUND,72% LN / 28% FAT,CKD,PAN-BROILED~^~~^~~^~~^~~^0^~~^^^^
+~10978~^~1000~^~Pork, ground, 84% lean / 16% fat, cooked, pan-broiled~^~PORK,GROUND,84% LN / 16% FAT,CKD,PAN-BROILED~^~~^~~^~~^~~^0^~~^^^^
+~10979~^~1000~^~Pork, ground, 96% lean / 4% fat, cooked, pan-broiled~^~PORK,GROUND,96% LN / 4% FAT,CKD,PAN-BROILED~^~~^~~^~~^~~^0^~~^^^^
+~11063~^~1100~^~Beans, snap, green, microwaved~^~BEANS,SNAP,GRN,MICROWAVED~^~~^~~^~~^~~^0^~~^^^^
+~11238~^~1100~^~Mushrooms, shiitake, raw~^~MUSHROOMS,SHIITAKE,RAW~^~~^~~^~~^~~^0^~Lentinus edodes~^6.25^2.62^8.37^3.48
+~11239~^~1100~^~Mushrooms, chanterelle, raw~^~MUSHROOMS,CHANTERELLE,RAW~^~~^~~^~~^~~^0^~Cantharellus californicus or Cantharellus cibarius~^6.25^2.62^8.37^3.48
+~11240~^~1100~^~Mushrooms, morel, raw~^~MUSHROOMS,MOREL,RAW~^~~^~~^~~^~~^0^~~^6.25^2.62^8.37^3.48
+~11939~^~1100~^~Mushrooms, portabella, exposed to ultraviolet light, grilled~^~MUSHROOMS,PORTABELLA,EXPOSED TO UV LT,GRILLED~^~portobella~^~~^~~^~~^0^~Agaricus bisporus~^6.25^2.62^8.37^3.48
+~11998~^~1100~^~Mushrooms, portabella, exposed to ultraviolet light, raw~^~MUSHROOMS,PORTABELLA,EXPOSED TO UV LT,RAW~^~portobella~^~~^~~^~Trimmings~^3^~Agaricus bisporus~^6.25^2.62^8.37^3.48
+~13156~^~1300~^~Beef, round, full cut, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled~^~BEEF,RND,FULL CUT,LN,1/4"FAT,CHOIC,CKD,BRLD~^~~^~~^~~^~8% bone, 9% separable fat~^17^~~^6.25^4.27^9.02^3.87
+~13158~^~1300~^~Beef, round, full cut, separable lean only, trimmed to 1/4" fat, select, cooked, broiled~^~BEEF,RND,FULL CUT,LN,1/4"FAT,SEL,CKD,BRLD~^~~^~~^~~^~Bone, 8%, separable fat, 9%~^17^~~^6.25^4.27^9.02^3.87
+~13227~^~1300~^~Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, raw~^~BEEF,SHANK CROSSCUTS,LN,1/4"FAT,CHOIC,RAW~^~~^~~^~~^~Bone 34%, separable fat 6%~^40^~~^6.25^4.27^9.02^3.87
+~13228~^~1300~^~Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, cooked, simmered~^~BEEF,SHANK CROSSCUTS,LN,1/4"FAT,CHOIC,CKD,SIMMRD~^~~^~~^~~^~Bone, 37%, separable fat, 8%~^45^~~^6.25^4.27^9.02^3.87
+~13479~^~1300~^~Beef, short loin, t-bone steak, separable lean only, trimmed to 1/4" fat, all grades, cooked, broiled~^~BEEF,SHRT LOIN,T-BONE STEAK,LN,1/4" FAT,ALL GRDS,CKD,BRLD~^~~^~~^~~^~Bone and heavy connective tissue, 21%, separable fat, 17%~^38^~~^6.25^4.27^9.02^3.87
+~13976~^~1300~^~Beef, plate, inside skirt steak, separable lean only, trimmed to 1/4" fat, all grades, raw~^~BEEF,PLATE,INSIDE SKIRT STEAK,LN ONLY,1/4" FAT,ALL GRDS,RAW~^~Plate Skirt Steak~^~~^~~^~Bone and heavy connective tissue, 3%, separable fat, 7%~^10^~~^6.25^4.27^9.02^3.87
+~13978~^~1300~^~Beef, plate, outside skirt steak, separable lean only, trimmed to 1/4" fat, all grades, raw~^~BEEF,PLATE,OUTSIDE SKIRT STEAK,LN ONLY,1/4" FAT,ALL GRDS,RAW~^~Plate Skirt Steak~^~~^~~^~Bone and heavy connective tissue, 4%, separable fat, 7%~^11^~~^6.25^4.27^9.02^3.87
+~14625~^~1400~^~Energy drink, AMP~^~ENERGY DRK,AMP~^~~^~~^~Y~^~~^0^~~^^^^
+~14626~^~1400~^~Energy drink, FULL THROTTLE~^~ENERGY DRK,FULL THROTTLE~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^6.25^^^
+~14627~^~1400~^~Energy Drink, Monster~^~ENERGY DRK,MONSTER~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14628~^~1400~^~Energy drink, AMP, sugar free~^~ENERGY DRK,AMP,SUGAR FREE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14629~^~1400~^~Energy drink, ROCKSTAR~^~ENERGY DRK,ROCKSTAR~^~~^~Rockstar, Inc.~^~Y~^~~^0^~~^6.25^^^
+~14630~^~1400~^~Energy drink, ROCKSTAR, sugar free~^~ENERGY DRK,ROCKSTAR,SUGAR FREE~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~14631~^~1400~^~Beverage, Horchata, dry mix, unprepared, variety of brands, all with morro seeds~^~HORCHATA,DRY MIX,UNPREP,VAR OF BRANDS,ALL W/ MORRO SEEDS~^~Latino food~^~~^~Y~^~~^0^~~^6.25^^^
+~14632~^~1400~^~Meal supplement drink, NESTLE, SUPLIGEN, canned, peanut flavor~^~MEAL SUPP DRK,NESTLE,SUPLIGEN,CND,PNUT FLAVOR~^~~^~~^~~^~~^0^~~^6.25^^^
+~14633~^~1400~^~Vegetable and fruit juice drink, reduced calorie, with low-calorie sweetener, added vitamin C~^~VEGETABLE & FRUIT JUC DRK,RED CAL,ADDED VIT C~^~~^~~^~Y~^~~^0^~~^^^^
+~14634~^~1400~^~Ready-to-drink reduced fat milk beverage, flavored and sweetened, with added calcium, vitamin A and vitamin D~^~READY-TO-DRINK RED FAT MILK,FLAV & SWTND,W/CA,VIT A & VIT D~^~Nesquik ready-to-drink~^~~^~Y~^~~^0^~~^6.25^^^
+~14635~^~1400~^~Beverages, vegetable and fruit juice blend, 100% juice, with added vitamins A, C, E~^~BEVERAGES,VEG & FRUIT JUC BLEND,W/ ADDED VITAMINS A,C,E~^~includes V8 V-fusion juices~^~~^~Y~^~~^0^~~^^^^
+~14636~^~1400~^~Beverages, fruit juice drink, reduced sugar, with vitamin E added~^~BEVERAGES,FRUIT JUC DRK,RED SUGAR,W/ VITAMIN E ADDED~^~includes Capri Sun~^~~^~Y~^~~^0^~~^^3.36^8.37^3.80
+~14637~^~1400~^~Water, with corn syrup and/or sugar and low calorie sweetener, fruit flavored~^~WATER,W/ CORN SYRUP AND/OR SUGAR & LO CAL SWTNR,FRUIT FLAV~^~includes Caprisun Roarin' Waters~^~~^~Y~^~~^0^~~^6.25^^^
+~14638~^~1400~^~Beverage, Horchata, as served in restaurant~^~BEVERAGE,HORCHATA,AS SERVED IN RESTAURANT~^~Latino food~^~~^~~^~~^0^~~^^^^
+~14639~^~1400~^~Rice drink, unsweetened, with added calcium, vitamins A and D~^~RICE DRK,UNSWTND,W/ ADDED CA,VITAMINS A & D~^~ricemilk, rice milk~^~~^~Y~^~~^0^~~^^^^
+~14640~^~1400~^~Energy drink, VAULT, citrus flavor~^~ENERGY DRK,VAULT,CITRUS FLAVOR~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^6.25^^^
+~14641~^~1400~^~Energy drink, VAULT Zero, sugar-free, citrus flavor~^~ENERGY DRK,VAULT ZERO,SUGAR-FREE,CITRUS FLAVOR~^~~^~The Coca-Cola Company~^~Y~^~~^0^~~^6.25^^^
+~16231~^~1600~^~Soymilk, chocolate, nonfat, with added calcium, vitamins A and D~^~SOYMILK,CHOC,NONFAT,W/ ADDED CA,VITAMINS A & D~^~~^~~^~Y~^~~^0^~~^^^^
+~16570~^~1600~^~GARDENBURGER, Black Bean Chipotle Burger~^~GARDENBURGER,BLACK BEAN CHIPOTLE BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16571~^~1600~^~GARDENBURGER Breaded Chik'n Veggie Patties~^~GARDENBURGER BREADED CHIK'N VEGGIE PATTIES~^~~^~Kellogg, Co.~^~~^~~^0^~~^^^^
+~16572~^~1600~^~GARDENBURGER, California Burger~^~GARDENBURGER,CALIFORNIA BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16573~^~1600~^~GARDENBURGER, Garden Vegan~^~GARDENBURGER,GARDEN VEGAN~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16574~^~1600~^~GARDENBURGER, Gourmet Baja Steak~^~GARDENBURGER,GOURMET BAJA STEAK~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16575~^~1600~^~GARDENBURGER, Gourmet Fire Dragon Steak~^~GARDENBURGER,GOURMET FIRE DRAGON STEAK~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16576~^~1600~^~GARDENBURGER, Gourmet Tuscany Steak~^~GARDENBURGER,GOURMET TUSCANY STEAK~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16577~^~1600~^~GARDENBURGER, Herb Crusted Cutlet~^~GARDENBURGER,HERB CRUSTED CUTLET~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16578~^~1600~^~GARDENBURGER, Malibu Burger made with organic whole grains, corn and carrots~^~GARDENBURGER,MALIBU BURGER MADE W/ ORG WHL GRNS,CORN & CRRTS~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16579~^~1600~^~GARDENBURGER, Original~^~GARDENBURGER,ORIGINAL~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16580~^~1600~^~GARDENBURGER, Breakfast Sausage Veggie Pattie~^~GARDENBURGER,BRKFST SAUSAGE VEGGIE PATTIE~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16581~^~1600~^~GARDENBURGER, Flame Grilled Burger~^~GARDENBURGER,FLAME GRILLED BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16582~^~1600~^~GARDENBURGER, Gourmet Hula Steak~^~GARDENBURGER,GOURMET HULA STEAK~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16583~^~1600~^~GARDENBURGER, Homestyle Classic Veggie Burger~^~GARDENBURGER,HOMESTYLE CLASSIC VEGGIE BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16584~^~1600~^~GARDENBURGER, Savory Portabella Veggie Burger~^~GARDENBURGER,SAVORY PORTABELLA VEGGIE BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16585~^~1600~^~GARDENBURGER, Sun-Dried Tomato Basil Burger~^~GARDENBURGER,SUN-DRIED TOMATO BASIL BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16586~^~1600~^~GARDENBURGER, Veggie Medley Burger~^~GARDENBURGER,VEGGIE MEDLEY BURGER~^~~^~Kellogg, Co.~^~~^~~^0^~~^6.25^^^
+~16587~^~1600~^~MORNINGSTAR FARMS Maple Flavored Veggie Sausage Patties, frozen, unprepared~^~MORNINGSTAR FARMS MPL FLAV VEG SAUSAGE PATTIES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^^^^
+~16588~^~1600~^~MORNINGSTAR FARMS Grillers Chik'n Veggie Patties, frozen, unprepared~^~MORNINGSTAR FARMS GRILLERS CHIK'N VEGGIE PATTIES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^^^^
+~16589~^~1600~^~MORNINGSTAR FARMS Veggie Italian Style Sausage, frozen, unprepared~^~MORNINGSTAR FARMS VEGGIE ITALIAN STYLE SAUSAGE,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^^^^
+~16590~^~1600~^~MORNINGSTAR FARMS BBQ Riblets, frozen, unprepared~^~MORNINGSTAR FARMS BBQ RIBLETS,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^^^^
+~16591~^~1600~^~WORTHINGTON Leanies, frozen, unprepared~^~WORTHINGTON LEANIES,FRZ,UNPREP~^~~^~Kellogg, Co.~^~~^~~^0^~~^^^^
+~18949~^~1800~^~Crackers, whole-wheat, reduced fat~^~CRACKERS,WHOLE-WHEAT,RED FAT~^~~^~~^~Y~^~~^0^~~^^^^
+~18950~^~1800~^~Crackers, wheat, reduced fat~^~CRACKERS,WHEAT,RED FAT~^~~^~~^~Y~^~~^0^~~^^^^
+~18951~^~1800~^~Waffles, chocolate chip, frozen, ready-to-heat~^~WAFFLES,CHOC CHIP,FRZ,RTH~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~18952~^~1800~^~Tostada shells, corn~^~TOSTADA SHELLS,CORN~^~Latino food~^~~^~~^~~^0^~~^^^^
+~18953~^~1800~^~Bread, salvadoran sweet cheese (quesadilla salvadorena)~^~BREAD,SALVADORAN SWT CHS (QUESADILLA SALVADORENA)~^~Latino food~^~~^~Y~^~~^0^~~^6.25^^^
+~18954~^~1800~^~Bread, pound cake type, pan de torta salvadoran~^~BREAD,POUND CAKE TYPE,PAN DE TORTA SALVADORAN~^~Latino food~^~~^~~^~~^0^~~^^^^
+~18955~^~1800~^~Bread, pan dulce, sweet yeast bread~^~BREAD,PAN DULCE,SWT YEAST BREAD~^~Latino food~^~~^~~^~~^0^~~^^^^
+~18956~^~1800~^~Keikitos (muffins), Latino bakery item~^~KEIKITOS (MUFFINS),LATINO BAKERY ITEM~^~~^~~^~~^~~^0^~~^6.25^^^
+~18957~^~1800~^~Cake, pound, BIMBO Bakeries USA, Panque Casero, home baked style~^~CAKE,POUND,BIMBO BAKERIES USA,PANQUE CASERO,HOME BKD STYLE~^~Latino food~^~~^~~^~~^0^~~^6.25^^^
+~18958~^~1800~^~Pan Dulce, LA RICURA, Salpora de Arroz con Azucar, cookie-like, contains wheat flour and rice flour~^~PAN DULCE,LA RICURA,SALPORA DE ARROZ,COOKIE-LIKE~^~Latino rice cookies~^~~^~~^~~^0^~~^6.25^^^
+~18959~^~1800~^~Pastry, Pastelitos de Guava (guava pastries)~^~PASTRY,PASTELITOS DE GUAVA (GUAVA PASTRIES)~^~Latino food, pastelios de guava, turnovers~^~~^~~^~~^0^~~^^^^
+~19049~^~2500~^~Snacks, M&M MARS, COMBOS Snacks Cheddar Cheese Pretzel~^~SNACKS,M&M MARS,COMBOS SNACKS CHEDDAR CHS PRETZEL~^~~^~~^~~^~~^0^~~^^^^
+~19273~^~2500~^~Snacks, SUNKIST, SUNKIST Fruit Roll, strawberry, with vitamins A, C, and E~^~SNACKS,SUNKIST,SUNKIST FRUIT ROLL,STRAWBERRY,W/VITMNS A,C,&E~^~~^~~^~~^~~^0^~~^^4.00^9.00^4.00
+~19419~^~2500~^~Snacks, corn cakes~^~CORN CAKES~^~~^~~^~~^~~^0^~~^6.10^3.10^8.40^4.10
+~19906~^~1900~^~Sweeteners, for baking, brown, contains sugar and sucralose~^~SWEETENERS,FOR BAKING,BROWN,CONTAINS SUGAR & SUCRALOSE~^~~^~~^~~^~~^0^~~^^^^
+~19907~^~1900~^~Sweeteners, for baking, contains sugar and sucralose~^~SWEETENERS,FOR BAKING,CONTAINS SUGAR & SUCRALOSE~^~~^~~^~~^~~^0^~~^^^^
+~19908~^~1900~^~Sugar, turbinado~^~SUGAR,TURBINADO~^~~^~~^~~^~~^0^~~^^^^
+~19909~^~1900~^~Sweeteners, sugar substitute, granulated, brown~^~SWEETENERS,SUGAR SUB,GRANULATED,BROWN~^~~^~~^~~^~~^0^~~^^^^
+~19910~^~1900~^~Candies, crispy bar with peanut butter filling~^~CANDIES,CRISPY BAR W/ PNUT BUTTER FILLING~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~21461~^~2100~^~Fast foods, grilled chicken, bacon and tomato club sandwich, with cheese, lettuce, and mayonnaise~^~GRILLED CHICK,BACON & TOMO CLB SNDWCH,W/ CHS,LETTUCE,& MAYO~^~~^~~^~Y~^~~^0^~~^^^^
+~21462~^~2100~^~Fast foods, crispy chicken, bacon, and tomato club sandwich, with cheese, lettuce, and mayonnaise~^~CRISPY CHICK,BACON,& TOMATO CLUB SNDWCH,W/ CHS,LETUCE,& MAYO~^~~^~~^~Y~^~~^0^~~^^^^
+~21463~^~2100~^~Yogurt parfait, lowfat, with fruit and granola~^~YOGURT PARFAIT,LOWFAT,W/ FRUIT & GRANOLA~^~~^~~^~Y~^~~^0^~~^^^^
+~21464~^~2100~^~Fast Foods, Fried Chicken, Breast, meat only, skin and breading removed~^~FAST FOODS,FRIED CHICK,BREAST,MEAT ONLY,SKN & BRDING REMOVED~^~~^~~^~~^~Skin, subcutaneous fat and breading,31.5%;Cartilage and bone, 9.5%~^41^~~^^^^
+~21465~^~2100~^~Fast Foods, Fried Chicken, Drumstick, meat only, skin and breading removed~^~FAST FOODS,FRIED CHICK,DRMSTK,MEAT ONLY,SKN & BRDING REMOVED~^~~^~~^~~^~Skin, subcutaneous fat and breading, 24.5%, Cartilage and bone, 22%~^47^~~^^^^
+~21466~^~2100~^~Fast Foods, Fried Chicken, Thigh, meat only, skin and breading removed~^~FAST FOODS,FRIED CHICK,THIGH,MEAT ONLY,SKN & BREDING REMOVED~^~~^~~^~~^~Skin, subcutaneous fat and breading, 37%; Cartilage and bone, 14.5%~^52^~~^^^^
+~21467~^~2100~^~Fast Foods, Fried Chicken, Wing, meat only, skin and breading removed~^~FAST FOODS,FRIED CHICK,WING,MEAT ONLY,SKN & BREADING REMOVED~^~~^~~^~~^~Skin, subcutaneous fat and breading, 35%; Cartilage and bone, 24%~^59^~~^^^^
+~21468~^~2100~^~Fast Foods, Fried Chicken, Skin and breading from all pieces~^~FAST FOODS,FRIED CHICK,SKN & BREADING FROM ALL PIECES~^~~^~~^~~^~~^0^~~^^^^
+~21469~^~2100~^~Fast Foods, Fried Chicken, Breast, meat and skin with breading~^~FAST FOODS,FRIED CHICK,BREAST,MEAT & SKN W/ BREADING~^~~^~~^~~^~Cartilage and bone~^10^~~^^^^
+~21470~^~2100~^~Fast Foods, Fried Chicken, Drumstick, meat and skin with breading~^~FAST FOODS,FRIED CHICK,DRUMSTK,MEAT & SKN W/ BREADING~^~~^~~^~~^~Cartilage and bone~^22^~~^^^^
+~21471~^~2100~^~Fast Foods, Fried Chicken, Thigh, meat and skin and breading~^~FAST FOODS,FRIED CHICK,THIGH,MEAT & SKN & BREADING~^~~^~~^~~^~Cartilage and bone~^14^~~^^^^
+~21472~^~2100~^~Fast Foods, Fried Chicken, Wing, meat and skin and breading~^~FAST FOODS,FRIED CHICK,WING,MEAT & SKN & BREADING~^~~^~~^~~^~Cartilage and bone~^23^~~^^^^
+~22959~^~2200~^~Macaroni and cheese dinner with dry sauce mix, boxed, uncooked~^~MACARONI & CHS DINNER W/ DRY SAU MIX,BOXED,UNCKD~^~~^~~^~Y~^~~^0^~~^^^^
+~22960~^~2200~^~Macaroni and cheese dinner with dry sauce mix, boxed, prepared with 2% milk and 60% vegetable oil spread~^~MACARONI & CHS DINNER W/ DRY SAU MIX,BOXED,PREP~^~~^~~^~~^~~^0^~~^^^^
+~22961~^~2200~^~HOT POCKETS, meatballs & mozzarella stuffed sandwich, frozen~^~HOT POCKETS,MEATBALLS & MOZZARELLA STUFFED SNDWCH,FRZ~^~~^~Nestle USA, Inc.~^~~^~~^0^~~^^^^
+~22962~^~2200~^~LEAN POCKETS, Ham N Cheddar~^~LEAN POCKETS,HAM N CHEDDAR~^~~^~Nestle USA, Inc.~^~~^~~^0^~~^^^^
+~22963~^~2200~^~Lean Pockets, Meatballs & Mozzarella~^~LEAN POCKETS,MEATBALLS & MOZZARELLA~^~~^~~^~~^~~^0^~~^^^^
+~23513~^~1300~^~Beef, chuck, clod roast, separable lean only, trimmed to 1/4" fat, all grades, raw~^~BEEF,CHUCK,CLOD RST,LN,1/4" FAT,ALL GRDS,RAW~^~~^~~^~~^~Bone and heavy connective tissue, 4%, separable fat, 5%~^9^~~^6.25^4.27^9.02^3.87
+~23515~^~1300~^~Beef, chuck, clod roast, separable lean only, trimmed to 1/4" fat, all grades, cooked, roasted~^~BEEF,CHUCK,CLOD RST,LN ONLY,TO 1/4" FAT,ALL GRDS,CKD,RSTD~^~~^~~^~~^~Bone and heavy connective tissue, 8%, separable fat, 11%~^19^~~^6.25^4.27^9.02^3.87
+~23517~^~1300~^~Beef, chuck, clod steak, separable lean only, trimmed to 1/4" fat, all grades, cooked, braised~^~BEEF,CHUCK,CLOD STEAK,LN ONLY,TO 1/4" FAT,ALL GRDS,CKD,BRSD~^~~^~~^~~^~Bone and heavy connective tissue, 8%, separable fat, 13%~^21^~~^6.25^4.27^9.02^3.87
+~25003~^~2500~^~Snacks, candy rolls, yogurt-covered, fruit flavored with high vitamin C~^~SNACKS,CANDY ROLLS,YOGURT-COVERED,FRUIT FLAV W/ HI VIT C~^~~^~~^~Y~^~~^0^~~^^^^
+~25020~^~2500~^~Formulated bar, SLIM-FAST OPTIMA meal bar, milk chocolate peanut~^~FORMULATED BAR,SLIM-FAST OPTIMA MEAL BAR,MILK CHOC PNUT~^~~^~Slim-Fast Foods Company~^~Y~^~~^0^~~^6.25^^^
+~25021~^~2500~^~Formulated bar, LUNA BAR, NUTZ OVER CHOCOLATE~^~FORMULATED BAR,LUNA BAR,NUTZ OVER CHOC~^~~^~LUNA BAR~^~Y~^~~^0^~~^6.25^^^
+~25030~^~2500~^~Snacks, vegetable chips, HAIN CELESTIAL GROUP, TERRA CHIPS~^~SNACKS,VEG CHIPS,HAIN CELESTIAL GROUP,TERRA CHIPS~^~~^~~^~Y~^~~^0^~~^^^^
+~25031~^~2500~^~Formulated bar, ZONE PERFECT CLASSIC CRUNCH BAR, mixed flavors~^~FORM BAR,ZONE PERFECT CLASSIC CRUNCH BAR,MXD FLAVORS~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~25032~^~2500~^~Snacks, granola bar, KASHI GOLEAN, chewy, mixed flavors~^~SNACKS,GRANOLA BAR,KASHI GOLEAN,CHEWY,MXD FLAVORS~^~~^~~^~Y~^~~^0^~~^^^^
+~25033~^~2500~^~Snacks, granola bar, KASHI TLC Bar, chewy, mixed flavors~^~SNACKS,GRANOLA BAR,KASHI TLC BAR,CHEWY,MXD FLAVORS~^~~^~~^~Y~^~~^0^~~^^^^
+~25034~^~2500~^~Snacks, granola bar, KASHI GOLEAN, crunchy, mixed flavors~^~SNACKS,GRANOLA BAR,KASHI GOLEAN,CRUNCHY,MXD FLAVORS~^~~^~~^~Y~^~~^0^~~^^^^
+~25035~^~2500~^~Snacks, granola bar, chewy, reduced sugar, all flavors~^~SNACKS,GRANOLA BAR,CHEWY,RED SUGAR,ALL FLAVORS~^~~^~~^~Y~^~~^0^~~^^^^
+~25036~^~2500~^~Snacks, granola bites, mixed flavors~^~SNACKS,GRANOLA BITES,MXD FLAVORS~^~~^~~^~Y~^~~^0^~~^^^^
+~25037~^~2500~^~Snacks, pita chips, salted~^~SNACKS,PITA CHIPS,SALTED~^~~^~~^~Y~^~~^0^~~^^^^
+~25038~^~2500~^~Snacks, granola bars, soft, almond, confectioners coating~^~SNACKS,GRANOLA BARS,SOFT,ALMOND,CONFECTIONERS COATING~^~~^~~^~Y~^~~^0^~~^^^^
+~25039~^~2500~^~Snacks, granola bars, QUAKER OATMEAL TO GO, all flavors~^~SNACKS,GRANOLA BARS,QUAKER OATMEAL TO GO,ALL FLAVORS~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~25040~^~2500~^~Snacks, vegetable chips, made from garden vegetables~^~SNACKS,VEG CHIPS,MADE FROM GARDEN VEG~^~~^~~^~Y~^~~^0^~~^6.26^^^
+~25041~^~2500~^~Snacks, granola bar, KASHI TLC Bar, crunchy, mixed flavors~^~SNACKS,GRANOLA BAR,KASHI TLC BAR,CRUNCHY,MXD FLAVORS~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~25043~^~2500~^~Snacks, candy bits, yogurt covered with vitamin C~^~SNACKS,CANDY BITS,YOGURT COVERED W/ VIT C~^~~^~~^~Y~^~~^0^~~^^^^
+~25045~^~2500~^~Formulated bar, high fiber, chewy, oats and chocolate~^~Formulated bar, high fiber, chewy, oats and chocolate~^~~^~~^~Y~^~~^0^~~^^^^
+~25046~^~2500~^~Snacks, bagel chips~^~SNACKS,BAGEL CHIPS~^~~^~~^~Y~^~~^0^~~^^^^
+~25048~^~2500~^~Snacks, NUTRI-GRAIN FRUIT AND NUT BAR~^~SNACKS,NUTRI-GRAIN FRUIT & NUT BAR~^~~^~~^~Y~^~~^0^~~^^^^
+~25050~^~2500~^~Snacks, yucca (cassava) chips, salted~^~SNACKS,YUCCA (CASSAVA) CHIPS,SALTED~^~~^~~^~~^~~^0^~~^^^^
+~27035~^~0600~^~Soup, ramen noodle, dry, any flavor, reduced fat, reduced sodium~^~SOUP,RAMEN NOODLE,DRY,ANY FLAVOR,RED FAT,RED NA~^~~^~~^~Y~^~~^0^~~^6.25^^^
+~35072~^~3500~^~Seal, ringed, liver (Alaska Native)~^~SEAL,RINGED,LIVER (ALASKA NATIVE)~^~~^~~^~~^~~^0^~Pusa hispida~^6.25^^^
+~35205~^~3500~^~Stinging Nettles, blanched (Northern Plains Indians)~^~STINGING NETTLES,BLANCHED (NORTHERN PLAINS INDIANS)~^~~^~~^~~^~~^0^~~^^^^
+~35211~^~3500~^~Caribou, hind quarter, meat, cooked (Alaska Native)~^~CARIBOU,HIND QUARTER,MEAT,CKD (ALASKA NATIVE)~^~~^~~^~~^~~^0^~~^^^^
+~35232~^~3500~^~Yellow pond lily, Wocas, dried seeds (Pacific Northwest Indians)~^~YELLOW POND LILY,WOCAS,DRIED SEEDS (PACIFIC NW INDIANS)~^~~^~~^~~^~~^0^~~^5.30^^^
+~35233~^~3500~^~Hazelnuts, beaked (Northern Plains Indians)~^~HAZELNUTS,BEAKED (NORTHERN PLAINS INDIANS)~^~~^~~^~~^~~^0^~Corylus cornuta Marsh.~^5.30^^^
+~35234~^~3500~^~Piki bread, made from blue cornmeal (Hopi)~^~PIKI BREAD,MADE FROM BLUE CORNMEAL (HOPI)~^~~^~~^~~^~~^0^~~^6.25^^^
+~35235~^~3500~^~Yellow pond lily, Wocas, tuber, cooked (Pacific Northwest Indians)~^~YELLOW POND LILY,WOCAS,TUBER,CKD (PACIFIC NW INDIANS)~^~~^~~^~~^~~^0^~~^5.30^^^
+~36000~^~3600~^~APPLEBEE'S, 9 oz house sirloin steak~^~APPLEBEE'S,9 OZ HOUSE SIRLOIN STEAK~^~family style, applebees~^~Applebee's~^~~^~~^0^~~^^^^
+~36001~^~3600~^~APPLEBEE'S, Double Crunch Shrimp~^~APPLEBEE'S,DOUBLE CRUNCH SHRIMP~^~family style, applebees~^~Applebee's~^~~^~~^0^~~^^^^
+~36002~^~3600~^~APPLEBEE'S, French fries~^~APPLEBEE'S,FRENCH FR~^~family style, applebees~^~Applebee's~^~~^~~^0^~~^^^^
+~36003~^~3600~^~APPLEBEE'S, KRAFT, Macaroni & Cheese, from kid's menu~^~APPLEBEE'S,KRAFT,MACARONI & CHS,FROM KID'S MENU~^~family style, applebees~^~Applebee's~^~~^~~^0^~~^^^^
+~36004~^~3600~^~APPLEBEE'S, mozzarella sticks~^~APPLEBEE'S,MOZZARELLA STKS~^~family style, applebees~^~Applebee's~^~~^~~^0^~~^^^^
+~36005~^~3600~^~APPLEBEE'S, chicken fingers, from kids' menu~^~APPLEBEE'S,CHICK FINGERS,FROM KIDS' MENU~^~family style, applebees~^~Applebee's~^~~^~~^0^~~^^^^
+~36006~^~3600~^~T.G.I. FRIDAY'S, FRIDAY'S Shrimp, breaded~^~T.G.I. FRIDAY'S,FRIDAY'S SHRIMP,BREADED~^~family style, Fridays, TGI Friday's~^~T.G.I Friday's~^~~^~~^0^~~^^^^
+~36007~^~3600~^~T.G.I. FRIDAY'S, French fries~^~T.G.I. FRIDAY'S,FRENCH FR~^~family style, Fridays, TGI Friday's~^~T.G.I Friday's~^~~^~~^0^~~^^^^
+~36008~^~3600~^~T.G.I. FRIDAY'S, fried mozzarella~^~T.G.I. FRIDAY'S,FRIED MOZZARELLA~^~family style, Fridays, TGI Friday's~^~T.G.I Friday's~^~~^~~^0^~~^^^^
+~36009~^~3600~^~T.G.I. FRIDAY'S, Mac & Cheese, from kid's menu~^~T.G.I. FRIDAY'S,MAC & CHS,FROM KID'S MENU~^~family style, Fridays, macaroni, TGI Friday's~^~T.G.I Friday's~^~~^~~^0^~~^^^^
+~36010~^~3600~^~T.G.I. FRIDAY'S, chicken fingers, from kids' menu~^~T.G.I. FRIDAY'S,CHICK FINGERS,FROM KIDS' MENU~^~family style, Fridays, TGI Friday's~^~T.G.I Friday's~^~~^~~^0^~~^^^^
+~36011~^~3600~^~T.G.I. FRIDAY'S, classic sirloin steak~^~T.G.I. FRIDAY'S,CLASSIC SIRLOIN STEAK~^~family style, Fridays, TGI Friday's~^~T.G.I Friday's~^~~^~~^0^~~^^^^
+~36012~^~3600~^~Restaurant, family style, fried mozzarella sticks~^~RESTAURANT,FAMILY STYLE,FRIED MOZZARELLA STKS~^~family style~^~~^~~^~~^0^~~^^^^
+~36013~^~3600~^~Restaurant, family style, sirloin steak~^~RESTAURANT,FAMILY STYLE,SIRLOIN STEAK~^~family style~^~~^~~^~~^0^~~^^^^
+~36014~^~3600~^~Restaurant, family style, French fries~^~RESTAURANT,FAMILY STYLE,FRENCH FR~^~family style~^~~^~~^~~^0^~~^^^^
+~36015~^~3600~^~Restaurant, family style, chicken fingers, from kid's menu~^~RESTAURANT,FAMILY STYLE,CHICK FINGERS,FROM KID'S MENU~^~family style~^~~^~~^~~^0^~~^^^^
+~36016~^~3600~^~Restaurant, family style, shrimp, breaded and fried~^~RESTAURANT,FAMILY STYLE,SHRIMP,BREADED & FRIED~^~family style~^~~^~~^~~^0^~~^^^^
+~36017~^~3600~^~Restaurant, family style, macaroni & cheese, from kids' menu~^~RESTAURANT,FAMILY STYLE,MACARONI & CHS,FROM KIDS' MENU~^~family style~^~~^~~^~~^0^~~^^^^
+~36401~^~3600~^~Restaurant, Latino, chicken and rice, entree, prepared~^~RESTAURANT,LATINO,CHICK & RICE,ENTREE,PREP~^~~^~~^~~^~~^0^~~^^^^
+~36403~^~3600~^~Restaurant, Latino, empanadas, beef, prepared~^~RESTAURANT,LATINO,EMPANADAS,BF,PREP~^~~^~~^~~^~~^0^~~^^^^
+~36404~^~3600~^~Restaurant, Latino, arroz con leche (rice pudding)~^~RESTAURANT,LATINO,ARROZ CON LECHE (RICE PUDDING)~^~~^~~^~~^~~^0^~~^^^^
+~36405~^~3600~^~Restaurant, Latino, Arroz con frijoles negros (rice and black beans)~^~RESTAURANT,LATINO,ARROZ CON FRIJOLES NEGROS (RICE&BLACK BNS)~^~~^~~^~~^~~^0^~~^^^^
+~36406~^~3600~^~Restaurant, Latino, Arroz con habichuelas colorados (Rice And Red Beans)~^~REST,LATINO,ARROZ CON ABICHUELAS COLORADOS (RICE&RED BNS)~^~~^~~^~~^~~^0^~~^^^^
+~36407~^~3600~^~Restaurant, Latino, Arroz con grandules (rice and pigeonpeas)~^~RESTAURANT,LATINO,ARROZ CON GRANDULES (RICE & PIGEONPEAS)~^~~^~~^~~^~~^0^~~^^^^
+~36601~^~3600~^~Restaurant, Chinese, egg rolls, assorted~^~RESTAURANT,CHINESE,EGG ROLLS,ASSORTED~^~~^~~^~~^~~^0^~~^^^^
+~36602~^~3600~^~Restaurant, Chinese, fried rice~^~RESTAURANT,CHINESE,FRIED RICE~^~~^~~^~~^~~^0^~~^^^^
+~36604~^~3600~^~CRACKER BARREL, chicken tenderloin platter, fried, from kid's menu~^~CRACKER BARREL,CHICK TENDERLOIN PLATTER,FRIED,FRM KID'S MENU~^~family style~^~Cracker Barrel~^~~^~~^0^~~^^^^
+~36605~^~3600~^~CRACKER BARREL, country fried shrimp platter~^~CRACKER BARREL,COUNTRY FRIED SHRIMP PLATTER~^~family style~^~Cracker Barrel~^~~^~~^0^~~^^^^
+~36606~^~3600~^~CRACKER BARREL, farm raised catfish platter~^~CRACKER BARREL,FARM RAISED CATFISH PLATTER~^~family style~^~Cracker Barrel~^~~^~~^0^~~^^^^
+~36607~^~3600~^~CRACKER BARREL, steak fries~^~CRACKER BARREL,STEAK FRIES~^~family style~^~Cracker Barrel~^~~^~~^0^~~^^^^
+~36608~^~3600~^~CRACKER BARREL, grilled sirloin steak~^~CRACKER BARREL,GRILLED SIRLOIN STEAK~^~family style~^~Cracker Barrel~^~~^~~^0^~~^^^^
+~36609~^~3600~^~CRACKER BARREL, macaroni n' cheese plate, from kid's menu~^~CRACKER BARREL,MACARONI N' CHS PLATE,FROM KID'S MENU~^~family style~^~Cracker Barrel~^~~^~~^0^~~^^^^
+~36610~^~3600~^~DENNY'S, French fries~^~DENNY'S,FRENCH FR~^~family style~^~Denny's~^~~^~~^0^~~^^^^
+~36611~^~3600~^~DENNY'S, mozzarella cheese sticks~^~DENNY'S,MOZZARELLA CHS STKS~^~family style~^~Denny's~^~~^~~^0^~~^^^^
+~36612~^~3600~^~DENNY'S, golden fried shrimp~^~DENNY'S,GOLDEN FRIED SHRIMP~^~family style~^~Denny's~^~~^~~^0^~~^^^^
+~36613~^~3600~^~DENNY'S, macaroni & cheese, from kid's menu~^~DENNY'S,MACARONI & CHS,FROM KID'S MENU~^~family style~^~Denny's~^~~^~~^0^~~^^^^
+~36614~^~3600~^~DENNY'S, MOONS & STARS chicken nuggets, from kid's menu~^~DENNY'S,MOONS & STARS CHICK NUGGETS,FROM KID'S MENU~^~family style~^~Denny's~^~~^~~^0^~~^^^^
+~36615~^~3600~^~DENNY'S, top sirloin steak~^~DENNY'S,TOP SIRLOIN STEAK~^~family style~^~Denny's~^~~^~~^0^~~^^^^

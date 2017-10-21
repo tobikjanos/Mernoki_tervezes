@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017.09.28., 18:20:17
+    Author     : TobikJanos
+*/
+
+.tab *.tab-label {
+    -fx-rotate: 90;
+    -fx-text-fill: black;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: gray;
+}
+
+.tab {
+    
+}
+
+#AnchorPane {
+    -fx-background-color: whitesmoke;
+}
+
+#t1ButtonTest {
+    -fx-background-color: #58FA58;
+    -fx-border-color: black;
+    -fx-border-radius: 4px;
+}
+
+#t1ButtonTest:hover {
+    -fx-background-color: #04B404;
+    -fx-text-fill: white;
+}
+/*
+#t3ButtonStart {
+    -fx-background-color: skyblue;
+}
+*/

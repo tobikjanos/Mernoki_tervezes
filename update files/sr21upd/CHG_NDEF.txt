@@ -1,0 +1,9 @@
+~318~^~IU~^~VITA_IU~^~Vitamin A, IU~^~0~^~7500~
+~319~^~mcg~^~RETOL~^~Retinol~^~0~^~7430~
+~320~^~mcg_RAE~^~VITA_RAE~^~Vitamin A, RAE~^~0~^~7420~
+~321~^~mcg~^~CARTB~^~Carotene, beta~^~0~^~7440~
+~322~^~mcg~^~CARTA~^~Carotene, alpha~^~0~^~7450~
+~334~^~mcg~^~CRYPX~^~Cryptoxanthin, beta~^~0~^~7460~
+~337~^~mcg~^~LYCPN~^~Lycopene~^~0~^~7530~
+~338~^~mcg~^~LUT+ZEA~^~Lutein + zeaxanthin~^~0~^~7560~
+~627~^~g~^~F18D4~^~18:4~^~3~^~14250~

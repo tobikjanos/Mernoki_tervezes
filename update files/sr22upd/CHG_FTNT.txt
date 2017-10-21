@@ -1,0 +1,11 @@
+~09316~^~01~^~N~^~432~^~Value based on the analysis of 5-methyltetrahydrofolate~
+~11333~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate~
+~11821~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate~
+~16173~^~01~^~N~^~417~^~Value based on the analysis of 5-methyltetrahydrofolate~
+~35195~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
+~35196~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
+~35200~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
+~35202~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
+~35203~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
+~35204~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
+~35206~^~01~^~N~^~417~^~Includes only 5-methyltetrahydrofolate.~
