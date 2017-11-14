@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class ETLController {
     
-    public static enum FILETYPES{ADD_FOOD, ADD_NUTR, ADD_WGT, CHG_FOOD, CHG_NUTR, CHG_WGT, DEL_FOOD, DEL_NUTR, DEL_WGT}
+    public static enum FILETYPES{ADD_FOOD, ADD_NUTR, ADD_WGT, CHG_FOOD, CHG_NUTR, CHG_WGT, DEL_FOOD, DEL_NUTR, DEL_WGT, ADD_NDEF, CHG_NDEF}
     
     private static final List<FileStructFood>       listAddFood     = new ArrayList<>();
     private static final List<FileStructNutrient>   listAddNutr     = new ArrayList<>();
@@ -31,6 +31,9 @@ public class ETLController {
     private static final List<FileStructFood>       listDelFood     = new ArrayList<>();
     private static final List<FileStructNutrient>   listDelNutr     = new ArrayList<>();
     private static final List<FileStructWeight>     listDelWgt      = new ArrayList<>();
+    
+    private static final List<FileStructNutrient>   listAddNdef     = new ArrayList<>();
+    private static final List<FileStructNutrient>   listChgNdef     = new ArrayList<>();
     
     private static MainWindowController controller;
     
@@ -91,6 +94,16 @@ public class ETLController {
                 FileHandler.readFile(strFilePath, listDelWgt, strFileType);
                 break;
             }
+            case ADD_NDEF:
+            {
+               FileHandler.readFile(strFilePath, listAddNdef, strFileType);
+               break;
+            }
+            case CHG_NDEF:
+            {
+               FileHandler.readFile(strFilePath, listChgNdef, strFileType);
+               break;
+            }
             default:
             {
                 System.err.println("Type of file is not known!\tGiven type: " + strFileType);
@@ -140,8 +153,9 @@ public class ETLController {
                 listDelWgt.size();
         
         Integer successCounter = 0;
-        Integer errorCounter = 0;
         Integer moduleCounter = 0;
+        
+        boolean rollbackEnabled = false;
                 
         /**
          * Clear log list
@@ -159,7 +173,7 @@ public class ETLController {
             conn.setTransactionIsolation(TRANSACTION_READ_UNCOMMITTED);
             Savepoint savePoint1 = conn.setSavepoint("savePoint1");
             
-            if(!listAddFood.isEmpty())
+            if(!rollbackEnabled && !listAddFood.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -176,17 +190,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "ADD_FOOD befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listAddNutr.isEmpty())
+            if(!rollbackEnabled && !listAddNutr.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -204,17 +225,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "ADD_NUTR befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listAddWgt.isEmpty())
+            if(!rollbackEnabled && !listAddWgt.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -232,17 +260,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "ADD_WGT befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listChgFood.isEmpty())
+            if(!rollbackEnabled && !listChgFood.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -260,17 +295,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "CHG_FOOD befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listChgNutr.isEmpty())
+            if(!rollbackEnabled && !listChgNutr.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -288,17 +330,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "CHG_NUTR befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listChgWgt.isEmpty())
+            if(!rollbackEnabled && !listChgWgt.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -316,17 +365,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "CHG_WGT befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listDelWgt.isEmpty())
+            if(!rollbackEnabled && !listDelWgt.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -344,17 +400,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "DEL_WGT befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listDelNutr.isEmpty())
+            if(!rollbackEnabled && !listDelNutr.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -372,17 +435,24 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "DEL_NUTR befejeződött: " + moduleCounter + " adat");
             }
             
-            if(!listDelFood.isEmpty())
+            if(!rollbackEnabled && !listDelFood.isEmpty())
             {
                 
                 /**__________________________________________________________________________
@@ -400,28 +470,26 @@ public class ETLController {
                         
                         moduleCounter++;
                         successCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
                         
                     } catch (SQLException ex) {
-                        errorCounter++;
-                        SendCounterValue(successCounter, errorCounter, totalData);
+                        SendCounterValue(successCounter, totalData);
+                        
+                        conn.rollback(savePoint1);
+                        SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
+                        conn.commit();
+                        SendTraceMessage("[  INFO  ]", "Az adatbázis visszaállt az előző állapotra");
+                        conn.close();
+                        rollbackEnabled = true;
+                        break;
                     }
                 }
                 SendTraceMessage("[  INFO  ]", "DEL_FOOD befejeződött: " + moduleCounter + " adat");
             }
             
-            /**
-             * If error(s) occured do the rollback in the whole transaction
-             */
-            if( !errorCounter.equals(0) )
-            {
-                conn.rollback(savePoint1);
-                SendTraceMessage("[  INFO  ]", "Rollback alkalmazása");
-            }
-            
             conn.commit();
+            SendTraceMessage("[  INFO  ]", "Adatbázis-frissítés vége");
             conn.close();
-            
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
@@ -437,9 +505,9 @@ public class ETLController {
         return;
     }
     
-    private static void SendCounterValue(Integer successValue, Integer errorValue, Integer maxValue)
+    private static void SendCounterValue(Integer successValue, Integer maxValue)
     {
-        controller.SetProgressStatus(successValue, errorValue, maxValue);
+        controller.SetProgressStatus(successValue, maxValue);
         return;
     }
     
@@ -454,6 +522,11 @@ public class ETLController {
     */
     public static void main(String[] args)
     {
-        
+       String filePath = "d:\\Egyetem\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_NDEF.txt";
+       ReadFiles(filePath, "ADD_NDEF");
+       
+       filePath = "d:\\Egyetem\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_NDEF.txt";
+       ReadFiles(filePath, "CHG_NDEF");
+       
     }
 }

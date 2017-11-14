@@ -51,7 +51,7 @@ public class FileHandler {
                           strList.get(3),
                           Integer.valueOf(strList.get(8)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "ADD_NUTR":
@@ -62,7 +62,7 @@ public class FileHandler {
                           strList.get(1),
                           Double.valueOf(strList.get(2)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "ADD_WGT":
@@ -74,7 +74,7 @@ public class FileHandler {
                           strList.get(3),
                           Double.valueOf(strList.get(4)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "CHG_FOOD":
@@ -86,7 +86,7 @@ public class FileHandler {
                           strList.get(3),
                           Integer.valueOf(strList.get(8)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "CHG_NUTR":
@@ -97,7 +97,7 @@ public class FileHandler {
                           strList.get(1),
                           Double.valueOf(strList.get(2)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "CHG_WGT":
@@ -109,7 +109,7 @@ public class FileHandler {
                           strList.get(3),
                           Double.valueOf(strList.get(4)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "DEL_FOOD":
@@ -119,7 +119,7 @@ public class FileHandler {
                           strList.get(0),
                           strList.get(1));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "DEL_NUTR":
@@ -129,7 +129,7 @@ public class FileHandler {
                           strList.get(0),
                           strList.get(1));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
                   break;
                }
                case "DEL_WGT":
@@ -141,7 +141,33 @@ public class FileHandler {
                           strList.get(3),
                           Double.valueOf(strList.get(4)));
                   TList.add( (T)Object );
-                  System.out.println(Object.toString());
+                  //System.out.println(Object.toString());
+                  break;
+               }
+               case "ADD_NDEF":
+               {
+                  ArrayList<String> strList = ParseUpdateFile( strLine );
+                  FileStructNutrient Object = new FileStructNutrient(
+                          strList.get(0),
+                          strList.get(1),
+                          strList.get(2),
+                          strList.get(3),
+                          Integer.valueOf(strList.get(4)));
+                  TList.add( (T)Object );
+                  System.out.println( strList.get(0) + " " + strList.get(1) + " " + strList.get(2) + " " + strList.get(3) + " " + Integer.valueOf(strList.get(4)) );
+                  break;
+               }
+               case "CHG_NDEF":
+               {
+                  ArrayList<String> strList = ParseUpdateFile( strLine );
+                  FileStructNutrient Object = new FileStructNutrient(
+                          strList.get(0),
+                          strList.get(1),
+                          strList.get(2),
+                          strList.get(3),
+                          Integer.valueOf(strList.get(4)));
+                  TList.add( (T)Object );
+                  System.out.println( strList.get(0) + " " + strList.get(1) + " " + strList.get(2) + " " + strList.get(3) + " " + Integer.valueOf(strList.get(4)) );
                   break;
                }
                case "LOG_FILE":

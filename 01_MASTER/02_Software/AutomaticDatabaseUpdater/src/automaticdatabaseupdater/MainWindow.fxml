@@ -13,7 +13,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="525.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@StyleSheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="automaticdatabaseupdater.MainWindowController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="525.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automaticdatabaseupdater.MainWindowController">
     <!--   
     <stylesheets>
         <URL value="@StyleSheet.css"/>
@@ -22,7 +22,7 @@
     <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <TabPane fx:id="TabPaneMain" layoutY="25.0" prefHeight="500.0" prefWidth="800.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="150.0" tabMaxWidth="100.0" tabMinHeight="150.0" tabMinWidth="70.0">
+            <TabPane fx:id="TabPaneMain" prefHeight="525.0" prefWidth="800.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="150.0" tabMaxWidth="100.0" tabMinHeight="150.0" tabMinWidth="70.0">
               <tabs>
                 <Tab fx:id="Tab1" text="Adatbázis&#10;beállítás">
                   <content>
@@ -125,20 +125,7 @@
             </TabPane>
          </children>
       </AnchorPane>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="Fájl">
-            <items>
-                  <MenuItem fx:id="MenuItemNew" mnemonicParsing="false" onAction="#InitNewUpdateProcess" text="Új" />
-              <MenuItem fx:id="MenuItemExit" mnemonicParsing="false" onAction="#ExitProgram" text="Kilépés" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Súgó">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <Button fx:id="ButtonNewProcess" layoutX="5.0" layoutY="440.0" mnemonicParsing="false" onAction="#InitNewUpdateProcess" prefHeight="77.0" prefWidth="75.0" text="Új" />
+      <Button fx:id="ButtonExit" layoutX="81.0" layoutY="440.0" mnemonicParsing="false" onAction="#ExitProgram" prefHeight="77.0" prefWidth="75.0" text="Kilépés" />
    </children>
 </AnchorPane>

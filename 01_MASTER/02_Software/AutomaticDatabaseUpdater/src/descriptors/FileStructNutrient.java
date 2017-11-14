@@ -14,6 +14,11 @@ public class FileStructNutrient {
     private String NDB_No;
     private String Nutr_No;
     private double Nutr_Val;
+    
+    private String Units;
+    private String Tagname;
+    private String Nutr_Desc;
+    private Integer Num_Dec;
 
     public FileStructNutrient(String NDB_No, String Nutr_No, double Nutr_Val) {
         this.NDB_No = NDB_No;
@@ -26,6 +31,46 @@ public class FileStructNutrient {
         this.Nutr_No = Nutr_No;
         this.Nutr_Val = 0.0;
     }
+
+   public String getUnits() {
+      return Units;
+   }
+
+   public void setUnits(String Units) {
+      this.Units = Units;
+   }
+
+   public String getTagname() {
+      return Tagname;
+   }
+
+   public void setTagname(String Tagname) {
+      this.Tagname = Tagname;
+   }
+
+   public String getNutr_Desc() {
+      return Nutr_Desc;
+   }
+
+   public void setNutr_Desc(String Nutr_Desc) {
+      this.Nutr_Desc = Nutr_Desc;
+   }
+
+   public Integer getNum_Dec() {
+      return Num_Dec;
+   }
+
+   public void setNum_Dec(Integer Num_Dec) {
+      this.Num_Dec = Num_Dec;
+   }
+
+   public FileStructNutrient(String Nutr_No, String Units, String Tagname, String Nutr_Desc, Integer Num_Dec) {
+      this.Nutr_No = Nutr_No;
+      this.Units = Units;
+      this.Tagname = Tagname;
+      this.Nutr_Desc = Nutr_Desc;
+      this.Num_Dec = Num_Dec;
+   }
 
     public String getNDB_No() {
         return NDB_No;

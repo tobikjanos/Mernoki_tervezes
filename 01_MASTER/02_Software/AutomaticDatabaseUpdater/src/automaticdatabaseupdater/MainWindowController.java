@@ -10,6 +10,9 @@ import descriptors.TraceMessage;
 import java.io.File;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -59,7 +62,7 @@ public class MainWindowController implements Initializable {
     private PasswordField t1Password;
     
     @FXML
-    private void MouseClickSaveDatabaseConfig()
+    private void MouseClickSaveDatabaseConfig() throws SQLException
     {
         DatabaseHandler.ClearDatabaseSetup();
         
@@ -85,16 +88,21 @@ public class MainWindowController implements Initializable {
         DatabaseHandler.setPASSWORD(        t1Password.getText()       );
         DatabaseHandler.setSCHEMA(          t1TextSchema.getText()     );
         
-        DatabaseHandler db = new DatabaseHandler();
-        System.out.println(db.toString());
+        if(DatabaseHandler.TestConnection())
+        {
+           SystemMessageController.DisplayInformationMessage("Adatbázis-kapcsolat létrehozása","Sikeres!");
+        }
+        else
+        {
+           SystemMessageController.DisplayErrorMessage("Adatbázis-kapcsolat létrehozása","Sikertelen!");
+        }
         
         Tab2.setDisable(false);
     }
     
     @FXML
-    private void MouseClickTestDatabaseConnection()
+    private void MouseClickTestDatabaseConnection() throws SQLException
     {
-        
         DatabaseHandler.ClearDatabaseSetup();
         
         DatabaseHandler.setIP_ADDRESS(      t1TextIPaddress.getText()  );
@@ -104,25 +112,14 @@ public class MainWindowController implements Initializable {
         DatabaseHandler.setPASSWORD(        t1Password.getText()       );
         DatabaseHandler.setSCHEMA(          t1TextSchema.getText()     );
         
-        
-        try {
-            Connection conn = DatabaseHandler.Connect();
-            if(conn.isValid(7))
-            {
-                SystemMessageController.DisplayInformationMessage("Adatbázis kapcsolat tesztelése","Teszt sikeres!");
-                System.out.println("Connected");
-            }
-            else
-            {
-                SystemMessageController.DisplayErrorMessage("Adatbázis kapcsolat tesztelése","Teszt sikertelen!");
-                System.out.println("Not connected");
-            }
-            conn.close();
-        } catch (Exception ex) {
-            SystemMessageController.DisplayErrorMessage("Adatbázis kapcsolat tesztelése","Teszt sikertelen!");
-            Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
+        if(DatabaseHandler.TestConnection())
+        {
+           SystemMessageController.DisplayInformationMessage("Adatbázis-kapcsolat tesztelése","Teszt sikeres!");
         }
-        
+        else
+        {
+           SystemMessageController.DisplayErrorMessage("Adatbázis-kapcsolat tesztelése","Teszt sikertelen!");
+        }
     }
     
     /****************************
@@ -363,12 +360,13 @@ public class MainWindowController implements Initializable {
         if(isEmpty)
         {
             if(SystemMessageController.DisplayWarningMessage("Kitöltetlen mező!", stringBuilder.toString()))
-                new Thread(task).start();
+               new Thread(task).start();
         }
         else
         {
             new Thread(task).start();
         }
+        SystemMessageController.DisplayInformationMessage("Fájl feldolgozás", "A művelet befejeződött");
         
     }
     
@@ -399,12 +397,22 @@ public class MainWindowController implements Initializable {
           t3ListView.getItems().clear();
        });
        
+       
        Task task = new Task<Void>() {
           @Override
           protected Void call() throws Exception {
-             
-             
+                          
              Connection conn = DatabaseHandler.Connect();
+             if(conn != null)
+             {
+                AddTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat létrehozása sikeres");
+             }
+             else
+             {
+                AddTraceMessage("[  INFO  ]", "Adatbázis-kapcsolat létrehozása sikertelen");
+                return null;
+             }             
+             
              ETLController.CreateFunctions(conn);
              ETLController.LoadDatabase(conn);
              
@@ -426,14 +434,13 @@ public class MainWindowController implements Initializable {
         });
     }
     
-    public void SetProgressStatus(Integer successValue, Integer errorValue, Integer maxValue)
+    public void SetProgressStatus(Integer successValue, Integer maxValue)
     {
         Platform.runLater(() -> {
             t3TextSuccessCounter.setText(String.valueOf(successValue));
             t3TextTotal.setText("/" + String.valueOf(maxValue));
             
-            Double progressValue = successValue.doubleValue() + errorValue.doubleValue();
-            t3ProgressBar.setProgress(progressValue / maxValue.doubleValue());
+            t3ProgressBar.setProgress(successValue.doubleValue() / maxValue.doubleValue());
         });
     }
     
@@ -482,7 +489,7 @@ public class MainWindowController implements Initializable {
         TabPaneMain.getSelectionModel().select(Tab1);
         
         Tab1.setDisable(false);
-        Tab2.setDisable(true);
+        Tab2.setDisable(false);
         Tab3.setDisable(true);
         
         /**
@@ -496,7 +503,7 @@ public class MainWindowController implements Initializable {
 //        t1TextSchema.setText("");
 //        t1Password.setText("");
         
-        DatabaseHandler.ClearDatabaseSetup();
+//        DatabaseHandler.ClearDatabaseSetup();
         
         /**
          * TAB_2
@@ -552,23 +559,34 @@ public class MainWindowController implements Initializable {
         DatabaseHandler.setController(this);
         
         
-//        t1TextIPaddress.setText("localhost");
-//        t1TextPort.setText("5432");
-//        t1TextDBname.setText("lavinia");
-//        t1TextUsername.setText("postgres");
-//        t1Password.setText("qaswed123");
-//        t1TextSchema.setText("minta2");
-//        
-//        t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_FOOD.txt");
-//        t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_NUTR.txt");
-//        t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_WGT.txt");
-//        t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_FOOD.txt");
-//        t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_NUTR.txt");
-//        t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_WGT.txt");
-//        t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_FOOD.txt");
-//        t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_NUTR.txt");
-//        t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_WGT.txt");
-//        t2TextRevisionNumber.setText("60");       
+        t1TextIPaddress.setText("localhost");
+        t1TextPort.setText("5432");
+        t1TextDBname.setText("lavinia");
+        t1TextUsername.setText("postgres");
+        t1Password.setText("qaswed123");
+        t1TextSchema.setText("minta2");
+        
+        t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_FOOD.txt");
+        t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_NUTR.txt");
+        t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_WGT.txt");
+        t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_FOOD.txt");
+        t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_NUTR.txt");
+        t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_WGT.txt");
+        t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_FOOD.txt");
+        t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_NUTR.txt");
+        t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_WGT.txt");
+        
+//        t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_FOOD.txt");
+//        t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_NUTR.txt");
+//        t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_WGT.txt");
+//        t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_FOOD.txt");
+//        t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_NUTR.txt");
+//        t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_WGT.txt");
+//        t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\DEL_FOOD.txt");
+//        t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\DEL_NUTR.txt");
+//        t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\DEL_WGT.txt");
+        
+        t2TextRevisionNumber.setText("60");       
         
     }
     

@@ -8,6 +8,23 @@
 - felhasználó felület terv
 
 --------------------------------------------------------------------------------------------------
+____EGYÉB____
+
+____ERRORS
+
+***MESSAGE: ERROR: current transaction is aborted, commands ignored until end of transaction block
+***STATE: 25P02
+***ERRORCODE: 0
+25P02	in_failed_sql_transaction
+
+***MESSAGE: ERROR: food_id már létezik (NDB_No = 13156)
+  Where: PL/pgSQL function minta2.addfood(text,text,text,integer) line 8 at RAISE
+***STATE: P0001
+***ERRORCODE: 0
+P0001	raise_exception
+
+
+--------------------------------------------------------------------------------------------------
 
 ___ TABLES TO INSERT/UPDATE/DELETE ___
 
