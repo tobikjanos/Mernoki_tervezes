@@ -5,7 +5,6 @@
 */
 package controllers;
 import automaticdatabaseupdater.MainWindowController;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import descriptors.*;
 
 import java.io.IOException;
@@ -17,7 +16,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
-import java.sql.SQLWarning;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -28,13 +26,13 @@ import java.util.logging.Logger;
  */
 public class DatabaseHandler {
    
-   private static String IP_ADDRESS  = "localhost";        /* localhost */
-   private static String PORT = "5432";                    /* 5432 */
-   private static String DATABASE_NAME = "lavinia";        /* lavinia */
-   private static String USERNAME = "postgres";            /* postgres */
-   private static String PASSWORD = "qaswed123";           /* qaswed123 */
-   private static String SCHEMA = "minta2";                 /* minta */
-   private static String VERSION = "30";                   /* 28 */
+   private static String IP_ADDRESS       = "localhost";      /* localhost */
+   private static String PORT             = "5432";           /* 5432 */
+   private static String DATABASE_NAME    = "lavinia";        /* lavinia */
+   private static String USERNAME         = "postgres";       /* postgres */
+   private static String PASSWORD         = "qaswed123";      /* qaswed123 */
+   private static String SCHEMA           = "minta2";         /* minta */
+   private static String VERSION          = "30";             /* 28 */
    
    private static MainWindowController controller;
    
@@ -93,6 +91,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> addFood");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addFood");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addFood");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -156,6 +159,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> addNutrient");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addNutrient");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addNutrient");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -244,6 +252,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> addWeight");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addWeight");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addWeight");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -312,6 +325,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> chgFood");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgFood");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgFood");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -375,7 +393,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> chgNutrient");
-         ex.printStackTrace();
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgNutrient");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgNutrient");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -442,6 +464,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> chgWeight");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgWeight");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgWeight");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -512,7 +539,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> delFood");
-         ex.printStackTrace();
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: delFood");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: delFood");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -577,6 +608,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> delNutrient");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: delNutrient");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: delNutrient");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -645,6 +681,11 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> delWeight");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: delWeight");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: delWeight");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
@@ -672,6 +713,8 @@ public class DatabaseHandler {
               "	var_nutr_id integer;" + "\n" +
               "BEGIN" + "\n\n" +
               
+              "   perform _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $1 || '%';" + "\n" +
+              "   if found then RAISE EXCEPTION 'nutr_id már létezik (Nutr_No = %)', $1; end if;" + "\n\n" +
               
               "   var_label_id := nextval('"+SCHEMA+".label_label_id_seq');\n" +
               "   var_nutr_id := nextval('"+SCHEMA+".nutrient_nutr_id_seq');" + "\n\n" +
@@ -687,11 +730,11 @@ public class DatabaseHandler {
               "   var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u" + "\n" +
               "					left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id" + "\n" +
               "					left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id" + "\n" +
-              "					where _lt.label_text = $2);" + "\n" +
+              "					where _lt.label_text ilike $2 and _lt.lang_id = 2);" + "\n" +
               "   if var_unit_id is null then RAISE EXCEPTION 'unit_id nem létezik ( label_text = % )', $2; end if;" + "\n\n" +
               
               "   insert into "+SCHEMA+".nutrient ( nutr_id, nutrname_label_id, usda_nutr_no, eurofir_nutr_no, unit_id, decimals, menugene_nutr_no )" + "\n" +
-              "   values ( var_nutr_id, var_label_id, $1, null, var_unit_id, $5, null );" + "\n" +
+              "   values ( var_nutr_id, var_label_id, 'SR" + VERSION + ":' || $1, null, var_unit_id, $5, null );" + "\n" +
               "   if not found then RAISE EXCEPTION 'Insert nem sikerült( nutrient )'; end if;" + "\n\n" +
               
               "END;" + "\n" +
@@ -708,10 +751,84 @@ public class DatabaseHandler {
          
       } catch (SQLException ex) {
          System.err.println("***LOG: function creation error -> addNutrDef");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addNutrDef");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: addNutrDef");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
       } finally {
          return;
       }
    
+   }
+   
+   public static void createChgNutrientDefiniton(Connection conn)
+   {
+      String createFunction =
+              "CREATE OR REPLACE FUNCTION "+SCHEMA+".chgNutrDef(" + "\n" +
+              "	Nutr_No text," + "\n" +
+              "	Units text," + "\n" +
+              "	Tagname text," + "\n" +
+              "	Nutr_Desc text," + "\n" +
+              "	Num_Dec integer" + "\n" +
+              "	)" + "\n" +
+              "    RETURNS void" + "\n" +
+              "    LANGUAGE 'plpgsql'" + "\n" +
+              "    COST 100.0" + "\n" +
+              "    VOLATILE NOT LEAKPROOF" + "\n" +
+              "AS $$" + "\n" +
+              
+              "DECLARE" + "\n" +
+              "	var_label_id integer;" + "\n" +
+              "	var_unit_id integer;" + "\n" +
+              "	var_nutr_id integer;" + "\n" +
+              "BEGIN" + "\n\n" +
+              
+              
+              "   var_nutr_id := (select _n.nutr_id from "+SCHEMA+".nutrient _n where _n.usda_nutr_no like '%' || $1 || '%');"+"\n" +
+              "   if var_nutr_id is null then RAISE EXCEPTION 'nutr_id nem létezik ( Nutr_No = % )', $1; end if;" + "\n\n" +
+              
+              "   var_label_id := (select _n.nutrname_label_id from "+SCHEMA+".nutrient _n where nutr_id = var_nutr_id);" + "\n" +
+              "   if var_label_id is null then RAISE EXCEPTION 'nutrname_label_id nem létezik ( Nutr_No = % )', $1; end if;" + "\n\n" +
+              
+              "   var_unit_id := (select _u.unit_id from "+SCHEMA+".unit _u"+"\n" +
+              "					left outer join "+SCHEMA+".label _l on _u.unit_label_id = _l.label_id"+"\n" +
+              "					left outer join "+SCHEMA+".label_text _lt on _l.label_id = _lt.label_id"+"\n" +
+              "					where _lt.label_text ilike $2 and _lt.lang_id = 2);" + "\n" +
+              "   if var_unit_id is null then RAISE EXCEPTION 'unit_id nem létezik ( label_text = % )', $2; end if;" + "\n\n" +
+              
+              "   update "+SCHEMA+".nutrient" + "\n" +
+              "	set unit_id = var_unit_id, decimals = $5" + "\n" +
+              "	where nutr_id = var_nutr_id;" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Update nem sikerült( nutrient )'; end if;" + "\n\n" +
+                            
+              "   update "+SCHEMA+".label_text" + "\n" +
+              "	set label_text = $3, label_long_text = $4" + "\n" +
+              "	where label_id = var_label_id and lang_id = 2;" + "\n" +
+              "   if not found then RAISE EXCEPTION 'Update nem sikerült( label_text )'; end if;" + "\n\n" +
+              
+              "END;" + "\n" +
+              "$$;";
+      try
+      {
+         if(conn.isClosed()) conn = Connect();
+         
+         PreparedStatement ps = conn.prepareStatement(createFunction);
+         ps.execute();
+         System.out.println("***LOG: function has been created -> chgNutrDef");
+         
+         ps.close();
+         
+      } catch (SQLException ex) {
+         System.err.println("***LOG: function creation error -> chgNutrDef");
+         String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+         SendTraceMessage("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgNutrDef");
+         SendTraceMessage("[ERRORMSG]", ErrorMessage);
+         LogHandler.AddElement("[ FAILED ]", "Tárolt eljárás létrehozás nem sikerült: chgNutrDef");
+         LogHandler.AddElement("[ FAILED ]", ErrorMessage);
+      } finally {
+         return;
+      }
    }
    
    public static void executeAddFoodFunction(Connection conn, FileStructFood food) throws SQLException
@@ -738,6 +855,7 @@ public class DatabaseHandler {
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             System.err.println(ErrorMessage);
             SendTraceMessage("[ FAILED ]", food.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", food.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -781,6 +899,7 @@ public class DatabaseHandler {
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             System.err.println(ErrorMessage);
             SendTraceMessage("[ FAILED ]", nutrient.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", nutrient.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -824,10 +943,10 @@ public class DatabaseHandler {
       } catch (SQLException ex) {
          if( !ex.getSQLState().equals("25P02") )
          {
-            ex.printStackTrace();
             System.err.println("***LOG: execute addWeight function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", weight.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", weight.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -867,6 +986,7 @@ public class DatabaseHandler {
             System.err.println("***LOG: execute chgFood function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", food.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", food.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -877,22 +997,20 @@ public class DatabaseHandler {
    }
    public static void executeChgNutrientFunction(Connection conn, FileStructNutrient nutrient) throws SQLException
    {
-      PreparedStatement cstmt = null;
+      CallableStatement cstmt = null;
       try
       {
-         cstmt = conn.prepareCall("select "+SCHEMA+".chgNutrient(?, ?, ?)");
-         cstmt.setString(1, nutrient.getNDB_No());
-         cstmt.setString(2, nutrient.getNutr_No());
-         cstmt.setDouble(3, nutrient.getNutr_Val());
+         cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgNutrient(?, ?, ?)}");
+         cstmt.registerOutParameter(1, Types.LONGVARCHAR);
+         cstmt.setString(2, nutrient.getNDB_No());
+         cstmt.setString(3, nutrient.getNutr_No());
+         cstmt.setDouble(4, nutrient.getNutr_Val());
          
-         cstmt.executeQuery();
+         cstmt.execute();
          
          LogHandler.AddElement("[   OK   ]", nutrient.toString());
          
-         ResultSet rs = cstmt.getResultSet();
-         rs.next();
-         
-         String res = rs.getString(1);
+         String res = cstmt.getString(1);
          String [] array = res.split(" ");
          String foodItem;
          for(String idx : array)
@@ -904,10 +1022,10 @@ public class DatabaseHandler {
       } catch (SQLException ex) {
          if( !ex.getSQLState().equals("25P02") )
          {
-            ex.printStackTrace();
             System.err.println("***LOG: execute chgNutrient function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", nutrient.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", nutrient.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -915,43 +1033,6 @@ public class DatabaseHandler {
       } finally {
          cstmt.close();
       }
-      
-      
-//      CallableStatement cstmt = null;
-//      try
-//      {
-//         cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgNutrient(?, ?, ?)}");
-//         cstmt.registerOutParameter(1, Types.LONGVARCHAR);
-//         cstmt.setString(2, nutrient.getNDB_No());
-//         cstmt.setString(3, nutrient.getNutr_No());
-//         cstmt.setDouble(4, nutrient.getNutr_Val());
-//         
-//         cstmt.execute();
-//         
-//         LogHandler.AddElement("[   OK   ]", nutrient.toString());
-//         
-//         String res = cstmt.getString(1);
-//         String [] array = res.split(" ");
-//         String foodItem;
-//         for(String idx : array)
-//         {
-//            foodItem = "Food ID  " + idx + "   |HU   " + getFoodNameByFoodID(conn, Integer.valueOf(idx), 1) + "   |EN   " + getFoodNameByFoodID(conn, Integer.valueOf(idx), 2);
-//            LogHandler.AddElement("[  INFO  ]", "Frissített élelmiszer   |" + foodItem);
-//         }
-//         
-//      } catch (SQLException ex) {
-//         if( !ex.getSQLState().equals("25P02") )
-//         {
-//            System.err.println("***LOG: execute chgNutrient function caused error");
-//            String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
-//            SendTraceMessage("[ FAILED ]", nutrient.toString());
-//            LogHandler.AddElement("[ FAILED ]", nutrient.toString());
-//            LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
-//            throw new SQLException(ex.getMessage());
-//         }
-//      } finally {
-//         cstmt.close();
-//      }
    }
    public static void executeChgWeightFunction(Connection conn, FileStructWeight weight) throws SQLException
    {
@@ -990,6 +1071,7 @@ public class DatabaseHandler {
             System.err.println("***LOG: execute chgWeight function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", weight.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", weight.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -1027,6 +1109,7 @@ public class DatabaseHandler {
             System.err.println("***LOG: execute delFood function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", food.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", food.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -1065,6 +1148,7 @@ public class DatabaseHandler {
             System.err.println("***LOG: execute delNutrient function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", nutrient.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", nutrient.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -1110,6 +1194,7 @@ public class DatabaseHandler {
             System.err.println("***LOG: execute delWeight function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             SendTraceMessage("[ FAILED ]", weight.toString());
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
             LogHandler.AddElement("[ FAILED ]", weight.toString());
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
@@ -1122,6 +1207,8 @@ public class DatabaseHandler {
    public static void executeAddNutrDefFunction(Connection conn, FileStructNutrient nutrient) throws SQLException
    {
       CallableStatement cstmt = null;
+      String nutr = nutrient.getNutr_No() + "   |   " + nutrient.getUnits() + 
+                 "   |   " + nutrient.getTagname() + "   |   " + nutrient.getNutr_Desc() + "   |   " + nutrient.getNum_Dec();
       try
       {
          cstmt = conn.prepareCall("{? = call "+SCHEMA+".addNutrDef( ?, ?, ?, ?, ? )}");
@@ -1131,10 +1218,10 @@ public class DatabaseHandler {
          cstmt.setString(4, nutrient.getTagname());
          cstmt.setString(5, nutrient.getNutr_Desc());
          cstmt.setInt(6, nutrient.getNum_Dec());
-         
+                  
          cstmt.execute();
          
-         LogHandler.AddElement("[   OK   ]", nutrient.toString());
+         LogHandler.AddElement("[   OK   ]", nutr );
          
       } catch (SQLException ex) {
          
@@ -1143,8 +1230,46 @@ public class DatabaseHandler {
             System.err.println("***LOG: execute addNutrDef function caused error");
             String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
             System.err.println(ErrorMessage);
-            SendTraceMessage("[ FAILED ]", nutrient.toString());
-            LogHandler.AddElement("[ FAILED ]", nutrient.toString());
+            SendTraceMessage("[ FAILED ]", nutr);
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
+            LogHandler.AddElement("[ FAILED ]", nutr);
+            LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
+            throw new SQLException(ex.getMessage());
+         }
+      } finally {
+         cstmt.close();
+      }
+   }
+   
+   public static void executeChgNutrDefFunction(Connection conn, FileStructNutrient nutrient) throws SQLException
+   {
+      CallableStatement cstmt = null;
+      String nutr = nutrient.getNutr_No() + "   |   " + nutrient.getUnits() + 
+                 "   |   " + nutrient.getTagname() + "   |   " + nutrient.getNutr_Desc() + "   |   " + nutrient.getNum_Dec();
+      try
+      {
+         cstmt = conn.prepareCall("{? = call "+SCHEMA+".chgNutrDef( ?, ?, ?, ?, ? )}");
+         cstmt.registerOutParameter(1, Types.OTHER);
+         cstmt.setString(2, nutrient.getNutr_No());
+         cstmt.setString(3, nutrient.getUnits());
+         cstmt.setString(4, nutrient.getTagname());
+         cstmt.setString(5, nutrient.getNutr_Desc());
+         cstmt.setInt(6, nutrient.getNum_Dec());
+         
+         cstmt.execute();
+         
+         LogHandler.AddElement("[   OK   ]", nutr );
+         
+      } catch (SQLException ex) {
+         
+         if( !ex.getSQLState().equals("25P02") )
+         {
+            System.err.println("***LOG: execute chgNutrDef function caused error");
+            String ErrorMessage = ex.getMessage().substring(0, ex.getMessage().indexOf("\n"));
+            System.err.println(ErrorMessage);
+            SendTraceMessage("[ FAILED ]", nutr);
+            SendTraceMessage("[ERRORMSG]", ErrorMessage);
+            LogHandler.AddElement("[ FAILED ]", nutr);
             LogHandler.AddElement("[ERRORMSG]", ErrorMessage);
             throw new SQLException(ex.getMessage());
          }
@@ -1335,6 +1460,7 @@ public class DatabaseHandler {
          conn = Connect();
                
          createAddNutrientDefiniton(conn);
+         createChgNutrientDefiniton(conn);
          
 //         System.out.println("________________________________________________");
 //         createAddFoodFunction(conn);

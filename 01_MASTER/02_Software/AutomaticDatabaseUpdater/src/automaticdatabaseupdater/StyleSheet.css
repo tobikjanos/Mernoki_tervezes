@@ -25,16 +25,56 @@ and open the template in the editor.
     -fx-background-color: whitesmoke;
 }
 
-#t1ButtonTest {
+
+#t1ButtonSave:selected {
+    -fx-background-color: white;
+}
+
+/*#t1ButtonSave:hover {
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}*/
+
+
+/*#t1ButtonTest {
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+}*/
+
+/*#t1ButtonTest:hover {
+    -fx-background-color: darkgreen;
+    -fx-text-fill: white;
+    -fx-translate-y: 4px;
+    transform: translateY(4px);
+}*/
+
+/*#t1ButtonTest:active {
+    -fx-background-color: darkgreen;
+    -fx-text-fill: white;
+}
+
+#ButtonNewProcess {
     -fx-background-color: #58FA58;
+    -fx-border-color: black;
+    -fx-border-radius: 4px;
+}*/
+
+.button {
     -fx-border-color: black;
     -fx-border-radius: 4px;
 }
 
-#t1ButtonTest:hover {
-    -fx-background-color: #04B404;
-    -fx-text-fill: white;
-}
+
 /*
 #t3ButtonStart {
     -fx-background-color: skyblue;

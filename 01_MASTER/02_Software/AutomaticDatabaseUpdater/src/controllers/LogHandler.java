@@ -9,7 +9,6 @@ import descriptors.*;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -22,7 +21,7 @@ import java.util.logging.Logger;
  */
 public class LogHandler {
    
-   private static List<TraceMessage> listMessages;
+   private static List<TraceMessage> listMessages = new ArrayList<>();
    private static File logFile;
    
    /**
@@ -32,11 +31,16 @@ public class LogHandler {
    {
       String timeStamp = new SimpleDateFormat("yyyy_MM_dd-HH_mm_ss").format(Calendar.getInstance().getTime());
 
-      try {
+      try 
+      {
          logFile = new File("LOG\\logfile_" + timeStamp.replace("-", "T") + ".txt");
          logFile.getParentFile().mkdirs();
          logFile.createNewFile();
+         
+         AddElement("[  INFO  ]", timeStamp);
+         
          System.out.println(logFile.getPath());
+         
       } catch (IOException ex) {
          Logger.getLogger(LogHandler.class.getName()).log(Level.SEVERE, null, ex);
       }
