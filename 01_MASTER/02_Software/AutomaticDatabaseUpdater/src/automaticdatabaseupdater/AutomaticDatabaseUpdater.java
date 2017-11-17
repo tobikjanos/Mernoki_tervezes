@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -28,6 +29,9 @@ public class AutomaticDatabaseUpdater extends Application {
         stage.setHeight(525);
         stage.setResizable(false);
         stage.sizeToScene();
+        
+        stage.setTitle("Lavinia adatbázis-frissítő rendszer");
+        stage.getIcons().add(new Image("file:src/Images/logo.png"));
         
         stage.setScene(scene);
         stage.show();

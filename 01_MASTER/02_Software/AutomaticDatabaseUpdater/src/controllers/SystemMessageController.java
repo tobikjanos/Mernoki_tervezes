@@ -9,6 +9,8 @@ import java.util.Optional;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
 
 /**
  *
@@ -28,6 +30,9 @@ public class SystemMessageController {
       alert.setHeaderText(title);
       alert.setContentText(msg);
       
+      Stage stage = (Stage)alert.getDialogPane().getScene().getWindow();
+      stage.getIcons().add(new Image("file:src/Images/logo.png"));
+      
       alert.showAndWait();
    }
    
@@ -43,6 +48,9 @@ public class SystemMessageController {
       alert.setTitle(null);
       alert.setHeaderText(title);
       alert.setContentText(msg);
+      
+      Stage stage = (Stage)alert.getDialogPane().getScene().getWindow();
+      stage.getIcons().add(new Image("file:src/Images/logo.png"));
       
       ButtonType buttonTypeOK = new ButtonType("OK");
       ButtonType buttonTypeCancel = new ButtonType("Vissza");
@@ -68,6 +76,9 @@ public class SystemMessageController {
       alert.setTitle(null);
       alert.setHeaderText(title);
       alert.setContentText(msg);
+      
+      Stage stage = (Stage)alert.getDialogPane().getScene().getWindow();
+      stage.getIcons().add(new Image("file:src/Images/logo.png"));
       
       alert.showAndWait();
    }

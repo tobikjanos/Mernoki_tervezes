@@ -86,7 +86,7 @@ public class MainWindowController implements Initializable {
       
       if(DatabaseHandler.TestConnection())
       {
-         SystemMessageController.DisplayInformationMessage("Adatbázis-kapcsolat létrehozása","Sikeres!");
+         SystemMessageController.DisplayInformationMessage("Adatbázis-kapcsolat létrehozása","Sikeres!\nAdatok elmentve");
       }
       else
       {
