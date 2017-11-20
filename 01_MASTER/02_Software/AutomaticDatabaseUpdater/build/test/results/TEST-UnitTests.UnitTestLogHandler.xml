@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="TobikJanos-PC" name="UnitTests.UnitTestFileHandler" skipped="0" tests="11" time="0.035" timestamp="2017-11-18T18:54:36">
+<testsuite errors="0" failures="0" hostname="TobikJanos-PC" name="UnitTests.UnitTestLogHandler" skipped="0" tests="2" time="0.032" timestamp="2017-11-18T20:27:45">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="HU" />
@@ -9,7 +9,7 @@
     <property name="libs.DataBindingME.src" value="E:\Program Files\NetBeans 8.2\mobility\sources\netbeans_databindingme-src.zip" />
     <property name="manifest.custom.codebase" value="*" />
     <property name="libs.spring-webmvc4.0.src" value="" />
-    <property name="javac.includes" value="UnitTests/UnitTestFileHandler.java" />
+    <property name="javac.includes" value="UnitTests/UnitTestLogHandler.java" />
     <property name="ant.core.lib" value="E:\Program Files\NetBeans 8.2\extide\ant\lib\ant.jar" />
     <property name="ant.file.AutomaticDatabaseUpdater-impl" value="E:\NetBeansProjects\AutomaticDatabaseUpdater\nbproject\build-impl.xml" />
     <property name="javadoc.windowtitle" value="" />
@@ -42,7 +42,7 @@
     <property name="libs.hamcrest.classpath" value="E:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="libs.javac-api.javadoc" value="" />
     <property name="os.name" value="Windows 7" />
-    <property name="test.class" value="UnitTests.UnitTestFileHandler" />
+    <property name="test.class" value="UnitTests.UnitTestLogHandler" />
     <property name="libs.beans-binding.classpath" value="E:\Program Files\NetBeans 8.2\java\modules\ext\beansbinding-1.2.1.jar" />
     <property name="libs.javaee-endorsed-api-7.0.maven-pom" value="" />
     <property name="ap.proc.none.internal" value="" />
@@ -65,7 +65,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner UnitTests.UnitTestFileHandler skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\NetBeansProjects\AutomaticDatabaseUpdater\build\test\results\TEST-UnitTests.UnitTestFileHandler.xml crashfile=E:\NetBeansProjects\AutomaticDatabaseUpdater\build\junitvmwatcher385872611573888535.properties propsfile=E:\NetBeansProjects\AutomaticDatabaseUpdater\build\junit5461419558474259505.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner UnitTests.UnitTestLogHandler skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\NetBeansProjects\AutomaticDatabaseUpdater\build\test\results\TEST-UnitTests.UnitTestLogHandler.xml crashfile=E:\NetBeansProjects\AutomaticDatabaseUpdater\build\junitvmwatcher6862942359910349747.properties propsfile=E:\NetBeansProjects\AutomaticDatabaseUpdater\build\junit6764318341753196405.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -93,7 +93,7 @@
     <property name="javafx.deploy.includeDT" value="true" />
     <property name="java.endorsed.dirs" value="E:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed" />
     <property name="libs.groovy-all.src" value="" />
-    <property name="test.includes" value="UnitTests/UnitTestFileHandler.java" />
+    <property name="test.includes" value="UnitTests/UnitTestLogHandler.java" />
     <property name="netbeans.dynamic.classpath" value="E:\Program Files\NetBeans 8.2\platform\core\asm-all-5.0.1.jar;E:\Program Files\NetBeans 8.2\platform\core\core-base.jar;E:\Program Files\NetBeans 8.2\platform\core\core.jar;E:\Program Files\NetBeans 8.2\platform\core\org-netbeans-libs-asm.jar;E:\Program Files\NetBeans 8.2\platform\core\org-openide-filesystems-compat8.jar;E:\Program Files\NetBeans 8.2\platform\core\org-openide-filesystems.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ja.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core-base_pt_BR.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ru.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core-base_zh_CN.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core_ja.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core_pt_BR.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core_ru.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\core_zh_CN.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ja.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_pt_BR.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ru.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_zh_CN.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ja.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_pt_BR.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ru.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_zh_CN.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_ja.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_ru.jar;E:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;E:\Program Files\NetBeans 8.2\nb\core\org-netbeans-upgrader.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\core_nb.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ja.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_pt_BR.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ru.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_zh_CN.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ja.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ru.jar;E:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
     <property name="jnlp.enabled" value="false" />
     <property name="java.vm.specification.version" value="1.8" />
@@ -112,7 +112,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="E:\NetBeansProjects\AutomaticDatabaseUpdater\null430984205" />
+    <property name="javac.includesfile.binary" value="E:\NetBeansProjects\AutomaticDatabaseUpdater\null352417136" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value="E:\Program Files\Java\jdk1.8.0_144\jre/lib/javaws.jar:E:\Program Files\Java\jdk1.8.0_144\jre/lib/deploy.jar:E:\Program Files\Java\jdk1.8.0_144\jre/lib/plugin.jar:E:\Program Files\NetBeans 8.2\ide\modules\ext\postgresql-9.4.1209.jar:E:\Program Files\NetBeans 8.2\ide\modules\ext\commons-io-2.5-javadoc.jar:E:\Program Files\NetBeans 8.2\ide\modules\ext\commons-io-2.5.jar:E:\Program Files\NetBeans 8.2\ide\modules\ext\postgresql-42.0.0.jar:E:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:E:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar:build/classes" />
@@ -126,7 +126,7 @@
     <property name="libs.hibernate4-persistencemodelgen.javadoc" value="" />
     <property name="libs.jaxb.javadoc" value="E:\Program Files\NetBeans 8.2\ide\docs\jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\antlr-2.7.2.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\bsf-2.3.0.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-beanutils-1.8.0.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-chain-1.2.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-digester-1.8.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-fileupload-1.1.1.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-io-1.1.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-logging-1.0.4.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-validator-1.3.1.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\jstl-1.0.2.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\oro-2.0.8.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\standard-1.0.6.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-core-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-el-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-extras-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-faces-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-mailreader-dao-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-scripting-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-taglib-1.3.10.jar;E:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-tiles-1.3.10.jar" />
-    <property name="javac.includes.binary" value="E:\NetBeansProjects\AutomaticDatabaseUpdater\build\test\classes\UnitTests\UnitTestFileHandler.class" />
+    <property name="javac.includes.binary" value="E:\NetBeansProjects\AutomaticDatabaseUpdater\build\test\classes\UnitTests\UnitTestLogHandler.class" />
     <property name="ant.home" value="E:\Program Files\NetBeans 8.2\extide\ant" />
     <property name="libs.junit_4.src" value="E:\Program Files\NetBeans 8.2\platform\docs\junit-4.12-sources.jar" />
     <property name="javafx.run.height" value="600" />
@@ -445,26 +445,8 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="E:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadDelNutrient" time="0.001" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testParseUpdateFile" time="0.001" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadDelWeight" time="0.001" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadChgFood" time="0.001" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testParseLogFile" time="0.0" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadChgNutrient" time="0.001" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadAddWeight" time="0.0" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadDelFood" time="0.0" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadAddNutrient" time="0.001" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadAddFood" time="0.0" />
-  <testcase classname="UnitTests.UnitTestFileHandler" name="testReadChgWeight" time="0.0" />
-  <system-out><![CDATA[60000   |   208   |   0.0
-60000   |   1.0   |   container (5.3 oz)   |   200.0
-60000   |   test_name00   |   TEST_NAME00   |   1
-60000   |   208   |   1.0
-60000   |   1.0   |   container (5.3 oz)   |   150.0
-60000   |   null   |   TEST_NAME00   |   0
-60000   |   208   |   0.0
-60000   |   test_name00   |   TEST_NAME00   |   0
-60000   |   1.0   |   container (5.3 oz)   |   200.0
-]]></system-out>
+  <testcase classname="UnitTests.UnitTestLogHandler" name="testAddElement" time="0.0" />
+  <testcase classname="UnitTests.UnitTestLogHandler" name="testClearLogList" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

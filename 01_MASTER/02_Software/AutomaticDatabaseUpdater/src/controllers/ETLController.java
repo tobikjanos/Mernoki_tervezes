@@ -13,6 +13,7 @@ import java.sql.SQLException;
 import java.sql.Savepoint;
 import java.util.ArrayList;
 import java.util.List;
+import javafx.application.Platform;
 
 /**
  *
@@ -580,7 +581,7 @@ public class ETLController {
             LogHandler.AddElement("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
          }
          
-         
+                  
          if( !conn.isClosed() )
          {
             conn.commit();

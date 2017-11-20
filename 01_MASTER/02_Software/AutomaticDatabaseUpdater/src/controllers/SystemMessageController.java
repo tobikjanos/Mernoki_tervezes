@@ -34,8 +34,8 @@ public class SystemMessageController {
       stage.getIcons().add(new Image("file:src/Images/logo.png"));
       
       alert.showAndWait();
-   }
-   
+   }   
+      
    /**
     * brief: creates alert box to display warning
     * @param title   - title of alert box

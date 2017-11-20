@@ -37,7 +37,7 @@ public class LogHandler {
          logFile.getParentFile().mkdirs();
          logFile.createNewFile();
          
-         AddElement("[  INFO  ]", timeStamp);
+         AddElement("[  INFO  ]", timeStamp.replace("-", " "));
          
          System.out.println(logFile.getPath());
          

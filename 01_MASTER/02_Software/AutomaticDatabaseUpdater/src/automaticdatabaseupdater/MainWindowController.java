@@ -86,14 +86,14 @@ public class MainWindowController implements Initializable {
       
       if(DatabaseHandler.TestConnection())
       {
-         SystemMessageController.DisplayInformationMessage("Adatbázis-kapcsolat létrehozása","Sikeres!\nAdatok elmentve");
+         SystemMessageController.DisplayInformationMessage("Adatbázis-kapcsolat létrehozása","Sikeres!");
+         TabPaneMain.getSelectionModel().select(Tab2);
       }
       else
       {
          SystemMessageController.DisplayErrorMessage("Adatbázis-kapcsolat létrehozása","Sikertelen!");
       }
       
-      Tab2.setDisable(false);
    }
    
    @FXML
@@ -242,7 +242,7 @@ public class MainWindowController implements Initializable {
       Task task = new Task<Void>() {
          @Override
          protected Void call() throws Exception {
-                        
+            
             Tab1.setDisable(true);
             Tab3.setDisable(true);
             t2ButtonStart.setDisable(true);
@@ -370,6 +370,7 @@ public class MainWindowController implements Initializable {
                t2PiChgNdef.setVisible(false);
             }
             
+            Tab1.setDisable(false);
             Tab3.setDisable(false);
             t2ButtonStart.setDisable(false);
             
@@ -383,14 +384,18 @@ public class MainWindowController implements Initializable {
       if(isEmpty)
       {
          if(SystemMessageController.DisplayWarningMessage("Kitöltetlen mező!", stringBuilder.toString()))
+         {
             new Thread(task).start();
+            SystemMessageController.DisplayInformationMessage("Fájlok feldolgozása", "A művelet befejeződött");
+         }
       }
       else
       {
          new Thread(task).start();
+         SystemMessageController.DisplayInformationMessage("Fájlok feldolgozása", "A művelet befejeződött");
       }
-      SystemMessageController.DisplayInformationMessage("Fájlok feldolgozása", "A művelet befejeződött");
       
+      TabPaneMain.getSelectionModel().select(Tab3);
    }
    
    /****************************
@@ -454,6 +459,8 @@ public class MainWindowController implements Initializable {
       
       new Thread(task).start();
       
+      Tab1.setDisable(false);
+      Tab2.setDisable(false);
       t3ButtonStart.setDisable(false);
    }
    
@@ -520,9 +527,6 @@ public class MainWindowController implements Initializable {
    {
       TabPaneMain.getSelectionModel().select(Tab1);
       
-      Tab1.setDisable(false);
-      Tab2.setDisable(false);
-      Tab3.setDisable(true);
       
       /**
        * TAB_1
@@ -562,8 +566,8 @@ public class MainWindowController implements Initializable {
    public void initialize(URL url, ResourceBundle rb) {
       
       Tab1.setDisable(false);
-      Tab2.setDisable(true);
-      Tab3.setDisable(true);
+      Tab2.setDisable(false);
+      Tab3.setDisable(false);
       Tab4.setDisable(false);
       
       t3ListView.setPlaceholder(new Label(""));
@@ -581,28 +585,28 @@ public class MainWindowController implements Initializable {
       t1Password.setText("qaswed123");
       t1TextSchema.setText("minta2");
       
-//      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_FOOD.txt");
-//      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_NUTR.txt");
-//      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_WGT.txt");
-//      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_FOOD.txt");
-//      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_NUTR.txt");
-//      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_WGT.txt");
-//      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_FOOD.txt");
-//      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_NUTR.txt");
-//      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_WGT.txt");
+      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_FOOD.txt");
+      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_NUTR.txt");
+      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_WGT.txt");
+      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_FOOD.txt");
+      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_NUTR.txt");
+      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_WGT.txt");
+      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_FOOD.txt");
+      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_NUTR.txt");
+      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_WGT.txt");
       
 //      t2TextAddNdef.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_NDEF.txt");
 //      t2TextChgNdef.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_NDEF.txt");
       
-      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_FOOD.txt");
-      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_NUTR.txt");
-      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_WGT.txt");
-      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_FOOD.txt");
-      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_NUTR.txt");
-      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_WGT.txt");
-      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_FOOD.txt");
-      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_NUTR.txt");
-      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_WGT.txt");
+//      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_FOOD.txt");
+//      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_NUTR.txt");
+//      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_WGT.txt");
+//      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_FOOD.txt");
+//      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_NUTR.txt");
+//      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_WGT.txt");
+//      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_FOOD.txt");
+//      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_NUTR.txt");
+//      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_WGT.txt");
       
       t2TextRevisionNumber.setText("60");
       

@@ -1421,7 +1421,7 @@ public class DatabaseHandler {
       }
       else
       {
-         retVal = true;
+         retVal = false;
          System.out.println("Not connected");
       }
       
