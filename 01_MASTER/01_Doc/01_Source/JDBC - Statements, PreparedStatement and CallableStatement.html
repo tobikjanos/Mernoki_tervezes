@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.tutorialspoint.com/jdbc/jdbc-statements.htm -->
+<html style="" class=" js no-touch csstransforms3d csstransitions"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Basic -->
+
+<title>JDBC - Statements, PreparedStatement and CallableStatement</title>
+<meta name="description" content="JDBC Statements, PreparedStatement and CallableStatement - Learning JDBC in simple and easy steps using this beginner&#39;s tutorial containing basic to advanced knowledge of JDBC including Drivers, Environment Setup, SQL Statement, Insert, Update, Select, Delete, Group By, Where Clause, Pagination, Result Sets, Database, Exception, Handling etc.">
+<meta name="keywords" content="Java, JDBC, Tutorials, Learning, Beginners, Basics, Drivers, Environment, Setup, SQL, Statement, Insert, Update, Select, Delete, Group By, Where Clause, Pagination, Result Sets, Database, Exception, Handling.">
+<!--<base href="https://www.tutorialspoint.com/">--><base href=".">
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="fb:app_id" content="471319149685276">
+<meta property="og:site_name" content="www.tutorialspoint.com">
+<meta name="robots" content="index, follow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="tutorialspoint.com">
+<script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_168.js"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=173123951318415&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy1&amp;impl=fifs&amp;json_a=1&amp;eid=21061412%2C108809103%2C21060362%2C21060903%2C21061149&amp;sc=1&amp;sfv=1-0-14&amp;iu_parts=60931893%2Ctutorial_right_bottom%2Ctutorial_right_middle%2Ctutorial_right_top%2Ctutorial_bottom_leader_board&amp;enc_prev_ius=%2F0%2F1%2C%2F0%2F2%2C%2F0%2F3%2C%2F0%2F4&amp;prev_iu_szs=300x250%7C300x600%2C300x250%7C300x600%2C300x250%2C600x400%7C300x250%7C480x320%7C468x60%7C336x280%7C600x200%7C580x400&amp;cookie_enabled=1&amp;abxe=1&amp;lmt=1511283434&amp;dt=1511283434710&amp;frm=20&amp;biw=1903&amp;bih=949&amp;oid=3&amp;adxs=0%2C0%2C0%2C0&amp;adys=0%2C0%2C0%2C0&amp;adks=3716823738%2C749877563%2C2359137328%2C2749173601&amp;gut=v2&amp;ifi=1&amp;u_tz=60&amp;u_his=3&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=4&amp;u_nmime=5&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.tutorialspoint.com%2Fjdbc%2Fjdbc-statements.htm&amp;ref=https%3A%2F%2Fwww.google.hu%2F&amp;dssz=18&amp;icsg=14508&amp;std=0&amp;vrg=168&amp;vis=1&amp;ga_vid=797687791.1506877059&amp;ga_sid=1511283435&amp;ga_hid=772274449&amp;ga_fc=true"></script><script type="text/javascript" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/script-min-v4.js.letöltés"></script>
+<link rel="stylesheet" href="./JDBC - Statements, PreparedStatement and CallableStatement_files/style-min.css">
+<script async="async" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/gpt.js.letöltés"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/60931893/tutorial_right_bottom', [[300, 250], [300, 600]], 'div-gpt-ad-1510138782906-0').addService(googletag.pubads());
+    googletag.defineSlot('/60931893/tutorial_right_middle', [[300, 250], [300, 600]], 'div-gpt-ad-1510138782906-1').addService(googletag.pubads());
+    googletag.defineSlot('/60931893/tutorial_right_top', [300, 250], 'div-gpt-ad-1510138782906-2').addService(googletag.pubads());
+    googletag.defineSlot('/60931893/tutorial_bottom_leader_board', [[600, 400], [300, 250], [480, 320], [468, 60], [336, 280], [600, 200], [580, 400]], 'div-gpt-ad-1510138782906-3').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- Head Libs -->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="/theme/css/ie8.css">
+<![endif]-->
+<style>
+select{ border:0 !important; outline: 1px inset black !important; outline-offset: -1px !important; }
+ul.nav-list.primary>li a.videolink{    background: none; margin: 0px; padding: 0px; border: 1px solid #d6d6d6;}
+div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #1890c4 url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #1890c4 !important;}
+.submenu-item{ border-bottom: 2px solid #1890c4 !important; border-top: 2px solid #1890c4 !important }
+.ace_scroller{overflow: auto!important;}
+a.demo{font-family: "Open Sans",Arial,sans-serif; background:#1890c4; color:#fff; font-size:13px; padding:3px 10px; border:1px solid #d6d6d6; position:absolute; right:5px; margin:-6px 17px 0px 0px;}
+a.demo:hover{opacity:.8}
+pre.prettyprint {
+    border: 1px solid #d6d6d6;
+    background-color: #eee;
+    width: 98%;
+    border-radius: 0;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 10px; margin-top:15px;
+    font-size: 13px;
+    overflow: auto;
+}
+</style>
+<script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
+<link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.tutorialspoint.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.tutorialspoint.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_168.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-14/html/container.html"><link rel="prefetch" href="https://securepubads.g.doubleclick.net/static/3p_cookie.html"></head>
+<body onload="prettyPrint()" style="">
+<div class="wrapLoader">
+   <div class="imgLoader">
+      <img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/loading-cg.gif" alt="" width="70" height="70">
+   </div>
+</div>
+<header>
+   <div class="container">			
+      <h1 class="logo">
+      <a href="https://www.tutorialspoint.com/index.htm" title="tutorialspoint">
+      <img alt="tutorialspoint" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/logo.png">
+      </a>
+      </h1>			
+      <nav>
+         <ul class="nav nav-pills nav-top">
+            <li><a href="https://www.tutorialspoint.com/about/about_careers.htm" style="background: #fffb09; font-weight: bold;"><i class="icon icon-suitcase"></i> Jobs</a></li>
+            <li> <a target="_blank" href="http://www.qries.com/"><i class="fa fa-send"></i> &nbsp;Qries (Q/A)</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/whiteboard.htm"><img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/image-editor.png" alt="Whiteboard" title="Whiteboard"> &nbsp;Whiteboard</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/netmeeting.php"><i class="fa-camera"></i> &nbsp;Net Meeting</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/online_dev_tools.htm"> <i class="dev-tools-menu" style="opacity:.5"></i> Tools </a> </li>
+            <li> <a href="https://www.tutorialspoint.com/articles/index.php"><i class="icon icon-file-text-o"></i> &nbsp;Articles</a> </li>            
+            <li class="top-icons">
+              <ul class="social-icons">
+              <li class="facebook"><a href="https://www.facebook.com/tutorialspointindia" target="_blank" data-placement="bottom" title="tutorialspoint @ Facebook">Facebook</a></li>
+              <li class="googleplus"><a href="https://plus.google.com/u/0/116678774017490391259/posts" target="_blank" data-placement="bottom" title="tutorialspoint @ Google+">Google+</a></li>
+              <li class="twitter"><a href="https://www.twitter.com/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Twitter">Twitter</a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Linkedin">Linkedin</a></li>
+              <li class="youtube"><a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" data-placement="bottom" title="tutorialspoint YouTube">YouTube</a></li>
+              </ul>
+           </li>
+         </ul>
+      </nav>
+         <!-- search code here  --> 
+      <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull" style="top: 1690px!important"> <i class="icon icon-bars"></i> </button>
+   </div>
+  
+   <div class="navbar nav-main">
+      <div class="container">
+         <nav class="nav-main mega-menu">
+            <ul class="nav nav-pills nav-main" id="mainMenu">
+               <li class="dropdown no-sub-menu"> <a class="dropdown" href="https://www.tutorialspoint.com/index.htm"><i class="icon icon-home"></i> Home</a> </li>   
+               <li class="dropdown" id="liTL"><a class="dropdown" href="javascript:void(0);"><span class="tut-lib"> Tutorials Library <i class="fa-caret-down"></i></span></a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/codingground.htm"><i class="fa-code"></i> Coding Ground </a> </li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/tutor_connect/index.php"><i class="fa-user"> </i> Tutor Connect</a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/videotutorials/index.htm"><i class="fa-toggle-right"></i> Videos </a></li>
+               <li class="dropdown no-sub-menu">
+                  <div class="searchform-popup">
+                     <input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == &#39;Search your favorite tutorials...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search your favorite tutorials...&#39;;}" autocomplete="off" style="">
+                     <div class="magnifying-glass"><i class="icon-search"></i> Search </div>
+                 </div>
+               </li>
+            </ul>
+         </nav>
+         <div class="submenu-item sub-main-menu" id="top-sub-menu"></div>
+         
+      </div>
+   </div>	
+</header>
+<div style="clear:both;"></div>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/jdbc-mini-logo.jpg" alt="JDBC Tutorial">
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">JDBC Tutorial</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/index.htm">JDBC - Home</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-introduction.htm">JDBC - Introduction</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-sql-syntax.htm">JDBC - SQL Syntax</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-environment-setup.htm">JDBC - Environment</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-sample-code.htm">JDBC - Sample Code</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-driver-types.htm">JDBC - Driver Types</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-db-connections.htm">JDBC - Connections</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-statements.htm" style="background-color: rgb(214, 214, 214);">JDBC - Statements</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-result-sets.htm">JDBC - Result Sets</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-data-types.htm">JDBC - Data Types</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-transactions.htm">JDBC - Transactions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-exceptions.htm">JDBC - Exceptions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-batch-processing.htm">JDBC - Batch Processing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-stored-procedure.htm">JDBC - Stored Procedure</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-streaming-data.htm">JDBC - Streaming Data</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">JDBC Examples</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-create-database.htm">JDBC - Create Database</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-select-database.htm">JDBC - Select Database</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-drop-database.htm">JDBC - Drop Database</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-create-tables.htm">JDBC - Create Tables</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-drop-tables.htm">JDBC - Drop Tables</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-insert-records.htm">JDBC - Insert Records</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-select-records.htm">JDBC - Select Records</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-update-records.htm">JDBC - Update Records</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-delete-records.htm">JDBC - Delete Records</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-where-clause.htm">JDBC - WHERE Clause</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-like-clause.htm">JDBC - Like Clause</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-sorting-data.htm">JDBC - Sorting Data</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">JDBC Useful Resources</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc_questions_answers.htm">JDBC - Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-quick-guide.htm">JDBC - Quick Guide</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-useful-resources.htm">JDBC - Useful Resources</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/jdbc/jdbc-discussion.htm">JDBC - Discussion</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/java/index.htm">Useful - Java Tutorials</a></li>
+</ul>
+
+<ul class="nav nav-list primary push-bottom left-menu special">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>JDBC - Statements, PreparedStatement and CallableStatement</h1>
+<div class="topgooglead">
+<hr>
+<div style="padding-bottom:5px;padding-left:10px;">Advertisements</div>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "image";
+google_ad_channel = "";
+//--></script>
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"> 
+</script>
+</div>
+<hr>
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/jdbc/jdbc-db-connections.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/jdbc/jdbc-result-sets.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+<p>Once a connection is obtained we can interact with the database. The JDBC <i>Statement, CallableStatement,</i> and <i>PreparedStatement</i> interfaces define the methods and properties that enable you to send SQL or PL/SQL commands and receive data from your database.</p>
+<p>They also define methods that help bridge data type differences between Java and SQL data types used in a database.</p>
+<p>The following table provides a summary of each interface's purpose to decide on the interface to use.</p> 
+<table class="table table-bordered">
+<tbody><tr>
+<th style="width:28%">Interfaces</th>
+<th style="width:72%">Recommended Use</th>
+</tr>
+<tr>
+<td>Statement</td>
+<td>Use the for general-purpose access to your database. Useful when you are using static SQL statements at runtime. The Statement interface cannot
+accept parameters.</td>
+</tr>
+<tr>
+<td>PreparedStatement</td>
+<td>Use the when you plan to use the SQL statements many times. The PreparedStatement interface accepts input parameters at runtime.</td>
+</tr>
+<tr>
+<td>CallableStatement</td>
+<td>Use the when you want to access the database stored procedures. The CallableStatement interface can also accept runtime input parameters.</td>
+</tr>
+</tbody></table>
+<h2>The Statement Objects</h2>
+<h3>Creating Statement Object</h3>
+<p>Before you can use a Statement object to execute a SQL statement, you need to create one using the Connection object's createStatement( ) method, as in the following example −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   stmt </span><span class="pun">=</span><span class="pln"> conn</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">(</span><span class="pln"> </span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>Once you've created a Statement object, you can then use it to execute an SQL statement with one of its three execute methods.</p>
+<ul class="list">
+<li><p><b>boolean execute (String SQL)</b>: Returns a boolean value of true if a ResultSet object can be retrieved; otherwise, it returns false. Use this method to execute SQL DDL statements or when you need to use truly dynamic SQL.</p></li>
+<li><p><b>int executeUpdate (String SQL)</b>: Returns the number of rows affected by the execution of the SQL statement. Use this method to execute SQL statements for which you expect to get a number of rows affected - for example, an INSERT, UPDATE, or DELETE statement.</p></li>
+<li><p><b>ResultSet executeQuery (String SQL)</b>: Returns a ResultSet object. Use this method when you expect to get a result set, as you would with a SELECT statement.</p></li>
+</ul>
+<h2>Closing Statement Object</h2>
+<p>Just as you close a Connection object to save database resources,  for the same reason you should also close the Statement object.</p>
+<p>A simple call to the close() method will do the job. If you close the Connection object first, it will close the Statement object as well. However, you should always explicitly close the Statement object to ensure proper cleanup.</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   stmt </span><span class="pun">=</span><span class="pln"> conn</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">(</span><span class="pln"> </span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>For a better understanding, we suggest you to study the <a href="https://www.tutorialspoint.com/jdbc/statement-object-example.htm">Statement - Example tutorial</a>.</p>
+<h2>The PreparedStatement Objects</h2>
+<p>The <i>PreparedStatement</i> interface extends the Statement interface, which gives you added functionality with a couple of advantages over a generic Statement object.</p>
+<p>This statement gives you the flexibility of supplying arguments dynamically.</p>
+<h2>Creating PreparedStatement Object</h2>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="typ">String</span><span class="pln"> SQL </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Update Employees SET age = ? WHERE id = ?"</span><span class="pun">;</span><span class="pln">
+   pstmt </span><span class="pun">=</span><span class="pln"> conn</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">SQL</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>All parameters in JDBC are represented by the <b>?</b> symbol, which is known as the parameter marker. You must supply values for every parameter before executing the SQL statement.</p>
+<p>The <b>setXXX()</b> methods bind values to the parameters, where <b>XXX</b> represents the Java data type of the value you wish to bind to the input parameter. If you forget to supply the values, you will receive an SQLException.</p>
+<p>Each parameter marker is referred by its ordinal position. The first marker represents position 1, the next position 2, and so forth. This method differs from that of Java array indices, which starts at 0.</p>
+<p>All of the <b>Statement object's</b> methods for interacting with the database (a) execute(), (b) executeQuery(), and (c) executeUpdate() also work with the PreparedStatement object. However, the methods are modified to use SQL statements that can input the parameters.</p>
+<h2>Closing PreparedStatement Object</h2>
+<p>Just as you close a Statement object, for the same reason you should also close the PreparedStatement object.</p>
+<p>A simple call to the close() method will do the job. If you close the Connection object first, it will close the PreparedStatement object as well. However, you should always explicitly close the PreparedStatement object to ensure proper cleanup.</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="typ">String</span><span class="pln"> SQL </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Update Employees SET age = ? WHERE id = ?"</span><span class="pun">;</span><span class="pln">
+   pstmt </span><span class="pun">=</span><span class="pln"> conn</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">SQL</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   pstmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>For a better understanding, let us study <a href="https://www.tutorialspoint.com/jdbc/preparestatement-object-example.htm">Prepare - Example Code</a>.</p>
+<h2>The CallableStatement Objects</h2>
+<p>Just as a Connection object creates the Statement and PreparedStatement objects, it also creates the CallableStatement object, which would be used to execute a call to a database stored procedure.</p>
+<h2>Creating CallableStatement Object</h2>
+<p>Suppose, you need to execute the following Oracle stored procedure −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">CREATE OR REPLACE PROCEDURE getEmpName 
+   </span><span class="pun">(</span><span class="pln">EMP_ID IN NUMBER</span><span class="pun">,</span><span class="pln"> EMP_FIRST OUT VARCHAR</span><span class="pun">)</span><span class="pln"> AS
+</span><span class="kwd">BEGIN</span><span class="pln">
+   SELECT first INTO EMP_FIRST
+   FROM </span><span class="typ">Employees</span><span class="pln">
+   WHERE ID </span><span class="pun">=</span><span class="pln"> EMP_ID</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">END</span><span class="pun">;</span></pre>
+<p><b>NOTE:</b> Above stored procedure has been written for Oracle, but we are working with MySQL database so, let us write same stored procedure for MySQL as follows to create it in EMP database −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">DELIMITER $$
+
+DROP PROCEDURE IF EXISTS </span><span class="str">`EMP`</span><span class="pun">.</span><span class="str">`getEmpName`</span><span class="pln"> $$
+CREATE PROCEDURE </span><span class="str">`EMP`</span><span class="pun">.</span><span class="str">`getEmpName`</span><span class="pln"> 
+   </span><span class="pun">(</span><span class="pln">IN EMP_ID INT</span><span class="pun">,</span><span class="pln"> OUT EMP_FIRST VARCHAR</span><span class="pun">(</span><span class="lit">255</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">BEGIN</span><span class="pln">
+   SELECT first INTO EMP_FIRST
+   FROM </span><span class="typ">Employees</span><span class="pln">
+   WHERE ID </span><span class="pun">=</span><span class="pln"> EMP_ID</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">END</span><span class="pln"> $$
+
+DELIMITER </span><span class="pun">;</span></pre>
+<p>Three types of parameters exist: IN, OUT, and INOUT. The PreparedStatement object only uses the IN parameter. The CallableStatement object can use all the three.</p>
+<p>Here are the definitions of each −</p>
+<table class="table table-bordered">
+<tbody><tr>
+<th style="width:28%">Parameter</th>
+<th style="width:72%">Description</th>
+</tr>
+<tr>
+<td>IN</td>
+<td>A parameter whose value is unknown when the SQL statement is created. You bind values to IN parameters with the setXXX() methods.</td>
+</tr>
+<tr>
+<td>OUT</td>
+<td>A parameter whose value is supplied by the SQL statement it returns. You retrieve values from theOUT parameters with the getXXX() methods.</td>
+</tr>
+<tr>
+<td>INOUT</td>
+<td>A parameter that provides both input and output values. You bind variables with the setXXX() methods and retrieve values with the getXXX() methods.</td>
+</tr>
+</tbody></table>
+<p>The following code snippet shows how to employ the <b>Connection.prepareCall()</b> method to instantiate a <b>CallableStatement</b> object based on the preceding stored procedure −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="typ">CallableStatement</span><span class="pln"> cstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="typ">String</span><span class="pln"> SQL </span><span class="pun">=</span><span class="pln"> </span><span class="str">"{call getEmpName (?, ?)}"</span><span class="pun">;</span><span class="pln">
+   cstmt </span><span class="pun">=</span><span class="pln"> conn</span><span class="pun">.</span><span class="pln">prepareCall </span><span class="pun">(</span><span class="pln">SQL</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>The String variable SQL, represents the stored procedure, with parameter placeholders.</p>
+<p>Using the CallableStatement objects is much like using the PreparedStatement objects. You must bind values to all the parameters before executing the statement, or you will receive an SQLException.</p>
+<p>If you have IN parameters, just follow the same rules and techniques that apply to a PreparedStatement object; use the setXXX() method that corresponds to the Java data type you are binding.</p>
+<p>When you use OUT and INOUT parameters you must employ an additional CallableStatement method, registerOutParameter(). The registerOutParameter() method binds the JDBC data type, to the data type that the stored procedure is expected to return.</p>
+<p>Once you call your stored procedure, you retrieve the value from the OUT parameter with the appropriate getXXX() method. This method casts the retrieved value of SQL type to a Java data type.</p>
+<h2>Closing CallableStatement Object</h2>
+<p>Just as you close other Statement object, for the same reason you should also close the CallableStatement object.</p>
+<p>A simple call to the close() method will do the job. If you close the Connection object first, it will close the CallableStatement object as well. However, you should always explicitly close the CallableStatement object to ensure proper cleanup.</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="typ">CallableStatement</span><span class="pln"> cstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="typ">String</span><span class="pln"> SQL </span><span class="pun">=</span><span class="pln"> </span><span class="str">"{call getEmpName (?, ?)}"</span><span class="pun">;</span><span class="pln">
+   cstmt </span><span class="pun">=</span><span class="pln"> conn</span><span class="pun">.</span><span class="pln">prepareCall </span><span class="pun">(</span><span class="pln">SQL</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   cstmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>For a better understanding, I would suggest to study <a href="https://www.tutorialspoint.com/jdbc/callablestatement-object-example.htm">Callable - Example Code</a>.</p>
+<hr>
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/jdbc/jdbc-db-connections.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="print-btn center">
+<a href="https://www.tutorialspoint.com/cgi-bin/printpage.cgi" target="_blank"><i class="icon icon-print big-font"></i> Print</a>
+</div>
+<div class="pdf-btn">
+<a href="https://www.tutorialspoint.com/jdbc/pdf/jdbc-statements.pdf" title="JDBC - Statements, PreparedStatement and CallableStatement" target="_blank"><i class="icon icon-file-pdf-o big-font"></i> PDF</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/jdbc/jdbc-result-sets.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<hr>
+<!-- PRINTING ENDS HERE -->
+<div class="bottomgooglead">
+<div class="bottomadtag">Advertisements</div>
+<!-- /60931893/tutorial_bottom_leader_board -->
+<div id="div-gpt-ad-1510138782906-3">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-3'); });
+</script>
+<div id="google_ads_iframe_/60931893/tutorial_bottom_leader_board_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/60931893/tutorial_bottom_leader_board_0" title="3rd party ad content" name="google_ads_iframe_/60931893/tutorial_bottom_leader_board_0" width="600" height="400" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/saved_resource.html"></iframe></div></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3" id="rightbar">
+<div class="simple-ad">
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open(&#39;https://www.facebook.com/sharer.php?u=&#39; + &#39;http://www.tutorialspoint.com/jdbc/jdbc-statements.htm&#39;,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=626,height=456,top=&#39;+sTop+&#39;,left=&#39;+sLeft);return false;">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/facebookIcon.jpg" alt="img">
+</a>
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open(&#39;https://twitter.com/share?url=&#39; + &#39;http://www.tutorialspoint.com/jdbc/jdbc-statements.htm&#39;,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=626,height=456,top=&#39;+sTop+&#39;,left=&#39;+sLeft);return false;">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/twitterIcon.jpg" alt="img">
+</a>
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open(&#39;https://www.linkedin.com/cws/share?url=&#39; + &#39;http://www.tutorialspoint.com/jdbc/jdbc-statements.htm&amp;title=&#39;+ document.title,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=626,height=456,top=&#39;+sTop+&#39;,left=&#39;+sLeft);return false;">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/linkedinIcon.jpg" alt="img">
+</a>
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open(&#39;https://plus.google.com/share?url=http://www.tutorialspoint.com/jdbc/jdbc-statements.htm&#39;,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=626,height=456,top=&#39;+sTop+&#39;,left=&#39;+sLeft);return false;">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/googlePlusIcon.jpg" alt="img">
+</a>
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open(&#39;https://www.stumbleupon.com/submit?url=http://www.tutorialspoint.com/jdbc/jdbc-statements.htm&amp;title=&#39;+ document.title,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=626,height=456,top=&#39;+sTop+&#39;,left=&#39;+sLeft);return false;">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/StumbleUponIcon.jpg" alt="img">
+</a>
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open(&#39;https://reddit.com/submit?url=http://www.tutorialspoint.com/jdbc/jdbc-statements.htm&amp;title=&#39;+ document.title,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=626,height=656,top=&#39;+sTop+&#39;,left=&#39;+sLeft);return false;">
+<img src="./JDBC - Statements, PreparedStatement and CallableStatement_files/reddit.jpg" alt="img">
+</a>
+</div>
+<div class="rightgooglead">
+<!-- /60931893/tutorial_right_top -->
+<div id="div-gpt-ad-1510138782906-2" style="height:250px; width:300px;">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-2'); });
+</script>
+<div id="google_ads_iframe_/60931893/tutorial_right_top_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/60931893/tutorial_right_top_0" title="3rd party ad content" name="google_ads_iframe_/60931893/tutorial_right_top_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/saved_resource(1).html"></iframe></div></div>
+</div>
+<div class="rightgooglead">
+<!-- /60931893/tutorial_right_middle -->
+<div id="div-gpt-ad-1510138782906-1">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-1'); });
+</script>
+<div id="google_ads_iframe_/60931893/tutorial_right_middle_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/60931893/tutorial_right_middle_0" title="3rd party ad content" name="google_ads_iframe_/60931893/tutorial_right_middle_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/saved_resource(2).html"></iframe></div></div>
+</div>
+<div class="rightgooglead">
+<!-- /60931893/tutorial_right_bottom -->
+<div id="div-gpt-ad-1510138782906-0">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-0'); });
+</script>
+<div id="google_ads_iframe_/60931893/tutorial_right_bottom_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/60931893/tutorial_right_bottom_0" title="3rd party ad content" name="google_ads_iframe_/60931893/tutorial_right_bottom_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/saved_resource(3).html"></iframe></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-1">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"> <img alt="Tutorials Point" class="img-responsive" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/logo-footer.png"> </a>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+   <nav id="sub-menu">
+      <ul>
+         <li><a href="https://www.tutorialspoint.com/about/tutorials_writing.htm">Write for us</a></li>
+         <li><a href="https://www.tutorialspoint.com/about/faq.htm">FAQ's</a></li>
+         <li><a href="https://www.tutorialspoint.com/about/about_helping.htm">Helping</a></li>
+         <li><a href="https://www.tutorialspoint.com/about/contact_us.htm">Contact</a></li>
+      </ul>
+   </nav>
+</div>
+<div class="col-md-3 col-sm-12 col-xs-12">
+<p>© Copyright 2017. All Rights Reserved.</p>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+   <div class="news-group">
+      <input type="text" class="form-control-foot search" name="textemail" id="textemail" autocomplete="off" placeholder="Enter email for newsletter" onfocus="if (this.value == &#39;Enter email for newsletter...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Enter email for newsletter...&#39;;}">
+      <span class="input-group-btn"> <button class="btn btn-default btn-footer" id="btnemail" type="submit" onclick="javascript:void(0);">go</button> </span>
+      <div id="newsresponse"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Libs -->
+<script type="text/javascript" src="./JDBC - Statements, PreparedStatement and CallableStatement_files/custom-min.js.letöltés"></script><a class="scroll-to-top visible" href="https://www.tutorialspoint.com/#" id="scrollToTop"><i class="icon icon-chevron-up icon-white"></i></a>
+<script src="https://www.google-analytics.com/urchin.js">
+</script>
+<script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+$('.pg-icon').click(function(){
+   $('.wrapLoader').show();
+});
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "JDBC - Statements, PreparedStatement and CallableStatement",
+    "name": "JDBC - Statements, PreparedStatement and CallableStatement",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.tutorialspoint.com/jdbc/jdbc-statements.htm"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tutorialspoint.com/jdbc/images/jdbc-mini-logo.jpg",
+        "width": 255,
+        "height": 194
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "Tutorials Point",
+        "url": "https://www.tutorialspoint.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.tutorialspoint.com/images/logo60.png",
+            "width": 210,
+            "height": 60
+        }
+    },
+    "datePublished": "August 15 2017 02:44:32.",
+    "dateModified": "August 15 2017 02:34:06.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Tutorials Point",
+        "url": "https://www.tutorialspoint.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.tutorialspoint.com/images/logo60.png",
+            "width": 210,
+            "height": 60
+        }
+    },
+    "description": "Once a connection is obtained we can interact with the database. The JDBC Statement, CallableStatement, and PreparedStatement interfaces define the methods and properties that enable you to send SQL or PL/SQL commands and receive data from your database...."
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "name": "www.tutorialspoint.com",
+                "@id": "https://www.tutorialspoint.com"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "name": "Jdbc",
+                "@id": "https://www.tutorialspoint.com/jdbc"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "name": "JDBC - Statements"
+            }
+        }
+    ]
+}
+</script>
+
+
+
+<div class="autocomplete-suggestions " style="top: 1742px; left: 0px; width: 0px;"></div></body></html>
