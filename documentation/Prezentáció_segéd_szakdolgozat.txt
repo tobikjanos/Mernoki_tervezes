@@ -2,7 +2,11 @@
 * 1. dia - Téma, témavezető stb
 ***********************************
 
+- Életmód-támogató szakértői rendszer automatizált adatbázis-frissítése
 
+- Témavezető: Dr. Vassányi István
+
+- Tobik János
 
 ***********************************
 * 2. dia - Tartalom
@@ -34,7 +38,7 @@ Lavinia
 * Rendszerterv
 ***********************************
 
-- modularitás fontossága, könnyű bővíthetőség (stb)
+- modularitás fontossága(MVC architektúra), könnyű bővíthetőség (stb)
 
 ***********************************
 * Technológiák
@@ -43,6 +47,9 @@ Lavinia
 ***********************************
 * Megoldás
 ***********************************
+
+- tranzakció kezelés
+- szál kezelés
 
 ***********************************
 * Tesztelés
