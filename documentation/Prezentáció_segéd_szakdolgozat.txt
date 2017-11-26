@@ -50,6 +50,7 @@ Lavinia
 
 - tranzakció kezelés
 - szál kezelés
+- további lehetőségek, manuális import, statisztika (stb)
 
 ***********************************
 * Tesztelés
