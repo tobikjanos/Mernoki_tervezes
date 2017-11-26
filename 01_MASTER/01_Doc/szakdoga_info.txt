@@ -1,0 +1,72 @@
+migrációs
+read uncommited, hatékonyság és gyorsaság miatt
+Lavinia helyett MenuGene
+
+
+
+____________________________________________
+SZERKESZTÉS
+____________________________________________
+
+** Máshova: időbélyeges naplófájlok
+** Magyarázások specibe vagy bevezetésbe
+** connection, tárolt eljárás kódja nem kell
+** "tervezési fázis" kiszedése a speciből
+
+____________________________________________
+Rendszerkövetelmény
+____________________________________________
+
+- USDA info bevezetésbe
+- Lavini info bevezetésbe
+
+
++ Tervezésből: USDA adatbázis ismertetése
++ Tervezésből: Lavinia adatbázis ismertetése
++ Tervezésből: Use case ábra
+
+
+____________________________________________
+Tervezés
+____________________________________________
+
+- adatbázisok ismertetése 
+
++ Megvalósításból: Szekvenciadiagram és Pseudó kód
++ Megvalósításból: Grafikus felület terve
++ modulokhoz + magyarázat
+
+
+____________________________________________
+Felhasznált tech.
+____________________________________________
+
+** Bevezetés után, Speci elé
+
+____________________________________________
+Megvalósítás
+____________________________________________
+
+- JavaFX-es cucc techbe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

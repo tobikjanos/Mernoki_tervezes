@@ -12,46 +12,152 @@
 * 2. dia - Tartalom
 ***********************************
 
+- bevezetés
+- feladat ismertetése
+- specifikáció
+- rendszerterv
+- megvalósítás
+- további lehetőségek
+- tesztelés
+
 ***********************************
 * 3. dia - Bevezetés
 ***********************************
 
-Lavinia
-- tanszéken fejlesztett
+Lavinia életmód-tükör
+- tanszéken fejlesztett alkalmazás
 - életmód tanácsadó rendszer
 - egészséges életmód hatékonyságának növelése
 
+*********
+* szöveg
+*********
+
+- cél: naplózás
+- tudatos táplálkozás betegek és egészségesek számára is
+- mindennapi táplálék bevitel nyilvántartása
 
 ***********************************
 * 4. dia - Feladat ismertetése
 ***********************************
 
-- ETL alkalmazás két adatbázis között
-- két adatbázisról infó
-- megfelelő specifikációt kaptam
+- Lavinia adatbázisában szereplő élelmiszerek és tápanyagértékek frissítése
+- szinkronizálás az USDA adatbázis új verziói által
+- migrációs folyamatot megvalósító ETL (Extract Transform Load) alkalmazás 
+
+*********
+* szöveg
+*********
+
+- Lavinia adatbázisában lévő élelmiszerek és tápanyagértékek frissítése automatizált módon
+- USDA általi szinkronizálás
+- ETL alkalmazás amely migrációs folyamatot valósít meg két adatbázis között
+
 
 ***********************************
-* Specifikáció
+* 5. dia - USDA (US Department of Agriculture)						!!!!!!!!!!!!Laviniával egy diára, táblázatban!!!!!!!!!!
 ***********************************
 
+- több ezer főből álló kutató csoport
+- élelmiszerek vizsgálata tápanyagtartalom szempontjából
+- 150 különböző tápanyag
+- adatbázis folyamatos bővítése
+
+*********
+* szöveg
+*********
+
+- 
+
 ***********************************
-* Rendszerterv
+* 6. dia - Lavinia
 ***********************************
 
+- MenuGene szakértői rendszer adatbázisát használja
+- relációs adatmodell
+- 
+
+*********
+* szöveg
+*********
+
+
+
+***********************************
+* 7.dia - Felhasznált technológiák
+***********************************
+
+- Postgres
+- Java
+  - JDBC
+  - JavaFX
+  - Apache Commons IO
+  - JUnit
+  - Git
+
+*********
+* szöveg
+*********
+
+- relációs adatbázis-kezelő rendszer, ezt használja a lavinia rendszere
+
+- általános célú objektum orientált programozási nyelv
+- virtuális gép futtatja a fordított kódot -> bármilyen platform
+
+- Java interfész az adatbázis hozzáféréshez
+- számos osztályt és metódust tartalmaz adatbázis manipulációhoz
+
+- alapértelmezett Java GUI könyvtár
+- XML alapú fájl definiálja a grafikus felületet (objektumok elhelyezkedése, mérete, stb)
+
+- Java könyvtár fájlműveletekhez
+- osztályok rövidebb, érthetőbb kód a fájlkezeléshez
+
+- keretrendszer unit teszteléshez
+
+- verziókezelő rendszer
+
+***********************************
+* 8. dia - Specifikáció
+***********************************
+
+- megfelelő specifikációt kaptam a feladat elvégzéséhez
+- (use case diagramm esetleg)
+
+***********************************
+* 9. dia - Rendszerterv
+***********************************
+
+- (változás általi frissítés)
+- fájlok külön feldolgozása, (mindegyikhez egy tárolt eljárás)
 - modularitás fontossága(MVC architektúra), könnyű bővíthetőség (stb)
 
-***********************************
-* Technológiák
-***********************************
+
 
 ***********************************
-* Megoldás
+* Megvalósítás
 ***********************************
 
-- tranzakció kezelés
+- mindegyik fájlhoz egy tárolt eljárás
+- tranzakció kezelés (egy tranzakcióként valósul meg)
 - szál kezelés
+
+
+***********************************
+* További lehetőségek
+***********************************
+
 - további lehetőségek, manuális import, statisztika (stb)
 
 ***********************************
 * Tesztelés
 ***********************************
+
+- futási idő tesztek
+
+
+
+
+
+
+
