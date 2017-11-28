@@ -24,11 +24,6 @@
 * 3. dia - Bevezetés
 ***********************************
 
-Lavinia életmód-tükör
-- tanszéken fejlesztett alkalmazás
-- életmód tanácsadó rendszer
-- egészséges életmód hatékonyságának növelése
-
 *********
 * szöveg
 *********
@@ -36,14 +31,14 @@ Lavinia életmód-tükör
 - cél: naplózás
 - tudatos táplálkozás betegek és egészségesek számára is
 - mindennapi táplálék bevitel nyilvántartása
+- személyes visszajelzések
+
+"tanszéken fejlesztett életmód tanácsadó szoftver"
+"a mindennapi táplálék bevitel nyilvántartásával, segíti a helyes táplálkozás elsajátítását személyes visszajelzések alapján"
 
 ***********************************
 * 4. dia - Feladat ismertetése
 ***********************************
-
-- Lavinia adatbázisában szereplő élelmiszerek és tápanyagértékek frissítése
-- szinkronizálás az USDA adatbázis új verziói által
-- migrációs folyamatot megvalósító ETL (Extract Transform Load) alkalmazás 
 
 *********
 * szöveg
@@ -53,53 +48,45 @@ Lavinia életmód-tükör
 - USDA általi szinkronizálás
 - ETL alkalmazás amely migrációs folyamatot valósít meg két adatbázis között
 
+"fő feladat hogy a lavinia adatbázisában szereplő élelmiszerek és tápanyagértékeik frissítésre kerüljenek"
+"ehhez az USDA adatbázis új verzióival kell szinkronizálnom"
+"ennek megvalósításához egy migrációs szoftvert kell létrehozni"
 
 ***********************************
-* 5. dia - USDA (US Department of Agriculture)						!!!!!!!!!!!!Laviniával egy diára, táblázatban!!!!!!!!!!
+* 5. dia - USDA (US Department of Agriculture)
 ***********************************
-
-- több ezer főből álló kutató csoport
-- élelmiszerek vizsgálata tápanyagtartalom szempontjából
-- 150 különböző tápanyag
-- adatbázis folyamatos bővítése
 
 *********
 * szöveg
 *********
 
-- 
+"az usda db-je több ezer kutató munkájának köszönhető"
+"élelmiszereket vizsgálnak többek között tápanyagtartalom szempontjából"
+"jelenleg 150 tápanyagot különböztetnek meg"
+"az adatbázist folyamatosan bővítik, évente-2 évente frissítik több ezer adattal"
+
 
 ***********************************
 * 6. dia - Lavinia
 ***********************************
 
-- MenuGene szakértői rendszer adatbázisát használja
-- relációs adatmodell
-- 
-
 *********
 * szöveg
 *********
 
-
+"a szintén tanszéki fejlesztésű MenuGene szakértői rendszer adatbázisát használja"
+"ez relációs adatmodell alapján épül fel"
+"eddig csak manuális frissítésre volt lehetőség az USDA adatai által"
 
 ***********************************
 * 7.dia - Felhasznált technológiák
 ***********************************
 
-- Postgres
-- Java
-  - JDBC
-  - JavaFX
-  - Apache Commons IO
-  - JUnit
-  - Git
-
 *********
 * szöveg
 *********
 
-- relációs adatbázis-kezelő rendszer, ezt használja a lavinia rendszere
+- relációs adatbázis-kezelő rendszer, ezt használja a lavinia mögötti adatbázis
 
 - általános célú objektum orientált programozási nyelv
 - virtuális gép futtatja a fordított kódot -> bármilyen platform
@@ -107,10 +94,10 @@ Lavinia életmód-tükör
 - Java interfész az adatbázis hozzáféréshez
 - számos osztályt és metódust tartalmaz adatbázis manipulációhoz
 
-- alapértelmezett Java GUI könyvtár
+- alapértelmezett Java könyvtár GUI létrehozásához, objektumok tulajdonságait egy xml fájl definiálja
 - XML alapú fájl definiálja a grafikus felületet (objektumok elhelyezkedése, mérete, stb)
 
-- Java könyvtár fájlműveletekhez
+- Java könyvtár fájlműveletekhez ("fájlkezeléshez egy külső Java könyvtárat használtam")
 - osztályok rövidebb, érthetőbb kód a fájlkezeléshez
 
 - keretrendszer unit teszteléshez
@@ -121,27 +108,64 @@ Lavinia életmód-tükör
 * 8. dia - Specifikáció
 ***********************************
 
+*********
+* szöveg
+*********
+
 - megfelelő specifikációt kaptam a feladat elvégzéséhez
-- (use case diagramm esetleg)
+- frissítési folyamatot tárolt eljárásokkal kell megvalósítani -> mi az a tárolt eljárás
+- megfelelő hibakezelés
+- hibák visszakeresésének céljából naplózás
+- felhasználóbarát működés érdekében GUI
+
+"az adatbázis frissítését tárolt eljárásokkal kell végrehajtani, ...(mi ez)"
+"ha a frissítési folyamat közben rendellenesség lépne fel, akkor megszakítani magát a folyamatot, és az elvégzett módosításokat érvényteleníteni kell"
+"hiba kezelés szempontjából szükésg van a naplózásra, mi okozta és miért"
+"emellett GUI a felhasználóbarát működés érdekében"
 
 ***********************************
-* 9. dia - Rendszerterv
+* 9. dia - Use case diagram
 ***********************************
 
-- (változás általi frissítés)
-- fájlok külön feldolgozása, (mindegyikhez egy tárolt eljárás)
-- modularitás fontossága(MVC architektúra), könnyű bővíthetőség (stb)
+1 aktor
+"alábbi funkcionalitást kellett megvalósítani"
 
+***********************************
+* 10. dia - Rendszerterv
+***********************************
+
+*********
+* szöveg
+*********
+
+- megfelelés az MVC architektúrának, emiatt könnyen bővíthető
+- USDA fájlok az egyes frissítések közötti változásokat tartalmazzák
+- fájlok külön feldolgozása hatékonyság, gyorsaság miatt
+  egymás közötti összefüggés ellenére (lehetett volna összekötni az egymáshoz tartozó adatokat)
+
+"későbbi bővítés esetén nem kell az egész szoftvert újra tervezni"
+"az usda 1-1 új verzió megjelenésével elérhetővé teszi, hogy mely adatok változtak az előző verzióhoz képest"
+"ezeket a fájlokat külön dolgozza fel a rendszer"
+"lehetnek összefüggése a fájlok között, az egyik az élelmiszert tárolja, a másik az arra vonatkozó tápanyagot, a harmadik a élelmiszerre vonatkozó tömegértékeket"
 
 
 ***********************************
-* Megvalósítás
+* Megvalósítás / Elkészült rendszer
 ***********************************
 
+*********
+* szöveg
+*********
+
+- adatbázis adminisztrátori adatok
 - mindegyik fájlhoz egy tárolt eljárás
 - tranzakció kezelés (egy tranzakcióként valósul meg)
 - szál kezelés
 
+"csak az adminok képesek használni, ők vannak birtokában az adatbázis hozzáféréséhez szükséges jogosultságoknak"
+"tranzakció tárolt eljárások egymás utáni hívásával"
+"főbb események valós időben is megfigyelhetőek"
+"amellett hogy minden bekövetkező esemény egy időbélyeggel ellátott fájlba mentésre kerül"
 
 ***********************************
 * További lehetőségek
