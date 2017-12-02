@@ -1,0 +1,14 @@
+﻿//Menu dropdown close from outside
+$(document).on("click", function (event) {
+    if ((event.target.className == "usa-accordion-button usa-nav-link") || ((event.target.id == "menuName")))
+    { //No action needed as already implemented
+    }
+    else {
+        var buttonElements = $("ul > li > button");
+        for (var i = 1; i <= buttonElements.length; i++) {
+            var element = buttonElements.eq(i);
+            $('#btnMenu-' + i).attr('aria-expanded', 'false');
+            $('#side-nav-' + i).attr('aria-hidden', 'true');
+        }
+    }
+});
