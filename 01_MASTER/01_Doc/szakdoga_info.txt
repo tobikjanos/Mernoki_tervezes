@@ -12,6 +12,7 @@ ____________________________________________
 ** Magyarázások specibe vagy bevezetésbe
 ** connection, tárolt eljárás kódja nem kell
 ** "tervezési fázis" kiszedése a speciből
+** transaction level gyorsaság és hatékonyság miatt
 
 ____________________________________________
 Rendszerkövetelmény
