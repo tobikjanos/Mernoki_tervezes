@@ -496,7 +496,7 @@ public class MainWindowController implements Initializable {
       t4ListView.setPlaceholder(new Label(""));
       
       FileChooser fileChooser = new FileChooser();
-      File defaultDir = new File("LOG\\");
+      File defaultDir = new File("..\\LOG\\");
       fileChooser.setInitialDirectory(defaultDir);
       
       File selectedFile = fileChooser.showOpenDialog(null);
@@ -576,39 +576,6 @@ public class MainWindowController implements Initializable {
       
       ETLController.setController(this);
       DatabaseHandler.setController(this);
-      
-      
-      t1TextIPaddress.setText("localhost");
-      t1TextPort.setText("5432");
-      t1TextDBname.setText("lavinia");
-      t1TextUsername.setText("postgres");
-      t1Password.setText("qaswed123");
-      t1TextSchema.setText("minta2");
-      
-      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_FOOD.txt");
-      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_NUTR.txt");
-      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\ADD_WGT.txt");
-      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_FOOD.txt");
-      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_NUTR.txt");
-      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\CHG_WGT.txt");
-      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_FOOD.txt");
-      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_NUTR.txt");
-      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\testUpdateFiles\\DEL_WGT.txt");
-      
-//      t2TextAddNdef.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_NDEF.txt");
-//      t2TextChgNdef.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_NDEF.txt");
-      
-//      t2TextAddFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_FOOD.txt");
-//      t2TextAddNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_NUTR.txt");
-//      t2TextAddWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\ADD_WGT.txt");
-//      t2TextChgFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_FOOD.txt");
-//      t2TextChgNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_NUTR.txt");
-//      t2TextChgWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\CHG_WGT.txt");
-//      t2TextDelFood.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_FOOD.txt");
-//      t2TextDelNutr.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_NUTR.txt");
-//      t2TextDelWgt.setText("D:\\EGYETEM\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr21upd\\DEL_WGT.txt");
-      
-      t2TextRevisionNumber.setText("60");
       
    }
    

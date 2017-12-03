@@ -13,7 +13,6 @@ import java.sql.SQLException;
 import java.sql.Savepoint;
 import java.util.ArrayList;
 import java.util.List;
-import javafx.application.Platform;
 
 /**
  *
@@ -182,8 +181,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * ADD_NDEF
              */
-            SendTraceMessage(       "[  INFO  ]", "ADD_NDEF elkezdése");
-            LogHandler.AddElement(  "[  INFO  ]", "ADD_NDEF elkezdése");
+            SendTraceMessage(       "[  INFO  ]", "ADD_NDEF frissítés elkezdése");
+            LogHandler.AddElement(  "[  INFO  ]", "ADD_NDEF frissítés elkezdése");
             
             for(FileStructNutrient fsn : listAddNdef)
             {
@@ -217,8 +216,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * CHG_NDEF
              */
-            SendTraceMessage(       "[  INFO  ]", "CHG_NDEF elkezdése");
-            LogHandler.AddElement(  "[  INFO  ]", "CHG_NDEF elkezdése");
+            SendTraceMessage(       "[  INFO  ]", "CHG_NDEF frissítés elkezdése");
+            LogHandler.AddElement(  "[  INFO  ]", "CHG_NDEF frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructNutrient fsn : listChgNdef)
@@ -247,15 +246,15 @@ public class ETLController {
             SendTraceMessage("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
             LogHandler.AddElement("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
          }
-         
+                  
          if(!conn.isClosed() && !listAddFood.isEmpty())
          {
             
             /**__________________________________________________________________________
              * ADD_FOOD
              */
-            SendTraceMessage(       "[  INFO  ]", "ADD_FOOD elkezdése");
-            LogHandler.AddElement(  "[  INFO  ]", "ADD_FOOD elkezdése");
+            SendTraceMessage(       "[  INFO  ]", "ADD_FOOD frissítés elkezdése");
+            LogHandler.AddElement(  "[  INFO  ]", "ADD_FOOD frissítés frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructFood ffs : listAddFood)
@@ -284,15 +283,15 @@ public class ETLController {
             SendTraceMessage("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
             LogHandler.AddElement("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
          }
-         
+                  
          if(!conn.isClosed() && !listAddNutr.isEmpty())
          {
             
             /**__________________________________________________________________________
              * ADD_NUTR
              */
-            SendTraceMessage(       "[  INFO  ]", "ADD_NUTR elkezdése");
-            LogHandler.AddElement(  "[  INFO  ]", "ADD_NUTR elkezdése");
+            SendTraceMessage(       "[  INFO  ]", "ADD_NUTR frissítés elkezdése");
+            LogHandler.AddElement(  "[  INFO  ]", "ADD_NUTR frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructNutrient fns : listAddNutr)
@@ -328,8 +327,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * ADD_WGT
              */
-            SendTraceMessage("[  INFO  ]", "ADD_WGT elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "ADD_WGT elkezdése");
+            SendTraceMessage("[  INFO  ]", "ADD_WGT frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "ADD_WGT frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructWeight fws : listAddWgt)
@@ -365,8 +364,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * CHG_FOOD
              */
-            SendTraceMessage("[  INFO  ]", "CHG_FOOD elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "CHG_FOOD elkezdése");
+            SendTraceMessage("[  INFO  ]", "CHG_FOOD frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "CHG_FOOD frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructFood ffs : listChgFood)
@@ -402,8 +401,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * CHG_NUTR
              */
-            SendTraceMessage("[  INFO  ]", "CHG_NUTR elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "CHG_NUTR elkezdése");
+            SendTraceMessage("[  INFO  ]", "CHG_NUTR frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "CHG_NUTR frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructNutrient fns : listChgNutr)
@@ -439,8 +438,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * CHG_WGT
              */
-            SendTraceMessage("[  INFO  ]", "CHG_WGT elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "CHG_WGT elkezdése");
+            SendTraceMessage("[  INFO  ]", "CHG_WGT frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "CHG_WGT frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructWeight fws : listChgWgt)
@@ -476,8 +475,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * DEL_WGT
              */
-            SendTraceMessage("[  INFO  ]", "DEL_WGT elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "DEL_WGT elkezdése");
+            SendTraceMessage("[  INFO  ]", "DEL_WGT frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "DEL_WGT frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructWeight fws : listDelWgt)
@@ -513,8 +512,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * DEL_NUTR
              */
-            SendTraceMessage("[  INFO  ]", "DEL_NUTR elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "DEL_NUTR elkezdése");
+            SendTraceMessage("[  INFO  ]", "DEL_NUTR frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "DEL_NUTR frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructNutrient fns : listDelNutr)
@@ -550,8 +549,8 @@ public class ETLController {
             /**__________________________________________________________________________
              * DEL_FOOD
              */
-            SendTraceMessage("[  INFO  ]", "DEL_FOOD elkezdése");
-            LogHandler.AddElement("[  INFO  ]", "DEL_FOOD elkezdése");
+            SendTraceMessage("[  INFO  ]", "DEL_FOOD frissítés elkezdése");
+            LogHandler.AddElement("[  INFO  ]", "DEL_FOOD frissítés elkezdése");
             moduleCounter = 0;
             
             for(FileStructFood ffs : listDelFood)
@@ -580,7 +579,6 @@ public class ETLController {
             SendTraceMessage("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
             LogHandler.AddElement("[  INFO  ]", "Feldolgozott adatok száma: " + moduleCounter);
          }
-         
                   
          if( !conn.isClosed() )
          {
@@ -640,11 +638,6 @@ public class ETLController {
    */
    public static void main(String[] args)
    {
-      String filePath = "d:\\Egyetem\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\ADD_NDEF.txt";
-      ReadFiles(filePath, "ADD_NDEF");
-      
-      filePath = "d:\\Egyetem\\Szakdolgozat\\Mernoki_tervezes\\update files\\sr22upd\\CHG_NDEF.txt";
-      ReadFiles(filePath, "CHG_NDEF");
       
    }
 }

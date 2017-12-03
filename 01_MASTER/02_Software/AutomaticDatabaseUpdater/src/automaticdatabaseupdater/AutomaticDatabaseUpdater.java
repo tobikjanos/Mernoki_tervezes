@@ -31,7 +31,7 @@ public class AutomaticDatabaseUpdater extends Application {
         stage.sizeToScene();
         
         stage.setTitle("Lavinia adatbázis-frissítő rendszer");
-        stage.getIcons().add(new Image("file:src/Images/logo.png"));
+        stage.getIcons().add(new Image("file:../src/Images/logo.png"));
         
         stage.setScene(scene);
         stage.show();

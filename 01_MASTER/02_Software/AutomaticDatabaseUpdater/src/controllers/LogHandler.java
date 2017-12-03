@@ -33,7 +33,7 @@ public class LogHandler {
 
       try 
       {
-         logFile = new File("LOG\\logfile_" + timeStamp.replace("-", "T") + ".txt");
+         logFile = new File("..\\LOG\\logfile_" + timeStamp.replace("-", "T") + ".txt");
          logFile.getParentFile().mkdirs();
          logFile.createNewFile();
          

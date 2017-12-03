@@ -26,13 +26,13 @@ import java.util.logging.Logger;
  */
 public class DatabaseHandler {
    
-   private static String IP_ADDRESS       = "localhost";      /* localhost */
-   private static String PORT             = "5432";           /* 5432 */
-   private static String DATABASE_NAME    = "lavinia";        /* lavinia */
-   private static String USERNAME         = "postgres";       /* postgres */
-   private static String PASSWORD         = "qaswed123";      /* qaswed123 */
-   private static String SCHEMA           = "minta2";         /* minta */
-   private static String VERSION          = "30";             /* 28 */
+   private static String IP_ADDRESS       = "";
+   private static String PORT             = "";
+   private static String DATABASE_NAME    = "";
+   private static String USERNAME         = "";
+   private static String PASSWORD         = "";
+   private static String SCHEMA           = "";
+   private static String VERSION          = "";
    
    private static MainWindowController controller;
    
@@ -890,8 +890,6 @@ public class DatabaseHandler {
             LogHandler.AddElement("[  INFO  ]", "Frissített élelmiszer   |" + foodItem);
          }
          
-         
-         
       } catch (SQLException ex) {
          if( !ex.getSQLState().equals("25P02") )
          {
@@ -1452,73 +1450,6 @@ public class DatabaseHandler {
    
    public static void main(String[] args) throws IOException
    {
-      Connection conn = null;
-      
-      
-      try
-      {
-         conn = Connect();
-               
-         createAddNutrientDefiniton(conn);
-         createChgNutrientDefiniton(conn);
-         
-//         System.out.println("________________________________________________");
-//         createAddFoodFunction(conn);
-//         createAddNutrientFunction(conn);
-//         createAddWeightFunction(conn);
-//         
-//         System.out.println("________________________________________________");
-//         createChgFoodFunction(conn);
-//         createChgNutrientFunction(conn);
-//         createChgWeightFunction(conn);
-//         
-//         System.out.println("________________________________________________");
-//         createDelFoodFunction(conn);
-//         createDelNutrientFunction(conn);
-//         createDelWeightFunction(conn);
-         
-         conn.close();
-         
-         
-//         System.out.println("________________________________________________");
-//         executeAddFoodFunction(conn, new FileFoodStruct(50016, "test_food10", "TEST_FOOD10", 0));
-//         executeAddFoodFunction(conn, new FileFoodStruct(50017, "test_food11", "TEST_FOOD11", 0));
-
-//         System.out.println("________________________________________________");
-//         executeChgFoodFunction(conn, new FileFoodStruct(50016, "test_food10_1", "TEST_FOOD10_1", 100));
-//         executeChgFoodFunction(conn, new FileFoodStruct(50017, "test_food11_1", "TEST_FOOD11_1", 100));
-
-//         System.out.println("________________________________________________");
-//         executeDelFoodFunction(conn, new FileFoodStruct(50016, "TEST_FOOD10_1"));
-//         executeDelFoodFunction(conn, new FileFoodStruct(50017, "TEST_FOOD11_1"));
-
-//         System.out.println("________________________________________________");
-//         executeAddNutrientFunction(conn, new FileNutrientStruct(50016, 208, 999.99));
-//         executeAddNutrientFunction(conn, new FileNutrientStruct(50017, 209, 999.99));
-
-//         System.out.println("________________________________________________");
-//         executeChgNutrientFunction(conn, new FileNutrientStruct(50020, 208, 10));
-//         executeChgNutrientFunction(conn, new FileNutrientStruct(50021, 209, 10));
-
-//         System.out.println("________________________________________________");
-//         executeDelNutrientFunction(conn, new FileNutrientStruct(50016, 208));
-//         executeDelNutrientFunction(conn, new FileNutrientStruct(50017, 209));
-
-//         System.out.println("________________________________________________");
-//         executeAddWeightFunction(conn, new FileWeightStruct(50016, 100.0, "testing desc10", 1000.0));
-//         executeAddWeightFunction(conn, new FileWeightStruct(50017, 100.0, "testing desc11", 1200.0));
-
-//         System.out.println("________________________________________________");
-//         executeChgWeightFunction(conn, new FileWeightStruct(50016, 100.0, "testing desc10", 700.0));
-//         executeChgWeightFunction(conn, new FileWeightStruct(50017, 100.0, "testing desc11", 600.0));
-
-//         System.out.println("________________________________________________");
-//         executeDelWeightFunction(conn, new FileWeightStruct(50016, 100.0, "testing desc10", 700.0));
-//         executeDelWeightFunction(conn, new FileWeightStruct(50017, 100.0, "testing desc11", 600.0));
-
-      }catch(SQLException e){
-         System.out.println("SQLException has been caught");
-      }
       
    }
    

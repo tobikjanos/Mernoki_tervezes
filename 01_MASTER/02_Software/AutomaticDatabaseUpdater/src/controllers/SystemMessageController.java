@@ -52,7 +52,7 @@ public class SystemMessageController {
       Stage stage = (Stage)alert.getDialogPane().getScene().getWindow();
       stage.getIcons().add(new Image("file:src/Images/logo.png"));
       
-      ButtonType buttonTypeOK = new ButtonType("OK");
+      ButtonType buttonTypeOK = new ButtonType("Folytatás");
       ButtonType buttonTypeCancel = new ButtonType("Vissza");
       
       alert.getButtonTypes().setAll(buttonTypeOK, buttonTypeCancel);
