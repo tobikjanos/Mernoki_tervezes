@@ -1,0 +1,165 @@
+***********************************
+* 1. dia - Téma, témavezető stb
+***********************************
+
+***********************************
+* 2. dia - Bevezetés
+***********************************
+
+Egyetemi fejlesztésű életmód tanácsadó alkalmazás
+Felhasználóinak segíti a mindennapi táplálkozás naplózását. (főleg cukorbetegeknek)
+
+
+
+***********************************
+* 3. dia - Feladat ismertetése
+***********************************
+
+Feladatom hogy a Lavinia által használt adatbázisban szereplő élelmiszerek és tápanyagértékeik frissítésre kerüljenek
+Egy külső adatbázis új verziói által.
+
+Ennek megvalósításához egy migrációs szoftvert kellett megtervezni és létrehozni.
+Aminek megfelelő hibatűréssel kell rendelkeznie.
+
+
+***********************************
+* 4. dia - Feladat ismertetése
+***********************************
+
+Lényegében a külső adatbázis módosított értékeit kell felhasználni a frissítésre.
+Nem egyértelmű feladat a két adatbázis szerkezeti felépítésben jelentősen eltér egymástól.
+
+
+***********************************
+* 5. dia - USDA
+***********************************
+
+Ez a külső adatbázis az USDA adatbázisa
+Több ezer kutató munkájának köszönhető az adatbázis
+Évente - két évente új frissítés érkezik
+Ez nagyságrendileg több tízezres rekordszámot jelent
+
+
+***********************************
+* 6. dia - Lavinia
+***********************************
+
+Szintén egyetemi fejlesztésű szakértői rendszer adatbázisát és szolgáltatásait használja fel
+Relációs adatmodell alapján épül fel
+Eddig csak manuális frissítések az USDA új verziói által
+
+
+***********************************
+* 7. dia - Use case diagram
+***********************************
+
+1 aktor az adatbázis adminisztrátor
+Fő funkciók melyek biztosítják az adatbázis hozzáférést és a migrációs folyamatot
+
+
+***********************************
+* 8. dia - Rendszerterv
+***********************************
+
+Egy-egy új verzió megjelenésével elérhetővé válnak szöveges fájlok hogy mely értékek módosultak az előző verzióhoz képest
+A rendszer ezeket a változásokat használja fel
+
+A fájlok külön feldolgozása a gyorsaság és hatékonyság miatt
+Olyan összefüggés hogy az egyik az élelmiszer a másik a tápanyag értékeket tárolja
+
+A másik oldalon a frissítés tárol eljárások segítségével valósul meg
+Ez egy függvény ami az adatbázis szerveren fut le, így funkcionalítása független a hívó környezettől
+
+
+
+***********************************
+* 9. dia - Felhasznált tech.
+***********************************
+
+Postgres mert a lavinia adatbázisa is ezt használja
+java kliens program megvalósítására
+
+
+
+***********************************
+* 10. dia - Elkészült rendszer
+***********************************
+
+alapvetően az adminisztrátorok számára készült, ők vannak birtokában a megfelelő adatoknak az adatb hozzáféréséhez
+
+a frissítés folyamata egy tranzakcióként valósul meg, a tranzakciókezelés a kliens oldalon van implementálva
+
+folyamat közben fontosabb információkat valós időben közöl
+
+naplófájlok segítségével könnyen kideríthető az esetleges hibák okai
+
+
+***********************************
+* 11. dia - Elkészült rendszer
+***********************************
+
+egy képernyőkép a rendszerről frissítés folyamata közben
+fő funkciók külön füleken érhetőek el
+
+
+***********************************
+* 12. dia - Tesztelés
+***********************************
+
+frissítési folyamat helyességét manuális módon futtattam, ehhez rendelkezésemre állt a teljes adatbázis, amiben megközelítőleg 600.000 rekord található
+
+futási idejű tesztek az alábbiak
+így ha több tízezer adatot is kell feldolgozni, néhány perc alatt végbe megy
+
+
+***********************************
+* 13. dia - Összefoglalás
+***********************************
+
+összeségében úgy gondolom hogy nagy segítségetet nyújt 
+jelentősen elősegíti az adatbázis növekedését és tartósságát a jövőre nézve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
